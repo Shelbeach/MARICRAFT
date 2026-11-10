@@ -1,0 +1,8 @@
+services:
+  maricraft:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${MARICRAFT_PORT:-8080}:8080"
+    restart: unless-stopped

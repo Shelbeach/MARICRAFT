@@ -1,0 +1,3769 @@
+{
+  "core_far": {
+    "file": "runtime/layers/core_far.png",
+    "category": "layers",
+    "description": "Дальние своды, крепости и лавопады входа 3-1.",
+    "source": "masters/core_far.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "texture_px": [
+      3072,
+      768
+    ],
+    "world_units": [
+      1536.0,
+      384.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "parallax": 0.12,
+    "z_index": -100,
+    "repeat": true,
+    "repeat_world_x": 1536,
+    "continuation": "A + отражённое продолжение A; стык совпадает пиксельно. Не разворачивать вручную ещё раз.",
+    "collision_world": null,
+    "recommended_display_world": [
+      2160,
+      540
+    ],
+    "demo_top_world": 0,
+    "recommended_repeat_world_x": 2160,
+    "native_density_note": "world_units — размер при технической плотности 2 px/ед.; для камеры 960×540 использовать recommended_display_world. Соотношение сторон сохраняется."
+  },
+  "forge_far": {
+    "file": "runtime/layers/forge_far.png",
+    "category": "layers",
+    "description": "Дальние башни и кузницы Чёрного Железа для 3-2.",
+    "source": "masters/forge_far_v2.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "texture_px": [
+      3072,
+      768
+    ],
+    "world_units": [
+      1536.0,
+      384.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "parallax": 0.15,
+    "z_index": -100,
+    "repeat": true,
+    "repeat_world_x": 1536,
+    "continuation": "A + отражённое продолжение A; стык совпадает пиксельно. Не разворачивать вручную ещё раз.",
+    "collision_world": null,
+    "recommended_display_world": [
+      2160,
+      540
+    ],
+    "demo_top_world": 0,
+    "recommended_repeat_world_x": 2160,
+    "native_density_note": "world_units — размер при технической плотности 2 px/ед.; для камеры 960×540 использовать recommended_display_world. Соотношение сторон сохраняется."
+  },
+  "sanctum_far": {
+    "file": "runtime/layers/sanctum_far.png",
+    "category": "layers",
+    "description": "Уникальный дальний зал арены Рагнароса; без повторения.",
+    "source": "masters/sanctum_far_v2.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "texture_px": [
+      1536,
+      768
+    ],
+    "world_units": [
+      768.0,
+      384.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "parallax": 0.08,
+    "z_index": -100,
+    "repeat": false,
+    "repeat_world_x": null,
+    "continuation": "Уникальный фон; удерживать камеру в пределах арены.",
+    "collision_world": null,
+    "recommended_display_world": [
+      1080,
+      540
+    ],
+    "demo_top_world": 0,
+    "recommended_repeat_world_x": null,
+    "native_density_note": "world_units — размер при технической плотности 2 px/ед.; для камеры 960×540 использовать recommended_display_world. Соотношение сторон сохраняется."
+  },
+  "core_mid": {
+    "file": "runtime/layers/core_mid.png",
+    "category": "layers",
+    "description": "Промежуточные базальтовые массивы без игровых площадок.",
+    "source": "masters/core_mid.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "texture_px": [
+      3072,
+      768
+    ],
+    "world_units": [
+      1536.0,
+      384.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "parallax": 0.36,
+    "z_index": -80,
+    "repeat": true,
+    "repeat_world_x": 1536,
+    "continuation": "A + отражённое продолжение A; стык совпадает пиксельно. Не разворачивать вручную ещё раз.",
+    "collision_world": null,
+    "recommended_display_world": [
+      1680,
+      420
+    ],
+    "demo_top_world": 120,
+    "recommended_repeat_world_x": 1680,
+    "native_density_note": "world_units — размер при технической плотности 2 px/ед.; для камеры 960×540 использовать recommended_display_world. Соотношение сторон сохраняется."
+  },
+  "forge_mid": {
+    "file": "runtime/layers/forge_mid.png",
+    "category": "layers",
+    "description": "Промежуточные кузнечные башни и подвесные цепи.",
+    "source": "masters/forge_mid.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "texture_px": [
+      3072,
+      768
+    ],
+    "world_units": [
+      1536.0,
+      384.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "parallax": 0.42,
+    "z_index": -80,
+    "repeat": true,
+    "repeat_world_x": 1536,
+    "continuation": "A + отражённое продолжение A; стык совпадает пиксельно. Не разворачивать вручную ещё раз.",
+    "collision_world": null,
+    "recommended_display_world": [
+      1680,
+      420
+    ],
+    "demo_top_world": 120,
+    "recommended_repeat_world_x": 1680,
+    "native_density_note": "world_units — размер при технической плотности 2 px/ед.; для камеры 960×540 использовать recommended_display_world. Соотношение сторон сохраняется."
+  },
+  "core_near": {
+    "file": "runtime/layers/core_near.png",
+    "category": "layers",
+    "description": "Ближние острые скалы у нижнего края кадра.",
+    "source": "masters/core_near.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "texture_px": [
+      3072,
+      768
+    ],
+    "world_units": [
+      1536.0,
+      384.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "parallax": 1.08,
+    "z_index": 20,
+    "repeat": true,
+    "repeat_world_x": 1536,
+    "continuation": "A + отражённое продолжение A; стык совпадает пиксельно. Не разворачивать вручную ещё раз.",
+    "collision_world": null,
+    "recommended_display_world": [
+      720,
+      180
+    ],
+    "demo_top_world": 405,
+    "recommended_repeat_world_x": 720,
+    "native_density_note": "world_units — размер при технической плотности 2 px/ед.; для камеры 960×540 использовать recommended_display_world. Соотношение сторон сохраняется."
+  },
+  "basalt_field": {
+    "file": "runtime/terrain/basalt_field.png",
+    "category": "terrain",
+    "description": "Сплошной базальт с холодными гранями и редкими трещинами.",
+    "source": "masters/basalt_field.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "texture_px": [
+      1024,
+      1024
+    ],
+    "world_units": [
+      512,
+      512
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "repeat": true,
+    "repeat_world": [
+      512,
+      512
+    ],
+    "parallax": 1,
+    "z_index": 0,
+    "collision_world": null,
+    "scale_rule": "Непрерывные мировые UV /512; повторять, не растягивать. Поле собрано 2×2 с отражением, противоположные края идентичны."
+  },
+  "obsidian_field": {
+    "file": "runtime/terrain/obsidian_field.png",
+    "category": "terrain",
+    "description": "Глянцевый обсидиан с крупными фиолетовыми гранями.",
+    "source": "masters/obsidian_field.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "texture_px": [
+      1024,
+      1024
+    ],
+    "world_units": [
+      512,
+      512
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "repeat": true,
+    "repeat_world": [
+      512,
+      512
+    ],
+    "parallax": 1,
+    "z_index": 0,
+    "collision_world": null,
+    "scale_rule": "Непрерывные мировые UV /512; повторять, не растягивать. Поле собрано 2×2 с отражением, противоположные края идентичны."
+  },
+  "heated_field": {
+    "file": "runtime/terrain/heated_field.png",
+    "category": "terrain",
+    "description": "Раскалённая порода с золотистыми прожилками.",
+    "source": "masters/heated_field.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "texture_px": [
+      1024,
+      1024
+    ],
+    "world_units": [
+      512,
+      512
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "repeat": true,
+    "repeat_world": [
+      512,
+      512
+    ],
+    "parallax": 1,
+    "z_index": 0,
+    "collision_world": null,
+    "scale_rule": "Непрерывные мировые UV /512; повторять, не растягивать. Поле собрано 2×2 с отражением, противоположные края идентичны."
+  },
+  "basalt_top": {
+    "file": "runtime/terrain/basalt_top.png",
+    "category": "terrain",
+    "description": "Базальтовая верхняя кромка",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      0,
+      418,
+      418
+    ],
+    "crop_in_region_px": [
+      27,
+      179,
+      392,
+      259
+    ],
+    "texture_px": [
+      256,
+      56
+    ],
+    "world_units": [
+      128,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      128.0,
+      2
+    ],
+    "anchor_world": [
+      64.0,
+      1.0
+    ],
+    "visible_region_px": [
+      9,
+      2,
+      237,
+      52
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "preferred_repeat_file": "runtime/terrain/basalt_top_repeat.png"
+  },
+  "obsidian_top": {
+    "file": "runtime/terrain/obsidian_top.png",
+    "category": "terrain",
+    "description": "Обсидиановая верхняя кромка",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      0,
+      836,
+      418
+    ],
+    "crop_in_region_px": [
+      27,
+      179,
+      392,
+      261
+    ],
+    "texture_px": [
+      256,
+      56
+    ],
+    "world_units": [
+      128,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      128.0,
+      2
+    ],
+    "anchor_world": [
+      64.0,
+      1.0
+    ],
+    "visible_region_px": [
+      12,
+      2,
+      231,
+      52
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "preferred_repeat_file": "runtime/terrain/obsidian_top_repeat.png"
+  },
+  "heated_top": {
+    "file": "runtime/terrain/heated_top.png",
+    "category": "terrain",
+    "description": "Раскалённая верхняя кромка",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      0,
+      1254,
+      418
+    ],
+    "crop_in_region_px": [
+      26,
+      179,
+      392,
+      257
+    ],
+    "texture_px": [
+      256,
+      56
+    ],
+    "world_units": [
+      128,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      128.0,
+      2
+    ],
+    "anchor_world": [
+      64.0,
+      1.0
+    ],
+    "visible_region_px": [
+      6,
+      2,
+      244,
+      52
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "preferred_repeat_file": "runtime/terrain/heated_top_repeat.png"
+  },
+  "top_left": {
+    "file": "runtime/terrain/top_left.png",
+    "category": "terrain",
+    "description": "Левый верхний внешний угол",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      418,
+      418,
+      836
+    ],
+    "crop_in_region_px": [
+      41,
+      58,
+      384,
+      377
+    ],
+    "texture_px": [
+      128,
+      128
+    ],
+    "world_units": [
+      64,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      64.0,
+      64.0
+    ],
+    "anchor_world": [
+      32.0,
+      32.0
+    ],
+    "visible_region_px": [
+      2,
+      6,
+      124,
+      115
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader."
+  },
+  "wall_edge": {
+    "file": "runtime/terrain/wall_edge.png",
+    "category": "terrain",
+    "description": "Вертикальная кромка стены",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      418,
+      836,
+      836
+    ],
+    "crop_in_region_px": [
+      160,
+      25,
+      256,
+      394
+    ],
+    "texture_px": [
+      40,
+      256
+    ],
+    "world_units": [
+      20,
+      128
+    ],
+    "density": 2,
+    "pivot_px": [
+      20.0,
+      128.0
+    ],
+    "anchor_world": [
+      10.0,
+      64.0
+    ],
+    "visible_region_px": [
+      2,
+      59,
+      36,
+      138
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "preferred_repeat_file": "runtime/terrain/wall_edge_repeat.png"
+  },
+  "top_right": {
+    "file": "runtime/terrain/top_right.png",
+    "category": "terrain",
+    "description": "Правый верхний внешний угол",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      418,
+      1254,
+      836
+    ],
+    "crop_in_region_px": [
+      34,
+      57,
+      376,
+      377
+    ],
+    "texture_px": [
+      128,
+      128
+    ],
+    "world_units": [
+      64,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      64.0,
+      64.0
+    ],
+    "anchor_world": [
+      32.0,
+      32.0
+    ],
+    "visible_region_px": [
+      2,
+      6,
+      124,
+      116
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader."
+  },
+  "bottom_left": {
+    "file": "runtime/terrain/bottom_left.png",
+    "category": "terrain",
+    "description": "Левый нижний угол",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      836,
+      418,
+      1254
+    ],
+    "crop_in_region_px": [
+      41,
+      45,
+      360,
+      366
+    ],
+    "texture_px": [
+      128,
+      128
+    ],
+    "world_units": [
+      64,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      64.0,
+      64.0
+    ],
+    "anchor_world": [
+      32.0,
+      32.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      123,
+      124
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader."
+  },
+  "bottom_right": {
+    "file": "runtime/terrain/bottom_right.png",
+    "category": "terrain",
+    "description": "Правый нижний угол",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      836,
+      836,
+      1254
+    ],
+    "crop_in_region_px": [
+      54,
+      45,
+      375,
+      366
+    ],
+    "texture_px": [
+      128,
+      128
+    ],
+    "world_units": [
+      64,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      64.0,
+      64.0
+    ],
+    "anchor_world": [
+      32.0,
+      32.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      124,
+      124
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader."
+  },
+  "underside": {
+    "file": "runtime/terrain/underside.png",
+    "category": "terrain",
+    "description": "Нижний рваный край",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      836,
+      1254,
+      1254
+    ],
+    "crop_in_region_px": [
+      28,
+      195,
+      390,
+      265
+    ],
+    "texture_px": [
+      256,
+      56
+    ],
+    "world_units": [
+      128,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      128.0,
+      28.0
+    ],
+    "anchor_world": [
+      64.0,
+      14.0
+    ],
+    "visible_region_px": [
+      2,
+      3,
+      252,
+      49
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "preferred_repeat_file": "runtime/terrain/underside_repeat.png"
+  },
+  "basalt_top_repeat": {
+    "file": "runtime/terrain/basalt_top_repeat.png",
+    "category": "terrain",
+    "description": "Базальтовая верхняя кромка; средняя повторяемая секция без торцов.",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      0,
+      418,
+      418
+    ],
+    "crop_in_region_px": [
+      27,
+      179,
+      392,
+      259
+    ],
+    "texture_px": [
+      472,
+      56
+    ],
+    "world_units": [
+      236,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      4
+    ],
+    "anchor_world": [
+      0,
+      2
+    ],
+    "visible_region_px": [
+      0,
+      2,
+      472,
+      52
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "repeat_world_x": 236,
+    "continuation": "Средняя часть + зеркальное продолжение; стык пиксельно совпадает.",
+    "visible_region_alpha_threshold": 8,
+    "runtime_parent": "runtime/terrain/basalt_top.png",
+    "runtime_crop_xyxy": [
+      10,
+      0,
+      246,
+      56
+    ]
+  },
+  "obsidian_top_repeat": {
+    "file": "runtime/terrain/obsidian_top_repeat.png",
+    "category": "terrain",
+    "description": "Обсидиановая верхняя кромка; средняя повторяемая секция без торцов.",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      0,
+      836,
+      418
+    ],
+    "crop_in_region_px": [
+      27,
+      179,
+      392,
+      261
+    ],
+    "texture_px": [
+      472,
+      56
+    ],
+    "world_units": [
+      236,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      4
+    ],
+    "anchor_world": [
+      0,
+      2
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      468,
+      52
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "repeat_world_x": 236,
+    "continuation": "Средняя часть + зеркальное продолжение; стык пиксельно совпадает.",
+    "visible_region_alpha_threshold": 8,
+    "runtime_parent": "runtime/terrain/obsidian_top.png",
+    "runtime_crop_xyxy": [
+      10,
+      0,
+      246,
+      56
+    ]
+  },
+  "heated_top_repeat": {
+    "file": "runtime/terrain/heated_top_repeat.png",
+    "category": "terrain",
+    "description": "Раскалённая верхняя кромка; средняя повторяемая секция без торцов.",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      0,
+      1254,
+      418
+    ],
+    "crop_in_region_px": [
+      26,
+      179,
+      392,
+      257
+    ],
+    "texture_px": [
+      472,
+      56
+    ],
+    "world_units": [
+      236,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      4
+    ],
+    "anchor_world": [
+      0,
+      2
+    ],
+    "visible_region_px": [
+      0,
+      2,
+      472,
+      52
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Кромка поверх непрерывного поля. Повторять среднюю секцию; углы не растягивать. Между разными породами использовать transition.gdshader.",
+    "repeat_world_x": 236,
+    "continuation": "Средняя часть + зеркальное продолжение; стык пиксельно совпадает.",
+    "visible_region_alpha_threshold": 8,
+    "runtime_parent": "runtime/terrain/heated_top.png",
+    "runtime_crop_xyxy": [
+      10,
+      0,
+      246,
+      56
+    ]
+  },
+  "basalt_column": {
+    "file": "runtime/decor/basalt_column.png",
+    "category": "decor",
+    "description": "Базальтовая колонна с широкой опорой и светящимся рельефом.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      0,
+      0,
+      444,
+      444
+    ],
+    "crop_in_region_px": [
+      54,
+      11,
+      391,
+      430
+    ],
+    "texture_px": [
+      232,
+      436
+    ],
+    "world_units": [
+      116,
+      218
+    ],
+    "density": 2,
+    "pivot_px": [
+      116.0,
+      434
+    ],
+    "anchor_world": [
+      58.0,
+      217.0
+    ],
+    "visible_region_px": [
+      2,
+      151,
+      228,
+      283
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "iron_support": {
+    "file": "runtime/decor/iron_support.png",
+    "category": "decor",
+    "description": "Железная стойка с раскосами; опора мостов и цехов.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      444,
+      0,
+      887,
+      444
+    ],
+    "crop_in_region_px": [
+      65,
+      12,
+      379,
+      429
+    ],
+    "texture_px": [
+      212,
+      420
+    ],
+    "world_units": [
+      106,
+      210
+    ],
+    "density": 2,
+    "pivot_px": [
+      106.0,
+      418
+    ],
+    "anchor_world": [
+      53.0,
+      209.0
+    ],
+    "visible_region_px": [
+      2,
+      142,
+      208,
+      276
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "dark_iron_furnace": {
+    "file": "runtime/decor/dark_iron_furnace.png",
+    "category": "decor",
+    "description": "Двухъярусная кузница с дворфским лицом и дымоходом.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      887,
+      0,
+      1330,
+      444
+    ],
+    "crop_in_region_px": [
+      23,
+      11,
+      420,
+      426
+    ],
+    "texture_px": [
+      436,
+      460
+    ],
+    "world_units": [
+      218,
+      230
+    ],
+    "density": 2,
+    "pivot_px": [
+      218.0,
+      458
+    ],
+    "anchor_world": [
+      109.0,
+      229.0
+    ],
+    "visible_region_px": [
+      2,
+      6,
+      432,
+      452
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "heated_elbow_pipe": {
+    "file": "runtime/decor/heated_elbow_pipe.png",
+    "category": "decor",
+    "description": "Раскалённое колено трубы с клапаном и двумя фланцами.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      1330,
+      0,
+      1774,
+      444
+    ],
+    "crop_in_region_px": [
+      51,
+      18,
+      409,
+      417
+    ],
+    "texture_px": [
+      216,
+      252
+    ],
+    "world_units": [
+      108,
+      126
+    ],
+    "density": 2,
+    "pivot_px": [
+      108.0,
+      126.0
+    ],
+    "anchor_world": [
+      54.0,
+      63.0
+    ],
+    "visible_region_px": [
+      2,
+      8,
+      212,
+      236
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "massive_chain": {
+    "file": "runtime/decor/massive_chain.png",
+    "category": "decor",
+    "description": "Вертикальная цепь с замкнутыми звеньями и концевыми кольцами.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      0,
+      444,
+      444,
+      887
+    ],
+    "crop_in_region_px": [
+      185,
+      10,
+      259,
+      431
+    ],
+    "texture_px": [
+      56,
+      360
+    ],
+    "world_units": [
+      28,
+      180
+    ],
+    "density": 2,
+    "pivot_px": [
+      28.0,
+      2
+    ],
+    "anchor_world": [
+      14.0,
+      1.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      52,
+      296
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "wall_anchor": {
+    "file": "runtime/decor/wall_anchor.png",
+    "category": "decor",
+    "description": "Монтажное кольцо на клёпаной каменной плите.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      444,
+      444,
+      887,
+      887
+    ],
+    "crop_in_region_px": [
+      44,
+      50,
+      398,
+      420
+    ],
+    "texture_px": [
+      120,
+      136
+    ],
+    "world_units": [
+      60,
+      68
+    ],
+    "density": 2,
+    "pivot_px": [
+      60.0,
+      68.0
+    ],
+    "anchor_world": [
+      30.0,
+      34.0
+    ],
+    "visible_region_px": [
+      2,
+      7,
+      116,
+      121
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "obsidian_crystals": {
+    "file": "runtime/decor/obsidian_crystals.png",
+    "category": "decor",
+    "description": "Кристаллы обсидиана с холодными гранями и тёплым основанием.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      887,
+      444,
+      1330,
+      887
+    ],
+    "crop_in_region_px": [
+      37,
+      14,
+      400,
+      428
+    ],
+    "texture_px": [
+      208,
+      288
+    ],
+    "world_units": [
+      104,
+      144
+    ],
+    "density": 2,
+    "pivot_px": [
+      104.0,
+      286
+    ],
+    "anchor_world": [
+      52.0,
+      143.0
+    ],
+    "visible_region_px": [
+      2,
+      53,
+      204,
+      233
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "smith_sculpture": {
+    "file": "runtime/decor/smith_sculpture.png",
+    "category": "decor",
+    "description": "Каменная статуя древнего кузнеца с молотом на постаменте.",
+    "source": "masters/forge_structures.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "source_region_px": [
+      1330,
+      444,
+      1774,
+      887
+    ],
+    "crop_in_region_px": [
+      42,
+      10,
+      400,
+      430
+    ],
+    "texture_px": [
+      252,
+      412
+    ],
+    "world_units": [
+      126,
+      206
+    ],
+    "density": 2,
+    "pivot_px": [
+      126.0,
+      410
+    ],
+    "anchor_world": [
+      63.0,
+      205.0
+    ],
+    "visible_region_px": [
+      2,
+      119,
+      248,
+      291
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "fire_lamp": {
+    "file": "runtime/decor/fire_lamp.png",
+    "category": "decor",
+    "description": "Напольная жаровня на тяжёлой каменной опоре.",
+    "source": "masters/core_props_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop_in_region_px": [
+      194,
+      108,
+      349,
+      386
+    ],
+    "texture_px": [
+      108,
+      220
+    ],
+    "world_units": [
+      54,
+      110
+    ],
+    "density": 2,
+    "pivot_px": [
+      54.0,
+      218
+    ],
+    "anchor_world": [
+      27.0,
+      109.0
+    ],
+    "visible_region_px": [
+      2,
+      31,
+      104,
+      187
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "wall_brazier": {
+    "file": "runtime/decor/wall_brazier.png",
+    "category": "decor",
+    "description": "Настенная жаровня с боковым кронштейном.",
+    "source": "masters/core_props_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "crop_in_region_px": [
+      129,
+      137,
+      380,
+      370
+    ],
+    "texture_px": [
+      148,
+      168
+    ],
+    "world_units": [
+      74,
+      84
+    ],
+    "density": 2,
+    "pivot_px": [
+      74.0,
+      84.0
+    ],
+    "anchor_world": [
+      37.0,
+      42.0
+    ],
+    "visible_region_px": [
+      2,
+      17,
+      144,
+      134
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "broken_arch": {
+    "file": "runtime/decor/broken_arch.png",
+    "category": "decor",
+    "description": "Обломанная арка на основании из кладки и щебня.",
+    "source": "masters/core_props_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "crop_in_region_px": [
+      90,
+      124,
+      395,
+      384
+    ],
+    "texture_px": [
+      328,
+      332
+    ],
+    "world_units": [
+      164,
+      166
+    ],
+    "density": 2,
+    "pivot_px": [
+      164.0,
+      330
+    ],
+    "anchor_world": [
+      82.0,
+      165.0
+    ],
+    "visible_region_px": [
+      2,
+      54,
+      324,
+      276
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "direction_sign": {
+    "file": "runtime/decor/direction_sign.png",
+    "category": "decor",
+    "description": "Указатель вправо на металлической стойке; надпись отдельно.",
+    "source": "masters/core_props_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "crop_in_region_px": [
+      159,
+      104,
+      368,
+      359
+    ],
+    "texture_px": [
+      140,
+      188
+    ],
+    "world_units": [
+      70,
+      94
+    ],
+    "density": 2,
+    "pivot_px": [
+      70.0,
+      186
+    ],
+    "anchor_world": [
+      35.0,
+      93.0
+    ],
+    "visible_region_px": [
+      2,
+      20,
+      136,
+      166
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "molten_ore": {
+    "file": "runtime/decor/molten_ore.png",
+    "category": "decor",
+    "description": "Низкая раскалённая рудная жила.",
+    "source": "masters/core_props_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "crop_in_region_px": [
+      92,
+      162,
+      413,
+      349
+    ],
+    "texture_px": [
+      200,
+      128
+    ],
+    "world_units": [
+      100,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      100.0,
+      126
+    ],
+    "anchor_world": [
+      50.0,
+      63.0
+    ],
+    "visible_region_px": [
+      2,
+      12,
+      196,
+      114
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "chain_winch": {
+    "file": "runtime/decor/chain_winch.png",
+    "category": "decor",
+    "description": "Крепёжный барабан с цепью на несущем основании.",
+    "source": "masters/core_props_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "crop_in_region_px": [
+      99,
+      123,
+      388,
+      357
+    ],
+    "texture_px": [
+      308,
+      288
+    ],
+    "world_units": [
+      154,
+      144
+    ],
+    "density": 2,
+    "pivot_px": [
+      154.0,
+      286
+    ],
+    "anchor_world": [
+      77.0,
+      143.0
+    ],
+    "visible_region_px": [
+      2,
+      40,
+      304,
+      246
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "stone_bridge": {
+    "file": "runtime/decor/stone_bridge.png",
+    "category": "decor",
+    "description": "Каменный арочный пролёт: опоры должны стоять на уступах.",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "crop_in_region_px": [
+      64,
+      156,
+      463,
+      319
+    ],
+    "texture_px": [
+      512,
+      228
+    ],
+    "world_units": [
+      256,
+      114
+    ],
+    "density": 2,
+    "pivot_px": [
+      256.0,
+      2
+    ],
+    "anchor_world": [
+      128.0,
+      1.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      508,
+      208
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "iron_bridge": {
+    "file": "runtime/decor/iron_bridge.png",
+    "category": "decor",
+    "description": "Клёпаный металлический пролёт с холодной верхней кромкой.",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "crop_in_region_px": [
+      55,
+      185,
+      456,
+      290
+    ],
+    "texture_px": [
+      512,
+      128
+    ],
+    "world_units": [
+      256,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      256.0,
+      2
+    ],
+    "anchor_world": [
+      128.0,
+      1.0
+    ],
+    "visible_region_px": [
+      19,
+      2,
+      474,
+      124
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "diagonal_chain": {
+    "file": "runtime/decor/diagonal_chain.png",
+    "category": "decor",
+    "description": "Диагональная цепь; оба конца крепить к кольцам.",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "crop_in_region_px": [
+      53,
+      60,
+      443,
+      439
+    ],
+    "texture_px": [
+      320,
+      360
+    ],
+    "world_units": [
+      160,
+      180
+    ],
+    "density": 2,
+    "pivot_px": [
+      160.0,
+      180.0
+    ],
+    "anchor_world": [
+      80.0,
+      90.0
+    ],
+    "visible_region_px": [
+      2,
+      26,
+      316,
+      307
+    ],
+    "collision_world": null,
+    "parallax": 1,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -3
+  },
+  "arena_crown_arch": {
+    "file": "runtime/decor/arena_crown_arch.png",
+    "category": "decor",
+    "description": "Коронованная базальтовая арка позади босса, три подвесных клинка.",
+    "source": "masters/arena_elements.png",
+    "source_px": [
+      2172,
+      724
+    ],
+    "source_region_px": [
+      0,
+      0,
+      760,
+      724
+    ],
+    "crop_in_region_px": [
+      10,
+      7,
+      754,
+      700
+    ],
+    "texture_px": [
+      688,
+      664
+    ],
+    "world_units": [
+      344,
+      332
+    ],
+    "density": 2,
+    "pivot_px": [
+      344.0,
+      662
+    ],
+    "anchor_world": [
+      172.0,
+      331.0
+    ],
+    "visible_region_px": [
+      2,
+      25,
+      684,
+      637
+    ],
+    "collision_world": null,
+    "parallax": 0.7,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -4
+  },
+  "arena_dais": {
+    "file": "runtime/decor/arena_dais.png",
+    "category": "decor",
+    "description": "Массивное основание арены с лавовым рельефом и золотыми полосами.",
+    "source": "masters/arena_elements.png",
+    "source_px": [
+      2172,
+      724
+    ],
+    "source_region_px": [
+      760,
+      0,
+      1560,
+      724
+    ],
+    "crop_in_region_px": [
+      8,
+      388,
+      786,
+      693
+    ],
+    "texture_px": [
+      620,
+      256
+    ],
+    "world_units": [
+      310,
+      128
+    ],
+    "density": 2,
+    "pivot_px": [
+      310.0,
+      254
+    ],
+    "anchor_world": [
+      155.0,
+      127.0
+    ],
+    "visible_region_px": [
+      2,
+      13,
+      616,
+      241
+    ],
+    "collision_world": null,
+    "parallax": 0.7,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -4
+  },
+  "arena_obelisk": {
+    "file": "runtime/decor/arena_obelisk.png",
+    "category": "decor",
+    "description": "Высокий раскалённый обелиск с цепными креплениями.",
+    "source": "masters/arena_elements.png",
+    "source_px": [
+      2172,
+      724
+    ],
+    "source_region_px": [
+      1560,
+      0,
+      2172,
+      724
+    ],
+    "crop_in_region_px": [
+      15,
+      8,
+      552,
+      695
+    ],
+    "texture_px": [
+      320,
+      588
+    ],
+    "world_units": [
+      160,
+      294
+    ],
+    "density": 2,
+    "pivot_px": [
+      160.0,
+      586
+    ],
+    "anchor_world": [
+      80.0,
+      293.0
+    ],
+    "visible_region_px": [
+      2,
+      182,
+      316,
+      404
+    ],
+    "collision_world": null,
+    "parallax": 0.7,
+    "repeat": false,
+    "z_index": -10,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "recommended_relative_z": -4
+  },
+  "block_chest": {
+    "file": "runtime/objects/block_chest.png",
+    "category": "objects",
+    "description": "Квадратный блок-сундук с замком и золотистыми уголками.",
+    "source": "masters/blocks_spikes.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop_in_region_px": [
+      31,
+      52,
+      487,
+      471
+    ],
+    "texture_px": [
+      68,
+      68
+    ],
+    "world_units": [
+      34,
+      34
+    ],
+    "density": 2,
+    "pivot_px": [
+      34.0,
+      34.0
+    ],
+    "anchor_world": [
+      17.0,
+      17.0
+    ],
+    "visible_region_px": [
+      2,
+      4,
+      64,
+      59
+    ],
+    "collision_world": [
+      32,
+      32
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "block_strong": {
+    "file": "runtime/objects/block_strong.png",
+    "category": "objects",
+    "description": "Прочный квадратный блок с железными перекладинами.",
+    "source": "masters/blocks_spikes.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "crop_in_region_px": [
+      31,
+      55,
+      485,
+      470
+    ],
+    "texture_px": [
+      68,
+      68
+    ],
+    "world_units": [
+      34,
+      34
+    ],
+    "density": 2,
+    "pivot_px": [
+      34.0,
+      34.0
+    ],
+    "anchor_world": [
+      17.0,
+      17.0
+    ],
+    "visible_region_px": [
+      2,
+      4,
+      64,
+      59
+    ],
+    "collision_world": [
+      32,
+      32
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "block_fragile": {
+    "file": "runtime/objects/block_fragile.png",
+    "category": "objects",
+    "description": "Разрушаемый блок с крупной трещиной и оборванными полосами.",
+    "source": "masters/blocks_spikes.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "crop_in_region_px": [
+      23,
+      55,
+      487,
+      471
+    ],
+    "texture_px": [
+      68,
+      68
+    ],
+    "world_units": [
+      34,
+      34
+    ],
+    "density": 2,
+    "pivot_px": [
+      34.0,
+      34.0
+    ],
+    "anchor_world": [
+      17.0,
+      17.0
+    ],
+    "visible_region_px": [
+      2,
+      5,
+      64,
+      57
+    ],
+    "collision_world": [
+      32,
+      32
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "block_used": {
+    "file": "runtime/objects/block_used.png",
+    "category": "objects",
+    "description": "Использованный блок с пустой выемкой вместо награды.",
+    "source": "masters/blocks_spikes.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "crop_in_region_px": [
+      31,
+      44,
+      487,
+      467
+    ],
+    "texture_px": [
+      68,
+      68
+    ],
+    "world_units": [
+      34,
+      34
+    ],
+    "density": 2,
+    "pivot_px": [
+      34.0,
+      34.0
+    ],
+    "anchor_world": [
+      17.0,
+      17.0
+    ],
+    "visible_region_px": [
+      2,
+      4,
+      64,
+      59
+    ],
+    "collision_world": [
+      32,
+      32
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "block_empty": {
+    "file": "runtime/objects/block_empty.png",
+    "category": "objects",
+    "description": "Пустой цельный каменный блок без награды.",
+    "source": "masters/blocks_spikes.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "crop_in_region_px": [
+      32,
+      44,
+      480,
+      466
+    ],
+    "texture_px": [
+      68,
+      68
+    ],
+    "world_units": [
+      34,
+      34
+    ],
+    "density": 2,
+    "pivot_px": [
+      34.0,
+      34.0
+    ],
+    "anchor_world": [
+      17.0,
+      17.0
+    ],
+    "visible_region_px": [
+      2,
+      4,
+      64,
+      60
+    ],
+    "collision_world": [
+      32,
+      32
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "spikes": {
+    "file": "runtime/objects/spikes.png",
+    "category": "objects",
+    "description": "Пять светлых стальных шипов с тёмной окантовкой; контрастны на лаве.",
+    "source": "masters/spikes_readable.png",
+    "source_px": [
+      1942,
+      809
+    ],
+    "source_region_px": [
+      0,
+      0,
+      1942,
+      809
+    ],
+    "crop_in_region_px": [
+      94,
+      129,
+      1849,
+      680
+    ],
+    "texture_px": [
+      96,
+      44
+    ],
+    "world_units": [
+      48,
+      22
+    ],
+    "density": 2,
+    "pivot_px": [
+      48.0,
+      42
+    ],
+    "anchor_world": [
+      24.0,
+      21.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      92,
+      40
+    ],
+    "collision_world": [
+      44,
+      18
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "pipe_entry": {
+    "file": "runtime/objects/pipe_entry.png",
+    "category": "objects",
+    "description": "Входная труба: золотая стрелка вниз.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      0,
+      418,
+      418
+    ],
+    "crop_in_region_px": [
+      25,
+      52,
+      393,
+      353
+    ],
+    "texture_px": [
+      164,
+      100
+    ],
+    "world_units": [
+      82,
+      50
+    ],
+    "density": 2,
+    "pivot_px": [
+      82.0,
+      98
+    ],
+    "anchor_world": [
+      41.0,
+      49.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      160,
+      96
+    ],
+    "collision_world": [
+      80,
+      48
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "physical_origin": "Низ по центру; верх трубы y=-48 ед. Размер не менять."
+  },
+  "pipe_return": {
+    "file": "runtime/objects/pipe_return.png",
+    "category": "objects",
+    "description": "Обратная труба: голубая стрелка вверх.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      0,
+      836,
+      418
+    ],
+    "crop_in_region_px": [
+      25,
+      52,
+      393,
+      353
+    ],
+    "texture_px": [
+      164,
+      100
+    ],
+    "world_units": [
+      82,
+      50
+    ],
+    "density": 2,
+    "pivot_px": [
+      82.0,
+      98
+    ],
+    "anchor_world": [
+      41.0,
+      49.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      160,
+      96
+    ],
+    "collision_world": [
+      80,
+      48
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "physical_origin": "Низ по центру; верх трубы y=-48 ед. Размер не менять."
+  },
+  "pipe_ambush": {
+    "file": "runtime/objects/pipe_ambush.png",
+    "category": "objects",
+    "description": "Труба-засада: зубчатый обод и огненный глаз.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      0,
+      1254,
+      418
+    ],
+    "crop_in_region_px": [
+      24,
+      52,
+      391,
+      354
+    ],
+    "texture_px": [
+      164,
+      100
+    ],
+    "world_units": [
+      82,
+      50
+    ],
+    "density": 2,
+    "pivot_px": [
+      82.0,
+      98
+    ],
+    "anchor_world": [
+      41.0,
+      49.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      160,
+      96
+    ],
+    "collision_world": [
+      80,
+      48
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "physical_origin": "Низ по центру; верх трубы y=-48 ед. Размер не менять."
+  },
+  "checkpoint_off": {
+    "file": "runtime/objects/checkpoint_off.png",
+    "category": "objects",
+    "description": "Неактивная контрольная точка, погашенный фонарь.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      418,
+      418,
+      836
+    ],
+    "crop_in_region_px": [
+      88,
+      12,
+      337,
+      385
+    ],
+    "texture_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "pivot_px": [
+      68.0,
+      298
+    ],
+    "anchor_world": [
+      34.0,
+      149.0
+    ],
+    "visible_region_px": [
+      2,
+      100,
+      132,
+      198
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "checkpoint_on": {
+    "file": "runtime/objects/checkpoint_on.png",
+    "category": "objects",
+    "description": "Активная контрольная точка, голубой фонарь и знамя.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      418,
+      836,
+      836
+    ],
+    "crop_in_region_px": [
+      86,
+      13,
+      366,
+      386
+    ],
+    "texture_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "pivot_px": [
+      68.0,
+      298
+    ],
+    "anchor_world": [
+      34.0,
+      149.0
+    ],
+    "visible_region_px": [
+      2,
+      122,
+      132,
+      176
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "finish_on": {
+    "file": "runtime/objects/finish_on.png",
+    "category": "objects",
+    "description": "Финиш: двойная золотая стойка, красное знамя.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      418,
+      1254,
+      836
+    ],
+    "crop_in_region_px": [
+      26,
+      12,
+      391,
+      386
+    ],
+    "texture_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "pivot_px": [
+      68.0,
+      298
+    ],
+    "anchor_world": [
+      34.0,
+      149.0
+    ],
+    "visible_region_px": [
+      2,
+      163,
+      132,
+      135
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "finish_off": {
+    "file": "runtime/objects/finish_off.png",
+    "category": "objects",
+    "description": "Неактивный финиш: приглушённое свёрнутое знамя.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      836,
+      418,
+      1254
+    ],
+    "crop_in_region_px": [
+      29,
+      17,
+      390,
+      392
+    ],
+    "texture_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "pivot_px": [
+      68.0,
+      298
+    ],
+    "anchor_world": [
+      34.0,
+      149.0
+    ],
+    "visible_region_px": [
+      2,
+      161,
+      132,
+      137
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией."
+  },
+  "ferry_stone": {
+    "file": "runtime/objects/ferry_stone.png",
+    "category": "objects",
+    "description": "Движущаяся каменная платформа с крепёжными кольцами.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      836,
+      836,
+      1254
+    ],
+    "crop_in_region_px": [
+      11,
+      153,
+      400,
+      261
+    ],
+    "texture_px": [
+      260,
+      56
+    ],
+    "world_units": [
+      130,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      130.0,
+      2
+    ],
+    "anchor_world": [
+      65.0,
+      1.0
+    ],
+    "visible_region_px": [
+      36,
+      2,
+      187,
+      52
+    ],
+    "collision_world": [
+      128,
+      16
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "physical_origin": "Верх по центру, коллизия 128×16 ед.; кольца ниже физического настила."
+  },
+  "ferry_iron": {
+    "file": "runtime/objects/ferry_iron.png",
+    "category": "objects",
+    "description": "Движущаяся железная платформа с решёткой и заклёпками.",
+    "source": "masters/interactive_devices.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      836,
+      1254,
+      1254
+    ],
+    "crop_in_region_px": [
+      13,
+      154,
+      400,
+      235
+    ],
+    "texture_px": [
+      260,
+      56
+    ],
+    "world_units": [
+      130,
+      28
+    ],
+    "density": 2,
+    "pivot_px": [
+      130.0,
+      2
+    ],
+    "anchor_world": [
+      65.0,
+      1.0
+    ],
+    "visible_region_px": [
+      6,
+      2,
+      248,
+      52
+    ],
+    "collision_world": [
+      128,
+      16
+    ],
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "physical_origin": "Верх по центру, коллизия 128×16 ед.; кольца ниже физического настила."
+  },
+  "gate_top": {
+    "file": "runtime/objects/gate_top.png",
+    "category": "objects",
+    "description": "Модуль ворот: верхнее крепление",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop_in_region_px": [
+      149,
+      95,
+      371,
+      456
+    ],
+    "texture_px": [
+      96,
+      168
+    ],
+    "world_units": [
+      48,
+      84
+    ],
+    "density": 2,
+    "pivot_px": [
+      48.0,
+      2
+    ],
+    "anchor_world": [
+      24.0,
+      1.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      92,
+      150
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Визуальная сборка под ширину существующего барьера 18 ед.; высота из уровня. Новая коллизия не задаётся."
+  },
+  "gate_middle": {
+    "file": "runtime/objects/gate_middle.png",
+    "category": "objects",
+    "description": "Модуль ворот: повторяемая вертикальная стойка",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "crop_in_region_px": [
+      206,
+      80,
+      307,
+      456
+    ],
+    "texture_px": [
+      40,
+      144
+    ],
+    "world_units": [
+      20,
+      72
+    ],
+    "density": 2,
+    "pivot_px": [
+      20.0,
+      2
+    ],
+    "anchor_world": [
+      10.0,
+      1.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      36,
+      134
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Визуальная сборка под ширину существующего барьера 18 ед.; высота из уровня. Новая коллизия не задаётся.",
+    "preferred_repeat_file": "runtime/objects/gate_middle_repeat.png"
+  },
+  "gate_bottom": {
+    "file": "runtime/objects/gate_bottom.png",
+    "category": "objects",
+    "description": "Модуль ворот: нижнее основание",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "crop_in_region_px": [
+      116,
+      81,
+      379,
+      454
+    ],
+    "texture_px": [
+      112,
+      168
+    ],
+    "world_units": [
+      56,
+      84
+    ],
+    "density": 2,
+    "pivot_px": [
+      56.0,
+      2
+    ],
+    "anchor_world": [
+      28.0,
+      1.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      108,
+      153
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Визуальная сборка под ширину существующего барьера 18 ед.; высота из уровня. Новая коллизия не задаётся."
+  },
+  "smoke": {
+    "file": "runtime/layers/smoke.png",
+    "category": "layers",
+    "description": "Низкое облако пепла.",
+    "source": "masters/atmosphere_elements_v2.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      0,
+      627,
+      627
+    ],
+    "crop_in_region_px": [
+      53,
+      249,
+      588,
+      435
+    ],
+    "texture_px": [
+      840,
+      280
+    ],
+    "world_units": [
+      420,
+      140
+    ],
+    "density": 2,
+    "pivot_px": [
+      420.0,
+      278
+    ],
+    "anchor_world": [
+      210.0,
+      139.0
+    ],
+    "visible_region_px": [
+      23,
+      2,
+      794,
+      276
+    ],
+    "collision_world": null,
+    "parallax": 0.5,
+    "repeat": false,
+    "z_index": -50,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Декоративный слой. Дым alpha≤0.25; не перекрывать героя и предупреждения. Лавопад/свет использовать с мягким краем atmosphere.gdshader."
+  },
+  "lavafall": {
+    "file": "runtime/layers/lavafall.png",
+    "category": "layers",
+    "description": "Лавопад для дальнего и среднего плана.",
+    "source": "masters/atmosphere_elements_v2.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      627,
+      0,
+      1254,
+      627
+    ],
+    "crop_in_region_px": [
+      176,
+      67,
+      436,
+      581
+    ],
+    "texture_px": [
+      256,
+      620
+    ],
+    "world_units": [
+      128,
+      310
+    ],
+    "density": 2,
+    "pivot_px": [
+      128.0,
+      310.0
+    ],
+    "anchor_world": [
+      64.0,
+      155.0
+    ],
+    "visible_region_px": [
+      2,
+      61,
+      252,
+      498
+    ],
+    "collision_world": null,
+    "parallax": 0.5,
+    "repeat": false,
+    "z_index": -50,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Декоративный слой. Дым alpha≤0.25; не перекрывать героя и предупреждения. Лавопад/свет использовать с мягким краем atmosphere.gdshader."
+  },
+  "lava_pool": {
+    "file": "runtime/layers/lava_pool.png",
+    "category": "layers",
+    "description": "Лавовый провал; изображение само не добавляет урон.",
+    "source": "masters/atmosphere_elements_v2.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      0,
+      627,
+      627,
+      1254
+    ],
+    "crop_in_region_px": [
+      71,
+      203,
+      577,
+      444
+    ],
+    "texture_px": [
+      768,
+      300
+    ],
+    "world_units": [
+      384,
+      150
+    ],
+    "density": 2,
+    "pivot_px": [
+      384.0,
+      298
+    ],
+    "anchor_world": [
+      192.0,
+      149.0
+    ],
+    "visible_region_px": [
+      73,
+      2,
+      621,
+      296
+    ],
+    "collision_world": null,
+    "parallax": 0.5,
+    "repeat": false,
+    "z_index": -50,
+    "mounting": "ground",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Декоративный слой. Дым alpha≤0.25; не перекрывать героя и предупреждения. Лавопад/свет использовать с мягким краем atmosphere.gdshader."
+  },
+  "heat_glow": {
+    "file": "runtime/layers/heat_glow.png",
+    "category": "layers",
+    "description": "Мягкий тёплый свет и редкие угольки.",
+    "source": "masters/atmosphere_elements_v2.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      627,
+      627,
+      1254,
+      1254
+    ],
+    "crop_in_region_px": [
+      50,
+      45,
+      553,
+      540
+    ],
+    "texture_px": [
+      512,
+      512
+    ],
+    "world_units": [
+      256,
+      256
+    ],
+    "density": 2,
+    "pivot_px": [
+      256.0,
+      256.0
+    ],
+    "anchor_world": [
+      128.0,
+      128.0
+    ],
+    "visible_region_px": [
+      2,
+      6,
+      508,
+      500
+    ],
+    "collision_world": null,
+    "parallax": 0.5,
+    "repeat": false,
+    "z_index": -50,
+    "mounting": "center",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "integration": "Декоративный слой. Дым alpha≤0.25; не перекрывать героя и предупреждения. Лавопад/свет использовать с мягким краем atmosphere.gdshader."
+  },
+  "world_map_base": {
+    "file": "runtime/ui/world_map_base.png",
+    "category": "ui",
+    "description": "Три области и единая дорога через 9 круглых площадок: 1-1→1-2→1-3→2-1→2-2→2-3→3-1→3-2→3-3. По три точки в каждом биоме, без развилок.",
+    "source": "masters/world_map_base_v2.png",
+    "source_px": [
+      1672,
+      941
+    ],
+    "texture_px": [
+      1920,
+      1080
+    ],
+    "ui_units": [
+      960,
+      540
+    ],
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_ui": [
+      0,
+      0
+    ],
+    "repeat": false,
+    "scale_rule": "KEEP_ASPECT_COVER в окне 16:9. Динамический текст/звёзды/состояния — отдельные Control."
+  },
+  "campaign_finale": {
+    "file": "runtime/ui/campaign_finale.png",
+    "category": "ui",
+    "description": "Рассвет над тремя областями; открытый центр под итоговый экран.",
+    "source": "masters/campaign_finale.png",
+    "source_px": [
+      1672,
+      941
+    ],
+    "texture_px": [
+      1920,
+      1080
+    ],
+    "ui_units": [
+      960,
+      540
+    ],
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_ui": [
+      0,
+      0
+    ],
+    "repeat": false,
+    "scale_rule": "KEEP_ASPECT_COVER в окне 16:9. Динамический текст/звёзды/состояния — отдельные Control."
+  },
+  "victory_trophy": {
+    "file": "runtime/ui/victory_trophy.png",
+    "category": "ui",
+    "description": "Трофей: погасший молот, корона и лавровая ветвь.",
+    "source": "masters/finale_ui_elements.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "crop_in_region_px": [
+      14,
+      21,
+      508,
+      487
+    ],
+    "texture_px": [
+      300,
+      300
+    ],
+    "density": 2,
+    "pivot_px": [
+      150.0,
+      150.0
+    ],
+    "anchor_world": [
+      75.0,
+      75.0
+    ],
+    "visible_region_px": [
+      2,
+      10,
+      296,
+      279
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ui",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "ui_units": [
+      150,
+      150
+    ]
+  },
+  "boss_portrait": {
+    "file": "runtime/ui/boss_portrait.png",
+    "category": "ui",
+    "description": "Медальон лица Рагнароса для полосы здоровья.",
+    "source": "masters/finale_ui_elements.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "crop_in_region_px": [
+      29,
+      22,
+      482,
+      477
+    ],
+    "texture_px": [
+      128,
+      128
+    ],
+    "density": 2,
+    "pivot_px": [
+      64.0,
+      64.0
+    ],
+    "anchor_world": [
+      32.0,
+      32.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      123,
+      124
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ui",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "ui_units": [
+      64,
+      64
+    ]
+  },
+  "boss_health_frame": {
+    "file": "runtime/ui/boss_health_frame.png",
+    "category": "ui",
+    "description": "Рамка полосы здоровья: тёмный металл, золотые наконечники.",
+    "source": "masters/finale_ui_elements.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "crop_in_region_px": [
+      1,
+      179,
+      507,
+      326
+    ],
+    "texture_px": [
+      600,
+      172
+    ],
+    "density": 2,
+    "pivot_px": [
+      300.0,
+      86.0
+    ],
+    "anchor_world": [
+      150.0,
+      43.0
+    ],
+    "visible_region_px": [
+      11,
+      2,
+      578,
+      168
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ui",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "ui_units": [
+      300,
+      86
+    ],
+    "nine_patch_margins_px": [
+      58,
+      18,
+      58,
+      18
+    ]
+  },
+  "boss_health_fill": {
+    "file": "runtime/ui/boss_health_fill.png",
+    "category": "ui",
+    "description": "Оранжевое заполнение полосы здоровья.",
+    "source": "masters/finale_ui_elements.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "crop_in_region_px": [
+      23,
+      211,
+      485,
+      271
+    ],
+    "texture_px": [
+      512,
+      64
+    ],
+    "density": 2,
+    "pivot_px": [
+      256.0,
+      32.0
+    ],
+    "anchor_world": [
+      128.0,
+      16.0
+    ],
+    "visible_region_px": [
+      25,
+      2,
+      462,
+      60
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ui",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "ui_units": [
+      256,
+      32
+    ],
+    "nine_patch_margins_px": [
+      18,
+      6,
+      18,
+      6
+    ]
+  },
+  "campaign_crest": {
+    "file": "runtime/ui/campaign_crest.png",
+    "category": "ui",
+    "description": "Три камня — три завершённые области кампании.",
+    "source": "masters/finale_ui_elements.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "crop_in_region_px": [
+      15,
+      3,
+      493,
+      482
+    ],
+    "texture_px": [
+      220,
+      220
+    ],
+    "density": 2,
+    "pivot_px": [
+      110.0,
+      110.0
+    ],
+    "anchor_world": [
+      55.0,
+      55.0
+    ],
+    "visible_region_px": [
+      2,
+      2,
+      216,
+      216
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ui",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "ui_units": [
+      110,
+      110
+    ]
+  },
+  "chapter_crown": {
+    "file": "runtime/ui/chapter_crown.png",
+    "category": "ui",
+    "description": "Малый знак третьей главы для HUD.",
+    "source": "masters/finale_ui_elements.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "crop_in_region_px": [
+      86,
+      48,
+      445,
+      455
+    ],
+    "texture_px": [
+      72,
+      72
+    ],
+    "density": 2,
+    "pivot_px": [
+      36.0,
+      36.0
+    ],
+    "anchor_world": [
+      18.0,
+      18.0
+    ],
+    "visible_region_px": [
+      6,
+      2,
+      60,
+      68
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": false,
+    "z_index": 0,
+    "mounting": "ui",
+    "scale_rule": "Сохранять пропорции; грунтовую опору погрузить на 1–2 ед. Крепления соединять с несущей конструкцией.",
+    "ui_units": [
+      36,
+      36
+    ]
+  },
+  "wall_edge_repeat": {
+    "file": "runtime/terrain/wall_edge_repeat.png",
+    "category": "terrain",
+    "description": "Вертикальная кромка стены; непрерывная средняя секция без торцевых полей.",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      418,
+      418,
+      836,
+      836
+    ],
+    "crop_in_region_px": [
+      160,
+      25,
+      256,
+      394
+    ],
+    "texture_px": [
+      40,
+      252
+    ],
+    "world_units": [
+      20.0,
+      126.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "visible_region_px": [
+      2,
+      0,
+      36,
+      252
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Повторять в исходной плотности 2 px/ед. без растягивания; торцы брать из отдельных модулей.",
+    "preferred_repeat_file": "runtime/terrain/wall_edge_repeat.png",
+    "repeat_axis": "y",
+    "repeat_world": 126.0,
+    "runtime_parent": "runtime/terrain/wall_edge.png",
+    "runtime_crop_xyxy": [
+      0,
+      65,
+      40,
+      191
+    ],
+    "continuation": "Средняя часть + зеркальное продолжение; противоположные края идентичны.",
+    "visible_region_alpha_threshold": 8
+  },
+  "gate_middle_repeat": {
+    "file": "runtime/objects/gate_middle_repeat.png",
+    "category": "objects",
+    "description": "Модуль ворот: повторяемая вертикальная стойка; непрерывная средняя секция без торцевых полей.",
+    "source": "masters/gate_bridge_modules_v2.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "source_region_px": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "crop_in_region_px": [
+      206,
+      80,
+      307,
+      456
+    ],
+    "texture_px": [
+      36,
+      244
+    ],
+    "world_units": [
+      18.0,
+      122.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "visible_region_px": [
+      0,
+      0,
+      36,
+      244
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "top",
+    "scale_rule": "Повторять в исходной плотности 2 px/ед. без растягивания; торцы брать из отдельных модулей.",
+    "integration": "Визуальная сборка под ширину существующего барьера 18 ед.; высота из уровня. Новая коллизия не задаётся.",
+    "preferred_repeat_file": "runtime/objects/gate_middle_repeat.png",
+    "repeat_axis": "y",
+    "repeat_world": 122.0,
+    "runtime_parent": "runtime/objects/gate_middle.png",
+    "runtime_crop_xyxy": [
+      2,
+      8,
+      38,
+      130
+    ],
+    "continuation": "Средняя часть + зеркальное продолжение; противоположные края идентичны.",
+    "visible_region_alpha_threshold": 8
+  },
+  "underside_repeat": {
+    "file": "runtime/terrain/underside_repeat.png",
+    "category": "terrain",
+    "description": "Нижний рваный край; непрерывная средняя секция без торцевых полей.",
+    "source": "masters/terrain_edges.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "source_region_px": [
+      836,
+      836,
+      1254,
+      1254
+    ],
+    "crop_in_region_px": [
+      28,
+      195,
+      390,
+      265
+    ],
+    "texture_px": [
+      472,
+      56
+    ],
+    "world_units": [
+      236.0,
+      28.0
+    ],
+    "density": 2,
+    "pivot_px": [
+      0,
+      0
+    ],
+    "anchor_world": [
+      0,
+      0
+    ],
+    "visible_region_px": [
+      0,
+      3,
+      472,
+      49
+    ],
+    "collision_world": null,
+    "parallax": 1.0,
+    "repeat": true,
+    "z_index": 0,
+    "mounting": "center",
+    "scale_rule": "Повторять в исходной плотности 2 px/ед. без растягивания; торцы брать из отдельных модулей.",
+    "preferred_repeat_file": "runtime/terrain/underside_repeat.png",
+    "repeat_axis": "x",
+    "repeat_world": 236.0,
+    "runtime_parent": "runtime/terrain/underside.png",
+    "runtime_crop_xyxy": [
+      10,
+      0,
+      246,
+      56
+    ],
+    "continuation": "Средняя часть + зеркальное продолжение; противоположные края идентичны.",
+    "visible_region_alpha_threshold": 8
+  }
+}

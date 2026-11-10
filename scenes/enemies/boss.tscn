@@ -1,0 +1,40 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/boss.gd" id="1"]
+
+[ext_resource type="Script" path="res://scripts/gameplay/boss_move.gd" id="ability"]
+
+[sub_resource type="Resource" id="Water"]
+script = ExtResource("ability")
+
+[sub_resource type="Resource" id="Rush"]
+script = ExtResource("ability")
+kind = 1
+warning = 0.85
+execution = 0.48
+recovery = 1.85
+travel = 100.0
+
+[sub_resource type="Resource" id="Breaker"]
+script = ExtResource("ability")
+kind = 2
+warning = 1.0
+execution = 0.72
+recovery = 2.0
+travel = 72.0
+arc_height = 65.0
+
+[sub_resource type="RectangleShape2D" id="Rect"]
+size = Vector2(60,76)
+
+[node name="boss" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1")
+opening = SubResource("Water")
+rush = SubResource("Rush")
+breaker = SubResource("Breaker")
+
+[node name="Hitbox" type="CollisionShape2D" parent="." groups=["test_hitboxes"]]
+position = Vector2(0,-38)
+shape = SubResource("Rect")

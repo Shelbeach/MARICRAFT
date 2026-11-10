@@ -1,0 +1,74 @@
+# Godot generated cache/imports
+.godot/
+.import/
+.mono/
+
+# Local IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Web and desktop build results (not source assets)
+build/
+builds/
+dist/
+exports/
+web_build/
+
+# Temporary output and unapproved asset iterations
+tmp/
+temp/
+cache/
+art_source/drafts/
+reports/temp/
+reports/evidence/videos/
+reports/evidence/screenshots/
+
+# Large preview media and backup archives
+*.mp4
+*.webm
+*.mov
+*.avi
+*.zip
+*.7z
+*.rar
+*.bak
+*.blend1
+*.blend2
+
+# Godot secret export credentials (export presets are safe to keep)
+.godot/export_credentials.cfg
+
+# Generated copies of the isolated visual-test harness; sources stay in tests/.
+qa/camera_repair/
+
+# Handoff: only deploy/web/ is the deliberate, compressed public release.
+/handoff/
+/reports/
+/art_source/
+/qa/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+!.env.example
+
+# Local implementation/visual/test reports. Keep the files on the owner's disk.
+# Architecture, design, coding-report source material and build instructions remain in Git.
+/docs/ARENA_POLISH_REPORT.md
+/docs/ART_P04_P05_HANDOFF.md
+/docs/ART_P07_V03_REPORT.md
+/docs/CAMERA_REPAIR_REPORT.md
+/docs/CAMPAIGN_POLISH_REPORT.md
+/docs/FOREST_ART_INTEGRATION.md
+/docs/FOREST_VISUAL_AUDIT.md
+/docs/MOLTEN_IMPLEMENTATION.md
+/docs/P07_INTEGRATION_REPORT.md
+/docs/P07_V03_MUSIC_REPORT.md
+/docs/REPORT_IMPLEMENTATION_TESTS.md
+/docs/REPORT_UI_ASSETS.md
+/docs/TEACHER_HANDOFF.md

@@ -1,0 +1,559 @@
+{
+  "menu_far": {
+    "file": "runtime/backgrounds/menu_far.png",
+    "source_px": [
+      1920,
+      1080
+    ],
+    "world_units": [
+      960,
+      540
+    ],
+    "description": "Дальний пейзаж от леса к охристым скалам, тихое синее небо, без персонажей.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "density": 2,
+    "recommended_display": [
+      960,
+      540
+    ]
+  },
+  "menu_edge": {
+    "file": "runtime/backgrounds/menu_edge.png",
+    "source_px": [
+      1920,
+      1080
+    ],
+    "world_units": [
+      960,
+      540
+    ],
+    "description": "Отдельные ветви в верхних углах и скалы в нижних, прозрачная центральная область.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "density": 2,
+    "recommended_display": [
+      960,
+      540
+    ]
+  },
+  "panel": {
+    "file": "runtime/components/panel.png",
+    "source_px": [
+      240,
+      150
+    ],
+    "world_units": [
+      240,
+      150
+    ],
+    "description": "Сине-зелёная панель с латунной рамкой, только углы сохраняют орнамент.",
+    "anchor": "top_left",
+    "nine_slice": [
+      23,
+      22,
+      23,
+      22
+    ],
+    "recommended_display": [
+      844,
+      452
+    ]
+  },
+  "button": {
+    "file": "runtime/components/button.png",
+    "source_px": [
+      180,
+      44
+    ],
+    "world_units": [
+      180,
+      44
+    ],
+    "description": "Пустая синяя эмалевая кнопка с золотой кромкой. Состояния заданы StyleBoxTexture.modulate_color.",
+    "anchor": "top_left",
+    "nine_slice": [
+      18,
+      12,
+      18,
+      12
+    ],
+    "recommended_display": [
+      320,
+      48
+    ]
+  },
+  "heart_full": {
+    "file": "runtime/icons/heart_full.png",
+    "source_px": [
+      104,
+      104
+    ],
+    "world_units": [
+      104,
+      104
+    ],
+    "description": "Исходный рисунок P03 в повышенной плотности для24–52 единиц UI.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      26,
+      26
+    ]
+  },
+  "heart_lost": {
+    "file": "runtime/icons/heart_lost.png",
+    "source_px": [
+      27,
+      27
+    ],
+    "world_units": [
+      27,
+      27
+    ],
+    "description": "Повторно используется утверждённый P03 — heart_lost",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      26,
+      26
+    ]
+  },
+  "star_on": {
+    "file": "runtime/icons/star_on.png",
+    "source_px": [
+      104,
+      104
+    ],
+    "world_units": [
+      104,
+      104
+    ],
+    "description": "Исходный рисунок P03 в повышенной плотности для24–52 единиц UI.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      44,
+      44
+    ]
+  },
+  "star_off": {
+    "file": "runtime/icons/star_off.png",
+    "source_px": [
+      26,
+      26
+    ],
+    "world_units": [
+      26,
+      26
+    ],
+    "description": "Повторно используется утверждённый P03 — star_off",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      44,
+      44
+    ]
+  },
+  "clock": {
+    "file": "runtime/icons/clock.png",
+    "source_px": [
+      104,
+      104
+    ],
+    "world_units": [
+      104,
+      104
+    ],
+    "description": "Исходный рисунок P03 в повышенной плотности для24–52 единиц UI.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      26,
+      26
+    ]
+  },
+  "hud_coin": {
+    "file": "runtime/icons/hud_coin.png",
+    "source_px": [
+      25,
+      25
+    ],
+    "world_units": [
+      25,
+      25
+    ],
+    "description": "Повторно используется утверждённый P03 — hud_coin",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      26,
+      26
+    ]
+  },
+  "portrait_human": {
+    "file": "runtime/icons/portrait_human.png",
+    "source_px": [
+      176,
+      176
+    ],
+    "world_units": [
+      176,
+      176
+    ],
+    "description": "Согласованный портрет из исходного P00, круглая бронзовая рамка, без нового рисунка лица.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      94,
+      94
+    ]
+  },
+  "portrait_ogre": {
+    "file": "runtime/icons/portrait_ogre.png",
+    "source_px": [
+      176,
+      176
+    ],
+    "world_units": [
+      176,
+      176
+    ],
+    "description": "Согласованный портрет из исходного P00, круглая бронзовая рамка, без нового рисунка лица.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      94,
+      94
+    ]
+  },
+  "map_locked": {
+    "file": "runtime/icons/map_locked.png",
+    "source_px": [
+      36,
+      36
+    ],
+    "world_units": [
+      36,
+      36
+    ],
+    "description": "Повторно используется утверждённый P03 — map_locked",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      36,
+      36
+    ]
+  },
+  "map_open": {
+    "file": "runtime/icons/map_open.png",
+    "source_px": [
+      36,
+      36
+    ],
+    "world_units": [
+      36,
+      36
+    ],
+    "description": "Повторно используется утверждённый P03 — map_open",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      36,
+      36
+    ]
+  },
+  "map_current": {
+    "file": "runtime/icons/map_current.png",
+    "source_px": [
+      36,
+      36
+    ],
+    "world_units": [
+      36,
+      36
+    ],
+    "description": "Повторно используется утверждённый P03 — map_current",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      36,
+      36
+    ]
+  },
+  "map_done": {
+    "file": "runtime/icons/map_done.png",
+    "source_px": [
+      36,
+      36
+    ],
+    "world_units": [
+      36,
+      36
+    ],
+    "description": "Повторно используется утверждённый P03 — map_done",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      36,
+      36
+    ]
+  },
+  "focus": {
+    "file": "runtime/components/focus.png",
+    "source_px": [
+      80,
+      48
+    ],
+    "world_units": [
+      80,
+      48
+    ],
+    "description": "Ясная светлая рамка клавиатурного фокуса поверх любого состояния.",
+    "anchor": "top_left",
+    "nine_slice": [
+      9,
+      9,
+      9,
+      9
+    ],
+    "recommended_display": [
+      80,
+      48
+    ]
+  },
+  "slider_track": {
+    "file": "runtime/components/slider_track.png",
+    "source_px": [
+      100,
+      12
+    ],
+    "world_units": [
+      100,
+      12
+    ],
+    "description": "Дорожка ползунка громкости.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      100,
+      12
+    ]
+  },
+  "slider_fill": {
+    "file": "runtime/components/slider_fill.png",
+    "source_px": [
+      100,
+      12
+    ],
+    "world_units": [
+      100,
+      12
+    ],
+    "description": "Заполненный участок ползунка.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      100,
+      12
+    ]
+  },
+  "slider_knob": {
+    "file": "runtime/components/slider_knob.png",
+    "source_px": [
+      26,
+      30
+    ],
+    "world_units": [
+      26,
+      30
+    ],
+    "description": "Ромбический бегунок с крупной зоной захвата.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      26,
+      30
+    ]
+  },
+  "toggle_off": {
+    "file": "runtime/components/toggle_off.png",
+    "source_px": [
+      52,
+      28
+    ],
+    "world_units": [
+      52,
+      28
+    ],
+    "description": "Переключатель звука выключен. Состояние относится к свойству mute по инструкции.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      52,
+      28
+    ]
+  },
+  "toggle_on": {
+    "file": "runtime/components/toggle_on.png",
+    "source_px": [
+      52,
+      28
+    ],
+    "world_units": [
+      52,
+      28
+    ],
+    "description": "Переключатель звука включён. Состояние относится к свойству mute по инструкции.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      52,
+      28
+    ]
+  },
+  "boss_track": {
+    "file": "runtime/components/boss_track.png",
+    "source_px": [
+      100,
+      22
+    ],
+    "world_units": [
+      100,
+      22
+    ],
+    "description": "Рамка полосы здоровья, безопасные поля8/6/8/6.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      100,
+      22
+    ]
+  },
+  "boss_fill": {
+    "file": "runtime/components/boss_fill.png",
+    "source_px": [
+      100,
+      22
+    ],
+    "world_units": [
+      100,
+      22
+    ],
+    "description": "Заполнение босса, значение задаёт hp/max_hp.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      100,
+      22
+    ]
+  },
+  "keycap": {
+    "file": "runtime/components/keycap.png",
+    "source_px": [
+      42,
+      36
+    ],
+    "world_units": [
+      42,
+      36
+    ],
+    "description": "Плашка клавиши, символ или название — настоящий Label.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      42,
+      36
+    ]
+  },
+  "arrow_left": {
+    "file": "runtime/components/arrow_left.png",
+    "source_px": [
+      32,
+      32
+    ],
+    "world_units": [
+      32,
+      32
+    ],
+    "description": "Стрелка навигации arrow_left.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      32,
+      32
+    ]
+  },
+  "arrow_right": {
+    "file": "runtime/components/arrow_right.png",
+    "source_px": [
+      32,
+      32
+    ],
+    "world_units": [
+      32,
+      32
+    ],
+    "description": "Стрелка навигации arrow_right.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      32,
+      32
+    ]
+  },
+  "close": {
+    "file": "runtime/components/close.png",
+    "source_px": [
+      32,
+      32
+    ],
+    "world_units": [
+      32,
+      32
+    ],
+    "description": "Крестик закрытия модального окна.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      32,
+      32
+    ]
+  },
+  "selection": {
+    "file": "runtime/components/selection.png",
+    "source_px": [
+      80,
+      48
+    ],
+    "world_units": [
+      80,
+      48
+    ],
+    "description": "Мятный контур выбранной карточки героя.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      80,
+      48
+    ]
+  },
+  "maricraft_logo": {
+    "file": "runtime/branding/maricraft_logo.png",
+    "source_px": [
+      760,
+      110
+    ],
+    "world_units": [
+      760,
+      110
+    ],
+    "description": "Проверенный экспорт точного MARICRAFT из Alegreya ExtraBold. Рабочий заголовок в демо остаётся Label.",
+    "anchor": "top_left",
+    "nine_slice": null,
+    "recommended_display": [
+      760,
+      110
+    ]
+  }
+}

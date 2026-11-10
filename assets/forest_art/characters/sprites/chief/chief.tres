@@ -1,0 +1,289 @@
+[gd_resource type="SpriteFrames" load_steps=67 format=3]
+
+[ext_resource type="Texture2D" path="idle.png" id="T_idle"]
+[ext_resource type="Texture2D" path="alert.png" id="T_alert"]
+[ext_resource type="Texture2D" path="attack_start.png" id="T_attack_start"]
+[ext_resource type="Texture2D" path="water_warning.png" id="T_water_warning"]
+[ext_resource type="Texture2D" path="water_release.png" id="T_water_release"]
+[ext_resource type="Texture2D" path="dash_warning.png" id="T_dash_warning"]
+[ext_resource type="Texture2D" path="dash.png" id="T_dash"]
+[ext_resource type="Texture2D" path="leap_warning.png" id="T_leap_warning"]
+[ext_resource type="Texture2D" path="leap.png" id="T_leap"]
+[ext_resource type="Texture2D" path="slam.png" id="T_slam"]
+[ext_resource type="Texture2D" path="hit.png" id="T_hit"]
+[ext_resource type="Texture2D" path="open.png" id="T_open"]
+[ext_resource type="Texture2D" path="deflect.png" id="T_deflect"]
+[ext_resource type="Texture2D" path="phase.png" id="T_phase"]
+[ext_resource type="Texture2D" path="death.png" id="T_death"]
+
+[sub_resource type="AtlasTexture" id="A_idle_0"]
+atlas = ExtResource("T_idle")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_1"]
+atlas = ExtResource("T_idle")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_2"]
+atlas = ExtResource("T_idle")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_3"]
+atlas = ExtResource("T_idle")
+region = Rect2(960, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_4"]
+atlas = ExtResource("T_idle")
+region = Rect2(1280, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_5"]
+atlas = ExtResource("T_idle")
+region = Rect2(1600, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_alert_0"]
+atlas = ExtResource("T_alert")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_alert_1"]
+atlas = ExtResource("T_alert")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_attack_start_0"]
+atlas = ExtResource("T_attack_start")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_attack_start_1"]
+atlas = ExtResource("T_attack_start")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_attack_start_2"]
+atlas = ExtResource("T_attack_start")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_warning_0"]
+atlas = ExtResource("T_water_warning")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_warning_1"]
+atlas = ExtResource("T_water_warning")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_warning_2"]
+atlas = ExtResource("T_water_warning")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_warning_3"]
+atlas = ExtResource("T_water_warning")
+region = Rect2(960, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_release_0"]
+atlas = ExtResource("T_water_release")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_release_1"]
+atlas = ExtResource("T_water_release")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_release_2"]
+atlas = ExtResource("T_water_release")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_warning_0"]
+atlas = ExtResource("T_dash_warning")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_warning_1"]
+atlas = ExtResource("T_dash_warning")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_warning_2"]
+atlas = ExtResource("T_dash_warning")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_0"]
+atlas = ExtResource("T_dash")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_1"]
+atlas = ExtResource("T_dash")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_2"]
+atlas = ExtResource("T_dash")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_dash_3"]
+atlas = ExtResource("T_dash")
+region = Rect2(960, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_leap_warning_0"]
+atlas = ExtResource("T_leap_warning")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_leap_warning_1"]
+atlas = ExtResource("T_leap_warning")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_leap_warning_2"]
+atlas = ExtResource("T_leap_warning")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_leap_0"]
+atlas = ExtResource("T_leap")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_leap_1"]
+atlas = ExtResource("T_leap")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_leap_2"]
+atlas = ExtResource("T_leap")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_slam_0"]
+atlas = ExtResource("T_slam")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_slam_1"]
+atlas = ExtResource("T_slam")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_slam_2"]
+atlas = ExtResource("T_slam")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hit_0"]
+atlas = ExtResource("T_hit")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hit_1"]
+atlas = ExtResource("T_hit")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hit_2"]
+atlas = ExtResource("T_hit")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_open_0"]
+atlas = ExtResource("T_open")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_open_1"]
+atlas = ExtResource("T_open")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_open_2"]
+atlas = ExtResource("T_open")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_deflect_0"]
+atlas = ExtResource("T_deflect")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_deflect_1"]
+atlas = ExtResource("T_deflect")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_deflect_2"]
+atlas = ExtResource("T_deflect")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_phase_0"]
+atlas = ExtResource("T_phase")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_phase_1"]
+atlas = ExtResource("T_phase")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_phase_2"]
+atlas = ExtResource("T_phase")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_phase_3"]
+atlas = ExtResource("T_phase")
+region = Rect2(960, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_0"]
+atlas = ExtResource("T_death")
+region = Rect2(0, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_1"]
+atlas = ExtResource("T_death")
+region = Rect2(320, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_2"]
+atlas = ExtResource("T_death")
+region = Rect2(640, 0, 320, 244)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_3"]
+atlas = ExtResource("T_death")
+region = Rect2(960, 0, 320, 244)
+filter_clip = true
+
+[resource]
+animations = [{"name": &"idle", "speed": 6.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_idle_0")}, {"duration": 1.0, "texture": SubResource("A_idle_1")}, {"duration": 1.0, "texture": SubResource("A_idle_2")}, {"duration": 1.0, "texture": SubResource("A_idle_3")}, {"duration": 1.0, "texture": SubResource("A_idle_4")}, {"duration": 1.0, "texture": SubResource("A_idle_5")}]},
+{"name": &"alert", "speed": 8.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_alert_0")}, {"duration": 1.0, "texture": SubResource("A_alert_1")}]},
+{"name": &"attack_start", "speed": 9.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_attack_start_0")}, {"duration": 1.0, "texture": SubResource("A_attack_start_1")}, {"duration": 1.0, "texture": SubResource("A_attack_start_2")}]},
+{"name": &"water_warning", "speed": 6.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_water_warning_0")}, {"duration": 1.0, "texture": SubResource("A_water_warning_1")}, {"duration": 1.0, "texture": SubResource("A_water_warning_2")}, {"duration": 1.0, "texture": SubResource("A_water_warning_3")}]},
+{"name": &"water_release", "speed": 10.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_water_release_0")}, {"duration": 1.0, "texture": SubResource("A_water_release_1")}, {"duration": 1.0, "texture": SubResource("A_water_release_2")}]},
+{"name": &"dash_warning", "speed": 5.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_dash_warning_0")}, {"duration": 1.0, "texture": SubResource("A_dash_warning_1")}, {"duration": 1.0, "texture": SubResource("A_dash_warning_2")}]},
+{"name": &"dash", "speed": 10.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_dash_0")}, {"duration": 1.0, "texture": SubResource("A_dash_1")}, {"duration": 1.0, "texture": SubResource("A_dash_2")}, {"duration": 1.0, "texture": SubResource("A_dash_3")}]},
+{"name": &"leap_warning", "speed": 5.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_leap_warning_0")}, {"duration": 1.0, "texture": SubResource("A_leap_warning_1")}, {"duration": 1.0, "texture": SubResource("A_leap_warning_2")}]},
+{"name": &"leap", "speed": 8.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_leap_0")}, {"duration": 1.0, "texture": SubResource("A_leap_1")}, {"duration": 1.0, "texture": SubResource("A_leap_2")}]},
+{"name": &"slam", "speed": 10.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_slam_0")}, {"duration": 1.0, "texture": SubResource("A_slam_1")}, {"duration": 1.0, "texture": SubResource("A_slam_2")}]},
+{"name": &"hit", "speed": 10.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_hit_0")}, {"duration": 1.0, "texture": SubResource("A_hit_1")}, {"duration": 1.0, "texture": SubResource("A_hit_2")}]},
+{"name": &"open", "speed": 5.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_open_0")}, {"duration": 1.0, "texture": SubResource("A_open_1")}, {"duration": 1.0, "texture": SubResource("A_open_2")}]},
+{"name": &"deflect", "speed": 9.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_deflect_0")}, {"duration": 1.0, "texture": SubResource("A_deflect_1")}, {"duration": 1.0, "texture": SubResource("A_deflect_2")}]},
+{"name": &"phase", "speed": 7.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_phase_0")}, {"duration": 1.0, "texture": SubResource("A_phase_1")}, {"duration": 1.0, "texture": SubResource("A_phase_2")}, {"duration": 1.0, "texture": SubResource("A_phase_3")}]},
+{"name": &"death", "speed": 7.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_death_0")}, {"duration": 1.0, "texture": SubResource("A_death_1")}, {"duration": 1.0, "texture": SubResource("A_death_2")}, {"duration": 1.0, "texture": SubResource("A_death_3")}]}]

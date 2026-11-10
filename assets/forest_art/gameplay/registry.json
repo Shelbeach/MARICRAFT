@@ -1,0 +1,4107 @@
+{
+ "rune": {
+  "id": "rune",
+  "name": "Руна лесной магии",
+  "group": "items",
+  "file": "items/rune.png",
+  "source": "masters/rune.png",
+  "description": "Бирюзовый ромб с золотыми креплениями и светлым знаком раздвоенного листа.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   52,
+   64
+  ],
+  "frame_px": [
+   52,
+   64
+  ],
+  "world": [
+   26,
+   32
+  ],
+  "anchor_world": [
+   13.0,
+   16.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Бирюзовый ромб с золотыми креплениями и светлым знаком раздвоенного листа."
+  ],
+  "collision": [
+   22,
+   25
+  ],
+  "spriteframes": "items/items.tres"
+ },
+ "rune_idle": {
+  "id": "rune_idle",
+  "name": "Руна лесной магии · ожидание",
+  "group": "items",
+  "file": "items/rune_idle.png",
+  "source": "masters/rune.png",
+  "description": "Бирюзовый ромб с золотыми креплениями и светлым знаком раздвоенного листа. Движение блика.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   416,
+   64
+  ],
+  "frame_px": [
+   52,
+   64
+  ],
+  "world": [
+   26,
+   32
+  ],
+  "anchor_world": [
+   13.0,
+   16.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 8,
+  "frames": [
+   "Блик 1/8",
+   "Блик 2/8",
+   "Блик 3/8",
+   "Блик 4/8",
+   "Блик 5/8",
+   "Блик 6/8",
+   "Блик 7/8",
+   "Блик 8/8"
+  ],
+  "collision": [
+   22,
+   25
+  ],
+  "spriteframes": "items/items.tres"
+ },
+ "potion": {
+  "id": "potion",
+  "name": "Зелье роста",
+  "group": "items",
+  "file": "items/potion.png",
+  "source": "masters/potion.png",
+  "description": "Зелёная жидкость с ростком в круглой прозрачной колбе с пробкой.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   52,
+   60
+  ],
+  "frame_px": [
+   52,
+   60
+  ],
+  "world": [
+   26,
+   30
+  ],
+  "anchor_world": [
+   13.0,
+   15.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Зелёная жидкость с ростком в круглой прозрачной колбе с пробкой."
+  ],
+  "collision": [
+   22,
+   25
+  ],
+  "spriteframes": "items/items.tres"
+ },
+ "potion_idle": {
+  "id": "potion_idle",
+  "name": "Зелье роста · ожидание",
+  "group": "items",
+  "file": "items/potion_idle.png",
+  "source": "masters/potion.png",
+  "description": "Зелёная жидкость с ростком в круглой прозрачной колбе с пробкой. Движение блика и пузырьков.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   416,
+   60
+  ],
+  "frame_px": [
+   52,
+   60
+  ],
+  "world": [
+   26,
+   30
+  ],
+  "anchor_world": [
+   13.0,
+   15.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 8,
+  "frames": [
+   "Блик 1/8",
+   "Блик 2/8",
+   "Блик 3/8",
+   "Блик 4/8",
+   "Блик 5/8",
+   "Блик 6/8",
+   "Блик 7/8",
+   "Блик 8/8"
+  ],
+  "collision": [
+   22,
+   25
+  ],
+  "spriteframes": "items/items.tres"
+ },
+ "coin_spin": {
+  "id": "coin_spin",
+  "name": "Монета · оборот",
+  "group": "items",
+  "file": "items/coin_spin.png",
+  "source": "reference_P00/C02.png",
+  "description": "Золотая монета с дубовым листом поворачивается через ребро и оборотную сторону.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   400,
+   40
+  ],
+  "frame_px": [
+   40,
+   40
+  ],
+  "world": [
+   20,
+   20
+  ],
+  "anchor_world": [
+   10.0,
+   10.0
+  ],
+  "fps": 10,
+  "loop": true,
+  "count": 10,
+  "frames": [
+   "Поворот на 0°",
+   "Поворот на 36°",
+   "Поворот на 72°",
+   "Поворот на 108°",
+   "Поворот на 144°",
+   "Поворот на 180°",
+   "Поворот на 216°",
+   "Поворот на 252°",
+   "Поворот на 288°",
+   "Поворот на 324°"
+  ],
+  "collision": [
+   18,
+   18
+  ],
+  "spriteframes": "items/items.tres"
+ },
+ "chest_coin": {
+  "id": "chest_coin",
+  "name": "Сундук · монеты",
+  "group": "interactive",
+  "file": "interactive/chest_coin.png",
+  "source": "reference_P00/C01.png",
+  "description": "Закрытый деревянный бонусный блок, бронзовые углы и бирюзовая вставка замка.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   64,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Закрытый деревянный бонусный блок, бронзовые углы и бирюзовая вставка замка."
+  ],
+  "collision": [
+   32,
+   32
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "chest_coin_open": {
+  "id": "chest_coin_open",
+  "name": "Сундук · открытие монетного блока",
+  "group": "interactive",
+  "file": "interactive/chest_coin_open.png",
+  "source": "reference_P00/C01.png + masters/chest_open.png",
+  "description": "Крышка приоткрывается, показывается тёмная полость и откинутая защёлка.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   384,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 20,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Закрыт",
+   "Щель",
+   "Подъём крышки",
+   "Крышка поднята",
+   "Открыт",
+   "Удержание"
+  ],
+  "collision": [
+   32,
+   32
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "chest_bonus": {
+  "id": "chest_bonus",
+  "name": "Сундук · усиление",
+  "group": "interactive",
+  "file": "interactive/chest_bonus.png",
+  "source": "reference_P00/C01.png",
+  "description": "Закрытый деревянный бонусный блок, бронзовые углы и салатовая вставка замка.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   64,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Закрытый деревянный бонусный блок, бронзовые углы и салатовая вставка замка."
+  ],
+  "collision": [
+   32,
+   32
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "chest_bonus_open": {
+  "id": "chest_bonus_open",
+  "name": "Сундук · открытие бонусного блока",
+  "group": "interactive",
+  "file": "interactive/chest_bonus_open.png",
+  "source": "reference_P00/C01.png + masters/chest_open.png",
+  "description": "Крышка приоткрывается, показывается тёмная полость и откинутая защёлка.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   384,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 20,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Закрыт",
+   "Щель",
+   "Подъём крышки",
+   "Крышка поднята",
+   "Открыт",
+   "Удержание"
+  ],
+  "collision": [
+   32,
+   32
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "chest_spent": {
+  "id": "chest_spent",
+  "name": "Открытый использованный сундук",
+  "group": "interactive",
+  "file": "interactive/chest_spent.png",
+  "source": "masters/chest_open.png",
+  "description": "Открытая крышка и отстёгнутая пряжка. Награда уже выдана.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   64,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Открытая крышка и отстёгнутая пряжка. Награда уже выдана."
+  ],
+  "collision": [
+   32,
+   32
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "fragile": {
+  "id": "fragile",
+  "name": "Хрупкий блок",
+  "group": "interactive",
+  "file": "interactive/fragile.png",
+  "source": "reference_P00/B02.png",
+  "description": "Квадратная тёпло-серая плита с расколом; разрушается одним подходящим ударом.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   64,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Квадратная тёпло-серая плита с расколом; разрушается одним подходящим ударом."
+  ],
+  "collision": [
+   32,
+   32
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "solid": {
+  "id": "solid",
+  "name": "Прочный камень",
+  "group": "interactive",
+  "file": "interactive/solid.png",
+  "source": "../P00_v02/Stone_atlas.png",
+  "description": "Серый природный камень с плоской опорной поверхностью и сколотыми краями.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   64,
+   64
+  ],
+  "frame_px": [
+   64,
+   64
+  ],
+  "world": [
+   32,
+   32
+  ],
+  "anchor_world": [
+   16.0,
+   16.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Серый природный камень с плоской опорной поверхностью и сколотыми краями."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "human_bolt": {
+  "id": "human_bolt",
+  "name": "Магия человека · полёт",
+  "group": "effects",
+  "file": "effects/human_bolt.png",
+  "source": "masters/human_bolt.png",
+  "description": "Белое ядро, два коротких синих языка пламени.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   264,
+   24
+  ],
+  "frame_px": [
+   44,
+   24
+  ],
+  "world": [
+   22,
+   12
+  ],
+  "anchor_world": [
+   11.0,
+   6.0
+  ],
+  "fps": 12,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза движения 1/6",
+   "Фаза движения 2/6",
+   "Фаза движения 3/6",
+   "Фаза движения 4/6",
+   "Фаза движения 5/6",
+   "Фаза движения 6/6"
+  ],
+  "collision": [
+   10,
+   6
+  ],
+  "spriteframes": "effects/effects.tres"
+ },
+ "ogre_bolt": {
+  "id": "ogre_bolt",
+  "name": "Магия огра · полёт",
+  "group": "effects",
+  "file": "effects/ogre_bolt.png",
+  "source": "masters/ogre_bolt.png",
+  "description": "Изумрудное зерно и ленты зелёно-золотой магии.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   264,
+   24
+  ],
+  "frame_px": [
+   44,
+   24
+  ],
+  "world": [
+   22,
+   12
+  ],
+  "anchor_world": [
+   11.0,
+   6.0
+  ],
+  "fps": 12,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза движения 1/6",
+   "Фаза движения 2/6",
+   "Фаза движения 3/6",
+   "Фаза движения 4/6",
+   "Фаза движения 5/6",
+   "Фаза движения 6/6"
+  ],
+  "collision": [
+   10,
+   6
+  ],
+  "spriteframes": "effects/effects.tres"
+ },
+ "water_shot": {
+  "id": "water_shot",
+  "name": "Водяной снаряд · полёт",
+  "group": "effects",
+  "file": "effects/water_shot.png",
+  "source": "masters/water_shot.png",
+  "description": "Компактный бирюзовый плевок с белой пеной.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   240,
+   36
+  ],
+  "frame_px": [
+   40,
+   36
+  ],
+  "world": [
+   20,
+   18
+  ],
+  "anchor_world": [
+   10.0,
+   9.0
+  ],
+  "fps": 12,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза движения 1/6",
+   "Фаза движения 2/6",
+   "Фаза движения 3/6",
+   "Фаза движения 4/6",
+   "Фаза движения 5/6",
+   "Фаза движения 6/6"
+  ],
+  "collision": [
+   12,
+   12
+  ],
+  "spriteframes": "effects/effects.tres"
+ },
+ "ground_wave": {
+  "id": "ground_wave",
+  "name": "Приземная волна · полёт",
+  "group": "effects",
+  "file": "effects/ground_wave.png",
+  "source": "masters/ground_wave.png",
+  "description": "Низкая волна с гребнем, движущаяся вправо.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   288,
+   36
+  ],
+  "frame_px": [
+   48,
+   36
+  ],
+  "world": [
+   24,
+   18
+  ],
+  "anchor_world": [
+   12.0,
+   9.0
+  ],
+  "fps": 12,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза движения 1/6",
+   "Фаза движения 2/6",
+   "Фаза движения 3/6",
+   "Фаза движения 4/6",
+   "Фаза движения 5/6",
+   "Фаза движения 6/6"
+  ],
+  "collision": [
+   12,
+   12
+  ],
+  "spriteframes": "effects/effects.tres"
+ },
+ "pipe_entry_rim": {
+  "id": "pipe_entry_rim",
+  "name": "Труба · Вход · Верхний обод и отверстие",
+  "group": "interactive",
+  "file": "interactive/pipe_entry_rim.png",
+  "source": "masters/pipe_safe.png",
+  "description": "Верхний обод и отверстие для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   40
+  ],
+  "frame_px": [
+   160,
+   40
+  ],
+  "world": [
+   80,
+   20.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Верхний обод и отверстие для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_entry_body": {
+  "id": "pipe_entry_body",
+  "name": "Труба · Вход · Секция корпуса",
+  "group": "interactive",
+  "file": "interactive/pipe_entry_body.png",
+  "source": "masters/pipe_safe.png",
+  "description": "Секция корпуса для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   32
+  ],
+  "frame_px": [
+   160,
+   32
+  ],
+  "world": [
+   80,
+   16.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Секция корпуса для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_entry_foot": {
+  "id": "pipe_entry_foot",
+  "name": "Труба · Вход · Нижняя опора",
+  "group": "interactive",
+  "file": "interactive/pipe_entry_foot.png",
+  "source": "masters/pipe_safe.png",
+  "description": "Нижняя опора для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   24
+  ],
+  "frame_px": [
+   160,
+   24
+  ],
+  "world": [
+   80,
+   12.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Нижняя опора для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "sign_entry": {
+  "id": "sign_entry",
+  "name": "Знак · Вход",
+  "group": "interactive",
+  "file": "interactive/sign_entry.png",
+  "source": "Авторская графика · build_assets.py",
+  "description": "Ромб с нижней стрелкой.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   28,
+   26
+  ],
+  "frame_px": [
+   28,
+   26
+  ],
+  "world": [
+   14,
+   13
+  ],
+  "anchor_world": [
+   7.0,
+   6.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Ромб с нижней стрелкой."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_entry": {
+  "id": "pipe_entry",
+  "name": "Труба · Вход",
+  "group": "interactive",
+  "file": "interactive/pipe_entry.png",
+  "source": "masters/pipe_safe.png + sign_entry",
+  "description": "Собранный обод, корпус, нижняя секция и отличительный знак.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   96
+  ],
+  "frame_px": [
+   160,
+   96
+  ],
+  "world": [
+   80,
+   48
+  ],
+  "anchor_world": [
+   40,
+   48
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Собранный обод, корпус, нижняя секция и отличительный знак."
+  ],
+  "collision": [
+   80,
+   48
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_return_rim": {
+  "id": "pipe_return_rim",
+  "name": "Труба · Возврат · Верхний обод и отверстие",
+  "group": "interactive",
+  "file": "interactive/pipe_return_rim.png",
+  "source": "masters/pipe_safe.png",
+  "description": "Верхний обод и отверстие для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   40
+  ],
+  "frame_px": [
+   160,
+   40
+  ],
+  "world": [
+   80,
+   20.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Верхний обод и отверстие для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_return_body": {
+  "id": "pipe_return_body",
+  "name": "Труба · Возврат · Секция корпуса",
+  "group": "interactive",
+  "file": "interactive/pipe_return_body.png",
+  "source": "masters/pipe_safe.png",
+  "description": "Секция корпуса для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   32
+  ],
+  "frame_px": [
+   160,
+   32
+  ],
+  "world": [
+   80,
+   16.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Секция корпуса для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_return_foot": {
+  "id": "pipe_return_foot",
+  "name": "Труба · Возврат · Нижняя опора",
+  "group": "interactive",
+  "file": "interactive/pipe_return_foot.png",
+  "source": "masters/pipe_safe.png",
+  "description": "Нижняя опора для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   24
+  ],
+  "frame_px": [
+   160,
+   24
+  ],
+  "world": [
+   80,
+   12.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Нижняя опора для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "sign_return": {
+  "id": "sign_return",
+  "name": "Знак · Возврат",
+  "group": "interactive",
+  "file": "interactive/sign_return.png",
+  "source": "Авторская графика · build_assets.py",
+  "description": "Ромб с верхней стрелкой.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   28,
+   26
+  ],
+  "frame_px": [
+   28,
+   26
+  ],
+  "world": [
+   14,
+   13
+  ],
+  "anchor_world": [
+   7.0,
+   6.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Ромб с верхней стрелкой."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_return": {
+  "id": "pipe_return",
+  "name": "Труба · Возврат",
+  "group": "interactive",
+  "file": "interactive/pipe_return.png",
+  "source": "masters/pipe_safe.png + sign_return",
+  "description": "Собранный обод, корпус, нижняя секция и отличительный знак.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   96
+  ],
+  "frame_px": [
+   160,
+   96
+  ],
+  "world": [
+   80,
+   48
+  ],
+  "anchor_world": [
+   40,
+   48
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Собранный обод, корпус, нижняя секция и отличительный знак."
+  ],
+  "collision": [
+   80,
+   48
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_ambush_rim": {
+  "id": "pipe_ambush_rim",
+  "name": "Труба · Засада · Верхний обод и отверстие",
+  "group": "interactive",
+  "file": "interactive/pipe_ambush_rim.png",
+  "source": "masters/pipe_danger.png",
+  "description": "Верхний обод и отверстие для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   40
+  ],
+  "frame_px": [
+   160,
+   40
+  ],
+  "world": [
+   80,
+   20.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Верхний обод и отверстие для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_ambush_body": {
+  "id": "pipe_ambush_body",
+  "name": "Труба · Засада · Секция корпуса",
+  "group": "interactive",
+  "file": "interactive/pipe_ambush_body.png",
+  "source": "masters/pipe_danger.png",
+  "description": "Секция корпуса для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   32
+  ],
+  "frame_px": [
+   160,
+   32
+  ],
+  "world": [
+   80,
+   16.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Секция корпуса для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_ambush_foot": {
+  "id": "pipe_ambush_foot",
+  "name": "Труба · Засада · Нижняя опора",
+  "group": "interactive",
+  "file": "interactive/pipe_ambush_foot.png",
+  "source": "masters/pipe_danger.png",
+  "description": "Нижняя опора для модульной сборки трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   24
+  ],
+  "frame_px": [
+   160,
+   24
+  ],
+  "world": [
+   80,
+   12.0
+  ],
+  "anchor_world": [
+   40,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Нижняя опора для модульной сборки трубы."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "sign_ambush": {
+  "id": "sign_ambush",
+  "name": "Знак · Засада",
+  "group": "interactive",
+  "file": "interactive/sign_ambush.png",
+  "source": "Авторская графика · build_assets.py",
+  "description": "Ромб с предупреждением.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   28,
+   26
+  ],
+  "frame_px": [
+   28,
+   26
+  ],
+  "world": [
+   14,
+   13
+  ],
+  "anchor_world": [
+   7.0,
+   6.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Ромб с предупреждением."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_ambush": {
+  "id": "pipe_ambush",
+  "name": "Труба · Засада",
+  "group": "interactive",
+  "file": "interactive/pipe_ambush.png",
+  "source": "masters/pipe_danger.png + sign_ambush",
+  "description": "Собранный обод, корпус, нижняя секция и отличительный знак.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   96
+  ],
+  "frame_px": [
+   160,
+   96
+  ],
+  "world": [
+   80,
+   48
+  ],
+  "anchor_world": [
+   40,
+   48
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Собранный обод, корпус, нижняя секция и отличительный знак."
+  ],
+  "collision": [
+   80,
+   48
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "pipe_ambush_spent": {
+  "id": "pipe_ambush_spent",
+  "name": "Засада · после выхода врага",
+  "group": "interactive",
+  "file": "interactive/pipe_ambush_spent.png",
+  "source": "masters/pipe_danger.png",
+  "description": "Потемневшая охристая опасная труба после одноразового срабатывания.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   160,
+   96
+  ],
+  "frame_px": [
+   160,
+   96
+  ],
+  "world": [
+   80,
+   48
+  ],
+  "anchor_world": [
+   40,
+   48
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Потемневшая охристая опасная труба после одноразового срабатывания."
+  ],
+  "collision": [
+   80,
+   48
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "ferry_oak": {
+  "id": "ferry_oak",
+  "name": "Паром · дуб",
+  "group": "interactive",
+  "file": "interactive/ferry_oak.png",
+  "source": "masters/ferry.png",
+  "description": "Плоский настил с обвязкой, верхняя кромка соответствует опоре.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   256,
+   32
+  ],
+  "frame_px": [
+   256,
+   32
+  ],
+  "world": [
+   128,
+   16
+  ],
+  "anchor_world": [
+   64,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Плоский настил с обвязкой, верхняя кромка соответствует опоре."
+  ],
+  "collision": [
+   128,
+   16
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "ferry_quay": {
+  "id": "ferry_quay",
+  "name": "Паром · причал",
+  "group": "interactive",
+  "file": "interactive/ferry_quay.png",
+  "source": "masters/ferry.png",
+  "description": "Плоский настил с обвязкой, верхняя кромка соответствует опоре.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   256,
+   32
+  ],
+  "frame_px": [
+   256,
+   32
+  ],
+  "world": [
+   128,
+   16
+  ],
+  "anchor_world": [
+   64,
+   0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Плоский настил с обвязкой, верхняя кромка соответствует опоре."
+  ],
+  "collision": [
+   128,
+   16
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "spikes": {
+  "id": "spikes",
+  "name": "Шипы переправы",
+  "group": "interactive",
+  "file": "interactive/spikes.png",
+  "source": "masters/spikes.png",
+  "description": "Три стальных острия на сигнальном рыжем основании.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   96,
+   42
+  ],
+  "frame_px": [
+   96,
+   42
+  ],
+  "world": [
+   48,
+   21
+  ],
+  "anchor_world": [
+   24,
+   21
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Три стальных острия на сигнальном рыжем основании."
+  ],
+  "collision": [
+   44,
+   18
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "checkpoint_off": {
+  "id": "checkpoint_off",
+  "name": "Привал до касания",
+  "group": "interactive",
+  "file": "interactive/checkpoint_off.png",
+  "source": "masters/checkpoint.png",
+  "description": "Высокое древко, приглушённый вымпел.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   160,
+   300
+  ],
+  "frame_px": [
+   160,
+   300
+  ],
+  "world": [
+   80.0,
+   150.0
+  ],
+  "anchor_world": [
+   25.5,
+   150.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Складки ткани 1"
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "checkpoint_on": {
+  "id": "checkpoint_on",
+  "name": "Активный привал",
+  "group": "interactive",
+  "file": "interactive/checkpoint_on.png",
+  "source": "masters/checkpoint.png",
+  "description": "Высокое древко, зеленовато-синий вымпел со знаком дуба.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   640,
+   300
+  ],
+  "frame_px": [
+   160,
+   300
+  ],
+  "world": [
+   80.0,
+   150.0
+  ],
+  "anchor_world": [
+   25.5,
+   150.0
+  ],
+  "fps": 5,
+  "loop": true,
+  "count": 4,
+  "frames": [
+   "Складки ткани 1",
+   "Складки ткани 2",
+   "Складки ткани 3",
+   "Складки ткани 4"
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "finish": {
+  "id": "finish",
+  "name": "Финиш",
+  "group": "interactive",
+  "file": "interactive/finish.png",
+  "source": "masters/finish.png",
+  "description": "Высокое древко, золотой вымпел с солнцем.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   640,
+   197
+  ],
+  "frame_px": [
+   160,
+   197
+  ],
+  "world": [
+   80.0,
+   98.5
+  ],
+  "anchor_world": [
+   16.0,
+   98.5
+  ],
+  "fps": 5,
+  "loop": true,
+  "count": 4,
+  "frames": [
+   "Складки ткани 1",
+   "Складки ткани 2",
+   "Складки ткани 3",
+   "Складки ткани 4"
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "gate_closed": {
+  "id": "gate_closed",
+  "name": "Засов арены",
+  "group": "interactive",
+  "file": "interactive/gate_closed.png",
+  "source": "masters/gate.png",
+  "description": "Вертикальный металлически окованный засов между ареной и выходом.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   40,
+   344
+  ],
+  "frame_px": [
+   40,
+   344
+  ],
+  "world": [
+   20,
+   172
+  ],
+  "anchor_world": [
+   10,
+   172
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Вертикальный металлически окованный засов между ареной и выходом."
+  ],
+  "collision": [
+   18,
+   172
+  ],
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "gate_open": {
+  "id": "gate_open",
+  "name": "Открытый проход",
+  "group": "interactive",
+  "file": "interactive/gate_open.png",
+  "source": "masters/gate.png",
+  "description": "После победы внизу остаётся только башмак засова.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   40,
+   344
+  ],
+  "frame_px": [
+   40,
+   344
+  ],
+  "world": [
+   20,
+   172
+  ],
+  "anchor_world": [
+   10,
+   172
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "После победы внизу остаётся только башмак засова."
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "gate_unlock": {
+  "id": "gate_unlock",
+  "name": "Подъём засова",
+  "group": "interactive",
+  "file": "interactive/gate_unlock.png",
+  "source": "masters/gate.png",
+  "description": "Засов уходит вверх, освобождая проход.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   280,
+   344
+  ],
+  "frame_px": [
+   40,
+   344
+  ],
+  "world": [
+   20,
+   172
+  ],
+  "anchor_world": [
+   10,
+   172
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 7,
+  "frames": [
+   "Закрыто",
+   "Отпирание",
+   "Подъём 1",
+   "Подъём 2",
+   "Подъём 3",
+   "Верхний край",
+   "Проход свободен"
+  ],
+  "collision": null,
+  "spriteframes": "interactive/interactive.tres"
+ },
+ "rune_pickup": {
+  "id": "rune_pickup",
+  "name": "Подбор руны",
+  "group": "effects",
+  "file": "effects/rune_pickup.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Бирюзовая грань и четыре расходящиеся искры.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   336,
+   64
+  ],
+  "frame_px": [
+   56,
+   64
+  ],
+  "world": [
+   28,
+   32
+  ],
+  "anchor_world": [
+   14.0,
+   16.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "magic_form": {
+  "id": "magic_form",
+  "name": "Получение магической формы",
+  "group": "effects",
+  "file": "effects/magic_form.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Пояс света поднимается от ног к руне на доспехе.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   480,
+   120
+  ],
+  "frame_px": [
+   80,
+   120
+  ],
+  "world": [
+   40,
+   60
+  ],
+  "anchor_world": [
+   20.0,
+   30.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "potion_eject": {
+  "id": "potion_eject",
+  "name": "Выход зелья из сундука",
+  "group": "effects",
+  "file": "effects/potion_eject.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Короткий зелёный выброс над открытой крышкой.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   312,
+   64
+  ],
+  "frame_px": [
+   52,
+   64
+  ],
+  "world": [
+   26,
+   32
+  ],
+  "anchor_world": [
+   13.0,
+   25.3
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "growth": {
+  "id": "growth",
+  "name": "Рост героя",
+  "group": "effects",
+  "file": "effects/growth.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Растущая спираль светлых семян и пояс зелёного света.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   468,
+   128
+  ],
+  "frame_px": [
+   78,
+   128
+  ],
+  "world": [
+   39,
+   64
+  ],
+  "anchor_world": [
+   19.5,
+   32.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "coin_pickup": {
+  "id": "coin_pickup",
+  "name": "Подбор монеты",
+  "group": "effects",
+  "file": "effects/coin_pickup.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Короткая россыпь золотых искр.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   288,
+   52
+  ],
+  "frame_px": [
+   48,
+   52
+  ],
+  "world": [
+   24,
+   26
+  ],
+  "anchor_world": [
+   12.0,
+   13.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "chest_reward": {
+  "id": "chest_reward",
+  "name": "Награда сундука",
+  "group": "effects",
+  "file": "effects/chest_reward.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Золотистые частицы выходят из открытого блока.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   408,
+   72
+  ],
+  "frame_px": [
+   68,
+   72
+  ],
+  "world": [
+   34,
+   36
+  ],
+  "anchor_world": [
+   17.0,
+   18.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "bonus_pickup": {
+  "id": "bonus_pickup",
+  "name": "Подбор усиления",
+  "group": "effects",
+  "file": "effects/bonus_pickup.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Светлые семена вокруг точки подбора.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   336,
+   60
+  ],
+  "frame_px": [
+   56,
+   60
+  ],
+  "world": [
+   28,
+   30
+  ],
+  "anchor_world": [
+   14.0,
+   15.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "land_dust": {
+  "id": "land_dust",
+  "name": "Пыль при приземлении",
+  "group": "effects",
+  "file": "effects/land_dust.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Два низких веера пыли расходятся от подошв.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   444,
+   34
+  ],
+  "frame_px": [
+   74,
+   34
+  ],
+  "world": [
+   37,
+   17
+  ],
+  "anchor_world": [
+   18.5,
+   13.4
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "run_dust": {
+  "id": "run_dust",
+  "name": "Пыль следа",
+  "group": "effects",
+  "file": "effects/run_dust.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Низкая пыль позади бегущей ноги.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   264,
+   24
+  ],
+  "frame_px": [
+   44,
+   24
+  ],
+  "world": [
+   22,
+   12
+  ],
+  "anchor_world": [
+   11.0,
+   9.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "head_bump": {
+  "id": "head_bump",
+  "name": "Удар головой",
+  "group": "effects",
+  "file": "effects/head_bump.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Короткие золотистые риски от точки удара о блок.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   276,
+   36
+  ],
+  "frame_px": [
+   46,
+   36
+  ],
+  "world": [
+   23,
+   18
+  ],
+  "anchor_world": [
+   11.5,
+   9.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "block_shards": {
+  "id": "block_shards",
+  "name": "Разрушение хрупкого камня",
+  "group": "effects",
+  "file": "effects/block_shards.png",
+  "source": "reference_P00/B02.png + effects.py",
+  "description": "Восемь фрагментов исходной плиты B02 расходятся и падают.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   528,
+   84
+  ],
+  "frame_px": [
+   88,
+   84
+  ],
+  "world": [
+   44,
+   42
+  ],
+  "anchor_world": [
+   22.0,
+   21.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "spike_contact": {
+  "id": "spike_contact",
+  "name": "Касание шипов",
+  "group": "effects",
+  "file": "effects/spike_contact.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Маленькие красно-золотые искры столкновения.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   264,
+   42
+  ],
+  "frame_px": [
+   44,
+   42
+  ],
+  "world": [
+   22,
+   21
+  ],
+  "anchor_world": [
+   11.0,
+   10.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "damage": {
+  "id": "damage",
+  "name": "Получение урона",
+  "group": "effects",
+  "file": "effects/damage.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Тёплая ударная вспышка с короткими лучами.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   348,
+   50
+  ],
+  "frame_px": [
+   58,
+   50
+  ],
+  "world": [
+   29,
+   25
+  ],
+  "anchor_world": [
+   14.5,
+   12.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "form_loss": {
+  "id": "form_loss",
+  "name": "Потеря усиленной формы",
+  "group": "effects",
+  "file": "effects/form_loss.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Гаснущие магические крупицы расходятся вниз.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   408,
+   100
+  ],
+  "frame_px": [
+   68,
+   100
+  ],
+  "world": [
+   34,
+   50
+  ],
+  "anchor_world": [
+   17.0,
+   25.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "enemy_fade": {
+  "id": "enemy_fade",
+  "name": "Исчезновение мурлока",
+  "group": "effects",
+  "file": "effects/enemy_fade.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Чешуйчатая дуга и мелкие капли.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   384,
+   58
+  ],
+  "frame_px": [
+   64,
+   58
+  ],
+  "world": [
+   32,
+   29
+  ],
+  "anchor_world": [
+   16.0,
+   14.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "respawn": {
+  "id": "respawn",
+  "name": "Возрождение",
+  "group": "effects",
+  "file": "effects/respawn.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Поднимающееся кольцо света вокруг точки появления.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   468,
+   102
+  ],
+  "frame_px": [
+   78,
+   102
+  ],
+  "world": [
+   39,
+   51
+  ],
+  "anchor_world": [
+   19.5,
+   25.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "pipe_enter": {
+  "id": "pipe_enter",
+  "name": "Переход через трубу",
+  "group": "effects",
+  "file": "effects/pipe_enter.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Спокойная рябь у отверстия трубы.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   672,
+   24
+  ],
+  "frame_px": [
+   112,
+   24
+  ],
+  "world": [
+   56,
+   12
+  ],
+  "anchor_world": [
+   28.0,
+   6.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "pipe_emerge": {
+  "id": "pipe_emerge",
+  "name": "Выход мурлока",
+  "group": "effects",
+  "file": "effects/pipe_emerge.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Два веера влажного пара над опасным ободом.",
+  "levels": "1-2",
+  "alpha": true,
+  "texture_px": [
+   540,
+   72
+  ],
+  "frame_px": [
+   90,
+   72
+  ],
+  "world": [
+   45,
+   36
+  ],
+  "anchor_world": [
+   22.5,
+   28.4
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "water_hit": {
+  "id": "water_hit",
+  "name": "Попадание воды",
+  "group": "effects",
+  "file": "effects/water_hit.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Капли и ломаная дуга всплеска.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   384,
+   56
+  ],
+  "frame_px": [
+   64,
+   56
+  ],
+  "world": [
+   32,
+   28
+  ],
+  "anchor_world": [
+   16.0,
+   14.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_aim": {
+  "id": "boss_aim",
+  "name": "Предупреждение выстрела",
+  "group": "effects",
+  "file": "effects/boss_aim.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Пунктирный участок линии прицеливания с наконечником.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   432,
+   16
+  ],
+  "frame_px": [
+   72,
+   16
+  ],
+  "world": [
+   36,
+   8
+  ],
+  "anchor_world": [
+   18.0,
+   4.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_dash_warn": {
+  "id": "boss_dash_warn",
+  "name": "Направление рывка",
+  "group": "effects",
+  "file": "effects/boss_dash_warn.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Три низких шеврона на стороне рывка.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   384,
+   20
+  ],
+  "frame_px": [
+   64,
+   20
+  ],
+  "world": [
+   32,
+   10
+  ],
+  "anchor_world": [
+   16.0,
+   5.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_dash_trail": {
+  "id": "boss_dash_trail",
+  "name": "След рывка",
+  "group": "effects",
+  "file": "effects/boss_dash_trail.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Короткие водяные штрихи позади плеча.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   504,
+   44
+  ],
+  "frame_px": [
+   84,
+   44
+  ],
+  "world": [
+   42,
+   22
+  ],
+  "anchor_world": [
+   21.0,
+   11.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_leap_warn": {
+  "id": "boss_leap_warn",
+  "name": "Точка приземления",
+  "group": "effects",
+  "file": "effects/boss_leap_warn.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Двойная пульсирующая отметка на полу.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   588,
+   32
+  ],
+  "frame_px": [
+   98,
+   32
+  ],
+  "world": [
+   49,
+   16
+  ],
+  "anchor_world": [
+   24.5,
+   8.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_slam": {
+  "id": "boss_slam",
+  "name": "Удар о землю",
+  "group": "effects",
+  "file": "effects/boss_slam.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Низкий широкий всплеск и расходящаяся дуга.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   780,
+   48
+  ],
+  "frame_px": [
+   130,
+   48
+  ],
+  "world": [
+   65,
+   24
+  ],
+  "anchor_world": [
+   32.5,
+   19.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_hit": {
+  "id": "boss_hit",
+  "name": "Попадание по вожаку",
+  "group": "effects",
+  "file": "effects/boss_hit.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Акцент контакта в открытом окне боя.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   468,
+   68
+  ],
+  "frame_px": [
+   78,
+   68
+  ],
+  "world": [
+   39,
+   34
+  ],
+  "anchor_world": [
+   19.5,
+   17.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_shield": {
+  "id": "boss_shield",
+  "name": "Поднятый щит",
+  "group": "effects",
+  "file": "effects/boss_shield.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Полупрозрачный защитный обод вокруг босса.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   1176,
+   196
+  ],
+  "frame_px": [
+   196,
+   196
+  ],
+  "world": [
+   98,
+   98
+  ],
+  "anchor_world": [
+   49.0,
+   49.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_deflect": {
+  "id": "boss_deflect",
+  "name": "Отражение болта",
+  "group": "effects",
+  "file": "effects/boss_deflect.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Дуга отражения и отколотые искры у щита.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   336,
+   58
+  ],
+  "frame_px": [
+   56,
+   58
+  ],
+  "world": [
+   28,
+   29
+  ],
+  "anchor_world": [
+   14.0,
+   14.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_open": {
+  "id": "boss_open",
+  "name": "Окно атаки",
+  "group": "effects",
+  "file": "effects/boss_open.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Три золотые отметки над доступной целью.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   372,
+   20
+  ],
+  "frame_px": [
+   62,
+   20
+  ],
+  "world": [
+   31,
+   10
+  ],
+  "anchor_world": [
+   15.5,
+   5.0
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_phase": {
+  "id": "boss_phase",
+  "name": "Смена фазы",
+  "group": "effects",
+  "file": "effects/boss_phase.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Красно-золотая пульсация вверх вдоль силуэта.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   720,
+   154
+  ],
+  "frame_px": [
+   120,
+   154
+  ],
+  "world": [
+   60,
+   77
+  ],
+  "anchor_world": [
+   30.0,
+   38.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "boss_victory": {
+  "id": "boss_victory",
+  "name": "Победа над вожаком",
+  "group": "effects",
+  "file": "effects/boss_victory.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Расходящиеся лучи и поднимающиеся золотые частицы.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   864,
+   132
+  ],
+  "frame_px": [
+   144,
+   132
+  ],
+  "world": [
+   72,
+   66
+  ],
+  "anchor_world": [
+   36.0,
+   33.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "gate_sparks": {
+  "id": "gate_sparks",
+  "name": "Отпирание ворот",
+  "group": "effects",
+  "file": "effects/gate_sparks.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Локальные искры у уходящего вверх засова.",
+  "levels": "1-3",
+  "alpha": true,
+  "texture_px": [
+   384,
+   60
+  ],
+  "frame_px": [
+   64,
+   60
+  ],
+  "world": [
+   32,
+   30
+  ],
+  "anchor_world": [
+   16.0,
+   15.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "forest_mote": {
+  "id": "forest_mote",
+  "name": "Лесная пыльца",
+  "group": "effects",
+  "file": "effects/forest_mote.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Слабая золотая пыльца для редкого фонового эмиттера.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   108,
+   18
+  ],
+  "frame_px": [
+   18,
+   18
+  ],
+  "world": [
+   9,
+   9
+  ],
+  "anchor_world": [
+   4.5,
+   4.5
+  ],
+  "fps": 8,
+  "loop": true,
+  "count": 6,
+  "frames": [
+   "Фаза пульса 1",
+   "Фаза пульса 2",
+   "Фаза пульса 3",
+   "Фаза пульса 4",
+   "Фаза пульса 5",
+   "Фаза пульса 6"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "human_trail": {
+  "id": "human_trail",
+  "name": "Человек · Короткий след",
+  "group": "effects",
+  "file": "effects/human_trail.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Короткий след в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   168,
+   16
+  ],
+  "frame_px": [
+   28,
+   16
+  ],
+  "world": [
+   14,
+   8
+  ],
+  "anchor_world": [
+   7.0,
+   4.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "human_wall": {
+  "id": "human_wall",
+  "name": "Человек · Касание стены",
+  "group": "effects",
+  "file": "effects/human_wall.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Касание стены в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   288,
+   42
+  ],
+  "frame_px": [
+   48,
+   42
+  ],
+  "world": [
+   24,
+   21
+  ],
+  "anchor_world": [
+   12.0,
+   10.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "human_enemy": {
+  "id": "human_enemy",
+  "name": "Человек · Удар во врага",
+  "group": "effects",
+  "file": "effects/human_enemy.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Удар во врага в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   336,
+   54
+  ],
+  "frame_px": [
+   56,
+   54
+  ],
+  "world": [
+   28,
+   27
+  ],
+  "anchor_world": [
+   14.0,
+   13.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "human_boss": {
+  "id": "human_boss",
+  "name": "Человек · Удар в щит или вожака",
+  "group": "effects",
+  "file": "effects/human_boss.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Удар в щит или вожака в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   408,
+   64
+  ],
+  "frame_px": [
+   68,
+   64
+  ],
+  "world": [
+   34,
+   32
+  ],
+  "anchor_world": [
+   17.0,
+   16.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "human_fade": {
+  "id": "human_fade",
+  "name": "Человек · Рассеивание",
+  "group": "effects",
+  "file": "effects/human_fade.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Рассеивание в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   216,
+   26
+  ],
+  "frame_px": [
+   36,
+   26
+  ],
+  "world": [
+   18,
+   13
+  ],
+  "anchor_world": [
+   9.0,
+   6.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "ogre_trail": {
+  "id": "ogre_trail",
+  "name": "Огр · Короткий след",
+  "group": "effects",
+  "file": "effects/ogre_trail.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Короткий след в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   168,
+   16
+  ],
+  "frame_px": [
+   28,
+   16
+  ],
+  "world": [
+   14,
+   8
+  ],
+  "anchor_world": [
+   7.0,
+   4.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "ogre_wall": {
+  "id": "ogre_wall",
+  "name": "Огр · Касание стены",
+  "group": "effects",
+  "file": "effects/ogre_wall.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Касание стены в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   288,
+   42
+  ],
+  "frame_px": [
+   48,
+   42
+  ],
+  "world": [
+   24,
+   21
+  ],
+  "anchor_world": [
+   12.0,
+   10.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "ogre_enemy": {
+  "id": "ogre_enemy",
+  "name": "Огр · Удар во врага",
+  "group": "effects",
+  "file": "effects/ogre_enemy.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Удар во врага в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   336,
+   54
+  ],
+  "frame_px": [
+   56,
+   54
+  ],
+  "world": [
+   28,
+   27
+  ],
+  "anchor_world": [
+   14.0,
+   13.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "ogre_boss": {
+  "id": "ogre_boss",
+  "name": "Огр · Удар в щит или вожака",
+  "group": "effects",
+  "file": "effects/ogre_boss.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Удар в щит или вожака в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   408,
+   64
+  ],
+  "frame_px": [
+   68,
+   64
+  ],
+  "world": [
+   34,
+   32
+  ],
+  "anchor_world": [
+   17.0,
+   16.0
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "ogre_fade": {
+  "id": "ogre_fade",
+  "name": "Огр · Рассеивание",
+  "group": "effects",
+  "file": "effects/ogre_fade.png",
+  "source": "effects.py · рисованные маски и траектории частиц",
+  "description": "Рассеивание в цвете соответствующего заклинания.",
+  "levels": "1-1, 1-2, 1-3",
+  "alpha": true,
+  "texture_px": [
+   216,
+   26
+  ],
+  "frame_px": [
+   36,
+   26
+  ],
+  "world": [
+   18,
+   13
+  ],
+  "anchor_world": [
+   9.0,
+   6.5
+  ],
+  "fps": 12,
+  "loop": false,
+  "count": 6,
+  "frames": [
+   "Начало",
+   "Появление",
+   "Раскрытие",
+   "Максимум",
+   "Ослабление",
+   "Затухание"
+  ],
+  "collision": null,
+  "spriteframes": "effects/effects.tres"
+ },
+ "heart_full": {
+  "id": "heart_full",
+  "name": "Полное сердце",
+  "group": "ui",
+  "file": "ui/heart_full.png",
+  "source": "masters/heart.png",
+  "description": "Красный сердцевидный самоцвет в золотой оправе.",
+  "levels": "HUD, карта, покупка и результаты",
+  "alpha": true,
+  "texture_px": [
+   27,
+   27
+  ],
+  "frame_px": [
+   27,
+   27
+  ],
+  "world": [
+   27,
+   27
+  ],
+  "anchor_world": [
+   13.5,
+   13.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Красный сердцевидный самоцвет в золотой оправе."
+  ],
+  "collision": null
+ },
+ "heart_lost": {
+  "id": "heart_lost",
+  "name": "Потерянное сердце",
+  "group": "ui",
+  "file": "ui/heart_lost.png",
+  "source": "masters/heart.png",
+  "description": "Та же ячейка сердца в холодной погасшей оправе.",
+  "levels": "HUD, карта, покупка и результаты",
+  "alpha": true,
+  "texture_px": [
+   27,
+   27
+  ],
+  "frame_px": [
+   27,
+   27
+  ],
+  "world": [
+   27,
+   27
+  ],
+  "anchor_world": [
+   13.5,
+   13.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Та же ячейка сердца в холодной погасшей оправе."
+  ],
+  "collision": null
+ },
+ "star_on": {
+  "id": "star_on",
+  "name": "Полученная звезда",
+  "group": "ui",
+  "file": "ui/star_on.png",
+  "source": "masters/star.png",
+  "description": "Золотая пятиконечная звезда результата.",
+  "levels": "HUD, карта, покупка и результаты",
+  "alpha": true,
+  "texture_px": [
+   26,
+   26
+  ],
+  "frame_px": [
+   26,
+   26
+  ],
+  "world": [
+   26,
+   26
+  ],
+  "anchor_world": [
+   13.0,
+   13.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Золотая пятиконечная звезда результата."
+  ],
+  "collision": null
+ },
+ "star_off": {
+  "id": "star_off",
+  "name": "Неполученная звезда",
+  "group": "ui",
+  "file": "ui/star_off.png",
+  "source": "masters/star.png",
+  "description": "Серо-синяя неактивная звезда.",
+  "levels": "HUD, карта, покупка и результаты",
+  "alpha": true,
+  "texture_px": [
+   26,
+   26
+  ],
+  "frame_px": [
+   26,
+   26
+  ],
+  "world": [
+   26,
+   26
+  ],
+  "anchor_world": [
+   13.0,
+   13.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Серо-синяя неактивная звезда."
+  ],
+  "collision": null
+ },
+ "clock": {
+  "id": "clock",
+  "name": "Активное время",
+  "group": "ui",
+  "file": "ui/clock.png",
+  "source": "masters/clock.png",
+  "description": "Латунные часы с двумя стрелками.",
+  "levels": "HUD, карта, покупка и результаты",
+  "alpha": true,
+  "texture_px": [
+   27,
+   27
+  ],
+  "frame_px": [
+   27,
+   27
+  ],
+  "world": [
+   27,
+   27
+  ],
+  "anchor_world": [
+   13.5,
+   13.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Латунные часы с двумя стрелками."
+  ],
+  "collision": null
+ },
+ "hud_coin": {
+  "id": "hud_coin",
+  "name": "Монеты в кошельке",
+  "group": "ui",
+  "file": "ui/hud_coin.png",
+  "source": "reference_P00/C02.png",
+  "description": "Дубовый лист на золотой монете P00.",
+  "levels": "HUD, карта, покупка и результаты",
+  "alpha": true,
+  "texture_px": [
+   25,
+   25
+  ],
+  "frame_px": [
+   25,
+   25
+  ],
+  "world": [
+   25,
+   25
+  ],
+  "anchor_world": [
+   12.5,
+   12.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Дубовый лист на золотой монете P00."
+  ],
+  "collision": null
+ },
+ "portrait_human": {
+  "id": "portrait_human",
+  "name": "Портрет · человек",
+  "group": "ui",
+  "file": "ui/portrait_human.png",
+  "source": "../P00/characters/A01.png",
+  "description": "Оригинальное лицо из P00 в круглой оправе.",
+  "levels": "Выбор героя, HUD",
+  "alpha": true,
+  "texture_px": [
+   60,
+   60
+  ],
+  "frame_px": [
+   60,
+   60
+  ],
+  "world": [
+   60,
+   60
+  ],
+  "anchor_world": [
+   30.0,
+   30.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Оригинальное лицо из P00 в круглой оправе."
+  ],
+  "collision": null
+ },
+ "portrait_ogre": {
+  "id": "portrait_ogre",
+  "name": "Портрет · огр",
+  "group": "ui",
+  "file": "ui/portrait_ogre.png",
+  "source": "../P00/characters/A03.png",
+  "description": "Оригинальное лицо из P00 в круглой оправе.",
+  "levels": "Выбор героя, HUD",
+  "alpha": true,
+  "texture_px": [
+   60,
+   60
+  ],
+  "frame_px": [
+   60,
+   60
+  ],
+  "world": [
+   60,
+   60
+  ],
+  "anchor_world": [
+   30.0,
+   30.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Оригинальное лицо из P00 в круглой оправе."
+  ],
+  "collision": null
+ },
+ "panel": {
+  "id": "panel",
+  "name": "Панель · дуб и латунь",
+  "group": "ui",
+  "file": "ui/panel.png",
+  "source": "masters/panel.png",
+  "description": "Тёмная свободная середина и четыре латунных угла с лиственным узором.",
+  "levels": "Меню, HUD, карта, результат",
+  "alpha": true,
+  "texture_px": [
+   140,
+   84
+  ],
+  "frame_px": [
+   140,
+   84
+  ],
+  "world": [
+   140,
+   84
+  ],
+  "anchor_world": [
+   70.0,
+   42.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Тёмная свободная середина и четыре латунных угла с лиственным узором."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   16,
+   14,
+   16,
+   14
+  ]
+ },
+ "button_normal": {
+  "id": "button_normal",
+  "name": "Кнопка · Обычная",
+  "group": "ui",
+  "file": "ui/button_normal.png",
+  "source": "masters/button.png",
+  "description": "Синяя эмалевая кнопка с латунной кромкой, состояние «Обычная». Подпись добавляет Label/Button.",
+  "levels": "Пауза, настройки, покупка, результаты",
+  "alpha": true,
+  "texture_px": [
+   108,
+   35
+  ],
+  "frame_px": [
+   108,
+   35
+  ],
+  "world": [
+   108,
+   35
+  ],
+  "anchor_world": [
+   54.0,
+   17.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Синяя эмалевая кнопка с латунной кромкой, состояние «Обычная». Подпись добавляет Label/Button."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   15,
+   10,
+   15,
+   10
+  ]
+ },
+ "button_hover": {
+  "id": "button_hover",
+  "name": "Кнопка · Наведение",
+  "group": "ui",
+  "file": "ui/button_hover.png",
+  "source": "masters/button.png",
+  "description": "Синяя эмалевая кнопка с латунной кромкой, состояние «Наведение». Подпись добавляет Label/Button.",
+  "levels": "Пауза, настройки, покупка, результаты",
+  "alpha": true,
+  "texture_px": [
+   108,
+   35
+  ],
+  "frame_px": [
+   108,
+   35
+  ],
+  "world": [
+   108,
+   35
+  ],
+  "anchor_world": [
+   54.0,
+   17.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Синяя эмалевая кнопка с латунной кромкой, состояние «Наведение». Подпись добавляет Label/Button."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   15,
+   10,
+   15,
+   10
+  ]
+ },
+ "button_pressed": {
+  "id": "button_pressed",
+  "name": "Кнопка · Нажата",
+  "group": "ui",
+  "file": "ui/button_pressed.png",
+  "source": "masters/button.png",
+  "description": "Синяя эмалевая кнопка с латунной кромкой, состояние «Нажата». Подпись добавляет Label/Button.",
+  "levels": "Пауза, настройки, покупка, результаты",
+  "alpha": true,
+  "texture_px": [
+   108,
+   35
+  ],
+  "frame_px": [
+   108,
+   35
+  ],
+  "world": [
+   108,
+   35
+  ],
+  "anchor_world": [
+   54.0,
+   17.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Синяя эмалевая кнопка с латунной кромкой, состояние «Нажата». Подпись добавляет Label/Button."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   15,
+   10,
+   15,
+   10
+  ]
+ },
+ "button_disabled": {
+  "id": "button_disabled",
+  "name": "Кнопка · Недоступна",
+  "group": "ui",
+  "file": "ui/button_disabled.png",
+  "source": "masters/button.png",
+  "description": "Синяя эмалевая кнопка с латунной кромкой, состояние «Недоступна». Подпись добавляет Label/Button.",
+  "levels": "Пауза, настройки, покупка, результаты",
+  "alpha": true,
+  "texture_px": [
+   108,
+   35
+  ],
+  "frame_px": [
+   108,
+   35
+  ],
+  "world": [
+   108,
+   35
+  ],
+  "anchor_world": [
+   54.0,
+   17.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Синяя эмалевая кнопка с латунной кромкой, состояние «Недоступна». Подпись добавляет Label/Button."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   15,
+   10,
+   15,
+   10
+  ]
+ },
+ "boss_hp_track": {
+  "id": "boss_hp_track",
+  "name": "Рамка здоровья босса",
+  "group": "ui",
+  "file": "ui/boss_hp_track.png",
+  "source": "ui.py · отдельная рамка",
+  "description": "Пустой тёмный трек с золотой окантовкой.",
+  "levels": "1-3 HUD",
+  "alpha": true,
+  "texture_px": [
+   54,
+   16
+  ],
+  "frame_px": [
+   54,
+   16
+  ],
+  "world": [
+   54,
+   16
+  ],
+  "anchor_world": [
+   27.0,
+   8.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Пустой тёмный трек с золотой окантовкой."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   6,
+   5,
+   6,
+   5
+  ]
+ },
+ "boss_hp_fill": {
+  "id": "boss_hp_fill",
+  "name": "Заполнение здоровья босса",
+  "group": "ui",
+  "file": "ui/boss_hp_fill.png",
+  "source": "ui.py · заливка",
+  "description": "Красно-янтарное заполнение для TextureProgressBar; доля из hp / 9.",
+  "levels": "1-3 HUD",
+  "alpha": true,
+  "texture_px": [
+   14,
+   8
+  ],
+  "frame_px": [
+   14,
+   8
+  ],
+  "world": [
+   14,
+   8
+  ],
+  "anchor_world": [
+   7.0,
+   4.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Красно-янтарное заполнение для TextureProgressBar; доля из hp / 9."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   2,
+   2,
+   2,
+   2
+  ]
+ },
+ "map_locked": {
+  "id": "map_locked",
+  "name": "Закрытая отметка",
+  "group": "ui",
+  "file": "ui/map_locked.png",
+  "source": "ui.py · геральдический маркер",
+  "description": "Шестиугольный узел карты. Закрытая отметка.",
+  "levels": "Карта кампании",
+  "alpha": true,
+  "texture_px": [
+   36,
+   36
+  ],
+  "frame_px": [
+   36,
+   36
+  ],
+  "world": [
+   36,
+   36
+  ],
+  "anchor_world": [
+   18.0,
+   18.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Шестиугольный узел карты. Закрытая отметка."
+  ],
+  "collision": null
+ },
+ "map_open": {
+  "id": "map_open",
+  "name": "Доступная отметка",
+  "group": "ui",
+  "file": "ui/map_open.png",
+  "source": "ui.py · геральдический маркер",
+  "description": "Шестиугольный узел карты. Доступная отметка.",
+  "levels": "Карта кампании",
+  "alpha": true,
+  "texture_px": [
+   36,
+   36
+  ],
+  "frame_px": [
+   36,
+   36
+  ],
+  "world": [
+   36,
+   36
+  ],
+  "anchor_world": [
+   18.0,
+   18.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Шестиугольный узел карты. Доступная отметка."
+  ],
+  "collision": null
+ },
+ "map_current": {
+  "id": "map_current",
+  "name": "Текущий уровень",
+  "group": "ui",
+  "file": "ui/map_current.png",
+  "source": "ui.py · геральдический маркер",
+  "description": "Шестиугольный узел карты. Текущий уровень.",
+  "levels": "Карта кампании",
+  "alpha": true,
+  "texture_px": [
+   36,
+   36
+  ],
+  "frame_px": [
+   36,
+   36
+  ],
+  "world": [
+   36,
+   36
+  ],
+  "anchor_world": [
+   18.0,
+   18.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Шестиугольный узел карты. Текущий уровень."
+  ],
+  "collision": null
+ },
+ "map_done": {
+  "id": "map_done",
+  "name": "Пройденная отметка",
+  "group": "ui",
+  "file": "ui/map_done.png",
+  "source": "ui.py · геральдический маркер",
+  "description": "Шестиугольный узел карты. Пройденная отметка.",
+  "levels": "Карта кампании",
+  "alpha": true,
+  "texture_px": [
+   36,
+   36
+  ],
+  "frame_px": [
+   36,
+   36
+  ],
+  "world": [
+   36,
+   36
+  ],
+  "anchor_world": [
+   18.0,
+   18.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Шестиугольный узел карты. Пройденная отметка."
+  ],
+  "collision": null
+ },
+ "divider": {
+  "id": "divider",
+  "name": "Разделитель",
+  "group": "ui",
+  "file": "ui/divider.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Разделитель в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   72,
+   9
+  ],
+  "frame_px": [
+   72,
+   9
+  ],
+  "world": [
+   72,
+   9
+  ],
+  "anchor_world": [
+   36.0,
+   4.5
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Разделитель в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ },
+ "selection": {
+  "id": "selection",
+  "name": "Маркер выбора",
+  "group": "ui",
+  "file": "ui/selection.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Маркер выбора в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   18,
+   20
+  ],
+  "frame_px": [
+   18,
+   20
+  ],
+  "world": [
+   18,
+   20
+  ],
+  "anchor_world": [
+   9.0,
+   10.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Маркер выбора в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ },
+ "focus": {
+  "id": "focus",
+  "name": "Рамка фокуса",
+  "group": "ui",
+  "file": "ui/focus.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Рамка фокуса в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   42,
+   30
+  ],
+  "frame_px": [
+   42,
+   30
+  ],
+  "world": [
+   42,
+   30
+  ],
+  "anchor_world": [
+   21.0,
+   15.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Рамка фокуса в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null,
+  "nine_slice_px": [
+   5,
+   4,
+   5,
+   4
+  ]
+ },
+ "slider_track": {
+  "id": "slider_track",
+  "name": "Дорожка громкости",
+  "group": "ui",
+  "file": "ui/slider_track.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Дорожка громкости в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   50,
+   8
+  ],
+  "frame_px": [
+   50,
+   8
+  ],
+  "world": [
+   50,
+   8
+  ],
+  "anchor_world": [
+   25.0,
+   4.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Дорожка громкости в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ },
+ "slider_knob": {
+  "id": "slider_knob",
+  "name": "Ручка громкости",
+  "group": "ui",
+  "file": "ui/slider_knob.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Ручка громкости в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   16,
+   18
+  ],
+  "frame_px": [
+   16,
+   18
+  ],
+  "world": [
+   16,
+   18
+  ],
+  "anchor_world": [
+   8.0,
+   9.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Ручка громкости в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ },
+ "mute_off": {
+  "id": "mute_off",
+  "name": "Переключатель · выкл.",
+  "group": "ui",
+  "file": "ui/mute_off.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Переключатель · выкл. в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   24,
+   18
+  ],
+  "frame_px": [
+   24,
+   18
+  ],
+  "world": [
+   24,
+   18
+  ],
+  "anchor_world": [
+   12.0,
+   9.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Переключатель · выкл. в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ },
+ "mute_on": {
+  "id": "mute_on",
+  "name": "Переключатель · вкл.",
+  "group": "ui",
+  "file": "ui/mute_on.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Переключатель · вкл. в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   24,
+   18
+  ],
+  "frame_px": [
+   24,
+   18
+  ],
+  "world": [
+   24,
+   18
+  ],
+  "anchor_world": [
+   12.0,
+   9.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Переключатель · вкл. в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ },
+ "warning": {
+  "id": "warning",
+  "name": "Предупреждение",
+  "group": "ui",
+  "file": "ui/warning.png",
+  "source": "ui.py · рисованный элемент управления",
+  "description": "Предупреждение в общей латунно-бирюзовой палитре.",
+  "levels": "Меню, карта и HUD",
+  "alpha": true,
+  "texture_px": [
+   24,
+   22
+  ],
+  "frame_px": [
+   24,
+   22
+  ],
+  "world": [
+   24,
+   22
+  ],
+  "anchor_world": [
+   12.0,
+   11.0
+  ],
+  "fps": 0,
+  "loop": false,
+  "count": 1,
+  "frames": [
+   "Предупреждение в общей латунно-бирюзовой палитре."
+  ],
+  "collision": null
+ }
+}

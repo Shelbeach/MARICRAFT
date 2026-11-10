@@ -1,0 +1,259 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cevdu586t0kyr"]
+
+[ext_resource type="Texture2D" uid="uid://dqw1blk063gh5" path="res://assets/forest_art/gameplay/items/coin_spin.png" id="T_coin_spin"]
+[ext_resource type="Texture2D" uid="uid://b58qtlnmggij2" path="res://assets/forest_art/gameplay/items/potion.png" id="T_potion"]
+[ext_resource type="Texture2D" uid="uid://cicfspa7orh7w" path="res://assets/forest_art/gameplay/items/potion_idle.png" id="T_potion_idle"]
+[ext_resource type="Texture2D" uid="uid://iq6cn3fy5vqh" path="res://assets/forest_art/gameplay/items/rune.png" id="T_rune"]
+[ext_resource type="Texture2D" uid="uid://dqjvhsgjpa7hv" path="res://assets/forest_art/gameplay/items/rune_idle.png" id="T_rune_idle"]
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_0"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(0, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_1"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(40, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_2"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(80, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_3"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(120, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_4"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(160, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_5"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(200, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_6"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(240, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_7"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(280, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_8"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(320, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_spin_9"]
+atlas = ExtResource("T_coin_spin")
+region = Rect2(360, 0, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_0"]
+atlas = ExtResource("T_potion")
+region = Rect2(0, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_0"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(0, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_1"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(52, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_2"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(104, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_3"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(156, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_4"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(208, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_5"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(260, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_6"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(312, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_idle_7"]
+atlas = ExtResource("T_potion_idle")
+region = Rect2(364, 0, 52, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_0"]
+atlas = ExtResource("T_rune")
+region = Rect2(0, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_0"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(0, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_1"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(52, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_2"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(104, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_3"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(156, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_4"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(208, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_5"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(260, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_6"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(312, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_idle_7"]
+atlas = ExtResource("T_rune_idle")
+region = Rect2(364, 0, 52, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_7")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_8")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_coin_spin_9")
+}],
+"loop": 1,
+"name": &"coin_spin",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_potion_0")
+}],
+"loop": 0,
+"name": &"potion",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_potion_idle_7")
+}],
+"loop": 1,
+"name": &"potion_idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_rune_0")
+}],
+"loop": 0,
+"name": &"rune",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_rune_idle_7")
+}],
+"loop": 1,
+"name": &"rune_idle",
+"speed": 8.0
+}]

@@ -1,0 +1,164 @@
+{
+  "1-1": [
+    {
+      "id": "alliance_waymarker",
+      "x": 3320,
+      "surface": "Ground3264",
+      "scale": 0.72
+    },
+    {
+      "id": "alliance_crest",
+      "x": 6304,
+      "surface": "LastCounter",
+      "scale": 0.45,
+      "mount": "beam",
+      "dy": 8
+    }
+  ],
+  "1-2": [
+    {
+      "id": "alliance_waymarker",
+      "x": 3040,
+      "surface": "Ground1770",
+      "scale": 0.72
+    },
+    {
+      "id": "alliance_stone_plaque",
+      "x": 6785,
+      "surface": "GrottoMiddleTerrace",
+      "scale": 0.52,
+      "mount": "wall",
+      "dy": 12
+    }
+  ],
+  "1-3": [
+    {
+      "id": "alliance_stone_plaque",
+      "x": 375,
+      "surface": "Shelf304Y442",
+      "scale": 0.46,
+      "mount": "wall",
+      "dy": 4
+    }
+  ],
+  "2-1": [
+    {
+      "id": "horde_standard",
+      "x": 2040,
+      "surface": "Descent",
+      "scale": 0.78
+    },
+    {
+      "id": "horde_waymarker",
+      "x": 5110,
+      "surface": "GateRoad",
+      "scale": 0.75
+    },
+    {
+      "id": "horde_wall_banner",
+      "x": 1180,
+      "surface": "RidgeDeck",
+      "scale": 0.68,
+      "mount": "beam",
+      "dy": 6
+    },
+    {
+      "id": "horde_gate_ornament",
+      "x": 150,
+      "surface": "Trail",
+      "scale": 0.65,
+      "mount": "canopy",
+      "dy": -126
+    },
+    {
+      "id": "canyon_spires",
+      "x": 1520,
+      "y": 500,
+      "scale": 1.1,
+      "mount": "distant",
+      "parallax": 0.45,
+      "reference_camera": 1000
+    }
+  ],
+  "2-2": [
+    {
+      "id": "horde_wall_banner",
+      "x": 1600,
+      "surface": "SwitchDeck",
+      "scale": 0.68,
+      "mount": "beam",
+      "dy": 6
+    },
+    {
+      "id": "horde_wood_plaque",
+      "x": 2858,
+      "surface": "GalleryWest",
+      "scale": 0.55,
+      "mount": "beam",
+      "dy": 1
+    },
+    {
+      "id": "horde_waymarker",
+      "x": 6980,
+      "surface": "MineFloor",
+      "scale": 0.7
+    },
+    {
+      "id": "mine_hoist",
+      "x": 2770,
+      "surface": "HaulRoad",
+      "scale": 0.76,
+      "parallax": 0.78,
+      "reference_camera": 2290,
+      "mount": "background"
+    },
+    {
+      "id": "ore_chute",
+      "x": 2500,
+      "surface": "HaulRoad",
+      "scale": 0.68,
+      "parallax": 0.78,
+      "reference_camera": 2020,
+      "mount": "background"
+    }
+  ],
+  "2-3": [
+    {
+      "id": "horde_standard",
+      "x": 90,
+      "surface": "Approach",
+      "scale": 0.74
+    },
+    {
+      "id": "horde_wall_banner",
+      "x": 2020,
+      "surface": "LoadingGallery",
+      "scale": 0.68,
+      "mount": "beam",
+      "dy": 6
+    },
+    {
+      "id": "horde_crest",
+      "x": 875,
+      "surface": "RampartDeck",
+      "scale": 0.48,
+      "mount": "beam",
+      "dy": 8
+    },
+    {
+      "id": "horde_waymarker",
+      "x": 2735,
+      "surface": "Forge",
+      "scale": 0.7
+    },
+    {
+      "id": "canyon_spires",
+      "x": 1150,
+      "y": 500,
+      "scale": 1.0,
+      "mount": "distant",
+      "parallax": 0.45,
+      "reference_camera": 650
+    }
+  ]
+}

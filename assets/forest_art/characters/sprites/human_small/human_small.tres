@@ -1,0 +1,395 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://quaoi2lncswf"]
+
+[ext_resource type="Texture2D" uid="uid://bn5iakqi2s4in" path="res://assets/forest_art/characters/sprites/human_small/death.png" id="T_death"]
+[ext_resource type="Texture2D" uid="uid://mfjd61o6wk0c" path="res://assets/forest_art/characters/sprites/human_small/fall.png" id="T_fall"]
+[ext_resource type="Texture2D" uid="uid://cc4frjykc185u" path="res://assets/forest_art/characters/sprites/human_small/head_hit.png" id="T_head_hit"]
+[ext_resource type="Texture2D" uid="uid://b2lhu4dbifxd" path="res://assets/forest_art/characters/sprites/human_small/hurt.png" id="T_hurt"]
+[ext_resource type="Texture2D" uid="uid://dmarc2sdwn1ts" path="res://assets/forest_art/characters/sprites/human_small/idle.png" id="T_idle"]
+[ext_resource type="Texture2D" uid="uid://bp80rfugxhixk" path="res://assets/forest_art/characters/sprites/human_small/jump.png" id="T_jump"]
+[ext_resource type="Texture2D" uid="uid://y5g7rc87373d" path="res://assets/forest_art/characters/sprites/human_small/land.png" id="T_land"]
+[ext_resource type="Texture2D" uid="uid://ggm7k2iyjhno" path="res://assets/forest_art/characters/sprites/human_small/run.png" id="T_run"]
+[ext_resource type="Texture2D" uid="uid://dcfjngwjuhtbl" path="res://assets/forest_art/characters/sprites/human_small/victory.png" id="T_victory"]
+
+[sub_resource type="AtlasTexture" id="A_death_0"]
+atlas = ExtResource("T_death")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_1"]
+atlas = ExtResource("T_death")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_2"]
+atlas = ExtResource("T_death")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_3"]
+atlas = ExtResource("T_death")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_0"]
+atlas = ExtResource("T_fall")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_1"]
+atlas = ExtResource("T_fall")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_2"]
+atlas = ExtResource("T_fall")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_3"]
+atlas = ExtResource("T_fall")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_0"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_1"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_2"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_3"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_0"]
+atlas = ExtResource("T_hurt")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_1"]
+atlas = ExtResource("T_hurt")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_2"]
+atlas = ExtResource("T_hurt")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_3"]
+atlas = ExtResource("T_hurt")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_0"]
+atlas = ExtResource("T_idle")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_1"]
+atlas = ExtResource("T_idle")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_2"]
+atlas = ExtResource("T_idle")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_3"]
+atlas = ExtResource("T_idle")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_4"]
+atlas = ExtResource("T_idle")
+region = Rect2(512, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_5"]
+atlas = ExtResource("T_idle")
+region = Rect2(640, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_jump_0"]
+atlas = ExtResource("T_jump")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_jump_1"]
+atlas = ExtResource("T_jump")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_jump_2"]
+atlas = ExtResource("T_jump")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_0"]
+atlas = ExtResource("T_land")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_1"]
+atlas = ExtResource("T_land")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_2"]
+atlas = ExtResource("T_land")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_3"]
+atlas = ExtResource("T_land")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_0"]
+atlas = ExtResource("T_run")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_1"]
+atlas = ExtResource("T_run")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_2"]
+atlas = ExtResource("T_run")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_3"]
+atlas = ExtResource("T_run")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_4"]
+atlas = ExtResource("T_run")
+region = Rect2(512, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_5"]
+atlas = ExtResource("T_run")
+region = Rect2(640, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_6"]
+atlas = ExtResource("T_run")
+region = Rect2(768, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_7"]
+atlas = ExtResource("T_run")
+region = Rect2(896, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_0"]
+atlas = ExtResource("T_victory")
+region = Rect2(0, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_1"]
+atlas = ExtResource("T_victory")
+region = Rect2(128, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_2"]
+atlas = ExtResource("T_victory")
+region = Rect2(256, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_3"]
+atlas = ExtResource("T_victory")
+region = Rect2(384, 0, 128, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_4"]
+atlas = ExtResource("T_victory")
+region = Rect2(512, 0, 128, 96)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_death_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_death_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_death_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_death_3")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_fall_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_fall_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_fall_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_fall_3")
+}],
+"loop": 1,
+"name": &"fall",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_head_hit_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_head_hit_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_head_hit_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_head_hit_3")
+}],
+"loop": 0,
+"name": &"head_hit",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_hurt_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_hurt_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_hurt_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_hurt_3")
+}],
+"loop": 0,
+"name": &"hurt",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_idle_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_idle_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_idle_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_idle_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_idle_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_idle_5")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_jump_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_jump_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_jump_2")
+}],
+"loop": 0,
+"name": &"jump",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_land_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_land_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_land_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_land_3")
+}],
+"loop": 0,
+"name": &"land",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_run_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_run_7")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A_victory_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_victory_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_victory_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_victory_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("A_victory_4")
+}],
+"loop": 0,
+"name": &"victory",
+"speed": 7.0
+}]

@@ -1,0 +1,12 @@
+# Docker configuration must behave the same on Windows and Linux checkouts.
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+compose.yaml text eol=lf
+compose.https.yaml text eol=lf
+deploy/nginx.conf text eol=lf
+deploy/Caddyfile text eol=lf
+tools/*.sh text eol=lf
+
+# These are an exported binary distribution with exact SHA256 checksums.
+# Do not normalize even its HTML, JSON, or SHA256SUMS on clone/checkout.
+deploy/web/** -text

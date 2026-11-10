@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/murloc.gd" id="1"]
+
+[sub_resource type="RectangleShape2D" id="Rect"]
+size = Vector2(30,28)
+
+[node name="Murloc" type="CharacterBody2D"]
+script = ExtResource("1")
+collision_layer = 4
+collision_mask = 1
+
+[node name="Hitbox" type="CollisionShape2D" parent="." groups=["test_hitboxes"]]
+position = Vector2(0,-14)
+shape = SubResource("Rect")

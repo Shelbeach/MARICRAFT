@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="world_map.gd" id="1"]
+[node name="world_map" type="Control"]
+script = ExtResource("1")

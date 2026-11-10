@@ -1,0 +1,21 @@
+# Optional HTTPS for a public domain. See README.md; the base Compose stays usable alone.
+services:
+  https:
+    image: caddy:2.11.9-alpine
+    environment:
+      MARICRAFT_DOMAIN: "${MARICRAFT_DOMAIN:?Set MARICRAFT_DOMAIN to your domain without https://}"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      maricraft:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:

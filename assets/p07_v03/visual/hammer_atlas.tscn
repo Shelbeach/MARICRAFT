@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="SpriteFrames" path="../resources/hammer.tres" id="1"]
+[node name="RagnarosHammerAtlas" type="AnimatedSprite2D"]
+sprite_frames=ExtResource("1")
+animation=&"open"
+centered=false
+offset=Vector2(-64,-128)
+scale=Vector2(0.5,0.5)

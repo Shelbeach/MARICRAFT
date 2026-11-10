@@ -1,0 +1,1956 @@
+{
+ "human_small": {
+  "name": "Малый человек",
+  "density": 2,
+  "faces": "right",
+  "height_world_with_crest": 31,
+  "collision_world": [
+   24,
+   32
+  ],
+  "pivot_px": [
+   64,
+   86
+  ],
+  "spriteframes": "sprites/human_small/human_small.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/idle.png",
+    "frames": [
+     "frames/human_small/idle/00.png",
+     "frames/human_small/idle/01.png",
+     "frames/human_small/idle/02.png",
+     "frames/human_small/idle/03.png",
+     "frames/human_small/idle/04.png",
+     "frames/human_small/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ]
+   },
+   "run": {
+    "fps": 12,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/run.png",
+    "frames": [
+     "frames/human_small/run/00.png",
+     "frames/human_small/run/01.png",
+     "frames/human_small/run/02.png",
+     "frames/human_small/run/03.png",
+     "frames/human_small/run/04.png",
+     "frames/human_small/run/05.png",
+     "frames/human_small/run/06.png",
+     "frames/human_small/run/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "opposite:0",
+     "opposite:1",
+     "opposite:2",
+     "opposite:3"
+    ]
+   },
+   "jump": {
+    "fps": 11,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/jump.png",
+    "frames": [
+     "frames/human_small/jump/00.png",
+     "frames/human_small/jump/01.png",
+     "frames/human_small/jump/02.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:1"
+    ]
+   },
+   "fall": {
+    "fps": 7,
+    "loop": true,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/fall.png",
+    "frames": [
+     "frames/human_small/fall/00.png",
+     "frames/human_small/fall/01.png",
+     "frames/human_small/fall/02.png",
+     "frames/human_small/fall/03.png"
+    ],
+    "painted_keys": [
+     "actions:2",
+     "actions:2",
+     "actions:2",
+     "actions:2"
+    ]
+   },
+   "land": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/land.png",
+    "frames": [
+     "frames/human_small/land/00.png",
+     "frames/human_small/land/01.png",
+     "frames/human_small/land/02.png",
+     "frames/human_small/land/03.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:0",
+     "idle",
+     "idle"
+    ]
+   },
+   "hurt": {
+    "fps": 11,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/hurt.png",
+    "frames": [
+     "frames/human_small/hurt/00.png",
+     "frames/human_small/hurt/01.png",
+     "frames/human_small/hurt/02.png",
+     "frames/human_small/hurt/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:5",
+     "actions:0",
+     "idle"
+    ]
+   },
+   "head_hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/head_hit.png",
+    "frames": [
+     "frames/human_small/head_hit/00.png",
+     "frames/human_small/head_hit/01.png",
+     "frames/human_small/head_hit/02.png",
+     "frames/human_small/head_hit/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:4",
+     "actions:4",
+     "actions:2"
+    ]
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/death.png",
+    "frames": [
+     "frames/human_small/death/00.png",
+     "frames/human_small/death/01.png",
+     "frames/human_small/death/02.png",
+     "frames/human_small/death/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:3",
+     "actions:8",
+     "actions:8"
+    ]
+   },
+   "victory": {
+    "fps": 7,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/human_small/victory.png",
+    "frames": [
+     "frames/human_small/victory/00.png",
+     "frames/human_small/victory/01.png",
+     "frames/human_small/victory/02.png",
+     "frames/human_small/victory/03.png",
+     "frames/human_small/victory/04.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:7",
+     "actions:7",
+     "actions:7"
+    ]
+   }
+  }
+ },
+ "human_large": {
+  "name": "Большой человек",
+  "density": 2,
+  "faces": "right",
+  "height_world_with_crest": 63,
+  "collision_world": [
+   24,
+   64
+  ],
+  "pivot_px": [
+   122,
+   170
+  ],
+  "spriteframes": "sprites/human_large/human_large.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/idle.png",
+    "frames": [
+     "frames/human_large/idle/00.png",
+     "frames/human_large/idle/01.png",
+     "frames/human_large/idle/02.png",
+     "frames/human_large/idle/03.png",
+     "frames/human_large/idle/04.png",
+     "frames/human_large/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ]
+   },
+   "run": {
+    "fps": 12,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/run.png",
+    "frames": [
+     "frames/human_large/run/00.png",
+     "frames/human_large/run/01.png",
+     "frames/human_large/run/02.png",
+     "frames/human_large/run/03.png",
+     "frames/human_large/run/04.png",
+     "frames/human_large/run/05.png",
+     "frames/human_large/run/06.png",
+     "frames/human_large/run/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "opposite:0",
+     "opposite:1",
+     "opposite:2",
+     "opposite:3"
+    ]
+   },
+   "jump": {
+    "fps": 11,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/jump.png",
+    "frames": [
+     "frames/human_large/jump/00.png",
+     "frames/human_large/jump/01.png",
+     "frames/human_large/jump/02.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:1"
+    ]
+   },
+   "fall": {
+    "fps": 7,
+    "loop": true,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/fall.png",
+    "frames": [
+     "frames/human_large/fall/00.png",
+     "frames/human_large/fall/01.png",
+     "frames/human_large/fall/02.png",
+     "frames/human_large/fall/03.png"
+    ],
+    "painted_keys": [
+     "actions:2",
+     "actions:2",
+     "actions:2",
+     "actions:2"
+    ]
+   },
+   "land": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/land.png",
+    "frames": [
+     "frames/human_large/land/00.png",
+     "frames/human_large/land/01.png",
+     "frames/human_large/land/02.png",
+     "frames/human_large/land/03.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:0",
+     "idle",
+     "idle"
+    ]
+   },
+   "hurt": {
+    "fps": 11,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/hurt.png",
+    "frames": [
+     "frames/human_large/hurt/00.png",
+     "frames/human_large/hurt/01.png",
+     "frames/human_large/hurt/02.png",
+     "frames/human_large/hurt/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:5",
+     "actions:0",
+     "idle"
+    ]
+   },
+   "head_hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/head_hit.png",
+    "frames": [
+     "frames/human_large/head_hit/00.png",
+     "frames/human_large/head_hit/01.png",
+     "frames/human_large/head_hit/02.png",
+     "frames/human_large/head_hit/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:4",
+     "actions:4",
+     "actions:2"
+    ]
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/death.png",
+    "frames": [
+     "frames/human_large/death/00.png",
+     "frames/human_large/death/01.png",
+     "frames/human_large/death/02.png",
+     "frames/human_large/death/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:3",
+     "actions:8",
+     "actions:8"
+    ]
+   },
+   "victory": {
+    "fps": 7,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_large/victory.png",
+    "frames": [
+     "frames/human_large/victory/00.png",
+     "frames/human_large/victory/01.png",
+     "frames/human_large/victory/02.png",
+     "frames/human_large/victory/03.png",
+     "frames/human_large/victory/04.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:7",
+     "actions:7",
+     "actions:7"
+    ]
+   }
+  }
+ },
+ "human_magic": {
+  "name": "Человек · магия",
+  "density": 2,
+  "faces": "right",
+  "height_world_with_crest": 63,
+  "collision_world": [
+   24,
+   64
+  ],
+  "pivot_px": [
+   122,
+   170
+  ],
+  "spriteframes": "sprites/human_magic/human_magic.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/idle.png",
+    "frames": [
+     "frames/human_magic/idle/00.png",
+     "frames/human_magic/idle/01.png",
+     "frames/human_magic/idle/02.png",
+     "frames/human_magic/idle/03.png",
+     "frames/human_magic/idle/04.png",
+     "frames/human_magic/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/human_magic/idle.png",
+    "base_model": "human_large"
+   },
+   "run": {
+    "fps": 12,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/run.png",
+    "frames": [
+     "frames/human_magic/run/00.png",
+     "frames/human_magic/run/01.png",
+     "frames/human_magic/run/02.png",
+     "frames/human_magic/run/03.png",
+     "frames/human_magic/run/04.png",
+     "frames/human_magic/run/05.png",
+     "frames/human_magic/run/06.png",
+     "frames/human_magic/run/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "opposite:0",
+     "opposite:1",
+     "opposite:2",
+     "opposite:3"
+    ],
+    "magic_layer": "magic_layers/human_magic/run.png",
+    "base_model": "human_large"
+   },
+   "jump": {
+    "fps": 11,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/jump.png",
+    "frames": [
+     "frames/human_magic/jump/00.png",
+     "frames/human_magic/jump/01.png",
+     "frames/human_magic/jump/02.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:1"
+    ],
+    "magic_layer": "magic_layers/human_magic/jump.png",
+    "base_model": "human_large"
+   },
+   "fall": {
+    "fps": 7,
+    "loop": true,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/fall.png",
+    "frames": [
+     "frames/human_magic/fall/00.png",
+     "frames/human_magic/fall/01.png",
+     "frames/human_magic/fall/02.png",
+     "frames/human_magic/fall/03.png"
+    ],
+    "painted_keys": [
+     "actions:2",
+     "actions:2",
+     "actions:2",
+     "actions:2"
+    ],
+    "magic_layer": "magic_layers/human_magic/fall.png",
+    "base_model": "human_large"
+   },
+   "land": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/land.png",
+    "frames": [
+     "frames/human_magic/land/00.png",
+     "frames/human_magic/land/01.png",
+     "frames/human_magic/land/02.png",
+     "frames/human_magic/land/03.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:0",
+     "idle",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/human_magic/land.png",
+    "base_model": "human_large"
+   },
+   "hurt": {
+    "fps": 11,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/hurt.png",
+    "frames": [
+     "frames/human_magic/hurt/00.png",
+     "frames/human_magic/hurt/01.png",
+     "frames/human_magic/hurt/02.png",
+     "frames/human_magic/hurt/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:5",
+     "actions:0",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/human_magic/hurt.png",
+    "base_model": "human_large"
+   },
+   "head_hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/head_hit.png",
+    "frames": [
+     "frames/human_magic/head_hit/00.png",
+     "frames/human_magic/head_hit/01.png",
+     "frames/human_magic/head_hit/02.png",
+     "frames/human_magic/head_hit/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:4",
+     "actions:4",
+     "actions:2"
+    ],
+    "magic_layer": "magic_layers/human_magic/head_hit.png",
+    "base_model": "human_large"
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/death.png",
+    "frames": [
+     "frames/human_magic/death/00.png",
+     "frames/human_magic/death/01.png",
+     "frames/human_magic/death/02.png",
+     "frames/human_magic/death/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:3",
+     "actions:8",
+     "actions:8"
+    ],
+    "magic_layer": "magic_layers/human_magic/death.png",
+    "base_model": "human_large"
+   },
+   "victory": {
+    "fps": 7,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/victory.png",
+    "frames": [
+     "frames/human_magic/victory/00.png",
+     "frames/human_magic/victory/01.png",
+     "frames/human_magic/victory/02.png",
+     "frames/human_magic/victory/03.png",
+     "frames/human_magic/victory/04.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:7",
+     "actions:7",
+     "actions:7"
+    ],
+    "magic_layer": "magic_layers/human_magic/victory.png",
+    "base_model": "human_large"
+   },
+   "cast": {
+    "fps": 12,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/human_magic/cast.png",
+    "frames": [
+     "frames/human_magic/cast/00.png",
+     "frames/human_magic/cast/01.png",
+     "frames/human_magic/cast/02.png",
+     "frames/human_magic/cast/03.png",
+     "frames/human_magic/cast/04.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "actions:6",
+     "actions:6",
+     "idle",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/human_magic/cast.png",
+    "base_model": "human_large"
+   }
+  }
+ },
+ "ogre_small": {
+  "name": "Малый огр",
+  "density": 2,
+  "faces": "right",
+  "height_world_with_crest": 31,
+  "collision_world": [
+   24,
+   32
+  ],
+  "pivot_px": [
+   64,
+   86
+  ],
+  "spriteframes": "sprites/ogre_small/ogre_small.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/idle.png",
+    "frames": [
+     "frames/ogre_small/idle/00.png",
+     "frames/ogre_small/idle/01.png",
+     "frames/ogre_small/idle/02.png",
+     "frames/ogre_small/idle/03.png",
+     "frames/ogre_small/idle/04.png",
+     "frames/ogre_small/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ]
+   },
+   "run": {
+    "fps": 12,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/run.png",
+    "frames": [
+     "frames/ogre_small/run/00.png",
+     "frames/ogre_small/run/01.png",
+     "frames/ogre_small/run/02.png",
+     "frames/ogre_small/run/03.png",
+     "frames/ogre_small/run/04.png",
+     "frames/ogre_small/run/05.png",
+     "frames/ogre_small/run/06.png",
+     "frames/ogre_small/run/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "opposite:0",
+     "opposite:1",
+     "opposite:2",
+     "opposite:3"
+    ]
+   },
+   "jump": {
+    "fps": 11,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/jump.png",
+    "frames": [
+     "frames/ogre_small/jump/00.png",
+     "frames/ogre_small/jump/01.png",
+     "frames/ogre_small/jump/02.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:1"
+    ]
+   },
+   "fall": {
+    "fps": 7,
+    "loop": true,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/fall.png",
+    "frames": [
+     "frames/ogre_small/fall/00.png",
+     "frames/ogre_small/fall/01.png",
+     "frames/ogre_small/fall/02.png",
+     "frames/ogre_small/fall/03.png"
+    ],
+    "painted_keys": [
+     "actions:2",
+     "actions:2",
+     "actions:2",
+     "actions:2"
+    ]
+   },
+   "land": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/land.png",
+    "frames": [
+     "frames/ogre_small/land/00.png",
+     "frames/ogre_small/land/01.png",
+     "frames/ogre_small/land/02.png",
+     "frames/ogre_small/land/03.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:0",
+     "idle",
+     "idle"
+    ]
+   },
+   "hurt": {
+    "fps": 11,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/hurt.png",
+    "frames": [
+     "frames/ogre_small/hurt/00.png",
+     "frames/ogre_small/hurt/01.png",
+     "frames/ogre_small/hurt/02.png",
+     "frames/ogre_small/hurt/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:5",
+     "actions:0",
+     "idle"
+    ]
+   },
+   "head_hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/head_hit.png",
+    "frames": [
+     "frames/ogre_small/head_hit/00.png",
+     "frames/ogre_small/head_hit/01.png",
+     "frames/ogre_small/head_hit/02.png",
+     "frames/ogre_small/head_hit/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:4",
+     "actions:4",
+     "actions:2"
+    ]
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/death.png",
+    "frames": [
+     "frames/ogre_small/death/00.png",
+     "frames/ogre_small/death/01.png",
+     "frames/ogre_small/death/02.png",
+     "frames/ogre_small/death/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:3",
+     "actions:8",
+     "actions:8"
+    ]
+   },
+   "victory": {
+    "fps": 7,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     128,
+     96
+    ],
+    "sheet": "sprites/ogre_small/victory.png",
+    "frames": [
+     "frames/ogre_small/victory/00.png",
+     "frames/ogre_small/victory/01.png",
+     "frames/ogre_small/victory/02.png",
+     "frames/ogre_small/victory/03.png",
+     "frames/ogre_small/victory/04.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:7",
+     "actions:7",
+     "actions:7"
+    ]
+   }
+  }
+ },
+ "ogre_large": {
+  "name": "Большой огр",
+  "density": 2,
+  "faces": "right",
+  "height_world_with_crest": 63,
+  "collision_world": [
+   24,
+   64
+  ],
+  "pivot_px": [
+   122,
+   170
+  ],
+  "spriteframes": "sprites/ogre_large/ogre_large.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/idle.png",
+    "frames": [
+     "frames/ogre_large/idle/00.png",
+     "frames/ogre_large/idle/01.png",
+     "frames/ogre_large/idle/02.png",
+     "frames/ogre_large/idle/03.png",
+     "frames/ogre_large/idle/04.png",
+     "frames/ogre_large/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ]
+   },
+   "run": {
+    "fps": 12,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/run.png",
+    "frames": [
+     "frames/ogre_large/run/00.png",
+     "frames/ogre_large/run/01.png",
+     "frames/ogre_large/run/02.png",
+     "frames/ogre_large/run/03.png",
+     "frames/ogre_large/run/04.png",
+     "frames/ogre_large/run/05.png",
+     "frames/ogre_large/run/06.png",
+     "frames/ogre_large/run/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "opposite:0",
+     "opposite:1",
+     "opposite:2",
+     "opposite:3"
+    ]
+   },
+   "jump": {
+    "fps": 11,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/jump.png",
+    "frames": [
+     "frames/ogre_large/jump/00.png",
+     "frames/ogre_large/jump/01.png",
+     "frames/ogre_large/jump/02.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:1"
+    ]
+   },
+   "fall": {
+    "fps": 7,
+    "loop": true,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/fall.png",
+    "frames": [
+     "frames/ogre_large/fall/00.png",
+     "frames/ogre_large/fall/01.png",
+     "frames/ogre_large/fall/02.png",
+     "frames/ogre_large/fall/03.png"
+    ],
+    "painted_keys": [
+     "actions:2",
+     "actions:2",
+     "actions:2",
+     "actions:2"
+    ]
+   },
+   "land": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/land.png",
+    "frames": [
+     "frames/ogre_large/land/00.png",
+     "frames/ogre_large/land/01.png",
+     "frames/ogre_large/land/02.png",
+     "frames/ogre_large/land/03.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:0",
+     "idle",
+     "idle"
+    ]
+   },
+   "hurt": {
+    "fps": 11,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/hurt.png",
+    "frames": [
+     "frames/ogre_large/hurt/00.png",
+     "frames/ogre_large/hurt/01.png",
+     "frames/ogre_large/hurt/02.png",
+     "frames/ogre_large/hurt/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:5",
+     "actions:0",
+     "idle"
+    ]
+   },
+   "head_hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/head_hit.png",
+    "frames": [
+     "frames/ogre_large/head_hit/00.png",
+     "frames/ogre_large/head_hit/01.png",
+     "frames/ogre_large/head_hit/02.png",
+     "frames/ogre_large/head_hit/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:4",
+     "actions:4",
+     "actions:2"
+    ]
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/death.png",
+    "frames": [
+     "frames/ogre_large/death/00.png",
+     "frames/ogre_large/death/01.png",
+     "frames/ogre_large/death/02.png",
+     "frames/ogre_large/death/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:3",
+     "actions:8",
+     "actions:8"
+    ]
+   },
+   "victory": {
+    "fps": 7,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_large/victory.png",
+    "frames": [
+     "frames/ogre_large/victory/00.png",
+     "frames/ogre_large/victory/01.png",
+     "frames/ogre_large/victory/02.png",
+     "frames/ogre_large/victory/03.png",
+     "frames/ogre_large/victory/04.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:7",
+     "actions:7",
+     "actions:7"
+    ]
+   }
+  }
+ },
+ "ogre_magic": {
+  "name": "Огр · магия",
+  "density": 2,
+  "faces": "right",
+  "height_world_with_crest": 63,
+  "collision_world": [
+   24,
+   64
+  ],
+  "pivot_px": [
+   122,
+   170
+  ],
+  "spriteframes": "sprites/ogre_magic/ogre_magic.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/idle.png",
+    "frames": [
+     "frames/ogre_magic/idle/00.png",
+     "frames/ogre_magic/idle/01.png",
+     "frames/ogre_magic/idle/02.png",
+     "frames/ogre_magic/idle/03.png",
+     "frames/ogre_magic/idle/04.png",
+     "frames/ogre_magic/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/idle.png",
+    "base_model": "ogre_large"
+   },
+   "run": {
+    "fps": 12,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/run.png",
+    "frames": [
+     "frames/ogre_magic/run/00.png",
+     "frames/ogre_magic/run/01.png",
+     "frames/ogre_magic/run/02.png",
+     "frames/ogre_magic/run/03.png",
+     "frames/ogre_magic/run/04.png",
+     "frames/ogre_magic/run/05.png",
+     "frames/ogre_magic/run/06.png",
+     "frames/ogre_magic/run/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "opposite:0",
+     "opposite:1",
+     "opposite:2",
+     "opposite:3"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/run.png",
+    "base_model": "ogre_large"
+   },
+   "jump": {
+    "fps": 11,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/jump.png",
+    "frames": [
+     "frames/ogre_magic/jump/00.png",
+     "frames/ogre_magic/jump/01.png",
+     "frames/ogre_magic/jump/02.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:1"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/jump.png",
+    "base_model": "ogre_large"
+   },
+   "fall": {
+    "fps": 7,
+    "loop": true,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/fall.png",
+    "frames": [
+     "frames/ogre_magic/fall/00.png",
+     "frames/ogre_magic/fall/01.png",
+     "frames/ogre_magic/fall/02.png",
+     "frames/ogre_magic/fall/03.png"
+    ],
+    "painted_keys": [
+     "actions:2",
+     "actions:2",
+     "actions:2",
+     "actions:2"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/fall.png",
+    "base_model": "ogre_large"
+   },
+   "land": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/land.png",
+    "frames": [
+     "frames/ogre_magic/land/00.png",
+     "frames/ogre_magic/land/01.png",
+     "frames/ogre_magic/land/02.png",
+     "frames/ogre_magic/land/03.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:0",
+     "idle",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/land.png",
+    "base_model": "ogre_large"
+   },
+   "hurt": {
+    "fps": 11,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/hurt.png",
+    "frames": [
+     "frames/ogre_magic/hurt/00.png",
+     "frames/ogre_magic/hurt/01.png",
+     "frames/ogre_magic/hurt/02.png",
+     "frames/ogre_magic/hurt/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:5",
+     "actions:0",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/hurt.png",
+    "base_model": "ogre_large"
+   },
+   "head_hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/head_hit.png",
+    "frames": [
+     "frames/ogre_magic/head_hit/00.png",
+     "frames/ogre_magic/head_hit/01.png",
+     "frames/ogre_magic/head_hit/02.png",
+     "frames/ogre_magic/head_hit/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:4",
+     "actions:4",
+     "actions:2"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/head_hit.png",
+    "base_model": "ogre_large"
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/death.png",
+    "frames": [
+     "frames/ogre_magic/death/00.png",
+     "frames/ogre_magic/death/01.png",
+     "frames/ogre_magic/death/02.png",
+     "frames/ogre_magic/death/03.png"
+    ],
+    "painted_keys": [
+     "actions:5",
+     "actions:3",
+     "actions:8",
+     "actions:8"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/death.png",
+    "base_model": "ogre_large"
+   },
+   "victory": {
+    "fps": 7,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/victory.png",
+    "frames": [
+     "frames/ogre_magic/victory/00.png",
+     "frames/ogre_magic/victory/01.png",
+     "frames/ogre_magic/victory/02.png",
+     "frames/ogre_magic/victory/03.png",
+     "frames/ogre_magic/victory/04.png"
+    ],
+    "painted_keys": [
+     "actions:0",
+     "actions:1",
+     "actions:7",
+     "actions:7",
+     "actions:7"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/victory.png",
+    "base_model": "ogre_large"
+   },
+   "cast": {
+    "fps": 12,
+    "loop": false,
+    "count": 5,
+    "frame_px": [
+     244,
+     180
+    ],
+    "sheet": "sprites/ogre_magic/cast.png",
+    "frames": [
+     "frames/ogre_magic/cast/00.png",
+     "frames/ogre_magic/cast/01.png",
+     "frames/ogre_magic/cast/02.png",
+     "frames/ogre_magic/cast/03.png",
+     "frames/ogre_magic/cast/04.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "actions:6",
+     "actions:6",
+     "idle",
+     "idle"
+    ],
+    "magic_layer": "magic_layers/ogre_magic/cast.png",
+    "base_model": "ogre_large"
+   }
+  }
+ },
+ "murloc": {
+  "name": "Мурлок",
+  "density": 2,
+  "faces": "left",
+  "height_world_with_crest": 31,
+  "collision_world": [
+   30,
+   28
+  ],
+  "pivot_px": [
+   75,
+   88
+  ],
+  "spriteframes": "sprites/murloc/murloc.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/idle.png",
+    "frames": [
+     "frames/murloc/idle/00.png",
+     "frames/murloc/idle/01.png",
+     "frames/murloc/idle/02.png",
+     "frames/murloc/idle/03.png",
+     "frames/murloc/idle/04.png",
+     "frames/murloc/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ]
+   },
+   "patrol": {
+    "fps": 9,
+    "loop": true,
+    "count": 8,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/patrol.png",
+    "frames": [
+     "frames/murloc/patrol/00.png",
+     "frames/murloc/patrol/01.png",
+     "frames/murloc/patrol/02.png",
+     "frames/murloc/patrol/03.png",
+     "frames/murloc/patrol/04.png",
+     "frames/murloc/patrol/05.png",
+     "frames/murloc/patrol/06.png",
+     "frames/murloc/patrol/07.png"
+    ],
+    "painted_keys": [
+     "run:0",
+     "run:1",
+     "run:2",
+     "run:3",
+     "run:4",
+     "run:5",
+     "run:6",
+     "run:7"
+    ]
+   },
+   "turn": {
+    "fps": 9,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/turn.png",
+    "frames": [
+     "frames/murloc/turn/00.png",
+     "frames/murloc/turn/01.png",
+     "frames/murloc/turn/02.png",
+     "frames/murloc/turn/03.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "actions:1",
+     "actions:1",
+     "idle"
+    ]
+   },
+   "hit": {
+    "fps": 12,
+    "loop": false,
+    "count": 2,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/hit.png",
+    "frames": [
+     "frames/murloc/hit/00.png",
+     "frames/murloc/hit/01.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:3"
+    ]
+   },
+   "stomp_defeat": {
+    "fps": 10,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/stomp_defeat.png",
+    "frames": [
+     "frames/murloc/stomp_defeat/00.png",
+     "frames/murloc/stomp_defeat/01.png",
+     "frames/murloc/stomp_defeat/02.png"
+    ],
+    "painted_keys": [
+     "actions:3",
+     "actions:4",
+     "actions:5"
+    ]
+   },
+   "magic_defeat": {
+    "fps": 9,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/magic_defeat.png",
+    "frames": [
+     "frames/murloc/magic_defeat/00.png",
+     "frames/murloc/magic_defeat/01.png",
+     "frames/murloc/magic_defeat/02.png"
+    ],
+    "painted_keys": [
+     "actions:6",
+     "actions:3",
+     "actions:7"
+    ]
+   },
+   "pipe_emerge": {
+    "fps": 10,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     150,
+     98
+    ],
+    "sheet": "sprites/murloc/pipe_emerge.png",
+    "frames": [
+     "frames/murloc/pipe_emerge/00.png",
+     "frames/murloc/pipe_emerge/01.png",
+     "frames/murloc/pipe_emerge/02.png",
+     "frames/murloc/pipe_emerge/03.png"
+    ],
+    "painted_keys": [
+     "actions:1",
+     "actions:8",
+     "actions:2",
+     "idle"
+    ]
+   }
+  }
+ },
+ "chief": {
+  "name": "Вожак",
+  "density": 2,
+  "faces": "left",
+  "height_world_with_crest": 88,
+  "collision_world": [
+   60,
+   76
+  ],
+  "pivot_px": [
+   160,
+   234
+  ],
+  "spriteframes": "sprites/chief/chief.tres",
+  "clips": {
+   "idle": {
+    "fps": 6,
+    "loop": true,
+    "count": 6,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/idle.png",
+    "frames": [
+     "frames/chief/idle/00.png",
+     "frames/chief/idle/01.png",
+     "frames/chief/idle/02.png",
+     "frames/chief/idle/03.png",
+     "frames/chief/idle/04.png",
+     "frames/chief/idle/05.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle",
+     "idle"
+    ]
+   },
+   "alert": {
+    "fps": 8,
+    "loop": false,
+    "count": 2,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/alert.png",
+    "frames": [
+     "frames/chief/alert/00.png",
+     "frames/chief/alert/01.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "water:0"
+    ]
+   },
+   "attack_start": {
+    "fps": 9,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/attack_start.png",
+    "frames": [
+     "frames/chief/attack_start/00.png",
+     "frames/chief/attack_start/01.png",
+     "frames/chief/attack_start/02.png"
+    ],
+    "painted_keys": [
+     "idle",
+     "react:1",
+     "water:0"
+    ]
+   },
+   "water_warning": {
+    "fps": 6,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/water_warning.png",
+    "frames": [
+     "frames/chief/water_warning/00.png",
+     "frames/chief/water_warning/01.png",
+     "frames/chief/water_warning/02.png",
+     "frames/chief/water_warning/03.png"
+    ],
+    "painted_keys": [
+     "water:0",
+     "water:1",
+     "water:2",
+     "water:2"
+    ]
+   },
+   "water_release": {
+    "fps": 10,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/water_release.png",
+    "frames": [
+     "frames/chief/water_release/00.png",
+     "frames/chief/water_release/01.png",
+     "frames/chief/water_release/02.png"
+    ],
+    "painted_keys": [
+     "water:3",
+     "water:4",
+     "water:5"
+    ]
+   },
+   "dash_warning": {
+    "fps": 5,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/dash_warning.png",
+    "frames": [
+     "frames/chief/dash_warning/00.png",
+     "frames/chief/dash_warning/01.png",
+     "frames/chief/dash_warning/02.png"
+    ],
+    "painted_keys": [
+     "dash:0",
+     "dash:1",
+     "dash:2"
+    ]
+   },
+   "dash": {
+    "fps": 10,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/dash.png",
+    "frames": [
+     "frames/chief/dash/00.png",
+     "frames/chief/dash/01.png",
+     "frames/chief/dash/02.png",
+     "frames/chief/dash/03.png"
+    ],
+    "painted_keys": [
+     "dash:3",
+     "dash:4",
+     "dash:3",
+     "dash:5"
+    ]
+   },
+   "leap_warning": {
+    "fps": 5,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/leap_warning.png",
+    "frames": [
+     "frames/chief/leap_warning/00.png",
+     "frames/chief/leap_warning/01.png",
+     "frames/chief/leap_warning/02.png"
+    ],
+    "painted_keys": [
+     "leap:0",
+     "leap:1",
+     "leap:1"
+    ]
+   },
+   "leap": {
+    "fps": 8,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/leap.png",
+    "frames": [
+     "frames/chief/leap/00.png",
+     "frames/chief/leap/01.png",
+     "frames/chief/leap/02.png"
+    ],
+    "painted_keys": [
+     "leap:2",
+     "leap:3",
+     "leap:3"
+    ]
+   },
+   "slam": {
+    "fps": 10,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/slam.png",
+    "frames": [
+     "frames/chief/slam/00.png",
+     "frames/chief/slam/01.png",
+     "frames/chief/slam/02.png"
+    ],
+    "painted_keys": [
+     "leap:4",
+     "leap:4",
+     "leap:5"
+    ]
+   },
+   "hit": {
+    "fps": 10,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/hit.png",
+    "frames": [
+     "frames/chief/hit/00.png",
+     "frames/chief/hit/01.png",
+     "frames/chief/hit/02.png"
+    ],
+    "painted_keys": [
+     "react:2",
+     "react:2",
+     "react:3"
+    ]
+   },
+   "open": {
+    "fps": 5,
+    "loop": true,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/open.png",
+    "frames": [
+     "frames/chief/open/00.png",
+     "frames/chief/open/01.png",
+     "frames/chief/open/02.png"
+    ],
+    "painted_keys": [
+     "react:3",
+     "water:5",
+     "react:3"
+    ]
+   },
+   "deflect": {
+    "fps": 9,
+    "loop": false,
+    "count": 3,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/deflect.png",
+    "frames": [
+     "frames/chief/deflect/00.png",
+     "frames/chief/deflect/01.png",
+     "frames/chief/deflect/02.png"
+    ],
+    "painted_keys": [
+     "react:1",
+     "react:1",
+     "idle"
+    ]
+   },
+   "phase": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/phase.png",
+    "frames": [
+     "frames/chief/phase/00.png",
+     "frames/chief/phase/01.png",
+     "frames/chief/phase/02.png",
+     "frames/chief/phase/03.png"
+    ],
+    "painted_keys": [
+     "leap:1",
+     "react:4",
+     "react:4",
+     "idle"
+    ]
+   },
+   "death": {
+    "fps": 7,
+    "loop": false,
+    "count": 4,
+    "frame_px": [
+     320,
+     244
+    ],
+    "sheet": "sprites/chief/death.png",
+    "frames": [
+     "frames/chief/death/00.png",
+     "frames/chief/death/01.png",
+     "frames/chief/death/02.png",
+     "frames/chief/death/03.png"
+    ],
+    "painted_keys": [
+     "react:2",
+     "react:3",
+     "leap:5",
+     "react:5"
+    ]
+   }
+  }
+ }
+}

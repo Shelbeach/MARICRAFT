@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/bolt.gd" id="1"]
+
+[sub_resource type="RectangleShape2D" id="Rect"]
+size = Vector2(10,6)
+
+[node name="Bolt" type="CharacterBody2D" groups=["bolts"]]
+script = ExtResource("1")
+collision_layer = 0
+collision_mask = 5
+
+[node name="Hitbox" type="CollisionShape2D" parent="." groups=["test_hitboxes"]]
+position = Vector2(0,0)
+shape = SubResource("Rect")

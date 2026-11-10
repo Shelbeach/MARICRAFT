@@ -1,0 +1,1476 @@
+[gd_resource type="SpriteFrames" load_steps=323 format=3]
+
+[ext_resource type="Texture2D" path="human_bolt.png" id="T_human_bolt"]
+[ext_resource type="Texture2D" path="ogre_bolt.png" id="T_ogre_bolt"]
+[ext_resource type="Texture2D" path="water_shot.png" id="T_water_shot"]
+[ext_resource type="Texture2D" path="ground_wave.png" id="T_ground_wave"]
+[ext_resource type="Texture2D" path="rune_pickup.png" id="T_rune_pickup"]
+[ext_resource type="Texture2D" path="magic_form.png" id="T_magic_form"]
+[ext_resource type="Texture2D" path="potion_eject.png" id="T_potion_eject"]
+[ext_resource type="Texture2D" path="growth.png" id="T_growth"]
+[ext_resource type="Texture2D" path="coin_pickup.png" id="T_coin_pickup"]
+[ext_resource type="Texture2D" path="chest_reward.png" id="T_chest_reward"]
+[ext_resource type="Texture2D" path="bonus_pickup.png" id="T_bonus_pickup"]
+[ext_resource type="Texture2D" path="land_dust.png" id="T_land_dust"]
+[ext_resource type="Texture2D" path="run_dust.png" id="T_run_dust"]
+[ext_resource type="Texture2D" path="head_bump.png" id="T_head_bump"]
+[ext_resource type="Texture2D" path="block_shards.png" id="T_block_shards"]
+[ext_resource type="Texture2D" path="spike_contact.png" id="T_spike_contact"]
+[ext_resource type="Texture2D" path="damage.png" id="T_damage"]
+[ext_resource type="Texture2D" path="form_loss.png" id="T_form_loss"]
+[ext_resource type="Texture2D" path="enemy_fade.png" id="T_enemy_fade"]
+[ext_resource type="Texture2D" path="respawn.png" id="T_respawn"]
+[ext_resource type="Texture2D" path="pipe_enter.png" id="T_pipe_enter"]
+[ext_resource type="Texture2D" path="pipe_emerge.png" id="T_pipe_emerge"]
+[ext_resource type="Texture2D" path="water_hit.png" id="T_water_hit"]
+[ext_resource type="Texture2D" path="boss_aim.png" id="T_boss_aim"]
+[ext_resource type="Texture2D" path="boss_dash_warn.png" id="T_boss_dash_warn"]
+[ext_resource type="Texture2D" path="boss_dash_trail.png" id="T_boss_dash_trail"]
+[ext_resource type="Texture2D" path="boss_leap_warn.png" id="T_boss_leap_warn"]
+[ext_resource type="Texture2D" path="boss_slam.png" id="T_boss_slam"]
+[ext_resource type="Texture2D" path="boss_hit.png" id="T_boss_hit"]
+[ext_resource type="Texture2D" path="boss_shield.png" id="T_boss_shield"]
+[ext_resource type="Texture2D" path="boss_deflect.png" id="T_boss_deflect"]
+[ext_resource type="Texture2D" path="boss_open.png" id="T_boss_open"]
+[ext_resource type="Texture2D" path="boss_phase.png" id="T_boss_phase"]
+[ext_resource type="Texture2D" path="boss_victory.png" id="T_boss_victory"]
+[ext_resource type="Texture2D" path="gate_sparks.png" id="T_gate_sparks"]
+[ext_resource type="Texture2D" path="forest_mote.png" id="T_forest_mote"]
+[ext_resource type="Texture2D" path="human_trail.png" id="T_human_trail"]
+[ext_resource type="Texture2D" path="human_wall.png" id="T_human_wall"]
+[ext_resource type="Texture2D" path="human_enemy.png" id="T_human_enemy"]
+[ext_resource type="Texture2D" path="human_boss.png" id="T_human_boss"]
+[ext_resource type="Texture2D" path="human_fade.png" id="T_human_fade"]
+[ext_resource type="Texture2D" path="ogre_trail.png" id="T_ogre_trail"]
+[ext_resource type="Texture2D" path="ogre_wall.png" id="T_ogre_wall"]
+[ext_resource type="Texture2D" path="ogre_enemy.png" id="T_ogre_enemy"]
+[ext_resource type="Texture2D" path="ogre_boss.png" id="T_ogre_boss"]
+[ext_resource type="Texture2D" path="ogre_fade.png" id="T_ogre_fade"]
+
+[sub_resource type="AtlasTexture" id="A_human_bolt_0"]
+atlas = ExtResource("T_human_bolt")
+region = Rect2(0, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_bolt_1"]
+atlas = ExtResource("T_human_bolt")
+region = Rect2(44, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_bolt_2"]
+atlas = ExtResource("T_human_bolt")
+region = Rect2(88, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_bolt_3"]
+atlas = ExtResource("T_human_bolt")
+region = Rect2(132, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_bolt_4"]
+atlas = ExtResource("T_human_bolt")
+region = Rect2(176, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_bolt_5"]
+atlas = ExtResource("T_human_bolt")
+region = Rect2(220, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_bolt_0"]
+atlas = ExtResource("T_ogre_bolt")
+region = Rect2(0, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_bolt_1"]
+atlas = ExtResource("T_ogre_bolt")
+region = Rect2(44, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_bolt_2"]
+atlas = ExtResource("T_ogre_bolt")
+region = Rect2(88, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_bolt_3"]
+atlas = ExtResource("T_ogre_bolt")
+region = Rect2(132, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_bolt_4"]
+atlas = ExtResource("T_ogre_bolt")
+region = Rect2(176, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_bolt_5"]
+atlas = ExtResource("T_ogre_bolt")
+region = Rect2(220, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_shot_0"]
+atlas = ExtResource("T_water_shot")
+region = Rect2(0, 0, 40, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_shot_1"]
+atlas = ExtResource("T_water_shot")
+region = Rect2(40, 0, 40, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_shot_2"]
+atlas = ExtResource("T_water_shot")
+region = Rect2(80, 0, 40, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_shot_3"]
+atlas = ExtResource("T_water_shot")
+region = Rect2(120, 0, 40, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_shot_4"]
+atlas = ExtResource("T_water_shot")
+region = Rect2(160, 0, 40, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_shot_5"]
+atlas = ExtResource("T_water_shot")
+region = Rect2(200, 0, 40, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ground_wave_0"]
+atlas = ExtResource("T_ground_wave")
+region = Rect2(0, 0, 48, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ground_wave_1"]
+atlas = ExtResource("T_ground_wave")
+region = Rect2(48, 0, 48, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ground_wave_2"]
+atlas = ExtResource("T_ground_wave")
+region = Rect2(96, 0, 48, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ground_wave_3"]
+atlas = ExtResource("T_ground_wave")
+region = Rect2(144, 0, 48, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ground_wave_4"]
+atlas = ExtResource("T_ground_wave")
+region = Rect2(192, 0, 48, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ground_wave_5"]
+atlas = ExtResource("T_ground_wave")
+region = Rect2(240, 0, 48, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_pickup_0"]
+atlas = ExtResource("T_rune_pickup")
+region = Rect2(0, 0, 56, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_pickup_1"]
+atlas = ExtResource("T_rune_pickup")
+region = Rect2(56, 0, 56, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_pickup_2"]
+atlas = ExtResource("T_rune_pickup")
+region = Rect2(112, 0, 56, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_pickup_3"]
+atlas = ExtResource("T_rune_pickup")
+region = Rect2(168, 0, 56, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_pickup_4"]
+atlas = ExtResource("T_rune_pickup")
+region = Rect2(224, 0, 56, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_rune_pickup_5"]
+atlas = ExtResource("T_rune_pickup")
+region = Rect2(280, 0, 56, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_form_0"]
+atlas = ExtResource("T_magic_form")
+region = Rect2(0, 0, 80, 120)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_form_1"]
+atlas = ExtResource("T_magic_form")
+region = Rect2(80, 0, 80, 120)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_form_2"]
+atlas = ExtResource("T_magic_form")
+region = Rect2(160, 0, 80, 120)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_form_3"]
+atlas = ExtResource("T_magic_form")
+region = Rect2(240, 0, 80, 120)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_form_4"]
+atlas = ExtResource("T_magic_form")
+region = Rect2(320, 0, 80, 120)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_form_5"]
+atlas = ExtResource("T_magic_form")
+region = Rect2(400, 0, 80, 120)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_eject_0"]
+atlas = ExtResource("T_potion_eject")
+region = Rect2(0, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_eject_1"]
+atlas = ExtResource("T_potion_eject")
+region = Rect2(52, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_eject_2"]
+atlas = ExtResource("T_potion_eject")
+region = Rect2(104, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_eject_3"]
+atlas = ExtResource("T_potion_eject")
+region = Rect2(156, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_eject_4"]
+atlas = ExtResource("T_potion_eject")
+region = Rect2(208, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_potion_eject_5"]
+atlas = ExtResource("T_potion_eject")
+region = Rect2(260, 0, 52, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_growth_0"]
+atlas = ExtResource("T_growth")
+region = Rect2(0, 0, 78, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_growth_1"]
+atlas = ExtResource("T_growth")
+region = Rect2(78, 0, 78, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_growth_2"]
+atlas = ExtResource("T_growth")
+region = Rect2(156, 0, 78, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_growth_3"]
+atlas = ExtResource("T_growth")
+region = Rect2(234, 0, 78, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_growth_4"]
+atlas = ExtResource("T_growth")
+region = Rect2(312, 0, 78, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_growth_5"]
+atlas = ExtResource("T_growth")
+region = Rect2(390, 0, 78, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_pickup_0"]
+atlas = ExtResource("T_coin_pickup")
+region = Rect2(0, 0, 48, 52)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_pickup_1"]
+atlas = ExtResource("T_coin_pickup")
+region = Rect2(48, 0, 48, 52)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_pickup_2"]
+atlas = ExtResource("T_coin_pickup")
+region = Rect2(96, 0, 48, 52)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_pickup_3"]
+atlas = ExtResource("T_coin_pickup")
+region = Rect2(144, 0, 48, 52)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_pickup_4"]
+atlas = ExtResource("T_coin_pickup")
+region = Rect2(192, 0, 48, 52)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_coin_pickup_5"]
+atlas = ExtResource("T_coin_pickup")
+region = Rect2(240, 0, 48, 52)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_reward_0"]
+atlas = ExtResource("T_chest_reward")
+region = Rect2(0, 0, 68, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_reward_1"]
+atlas = ExtResource("T_chest_reward")
+region = Rect2(68, 0, 68, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_reward_2"]
+atlas = ExtResource("T_chest_reward")
+region = Rect2(136, 0, 68, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_reward_3"]
+atlas = ExtResource("T_chest_reward")
+region = Rect2(204, 0, 68, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_reward_4"]
+atlas = ExtResource("T_chest_reward")
+region = Rect2(272, 0, 68, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_reward_5"]
+atlas = ExtResource("T_chest_reward")
+region = Rect2(340, 0, 68, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_bonus_pickup_0"]
+atlas = ExtResource("T_bonus_pickup")
+region = Rect2(0, 0, 56, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_bonus_pickup_1"]
+atlas = ExtResource("T_bonus_pickup")
+region = Rect2(56, 0, 56, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_bonus_pickup_2"]
+atlas = ExtResource("T_bonus_pickup")
+region = Rect2(112, 0, 56, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_bonus_pickup_3"]
+atlas = ExtResource("T_bonus_pickup")
+region = Rect2(168, 0, 56, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_bonus_pickup_4"]
+atlas = ExtResource("T_bonus_pickup")
+region = Rect2(224, 0, 56, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_bonus_pickup_5"]
+atlas = ExtResource("T_bonus_pickup")
+region = Rect2(280, 0, 56, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_dust_0"]
+atlas = ExtResource("T_land_dust")
+region = Rect2(0, 0, 74, 34)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_dust_1"]
+atlas = ExtResource("T_land_dust")
+region = Rect2(74, 0, 74, 34)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_dust_2"]
+atlas = ExtResource("T_land_dust")
+region = Rect2(148, 0, 74, 34)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_dust_3"]
+atlas = ExtResource("T_land_dust")
+region = Rect2(222, 0, 74, 34)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_dust_4"]
+atlas = ExtResource("T_land_dust")
+region = Rect2(296, 0, 74, 34)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_dust_5"]
+atlas = ExtResource("T_land_dust")
+region = Rect2(370, 0, 74, 34)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_dust_0"]
+atlas = ExtResource("T_run_dust")
+region = Rect2(0, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_dust_1"]
+atlas = ExtResource("T_run_dust")
+region = Rect2(44, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_dust_2"]
+atlas = ExtResource("T_run_dust")
+region = Rect2(88, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_dust_3"]
+atlas = ExtResource("T_run_dust")
+region = Rect2(132, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_dust_4"]
+atlas = ExtResource("T_run_dust")
+region = Rect2(176, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_dust_5"]
+atlas = ExtResource("T_run_dust")
+region = Rect2(220, 0, 44, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_bump_0"]
+atlas = ExtResource("T_head_bump")
+region = Rect2(0, 0, 46, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_bump_1"]
+atlas = ExtResource("T_head_bump")
+region = Rect2(46, 0, 46, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_bump_2"]
+atlas = ExtResource("T_head_bump")
+region = Rect2(92, 0, 46, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_bump_3"]
+atlas = ExtResource("T_head_bump")
+region = Rect2(138, 0, 46, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_bump_4"]
+atlas = ExtResource("T_head_bump")
+region = Rect2(184, 0, 46, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_bump_5"]
+atlas = ExtResource("T_head_bump")
+region = Rect2(230, 0, 46, 36)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_block_shards_0"]
+atlas = ExtResource("T_block_shards")
+region = Rect2(0, 0, 88, 84)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_block_shards_1"]
+atlas = ExtResource("T_block_shards")
+region = Rect2(88, 0, 88, 84)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_block_shards_2"]
+atlas = ExtResource("T_block_shards")
+region = Rect2(176, 0, 88, 84)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_block_shards_3"]
+atlas = ExtResource("T_block_shards")
+region = Rect2(264, 0, 88, 84)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_block_shards_4"]
+atlas = ExtResource("T_block_shards")
+region = Rect2(352, 0, 88, 84)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_block_shards_5"]
+atlas = ExtResource("T_block_shards")
+region = Rect2(440, 0, 88, 84)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spike_contact_0"]
+atlas = ExtResource("T_spike_contact")
+region = Rect2(0, 0, 44, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spike_contact_1"]
+atlas = ExtResource("T_spike_contact")
+region = Rect2(44, 0, 44, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spike_contact_2"]
+atlas = ExtResource("T_spike_contact")
+region = Rect2(88, 0, 44, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spike_contact_3"]
+atlas = ExtResource("T_spike_contact")
+region = Rect2(132, 0, 44, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spike_contact_4"]
+atlas = ExtResource("T_spike_contact")
+region = Rect2(176, 0, 44, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spike_contact_5"]
+atlas = ExtResource("T_spike_contact")
+region = Rect2(220, 0, 44, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_damage_0"]
+atlas = ExtResource("T_damage")
+region = Rect2(0, 0, 58, 50)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_damage_1"]
+atlas = ExtResource("T_damage")
+region = Rect2(58, 0, 58, 50)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_damage_2"]
+atlas = ExtResource("T_damage")
+region = Rect2(116, 0, 58, 50)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_damage_3"]
+atlas = ExtResource("T_damage")
+region = Rect2(174, 0, 58, 50)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_damage_4"]
+atlas = ExtResource("T_damage")
+region = Rect2(232, 0, 58, 50)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_damage_5"]
+atlas = ExtResource("T_damage")
+region = Rect2(290, 0, 58, 50)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_form_loss_0"]
+atlas = ExtResource("T_form_loss")
+region = Rect2(0, 0, 68, 100)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_form_loss_1"]
+atlas = ExtResource("T_form_loss")
+region = Rect2(68, 0, 68, 100)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_form_loss_2"]
+atlas = ExtResource("T_form_loss")
+region = Rect2(136, 0, 68, 100)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_form_loss_3"]
+atlas = ExtResource("T_form_loss")
+region = Rect2(204, 0, 68, 100)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_form_loss_4"]
+atlas = ExtResource("T_form_loss")
+region = Rect2(272, 0, 68, 100)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_form_loss_5"]
+atlas = ExtResource("T_form_loss")
+region = Rect2(340, 0, 68, 100)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_enemy_fade_0"]
+atlas = ExtResource("T_enemy_fade")
+region = Rect2(0, 0, 64, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_enemy_fade_1"]
+atlas = ExtResource("T_enemy_fade")
+region = Rect2(64, 0, 64, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_enemy_fade_2"]
+atlas = ExtResource("T_enemy_fade")
+region = Rect2(128, 0, 64, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_enemy_fade_3"]
+atlas = ExtResource("T_enemy_fade")
+region = Rect2(192, 0, 64, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_enemy_fade_4"]
+atlas = ExtResource("T_enemy_fade")
+region = Rect2(256, 0, 64, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_enemy_fade_5"]
+atlas = ExtResource("T_enemy_fade")
+region = Rect2(320, 0, 64, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_respawn_0"]
+atlas = ExtResource("T_respawn")
+region = Rect2(0, 0, 78, 102)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_respawn_1"]
+atlas = ExtResource("T_respawn")
+region = Rect2(78, 0, 78, 102)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_respawn_2"]
+atlas = ExtResource("T_respawn")
+region = Rect2(156, 0, 78, 102)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_respawn_3"]
+atlas = ExtResource("T_respawn")
+region = Rect2(234, 0, 78, 102)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_respawn_4"]
+atlas = ExtResource("T_respawn")
+region = Rect2(312, 0, 78, 102)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_respawn_5"]
+atlas = ExtResource("T_respawn")
+region = Rect2(390, 0, 78, 102)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_enter_0"]
+atlas = ExtResource("T_pipe_enter")
+region = Rect2(0, 0, 112, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_enter_1"]
+atlas = ExtResource("T_pipe_enter")
+region = Rect2(112, 0, 112, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_enter_2"]
+atlas = ExtResource("T_pipe_enter")
+region = Rect2(224, 0, 112, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_enter_3"]
+atlas = ExtResource("T_pipe_enter")
+region = Rect2(336, 0, 112, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_enter_4"]
+atlas = ExtResource("T_pipe_enter")
+region = Rect2(448, 0, 112, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_enter_5"]
+atlas = ExtResource("T_pipe_enter")
+region = Rect2(560, 0, 112, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_0"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(0, 0, 90, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_1"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(90, 0, 90, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_2"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(180, 0, 90, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_3"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(270, 0, 90, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_4"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(360, 0, 90, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_5"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(450, 0, 90, 72)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_hit_0"]
+atlas = ExtResource("T_water_hit")
+region = Rect2(0, 0, 64, 56)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_hit_1"]
+atlas = ExtResource("T_water_hit")
+region = Rect2(64, 0, 64, 56)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_hit_2"]
+atlas = ExtResource("T_water_hit")
+region = Rect2(128, 0, 64, 56)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_hit_3"]
+atlas = ExtResource("T_water_hit")
+region = Rect2(192, 0, 64, 56)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_hit_4"]
+atlas = ExtResource("T_water_hit")
+region = Rect2(256, 0, 64, 56)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_water_hit_5"]
+atlas = ExtResource("T_water_hit")
+region = Rect2(320, 0, 64, 56)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_aim_0"]
+atlas = ExtResource("T_boss_aim")
+region = Rect2(0, 0, 72, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_aim_1"]
+atlas = ExtResource("T_boss_aim")
+region = Rect2(72, 0, 72, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_aim_2"]
+atlas = ExtResource("T_boss_aim")
+region = Rect2(144, 0, 72, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_aim_3"]
+atlas = ExtResource("T_boss_aim")
+region = Rect2(216, 0, 72, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_aim_4"]
+atlas = ExtResource("T_boss_aim")
+region = Rect2(288, 0, 72, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_aim_5"]
+atlas = ExtResource("T_boss_aim")
+region = Rect2(360, 0, 72, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_warn_0"]
+atlas = ExtResource("T_boss_dash_warn")
+region = Rect2(0, 0, 64, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_warn_1"]
+atlas = ExtResource("T_boss_dash_warn")
+region = Rect2(64, 0, 64, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_warn_2"]
+atlas = ExtResource("T_boss_dash_warn")
+region = Rect2(128, 0, 64, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_warn_3"]
+atlas = ExtResource("T_boss_dash_warn")
+region = Rect2(192, 0, 64, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_warn_4"]
+atlas = ExtResource("T_boss_dash_warn")
+region = Rect2(256, 0, 64, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_warn_5"]
+atlas = ExtResource("T_boss_dash_warn")
+region = Rect2(320, 0, 64, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_trail_0"]
+atlas = ExtResource("T_boss_dash_trail")
+region = Rect2(0, 0, 84, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_trail_1"]
+atlas = ExtResource("T_boss_dash_trail")
+region = Rect2(84, 0, 84, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_trail_2"]
+atlas = ExtResource("T_boss_dash_trail")
+region = Rect2(168, 0, 84, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_trail_3"]
+atlas = ExtResource("T_boss_dash_trail")
+region = Rect2(252, 0, 84, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_trail_4"]
+atlas = ExtResource("T_boss_dash_trail")
+region = Rect2(336, 0, 84, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_dash_trail_5"]
+atlas = ExtResource("T_boss_dash_trail")
+region = Rect2(420, 0, 84, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_leap_warn_0"]
+atlas = ExtResource("T_boss_leap_warn")
+region = Rect2(0, 0, 98, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_leap_warn_1"]
+atlas = ExtResource("T_boss_leap_warn")
+region = Rect2(98, 0, 98, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_leap_warn_2"]
+atlas = ExtResource("T_boss_leap_warn")
+region = Rect2(196, 0, 98, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_leap_warn_3"]
+atlas = ExtResource("T_boss_leap_warn")
+region = Rect2(294, 0, 98, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_leap_warn_4"]
+atlas = ExtResource("T_boss_leap_warn")
+region = Rect2(392, 0, 98, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_leap_warn_5"]
+atlas = ExtResource("T_boss_leap_warn")
+region = Rect2(490, 0, 98, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_slam_0"]
+atlas = ExtResource("T_boss_slam")
+region = Rect2(0, 0, 130, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_slam_1"]
+atlas = ExtResource("T_boss_slam")
+region = Rect2(130, 0, 130, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_slam_2"]
+atlas = ExtResource("T_boss_slam")
+region = Rect2(260, 0, 130, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_slam_3"]
+atlas = ExtResource("T_boss_slam")
+region = Rect2(390, 0, 130, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_slam_4"]
+atlas = ExtResource("T_boss_slam")
+region = Rect2(520, 0, 130, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_slam_5"]
+atlas = ExtResource("T_boss_slam")
+region = Rect2(650, 0, 130, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_hit_0"]
+atlas = ExtResource("T_boss_hit")
+region = Rect2(0, 0, 78, 68)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_hit_1"]
+atlas = ExtResource("T_boss_hit")
+region = Rect2(78, 0, 78, 68)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_hit_2"]
+atlas = ExtResource("T_boss_hit")
+region = Rect2(156, 0, 78, 68)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_hit_3"]
+atlas = ExtResource("T_boss_hit")
+region = Rect2(234, 0, 78, 68)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_hit_4"]
+atlas = ExtResource("T_boss_hit")
+region = Rect2(312, 0, 78, 68)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_hit_5"]
+atlas = ExtResource("T_boss_hit")
+region = Rect2(390, 0, 78, 68)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_shield_0"]
+atlas = ExtResource("T_boss_shield")
+region = Rect2(0, 0, 196, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_shield_1"]
+atlas = ExtResource("T_boss_shield")
+region = Rect2(196, 0, 196, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_shield_2"]
+atlas = ExtResource("T_boss_shield")
+region = Rect2(392, 0, 196, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_shield_3"]
+atlas = ExtResource("T_boss_shield")
+region = Rect2(588, 0, 196, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_shield_4"]
+atlas = ExtResource("T_boss_shield")
+region = Rect2(784, 0, 196, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_shield_5"]
+atlas = ExtResource("T_boss_shield")
+region = Rect2(980, 0, 196, 196)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_deflect_0"]
+atlas = ExtResource("T_boss_deflect")
+region = Rect2(0, 0, 56, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_deflect_1"]
+atlas = ExtResource("T_boss_deflect")
+region = Rect2(56, 0, 56, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_deflect_2"]
+atlas = ExtResource("T_boss_deflect")
+region = Rect2(112, 0, 56, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_deflect_3"]
+atlas = ExtResource("T_boss_deflect")
+region = Rect2(168, 0, 56, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_deflect_4"]
+atlas = ExtResource("T_boss_deflect")
+region = Rect2(224, 0, 56, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_deflect_5"]
+atlas = ExtResource("T_boss_deflect")
+region = Rect2(280, 0, 56, 58)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_open_0"]
+atlas = ExtResource("T_boss_open")
+region = Rect2(0, 0, 62, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_open_1"]
+atlas = ExtResource("T_boss_open")
+region = Rect2(62, 0, 62, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_open_2"]
+atlas = ExtResource("T_boss_open")
+region = Rect2(124, 0, 62, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_open_3"]
+atlas = ExtResource("T_boss_open")
+region = Rect2(186, 0, 62, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_open_4"]
+atlas = ExtResource("T_boss_open")
+region = Rect2(248, 0, 62, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_open_5"]
+atlas = ExtResource("T_boss_open")
+region = Rect2(310, 0, 62, 20)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_phase_0"]
+atlas = ExtResource("T_boss_phase")
+region = Rect2(0, 0, 120, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_phase_1"]
+atlas = ExtResource("T_boss_phase")
+region = Rect2(120, 0, 120, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_phase_2"]
+atlas = ExtResource("T_boss_phase")
+region = Rect2(240, 0, 120, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_phase_3"]
+atlas = ExtResource("T_boss_phase")
+region = Rect2(360, 0, 120, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_phase_4"]
+atlas = ExtResource("T_boss_phase")
+region = Rect2(480, 0, 120, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_phase_5"]
+atlas = ExtResource("T_boss_phase")
+region = Rect2(600, 0, 120, 154)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_victory_0"]
+atlas = ExtResource("T_boss_victory")
+region = Rect2(0, 0, 144, 132)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_victory_1"]
+atlas = ExtResource("T_boss_victory")
+region = Rect2(144, 0, 144, 132)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_victory_2"]
+atlas = ExtResource("T_boss_victory")
+region = Rect2(288, 0, 144, 132)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_victory_3"]
+atlas = ExtResource("T_boss_victory")
+region = Rect2(432, 0, 144, 132)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_victory_4"]
+atlas = ExtResource("T_boss_victory")
+region = Rect2(576, 0, 144, 132)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_boss_victory_5"]
+atlas = ExtResource("T_boss_victory")
+region = Rect2(720, 0, 144, 132)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_sparks_0"]
+atlas = ExtResource("T_gate_sparks")
+region = Rect2(0, 0, 64, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_sparks_1"]
+atlas = ExtResource("T_gate_sparks")
+region = Rect2(64, 0, 64, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_sparks_2"]
+atlas = ExtResource("T_gate_sparks")
+region = Rect2(128, 0, 64, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_sparks_3"]
+atlas = ExtResource("T_gate_sparks")
+region = Rect2(192, 0, 64, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_sparks_4"]
+atlas = ExtResource("T_gate_sparks")
+region = Rect2(256, 0, 64, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_sparks_5"]
+atlas = ExtResource("T_gate_sparks")
+region = Rect2(320, 0, 64, 60)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_forest_mote_0"]
+atlas = ExtResource("T_forest_mote")
+region = Rect2(0, 0, 18, 18)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_forest_mote_1"]
+atlas = ExtResource("T_forest_mote")
+region = Rect2(18, 0, 18, 18)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_forest_mote_2"]
+atlas = ExtResource("T_forest_mote")
+region = Rect2(36, 0, 18, 18)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_forest_mote_3"]
+atlas = ExtResource("T_forest_mote")
+region = Rect2(54, 0, 18, 18)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_forest_mote_4"]
+atlas = ExtResource("T_forest_mote")
+region = Rect2(72, 0, 18, 18)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_forest_mote_5"]
+atlas = ExtResource("T_forest_mote")
+region = Rect2(90, 0, 18, 18)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_trail_0"]
+atlas = ExtResource("T_human_trail")
+region = Rect2(0, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_trail_1"]
+atlas = ExtResource("T_human_trail")
+region = Rect2(28, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_trail_2"]
+atlas = ExtResource("T_human_trail")
+region = Rect2(56, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_trail_3"]
+atlas = ExtResource("T_human_trail")
+region = Rect2(84, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_trail_4"]
+atlas = ExtResource("T_human_trail")
+region = Rect2(112, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_trail_5"]
+atlas = ExtResource("T_human_trail")
+region = Rect2(140, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_wall_0"]
+atlas = ExtResource("T_human_wall")
+region = Rect2(0, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_wall_1"]
+atlas = ExtResource("T_human_wall")
+region = Rect2(48, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_wall_2"]
+atlas = ExtResource("T_human_wall")
+region = Rect2(96, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_wall_3"]
+atlas = ExtResource("T_human_wall")
+region = Rect2(144, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_wall_4"]
+atlas = ExtResource("T_human_wall")
+region = Rect2(192, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_wall_5"]
+atlas = ExtResource("T_human_wall")
+region = Rect2(240, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_enemy_0"]
+atlas = ExtResource("T_human_enemy")
+region = Rect2(0, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_enemy_1"]
+atlas = ExtResource("T_human_enemy")
+region = Rect2(56, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_enemy_2"]
+atlas = ExtResource("T_human_enemy")
+region = Rect2(112, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_enemy_3"]
+atlas = ExtResource("T_human_enemy")
+region = Rect2(168, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_enemy_4"]
+atlas = ExtResource("T_human_enemy")
+region = Rect2(224, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_enemy_5"]
+atlas = ExtResource("T_human_enemy")
+region = Rect2(280, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_boss_0"]
+atlas = ExtResource("T_human_boss")
+region = Rect2(0, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_boss_1"]
+atlas = ExtResource("T_human_boss")
+region = Rect2(68, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_boss_2"]
+atlas = ExtResource("T_human_boss")
+region = Rect2(136, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_boss_3"]
+atlas = ExtResource("T_human_boss")
+region = Rect2(204, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_boss_4"]
+atlas = ExtResource("T_human_boss")
+region = Rect2(272, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_boss_5"]
+atlas = ExtResource("T_human_boss")
+region = Rect2(340, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_fade_0"]
+atlas = ExtResource("T_human_fade")
+region = Rect2(0, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_fade_1"]
+atlas = ExtResource("T_human_fade")
+region = Rect2(36, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_fade_2"]
+atlas = ExtResource("T_human_fade")
+region = Rect2(72, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_fade_3"]
+atlas = ExtResource("T_human_fade")
+region = Rect2(108, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_fade_4"]
+atlas = ExtResource("T_human_fade")
+region = Rect2(144, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_human_fade_5"]
+atlas = ExtResource("T_human_fade")
+region = Rect2(180, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_trail_0"]
+atlas = ExtResource("T_ogre_trail")
+region = Rect2(0, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_trail_1"]
+atlas = ExtResource("T_ogre_trail")
+region = Rect2(28, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_trail_2"]
+atlas = ExtResource("T_ogre_trail")
+region = Rect2(56, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_trail_3"]
+atlas = ExtResource("T_ogre_trail")
+region = Rect2(84, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_trail_4"]
+atlas = ExtResource("T_ogre_trail")
+region = Rect2(112, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_trail_5"]
+atlas = ExtResource("T_ogre_trail")
+region = Rect2(140, 0, 28, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_wall_0"]
+atlas = ExtResource("T_ogre_wall")
+region = Rect2(0, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_wall_1"]
+atlas = ExtResource("T_ogre_wall")
+region = Rect2(48, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_wall_2"]
+atlas = ExtResource("T_ogre_wall")
+region = Rect2(96, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_wall_3"]
+atlas = ExtResource("T_ogre_wall")
+region = Rect2(144, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_wall_4"]
+atlas = ExtResource("T_ogre_wall")
+region = Rect2(192, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_wall_5"]
+atlas = ExtResource("T_ogre_wall")
+region = Rect2(240, 0, 48, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_enemy_0"]
+atlas = ExtResource("T_ogre_enemy")
+region = Rect2(0, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_enemy_1"]
+atlas = ExtResource("T_ogre_enemy")
+region = Rect2(56, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_enemy_2"]
+atlas = ExtResource("T_ogre_enemy")
+region = Rect2(112, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_enemy_3"]
+atlas = ExtResource("T_ogre_enemy")
+region = Rect2(168, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_enemy_4"]
+atlas = ExtResource("T_ogre_enemy")
+region = Rect2(224, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_enemy_5"]
+atlas = ExtResource("T_ogre_enemy")
+region = Rect2(280, 0, 56, 54)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_boss_0"]
+atlas = ExtResource("T_ogre_boss")
+region = Rect2(0, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_boss_1"]
+atlas = ExtResource("T_ogre_boss")
+region = Rect2(68, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_boss_2"]
+atlas = ExtResource("T_ogre_boss")
+region = Rect2(136, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_boss_3"]
+atlas = ExtResource("T_ogre_boss")
+region = Rect2(204, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_boss_4"]
+atlas = ExtResource("T_ogre_boss")
+region = Rect2(272, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_boss_5"]
+atlas = ExtResource("T_ogre_boss")
+region = Rect2(340, 0, 68, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_fade_0"]
+atlas = ExtResource("T_ogre_fade")
+region = Rect2(0, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_fade_1"]
+atlas = ExtResource("T_ogre_fade")
+region = Rect2(36, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_fade_2"]
+atlas = ExtResource("T_ogre_fade")
+region = Rect2(72, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_fade_3"]
+atlas = ExtResource("T_ogre_fade")
+region = Rect2(108, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_fade_4"]
+atlas = ExtResource("T_ogre_fade")
+region = Rect2(144, 0, 36, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ogre_fade_5"]
+atlas = ExtResource("T_ogre_fade")
+region = Rect2(180, 0, 36, 26)
+filter_clip = true
+
+[resource]
+animations = [{"name": &"human_bolt", "speed": 12.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_human_bolt_0")}, {"duration": 1.0, "texture": SubResource("A_human_bolt_1")}, {"duration": 1.0, "texture": SubResource("A_human_bolt_2")}, {"duration": 1.0, "texture": SubResource("A_human_bolt_3")}, {"duration": 1.0, "texture": SubResource("A_human_bolt_4")}, {"duration": 1.0, "texture": SubResource("A_human_bolt_5")}]},
+{"name": &"ogre_bolt", "speed": 12.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_ogre_bolt_0")}, {"duration": 1.0, "texture": SubResource("A_ogre_bolt_1")}, {"duration": 1.0, "texture": SubResource("A_ogre_bolt_2")}, {"duration": 1.0, "texture": SubResource("A_ogre_bolt_3")}, {"duration": 1.0, "texture": SubResource("A_ogre_bolt_4")}, {"duration": 1.0, "texture": SubResource("A_ogre_bolt_5")}]},
+{"name": &"water_shot", "speed": 12.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_water_shot_0")}, {"duration": 1.0, "texture": SubResource("A_water_shot_1")}, {"duration": 1.0, "texture": SubResource("A_water_shot_2")}, {"duration": 1.0, "texture": SubResource("A_water_shot_3")}, {"duration": 1.0, "texture": SubResource("A_water_shot_4")}, {"duration": 1.0, "texture": SubResource("A_water_shot_5")}]},
+{"name": &"ground_wave", "speed": 12.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_ground_wave_0")}, {"duration": 1.0, "texture": SubResource("A_ground_wave_1")}, {"duration": 1.0, "texture": SubResource("A_ground_wave_2")}, {"duration": 1.0, "texture": SubResource("A_ground_wave_3")}, {"duration": 1.0, "texture": SubResource("A_ground_wave_4")}, {"duration": 1.0, "texture": SubResource("A_ground_wave_5")}]},
+{"name": &"rune_pickup", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_rune_pickup_0")}, {"duration": 1.0, "texture": SubResource("A_rune_pickup_1")}, {"duration": 1.0, "texture": SubResource("A_rune_pickup_2")}, {"duration": 1.0, "texture": SubResource("A_rune_pickup_3")}, {"duration": 1.0, "texture": SubResource("A_rune_pickup_4")}, {"duration": 1.0, "texture": SubResource("A_rune_pickup_5")}]},
+{"name": &"magic_form", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_magic_form_0")}, {"duration": 1.0, "texture": SubResource("A_magic_form_1")}, {"duration": 1.0, "texture": SubResource("A_magic_form_2")}, {"duration": 1.0, "texture": SubResource("A_magic_form_3")}, {"duration": 1.0, "texture": SubResource("A_magic_form_4")}, {"duration": 1.0, "texture": SubResource("A_magic_form_5")}]},
+{"name": &"potion_eject", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_potion_eject_0")}, {"duration": 1.0, "texture": SubResource("A_potion_eject_1")}, {"duration": 1.0, "texture": SubResource("A_potion_eject_2")}, {"duration": 1.0, "texture": SubResource("A_potion_eject_3")}, {"duration": 1.0, "texture": SubResource("A_potion_eject_4")}, {"duration": 1.0, "texture": SubResource("A_potion_eject_5")}]},
+{"name": &"growth", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_growth_0")}, {"duration": 1.0, "texture": SubResource("A_growth_1")}, {"duration": 1.0, "texture": SubResource("A_growth_2")}, {"duration": 1.0, "texture": SubResource("A_growth_3")}, {"duration": 1.0, "texture": SubResource("A_growth_4")}, {"duration": 1.0, "texture": SubResource("A_growth_5")}]},
+{"name": &"coin_pickup", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_coin_pickup_0")}, {"duration": 1.0, "texture": SubResource("A_coin_pickup_1")}, {"duration": 1.0, "texture": SubResource("A_coin_pickup_2")}, {"duration": 1.0, "texture": SubResource("A_coin_pickup_3")}, {"duration": 1.0, "texture": SubResource("A_coin_pickup_4")}, {"duration": 1.0, "texture": SubResource("A_coin_pickup_5")}]},
+{"name": &"chest_reward", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_chest_reward_0")}, {"duration": 1.0, "texture": SubResource("A_chest_reward_1")}, {"duration": 1.0, "texture": SubResource("A_chest_reward_2")}, {"duration": 1.0, "texture": SubResource("A_chest_reward_3")}, {"duration": 1.0, "texture": SubResource("A_chest_reward_4")}, {"duration": 1.0, "texture": SubResource("A_chest_reward_5")}]},
+{"name": &"bonus_pickup", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_bonus_pickup_0")}, {"duration": 1.0, "texture": SubResource("A_bonus_pickup_1")}, {"duration": 1.0, "texture": SubResource("A_bonus_pickup_2")}, {"duration": 1.0, "texture": SubResource("A_bonus_pickup_3")}, {"duration": 1.0, "texture": SubResource("A_bonus_pickup_4")}, {"duration": 1.0, "texture": SubResource("A_bonus_pickup_5")}]},
+{"name": &"land_dust", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_land_dust_0")}, {"duration": 1.0, "texture": SubResource("A_land_dust_1")}, {"duration": 1.0, "texture": SubResource("A_land_dust_2")}, {"duration": 1.0, "texture": SubResource("A_land_dust_3")}, {"duration": 1.0, "texture": SubResource("A_land_dust_4")}, {"duration": 1.0, "texture": SubResource("A_land_dust_5")}]},
+{"name": &"run_dust", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_run_dust_0")}, {"duration": 1.0, "texture": SubResource("A_run_dust_1")}, {"duration": 1.0, "texture": SubResource("A_run_dust_2")}, {"duration": 1.0, "texture": SubResource("A_run_dust_3")}, {"duration": 1.0, "texture": SubResource("A_run_dust_4")}, {"duration": 1.0, "texture": SubResource("A_run_dust_5")}]},
+{"name": &"head_bump", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_head_bump_0")}, {"duration": 1.0, "texture": SubResource("A_head_bump_1")}, {"duration": 1.0, "texture": SubResource("A_head_bump_2")}, {"duration": 1.0, "texture": SubResource("A_head_bump_3")}, {"duration": 1.0, "texture": SubResource("A_head_bump_4")}, {"duration": 1.0, "texture": SubResource("A_head_bump_5")}]},
+{"name": &"block_shards", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_block_shards_0")}, {"duration": 1.0, "texture": SubResource("A_block_shards_1")}, {"duration": 1.0, "texture": SubResource("A_block_shards_2")}, {"duration": 1.0, "texture": SubResource("A_block_shards_3")}, {"duration": 1.0, "texture": SubResource("A_block_shards_4")}, {"duration": 1.0, "texture": SubResource("A_block_shards_5")}]},
+{"name": &"spike_contact", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_spike_contact_0")}, {"duration": 1.0, "texture": SubResource("A_spike_contact_1")}, {"duration": 1.0, "texture": SubResource("A_spike_contact_2")}, {"duration": 1.0, "texture": SubResource("A_spike_contact_3")}, {"duration": 1.0, "texture": SubResource("A_spike_contact_4")}, {"duration": 1.0, "texture": SubResource("A_spike_contact_5")}]},
+{"name": &"damage", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_damage_0")}, {"duration": 1.0, "texture": SubResource("A_damage_1")}, {"duration": 1.0, "texture": SubResource("A_damage_2")}, {"duration": 1.0, "texture": SubResource("A_damage_3")}, {"duration": 1.0, "texture": SubResource("A_damage_4")}, {"duration": 1.0, "texture": SubResource("A_damage_5")}]},
+{"name": &"form_loss", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_form_loss_0")}, {"duration": 1.0, "texture": SubResource("A_form_loss_1")}, {"duration": 1.0, "texture": SubResource("A_form_loss_2")}, {"duration": 1.0, "texture": SubResource("A_form_loss_3")}, {"duration": 1.0, "texture": SubResource("A_form_loss_4")}, {"duration": 1.0, "texture": SubResource("A_form_loss_5")}]},
+{"name": &"enemy_fade", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_enemy_fade_0")}, {"duration": 1.0, "texture": SubResource("A_enemy_fade_1")}, {"duration": 1.0, "texture": SubResource("A_enemy_fade_2")}, {"duration": 1.0, "texture": SubResource("A_enemy_fade_3")}, {"duration": 1.0, "texture": SubResource("A_enemy_fade_4")}, {"duration": 1.0, "texture": SubResource("A_enemy_fade_5")}]},
+{"name": &"respawn", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_respawn_0")}, {"duration": 1.0, "texture": SubResource("A_respawn_1")}, {"duration": 1.0, "texture": SubResource("A_respawn_2")}, {"duration": 1.0, "texture": SubResource("A_respawn_3")}, {"duration": 1.0, "texture": SubResource("A_respawn_4")}, {"duration": 1.0, "texture": SubResource("A_respawn_5")}]},
+{"name": &"pipe_enter", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_enter_0")}, {"duration": 1.0, "texture": SubResource("A_pipe_enter_1")}, {"duration": 1.0, "texture": SubResource("A_pipe_enter_2")}, {"duration": 1.0, "texture": SubResource("A_pipe_enter_3")}, {"duration": 1.0, "texture": SubResource("A_pipe_enter_4")}, {"duration": 1.0, "texture": SubResource("A_pipe_enter_5")}]},
+{"name": &"pipe_emerge", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_emerge_0")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_1")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_2")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_3")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_4")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_5")}]},
+{"name": &"water_hit", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_water_hit_0")}, {"duration": 1.0, "texture": SubResource("A_water_hit_1")}, {"duration": 1.0, "texture": SubResource("A_water_hit_2")}, {"duration": 1.0, "texture": SubResource("A_water_hit_3")}, {"duration": 1.0, "texture": SubResource("A_water_hit_4")}, {"duration": 1.0, "texture": SubResource("A_water_hit_5")}]},
+{"name": &"boss_aim", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_aim_0")}, {"duration": 1.0, "texture": SubResource("A_boss_aim_1")}, {"duration": 1.0, "texture": SubResource("A_boss_aim_2")}, {"duration": 1.0, "texture": SubResource("A_boss_aim_3")}, {"duration": 1.0, "texture": SubResource("A_boss_aim_4")}, {"duration": 1.0, "texture": SubResource("A_boss_aim_5")}]},
+{"name": &"boss_dash_warn", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_dash_warn_0")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_warn_1")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_warn_2")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_warn_3")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_warn_4")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_warn_5")}]},
+{"name": &"boss_dash_trail", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_dash_trail_0")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_trail_1")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_trail_2")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_trail_3")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_trail_4")}, {"duration": 1.0, "texture": SubResource("A_boss_dash_trail_5")}]},
+{"name": &"boss_leap_warn", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_leap_warn_0")}, {"duration": 1.0, "texture": SubResource("A_boss_leap_warn_1")}, {"duration": 1.0, "texture": SubResource("A_boss_leap_warn_2")}, {"duration": 1.0, "texture": SubResource("A_boss_leap_warn_3")}, {"duration": 1.0, "texture": SubResource("A_boss_leap_warn_4")}, {"duration": 1.0, "texture": SubResource("A_boss_leap_warn_5")}]},
+{"name": &"boss_slam", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_slam_0")}, {"duration": 1.0, "texture": SubResource("A_boss_slam_1")}, {"duration": 1.0, "texture": SubResource("A_boss_slam_2")}, {"duration": 1.0, "texture": SubResource("A_boss_slam_3")}, {"duration": 1.0, "texture": SubResource("A_boss_slam_4")}, {"duration": 1.0, "texture": SubResource("A_boss_slam_5")}]},
+{"name": &"boss_hit", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_hit_0")}, {"duration": 1.0, "texture": SubResource("A_boss_hit_1")}, {"duration": 1.0, "texture": SubResource("A_boss_hit_2")}, {"duration": 1.0, "texture": SubResource("A_boss_hit_3")}, {"duration": 1.0, "texture": SubResource("A_boss_hit_4")}, {"duration": 1.0, "texture": SubResource("A_boss_hit_5")}]},
+{"name": &"boss_shield", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_shield_0")}, {"duration": 1.0, "texture": SubResource("A_boss_shield_1")}, {"duration": 1.0, "texture": SubResource("A_boss_shield_2")}, {"duration": 1.0, "texture": SubResource("A_boss_shield_3")}, {"duration": 1.0, "texture": SubResource("A_boss_shield_4")}, {"duration": 1.0, "texture": SubResource("A_boss_shield_5")}]},
+{"name": &"boss_deflect", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_deflect_0")}, {"duration": 1.0, "texture": SubResource("A_boss_deflect_1")}, {"duration": 1.0, "texture": SubResource("A_boss_deflect_2")}, {"duration": 1.0, "texture": SubResource("A_boss_deflect_3")}, {"duration": 1.0, "texture": SubResource("A_boss_deflect_4")}, {"duration": 1.0, "texture": SubResource("A_boss_deflect_5")}]},
+{"name": &"boss_open", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_open_0")}, {"duration": 1.0, "texture": SubResource("A_boss_open_1")}, {"duration": 1.0, "texture": SubResource("A_boss_open_2")}, {"duration": 1.0, "texture": SubResource("A_boss_open_3")}, {"duration": 1.0, "texture": SubResource("A_boss_open_4")}, {"duration": 1.0, "texture": SubResource("A_boss_open_5")}]},
+{"name": &"boss_phase", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_phase_0")}, {"duration": 1.0, "texture": SubResource("A_boss_phase_1")}, {"duration": 1.0, "texture": SubResource("A_boss_phase_2")}, {"duration": 1.0, "texture": SubResource("A_boss_phase_3")}, {"duration": 1.0, "texture": SubResource("A_boss_phase_4")}, {"duration": 1.0, "texture": SubResource("A_boss_phase_5")}]},
+{"name": &"boss_victory", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_boss_victory_0")}, {"duration": 1.0, "texture": SubResource("A_boss_victory_1")}, {"duration": 1.0, "texture": SubResource("A_boss_victory_2")}, {"duration": 1.0, "texture": SubResource("A_boss_victory_3")}, {"duration": 1.0, "texture": SubResource("A_boss_victory_4")}, {"duration": 1.0, "texture": SubResource("A_boss_victory_5")}]},
+{"name": &"gate_sparks", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_gate_sparks_0")}, {"duration": 1.0, "texture": SubResource("A_gate_sparks_1")}, {"duration": 1.0, "texture": SubResource("A_gate_sparks_2")}, {"duration": 1.0, "texture": SubResource("A_gate_sparks_3")}, {"duration": 1.0, "texture": SubResource("A_gate_sparks_4")}, {"duration": 1.0, "texture": SubResource("A_gate_sparks_5")}]},
+{"name": &"forest_mote", "speed": 8.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_forest_mote_0")}, {"duration": 1.0, "texture": SubResource("A_forest_mote_1")}, {"duration": 1.0, "texture": SubResource("A_forest_mote_2")}, {"duration": 1.0, "texture": SubResource("A_forest_mote_3")}, {"duration": 1.0, "texture": SubResource("A_forest_mote_4")}, {"duration": 1.0, "texture": SubResource("A_forest_mote_5")}]},
+{"name": &"human_trail", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_human_trail_0")}, {"duration": 1.0, "texture": SubResource("A_human_trail_1")}, {"duration": 1.0, "texture": SubResource("A_human_trail_2")}, {"duration": 1.0, "texture": SubResource("A_human_trail_3")}, {"duration": 1.0, "texture": SubResource("A_human_trail_4")}, {"duration": 1.0, "texture": SubResource("A_human_trail_5")}]},
+{"name": &"human_wall", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_human_wall_0")}, {"duration": 1.0, "texture": SubResource("A_human_wall_1")}, {"duration": 1.0, "texture": SubResource("A_human_wall_2")}, {"duration": 1.0, "texture": SubResource("A_human_wall_3")}, {"duration": 1.0, "texture": SubResource("A_human_wall_4")}, {"duration": 1.0, "texture": SubResource("A_human_wall_5")}]},
+{"name": &"human_enemy", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_human_enemy_0")}, {"duration": 1.0, "texture": SubResource("A_human_enemy_1")}, {"duration": 1.0, "texture": SubResource("A_human_enemy_2")}, {"duration": 1.0, "texture": SubResource("A_human_enemy_3")}, {"duration": 1.0, "texture": SubResource("A_human_enemy_4")}, {"duration": 1.0, "texture": SubResource("A_human_enemy_5")}]},
+{"name": &"human_boss", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_human_boss_0")}, {"duration": 1.0, "texture": SubResource("A_human_boss_1")}, {"duration": 1.0, "texture": SubResource("A_human_boss_2")}, {"duration": 1.0, "texture": SubResource("A_human_boss_3")}, {"duration": 1.0, "texture": SubResource("A_human_boss_4")}, {"duration": 1.0, "texture": SubResource("A_human_boss_5")}]},
+{"name": &"human_fade", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_human_fade_0")}, {"duration": 1.0, "texture": SubResource("A_human_fade_1")}, {"duration": 1.0, "texture": SubResource("A_human_fade_2")}, {"duration": 1.0, "texture": SubResource("A_human_fade_3")}, {"duration": 1.0, "texture": SubResource("A_human_fade_4")}, {"duration": 1.0, "texture": SubResource("A_human_fade_5")}]},
+{"name": &"ogre_trail", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ogre_trail_0")}, {"duration": 1.0, "texture": SubResource("A_ogre_trail_1")}, {"duration": 1.0, "texture": SubResource("A_ogre_trail_2")}, {"duration": 1.0, "texture": SubResource("A_ogre_trail_3")}, {"duration": 1.0, "texture": SubResource("A_ogre_trail_4")}, {"duration": 1.0, "texture": SubResource("A_ogre_trail_5")}]},
+{"name": &"ogre_wall", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ogre_wall_0")}, {"duration": 1.0, "texture": SubResource("A_ogre_wall_1")}, {"duration": 1.0, "texture": SubResource("A_ogre_wall_2")}, {"duration": 1.0, "texture": SubResource("A_ogre_wall_3")}, {"duration": 1.0, "texture": SubResource("A_ogre_wall_4")}, {"duration": 1.0, "texture": SubResource("A_ogre_wall_5")}]},
+{"name": &"ogre_enemy", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ogre_enemy_0")}, {"duration": 1.0, "texture": SubResource("A_ogre_enemy_1")}, {"duration": 1.0, "texture": SubResource("A_ogre_enemy_2")}, {"duration": 1.0, "texture": SubResource("A_ogre_enemy_3")}, {"duration": 1.0, "texture": SubResource("A_ogre_enemy_4")}, {"duration": 1.0, "texture": SubResource("A_ogre_enemy_5")}]},
+{"name": &"ogre_boss", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ogre_boss_0")}, {"duration": 1.0, "texture": SubResource("A_ogre_boss_1")}, {"duration": 1.0, "texture": SubResource("A_ogre_boss_2")}, {"duration": 1.0, "texture": SubResource("A_ogre_boss_3")}, {"duration": 1.0, "texture": SubResource("A_ogre_boss_4")}, {"duration": 1.0, "texture": SubResource("A_ogre_boss_5")}]},
+{"name": &"ogre_fade", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ogre_fade_0")}, {"duration": 1.0, "texture": SubResource("A_ogre_fade_1")}, {"duration": 1.0, "texture": SubResource("A_ogre_fade_2")}, {"duration": 1.0, "texture": SubResource("A_ogre_fade_3")}, {"duration": 1.0, "texture": SubResource("A_ogre_fade_4")}, {"duration": 1.0, "texture": SubResource("A_ogre_fade_5")}]}]

@@ -1,0 +1,973 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/forest_level.gd" id="level"]
+[ext_resource type="PackedScene" path="res://scenes/objects/test_platform.tscn" id="floor"]
+[ext_resource type="PackedScene" path="res://scenes/objects/ferry.tscn" id="ferry"]
+[ext_resource type="PackedScene" path="res://scenes/objects/spikes.tscn" id="spikes"]
+[ext_resource type="PackedScene" path="res://scenes/objects/pipe.tscn" id="pipe"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/murloc.tscn" id="enemy"]
+[ext_resource type="PackedScene" path="res://scenes/objects/reward_block.tscn" id="block"]
+[ext_resource type="PackedScene" path="res://scenes/objects/coin.tscn" id="coin"]
+[ext_resource type="PackedScene" path="res://scenes/actors/forest_player.tscn" id="player"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/grass.png" id="decor_0"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/flowers.png" id="decor_1"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/fern_fan.png" id="decor_2"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/mooring.png" id="decor_3"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/arena_reeds.png" id="decor_4"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/grotto/mushrooms.png" id="decor_5"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/grotto/crystal.png" id="decor_6"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/oak_trunk.png" id="decor_7"]
+[ext_resource type="Shader" path="res://scripts/visual/tree_depth.gdshader" id="decor_tree_shader"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/oak_crown.png" id="decor_9"]
+[ext_resource type="Texture2D" path="res://assets/forest_art/environment/decor/oak_bough.png" id="decor_10"]
+
+
+
+[sub_resource type="ShaderMaterial" id="TreeDepth"]
+shader = ExtResource("decor_tree_shader")
+
+[node name="Forest" type="Node2D"]
+script = ExtResource("level")
+forest_art = true
+finish_x = 5050.0
+checkpoint_x = 2770.0
+water_spans = PackedVector2Array(650,720, 1450,1770, 3380,3464, 4200,4480, 6990,7060)
+sections = {72: "01   ТЕРНОВНИК", 750: "02   ПАРОМНАЯ СТАНЦИЯ", 2020: "ГРОТ   /   Спуск по трубе", 2930: "03   СТОРОЖЕВОЙ ПОСТ", 4120: "04   ПОСЛЕДНЯЯ ПРОТОКА", 6500: "ПОД КОРНЯМИ   /   Обратная труба справа"}
+cave_left = 6400.0
+cave_width = 1280.0
+
+[node name="Ground0" parent="." instance=ExtResource("floor")]
+position = Vector2(0,480)
+size = Vector2(650,64)
+
+[node name="Ground720" parent="." instance=ExtResource("floor")]
+position = Vector2(720,480)
+size = Vector2(730,64)
+
+[node name="Ground1770" parent="." instance=ExtResource("floor")]
+position = Vector2(1866,480)
+size = Vector2(1514,64)
+
+[node name="Ground3464" parent="." instance=ExtResource("floor")]
+position = Vector2(3464,480)
+size = Vector2(736,64)
+
+[node name="Ground4480" parent="." instance=ExtResource("floor")]
+position = Vector2(4576,480)
+size = Vector2(602,64)
+
+[node name="Ground6400" parent="." instance=ExtResource("floor")]
+position = Vector2(6400,480)
+size = Vector2(590,64)
+
+[node name="Ground7060" parent="." instance=ExtResource("floor")]
+position = Vector2(7060,480)
+size = Vector2(620,64)
+
+[node name="CaveWest" parent="." instance=ExtResource("floor")]
+position = Vector2(6400,-60)
+size = Vector2(24,600)
+
+[node name="CaveEast" parent="." instance=ExtResource("floor")]
+position = Vector2(7656,-60)
+size = Vector2(24,600)
+
+[node name="Shelf1112Y388" parent="." instance=ExtResource("floor")]
+position = Vector2(1104,384)
+size = Vector2(144,24)
+construction = "quay"
+
+[node name="Shelf1880Y426" parent="." instance=ExtResource("floor")]
+position = Vector2(1872,384)
+size = Vector2(160,24)
+construction = "quay"
+
+[node name="Shelf2310Y438" parent="." instance=ExtResource("floor")]
+position = Vector2(2304,440)
+size = Vector2(128,40)
+construction = "masonry"
+
+[node name="Shelf2490Y379" parent="." instance=ExtResource("floor")]
+position = Vector2(2480,376)
+size = Vector2(136,24)
+construction = "quay"
+
+[node name="Shelf3560Y428" parent="." instance=ExtResource("floor")]
+position = Vector2(3520,376)
+size = Vector2(120,24)
+construction = "timber"
+
+[node name="Shelf3810Y291" parent="." instance=ExtResource("floor")]
+position = Vector2(3808,260)
+size = Vector2(160,24)
+construction = "timber"
+
+[node name="Shelf3990Y360" parent="." instance=ExtResource("floor")]
+position = Vector2(4032,260)
+size = Vector2(112,24)
+construction = "timber"
+
+[node name="Shelf4508Y418" parent="." instance=ExtResource("floor")]
+position = Vector2(4544,368)
+size = Vector2(128,24)
+construction = "quay"
+
+[node name="Shelf4670Y369" parent="." instance=ExtResource("floor")]
+position = Vector2(4720,368)
+size = Vector2(88,24)
+construction = "quay"
+
+[node name="Shelf6650Y412" parent="." instance=ExtResource("floor")]
+position = Vector2(6656,432)
+size = Vector2(80,48)
+construction = "cave"
+
+[node name="Shelf6860Y358" parent="." instance=ExtResource("floor")]
+position = Vector2(6840,336)
+size = Vector2(144,144)
+construction = "cave"
+
+[node name="Shelf7150Y425" parent="." instance=ExtResource("floor")]
+position = Vector2(7136,424)
+size = Vector2(112,56)
+construction = "cave"
+
+[node name="Shelf7300Y364" parent="." instance=ExtResource("floor")]
+position = Vector2(7248,364)
+size = Vector2(144,116)
+construction = "cave"
+
+[node name="PracticeFerry" parent="." instance=ExtResource("ferry")]
+position = Vector2(900,431)
+travel = Vector2(116, -28)
+period = 4.2
+
+[node name="BrookFerry" parent="." instance=ExtResource("ferry")]
+position = Vector2(1450,454)
+travel = Vector2(324,0)
+period = 5.6
+
+[node name="LastFerry" parent="." instance=ExtResource("ferry")]
+position = Vector2(4215,451)
+travel = Vector2(278,-18)
+period = 5.1
+
+[node name="Thorns430" parent="." instance=ExtResource("spikes")]
+position = Vector2(430,480)
+
+[node name="Thorns3090" parent="." instance=ExtResource("spikes")]
+position = Vector2(3090,480)
+
+[node name="Thorns4070" parent="." instance=ExtResource("spikes")]
+position = Vector2(3948,480)
+
+[node name="Entrance" parent="." instance=ExtResource("pipe")]
+position = Vector2(2144,480)
+mode = "entry"
+destination = Vector2(6480,475)
+
+[node name="GrottoPotion" parent="." instance=ExtResource("block")]
+position = Vector2(6575,356)
+kind = "potion"
+reward_id = "1-2/grotto_growth"
+
+[node name="Return" parent="." instance=ExtResource("pipe")]
+position = Vector2(7530,480)
+mode = "return"
+destination = Vector2(2215,475)
+
+[node name="Ambush" parent="." instance=ExtResource("pipe")]
+position = Vector2(2940,480)
+mode = "ambush"
+enemy_id = "1-2/pipe_guard"
+
+[node name="FerryGuard" parent="." instance=ExtResource("enemy")]
+position = Vector2(1930,384)
+reward_id = "1-2/FerryGuard"
+patrol_width = 32.0
+
+[node name="WoodGuard" parent="." instance=ExtResource("enemy")]
+position = Vector2(4950,478)
+reward_id = "1-2/WoodGuard"
+patrol_width = 32.0
+
+[node name="Block540" parent="." instance=ExtResource("block")]
+position = Vector2(540,360)
+kind = "coins"
+reward_id = "1-2/thorn_cache"
+amount = 16
+
+[node name="Block1196" parent="." instance=ExtResource("block")]
+position = Vector2(1196,272)
+kind = "coins"
+reward_id = "1-2/ferry_cache"
+amount = 12
+
+[node name="Block2620" parent="." instance=ExtResource("block")]
+position = Vector2(2664,354)
+kind = "potion"
+reward_id = "1-2/growth"
+amount = 0
+
+[node name="Block3624" parent="." instance=ExtResource("block")]
+position = Vector2(3684,356)
+kind = "empty"
+reward_id = "1-2/empty_step"
+amount = 0
+
+[node name="Block3710" parent="." instance=ExtResource("block")]
+position = Vector2(3764,308)
+kind = "fragile"
+reward_id = "1-2/high_step"
+amount = 0
+
+[node name="Block3890" parent="." instance=ExtResource("block")]
+position = Vector2(3890,157)
+kind = "coins"
+reward_id = "1-2/lookout"
+amount = 6
+
+[node name="Block6800" parent="." instance=ExtResource("block")]
+position = Vector2(6784,288)
+kind = "fragile"
+reward_id = "1-2/cave_brick"
+amount = 0
+
+[node name="Block7320" parent="." instance=ExtResource("block")]
+position = Vector2(7320,246)
+kind = "coins"
+reward_id = "1-2/cave_cache"
+amount = 10
+
+[node name="Coin180" parent="." instance=ExtResource("coin")]
+position = Vector2(180,452)
+reward_id = "1-2/coin_180"
+
+[node name="Coin242" parent="." instance=ExtResource("coin")]
+position = Vector2(244,452)
+reward_id = "1-2/coin_242"
+
+[node name="Coin410" parent="." instance=ExtResource("coin")]
+position = Vector2(412,386)
+reward_id = "1-2/coin_410"
+
+[node name="Coin664" parent="." instance=ExtResource("coin")]
+position = Vector2(684,392)
+reward_id = "1-2/coin_664"
+
+[node name="Coin882" parent="." instance=ExtResource("coin")]
+position = Vector2(900,396)
+reward_id = "1-2/coin_882"
+
+[node name="Coin1002" parent="." instance=ExtResource("coin")]
+position = Vector2(1008,372)
+reward_id = "1-2/coin_1002"
+
+[node name="Coin1152" parent="." instance=ExtResource("coin")]
+position = Vector2(1144,356)
+reward_id = "1-2/coin_1152"
+
+[node name="Coin1255" parent="." instance=ExtResource("coin")]
+position = Vector2(1208,356)
+reward_id = "1-2/coin_1255"
+
+[node name="Coin1430" parent="." instance=ExtResource("coin")]
+position = Vector2(1384,426)
+reward_id = "1-2/coin_1430"
+
+[node name="Coin1610" parent="." instance=ExtResource("coin")]
+position = Vector2(1608,404)
+reward_id = "1-2/coin_1610"
+
+[node name="Coin1810" parent="." instance=ExtResource("coin")]
+position = Vector2(1800,426)
+reward_id = "1-2/coin_1810"
+
+[node name="Coin1910" parent="." instance=ExtResource("coin")]
+position = Vector2(1952,332)
+reward_id = "1-2/coin_1910"
+
+[node name="Coin2080" parent="." instance=ExtResource("coin")]
+position = Vector2(2088,398)
+reward_id = "1-2/coin_2080"
+
+[node name="Coin2260" parent="." instance=ExtResource("coin")]
+position = Vector2(2240,398)
+reward_id = "1-2/coin_2260"
+
+[node name="Coin2380" parent="." instance=ExtResource("coin")]
+position = Vector2(2368,412)
+reward_id = "1-2/coin_2380"
+
+[node name="Coin2550" parent="." instance=ExtResource("coin")]
+position = Vector2(2548,348)
+reward_id = "1-2/coin_2550"
+
+[node name="Coin2730" parent="." instance=ExtResource("coin")]
+position = Vector2(2740,452)
+reward_id = "1-2/coin_2730"
+
+[node name="Coin3000" parent="." instance=ExtResource("coin")]
+position = Vector2(3020,412)
+reward_id = "1-2/coin_3000"
+
+[node name="Coin3170" parent="." instance=ExtResource("coin")]
+position = Vector2(3090,376)
+reward_id = "1-2/coin_3170"
+
+[node name="Coin3410" parent="." instance=ExtResource("coin")]
+position = Vector2(3420,388)
+reward_id = "1-2/coin_3410"
+
+[node name="Coin3580" parent="." instance=ExtResource("coin")]
+position = Vector2(3576,348)
+reward_id = "1-2/coin_3580"
+
+[node name="Coin3698" parent="." instance=ExtResource("coin")]
+position = Vector2(3764,264)
+reward_id = "1-2/coin_3698"
+
+[node name="Coin3854" parent="." instance=ExtResource("coin")]
+position = Vector2(3856,232)
+reward_id = "1-2/coin_3854"
+
+[node name="Coin4028" parent="." instance=ExtResource("coin")]
+position = Vector2(4088,232)
+reward_id = "1-2/coin_4028"
+
+[node name="Coin4220" parent="." instance=ExtResource("coin")]
+position = Vector2(4168,423)
+reward_id = "1-2/coin_4220"
+
+[node name="Coin4390" parent="." instance=ExtResource("coin")]
+position = Vector2(4344,399)
+reward_id = "1-2/coin_4390"
+
+[node name="Coin4560" parent="." instance=ExtResource("coin")]
+position = Vector2(4608,340)
+reward_id = "1-2/coin_4560"
+
+[node name="Coin4710" parent="." instance=ExtResource("coin")]
+position = Vector2(4764,340)
+reward_id = "1-2/coin_4710"
+
+[node name="Coin4900" parent="." instance=ExtResource("coin")]
+position = Vector2(4898,422)
+reward_id = "1-2/coin_4900"
+
+[node name="Coin4960" parent="." instance=ExtResource("coin")]
+position = Vector2(4962,390)
+reward_id = "1-2/coin_4960"
+
+[node name="Coin6560" parent="." instance=ExtResource("coin")]
+position = Vector2(6560,455)
+reward_id = "1-2/coin_6560"
+
+[node name="Coin6690" parent="." instance=ExtResource("coin")]
+position = Vector2(6696,404)
+reward_id = "1-2/coin_6690"
+
+[node name="Coin6770" parent="." instance=ExtResource("coin")]
+position = Vector2(6784,356)
+reward_id = "1-2/coin_6770"
+
+[node name="Coin6890" parent="." instance=ExtResource("coin")]
+position = Vector2(6928,308)
+reward_id = "1-2/coin_6890"
+
+[node name="Coin7024" parent="." instance=ExtResource("coin")]
+position = Vector2(7024,292)
+reward_id = "1-2/coin_7024"
+
+[node name="Coin7200" parent="." instance=ExtResource("coin")]
+position = Vector2(7192,396)
+reward_id = "1-2/coin_7200"
+
+[node name="Coin7340" parent="." instance=ExtResource("coin")]
+position = Vector2(7320,336)
+reward_id = "1-2/coin_7340"
+
+[node name="Coin7440" parent="." instance=ExtResource("coin")]
+position = Vector2(7468,398)
+reward_id = "1-2/coin_7440"
+
+[node name="West" parent="." instance=ExtResource("floor")]
+position = Vector2(-32,-64)
+size = Vector2(32,610)
+
+[node name="East" parent="." instance=ExtResource("floor")]
+position = Vector2(5150,-64)
+size = Vector2(32,610)
+
+[node name="Player" parent="." instance=ExtResource("player")]
+position = Vector2(96,475)
+
+
+[node name="LaunchQuay" parent="." instance=ExtResource("floor")]
+position = Vector2(1304,456)
+size = Vector2(68,24)
+construction = "quay"
+
+[node name="LandingQuay" parent="." instance=ExtResource("floor")]
+position = Vector2(1770,480)
+size = Vector2(96,64)
+construction = "plain"
+
+[node name="LastLanding" parent="." instance=ExtResource("floor")]
+position = Vector2(4480,480)
+size = Vector2(96,64)
+construction = "plain"
+
+[node name="GrottoMiddleTerrace" parent="." instance=ExtResource("floor")]
+position = Vector2(6736,384)
+size = Vector2(104,96)
+construction = "cave"
+
+[node name="Scenery" type="Node2D" parent="."]
+z_index = -19
+
+[node name="grass_00" type="Sprite2D" parent="Scenery"]
+position = Vector2(70, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_01" type="Sprite2D" parent="Scenery"]
+position = Vector2(245, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_02" type="Sprite2D" parent="Scenery"]
+position = Vector2(420, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_03" type="Sprite2D" parent="Scenery"]
+position = Vector2(595, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_04" type="Sprite2D" parent="Scenery"]
+position = Vector2(790, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_05" type="Sprite2D" parent="Scenery"]
+position = Vector2(965, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_06" type="Sprite2D" parent="Scenery"]
+position = Vector2(1140, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_07" type="Sprite2D" parent="Scenery"]
+position = Vector2(1315, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_08" type="Sprite2D" parent="Scenery"]
+position = Vector2(1936, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_09" type="Sprite2D" parent="Scenery"]
+position = Vector2(2111, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_10" type="Sprite2D" parent="Scenery"]
+position = Vector2(2286, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_11" type="Sprite2D" parent="Scenery"]
+position = Vector2(2461, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_12" type="Sprite2D" parent="Scenery"]
+position = Vector2(2636, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_13" type="Sprite2D" parent="Scenery"]
+position = Vector2(2811, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_14" type="Sprite2D" parent="Scenery"]
+position = Vector2(2986, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_15" type="Sprite2D" parent="Scenery"]
+position = Vector2(3161, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_16" type="Sprite2D" parent="Scenery"]
+position = Vector2(3336, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_17" type="Sprite2D" parent="Scenery"]
+position = Vector2(3534, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_18" type="Sprite2D" parent="Scenery"]
+position = Vector2(3709, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_19" type="Sprite2D" parent="Scenery"]
+position = Vector2(3884, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="grass_20" type="Sprite2D" parent="Scenery"]
+position = Vector2(4059, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-15, -28)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="flowers_21" type="Sprite2D" parent="Scenery"]
+position = Vector2(4646, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-14, -36)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_22" type="Sprite2D" parent="Scenery"]
+position = Vector2(4821, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="fern_fan_23" type="Sprite2D" parent="Scenery"]
+position = Vector2(4996, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-31, -32)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mooring_24" type="Sprite2D" parent="Scenery"]
+position = Vector2(1396, 485)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-15, -58)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mooring_25" type="Sprite2D" parent="Scenery"]
+position = Vector2(1938, 389)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-15, -58)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mooring_26" type="Sprite2D" parent="Scenery"]
+position = Vector2(4158, 485)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-15, -58)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mooring_27" type="Sprite2D" parent="Scenery"]
+position = Vector2(4635, 373)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-15, -58)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="arena_reeds_28" type="Sprite2D" parent="Scenery"]
+position = Vector2(220, 484)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-34, -50)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="arena_reeds_29" type="Sprite2D" parent="Scenery"]
+position = Vector2(1150, 484)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-34, -50)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="arena_reeds_30" type="Sprite2D" parent="Scenery"]
+position = Vector2(2070, 484)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-34, -50)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="arena_reeds_31" type="Sprite2D" parent="Scenery"]
+position = Vector2(2820, 484)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-34, -50)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="arena_reeds_32" type="Sprite2D" parent="Scenery"]
+position = Vector2(4740, 484)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-34, -50)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mushrooms_33" type="Sprite2D" parent="Scenery"]
+position = Vector2(6530, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-17, -38)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mushrooms_34" type="Sprite2D" parent="Scenery"]
+position = Vector2(6790, 387)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-17, -38)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="crystal_35" type="Sprite2D" parent="Scenery"]
+position = Vector2(7050, 543)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_6")
+centered = false
+offset = Vector2(-20, -50)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mushrooms_36" type="Sprite2D" parent="Scenery"]
+position = Vector2(7310, 367)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-17, -38)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="mushrooms_37" type="Sprite2D" parent="Scenery"]
+position = Vector2(7570, 483)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-17, -38)
+modulate = Color(1, 1, 1, 1)
+texture_filter = 2
+
+[node name="Oak_38" type="Node2D" parent="Scenery"]
+position = Vector2(250, 498)
+metadata/_edit_group_ = true
+
+[node name="oak_trunk_00" type="Sprite2D" parent="Scenery/Oak_38"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-183, -452)
+modulate = Color(0.635294, 0.721569, 0.627451, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_crown_01" type="Sprite2D" parent="Scenery/Oak_38"]
+position = Vector2(2, -204)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_9")
+centered = false
+offset = Vector2(-134, -160)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_bough_02" type="Sprite2D" parent="Scenery/Oak_38"]
+position = Vector2(35, -174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_10")
+centered = false
+offset = Vector2(-147, -98)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="Oak_39" type="Node2D" parent="Scenery"]
+position = Vector2(970, 498)
+metadata/_edit_group_ = true
+
+[node name="oak_trunk_00" type="Sprite2D" parent="Scenery/Oak_39"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-183, -452)
+modulate = Color(0.635294, 0.721569, 0.627451, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_crown_01" type="Sprite2D" parent="Scenery/Oak_39"]
+position = Vector2(2, -204)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_9")
+centered = false
+offset = Vector2(-134, -160)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_bough_02" type="Sprite2D" parent="Scenery/Oak_39"]
+position = Vector2(35, -174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_10")
+centered = false
+offset = Vector2(-147, -98)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="Oak_40" type="Node2D" parent="Scenery"]
+position = Vector2(2116, 498)
+metadata/_edit_group_ = true
+
+[node name="oak_trunk_00" type="Sprite2D" parent="Scenery/Oak_40"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-183, -452)
+modulate = Color(0.635294, 0.721569, 0.627451, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_crown_01" type="Sprite2D" parent="Scenery/Oak_40"]
+position = Vector2(2, -204)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_9")
+centered = false
+offset = Vector2(-134, -160)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_bough_02" type="Sprite2D" parent="Scenery/Oak_40"]
+position = Vector2(35, -174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_10")
+centered = false
+offset = Vector2(-147, -98)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="Oak_41" type="Node2D" parent="Scenery"]
+position = Vector2(2846, 498)
+metadata/_edit_group_ = true
+
+[node name="oak_trunk_00" type="Sprite2D" parent="Scenery/Oak_41"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-183, -452)
+modulate = Color(0.635294, 0.721569, 0.627451, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_crown_01" type="Sprite2D" parent="Scenery/Oak_41"]
+position = Vector2(2, -204)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_9")
+centered = false
+offset = Vector2(-134, -160)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_bough_02" type="Sprite2D" parent="Scenery/Oak_41"]
+position = Vector2(35, -174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_10")
+centered = false
+offset = Vector2(-147, -98)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="Oak_42" type="Node2D" parent="Scenery"]
+position = Vector2(3714, 498)
+metadata/_edit_group_ = true
+
+[node name="oak_trunk_00" type="Sprite2D" parent="Scenery/Oak_42"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-183, -452)
+modulate = Color(0.635294, 0.721569, 0.627451, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_crown_01" type="Sprite2D" parent="Scenery/Oak_42"]
+position = Vector2(2, -204)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_9")
+centered = false
+offset = Vector2(-134, -160)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_bough_02" type="Sprite2D" parent="Scenery/Oak_42"]
+position = Vector2(35, -174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_10")
+centered = false
+offset = Vector2(-147, -98)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="Oak_43" type="Node2D" parent="Scenery"]
+position = Vector2(4826, 498)
+metadata/_edit_group_ = true
+
+[node name="oak_trunk_00" type="Sprite2D" parent="Scenery/Oak_43"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-183, -452)
+modulate = Color(0.635294, 0.721569, 0.627451, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_crown_01" type="Sprite2D" parent="Scenery/Oak_43"]
+position = Vector2(2, -204)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_9")
+centered = false
+offset = Vector2(-134, -160)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")
+
+[node name="oak_bough_02" type="Sprite2D" parent="Scenery/Oak_43"]
+position = Vector2(35, -174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("decor_10")
+centered = false
+offset = Vector2(-147, -98)
+modulate = Color(0.654902, 0.737255, 0.611765, 1)
+texture_filter = 2
+material = SubResource("TreeDepth")

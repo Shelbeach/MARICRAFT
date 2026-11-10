@@ -1,0 +1,580 @@
+{
+  "alliance_crest": {
+    "file": "runtime/decor/alliance_crest.png",
+    "description": "Золотой лев Альянса на синем металлическом щите; герб меню или настенное украшение.",
+    "source": "masters/alliance_crest.png",
+    "source_px": [
+      1182,
+      1330
+    ],
+    "crop_px": [
+      61,
+      24,
+      1121,
+      1312
+    ],
+    "texture_px": [
+      144,
+      164
+    ],
+    "world_units": [
+      72,
+      82
+    ],
+    "anchor_world": [
+      36.0,
+      1
+    ],
+    "anchor_px": [
+      72.0,
+      2
+    ],
+    "role": "wall/UI",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Верхнее крепление соприкасается со стеной или балкой; не подвешивать в пустоте."
+  },
+  "horde_crest": {
+    "file": "runtime/decor/horde_crest.png",
+    "description": "Красный знак Орды на тёмном щите с клыками; герб меню или стены.",
+    "source": "masters/horde_crest.png",
+    "source_px": [
+      1200,
+      1310
+    ],
+    "crop_px": [
+      58,
+      14,
+      1138,
+      1301
+    ],
+    "texture_px": [
+      144,
+      164
+    ],
+    "world_units": [
+      72,
+      82
+    ],
+    "anchor_world": [
+      36.0,
+      1
+    ],
+    "anchor_px": [
+      72.0,
+      2
+    ],
+    "role": "wall/UI",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Верхнее крепление соприкасается со стеной или балкой; не подвешивать в пустоте."
+  },
+  "alliance_wall_banner": {
+    "file": "runtime/decor/alliance_wall_banner.png",
+    "description": "Старое синее полотнище Альянса, перекладина и два настенных крепления.",
+    "source": "masters/alliance_wall_banner.png",
+    "source_px": [
+      1024,
+      1536
+    ],
+    "crop_px": [
+      39,
+      13,
+      988,
+      1518
+    ],
+    "texture_px": [
+      172,
+      260
+    ],
+    "world_units": [
+      86,
+      130
+    ],
+    "anchor_world": [
+      43.0,
+      1
+    ],
+    "anchor_px": [
+      86.0,
+      2
+    ],
+    "role": "wall",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Верхнее крепление соприкасается со стеной или балкой; не подвешивать в пустоте."
+  },
+  "horde_wall_banner": {
+    "file": "runtime/decor/horde_wall_banner.png",
+    "description": "Красное полотнище Орды с крюком и канатной подвеской.",
+    "source": "masters/horde_wall_banner.png",
+    "source_px": [
+      1024,
+      1536
+    ],
+    "crop_px": [
+      21,
+      0,
+      998,
+      1531
+    ],
+    "texture_px": [
+      172,
+      260
+    ],
+    "world_units": [
+      86,
+      130
+    ],
+    "anchor_world": [
+      43.0,
+      1
+    ],
+    "anchor_px": [
+      86.0,
+      2
+    ],
+    "role": "wall",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Верхнее крепление соприкасается со стеной или балкой; не подвешивать в пустоте."
+  },
+  "alliance_standard": {
+    "file": "runtime/decor/alliance_standard.png",
+    "description": "Синий штандарт на древке с каменным основанием; лесные дороги и руины.",
+    "source": "masters/alliance_standard.png",
+    "source_px": [
+      1024,
+      1536
+    ],
+    "crop_px": [
+      203,
+      0,
+      898,
+      1532
+    ],
+    "texture_px": [
+      184,
+      380
+    ],
+    "world_units": [
+      92,
+      190
+    ],
+    "anchor_world": [
+      46.0,
+      189
+    ],
+    "anchor_px": [
+      92.0,
+      378
+    ],
+    "role": "ground",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "horde_standard": {
+    "file": "runtime/decor/horde_standard.png",
+    "description": "Красный штандарт с клыками, деревянными раскосами и каменным основанием; Дуротар.",
+    "source": "masters/horde_standard.png",
+    "source_px": [
+      1024,
+      1536
+    ],
+    "crop_px": [
+      123,
+      6,
+      902,
+      1532
+    ],
+    "texture_px": [
+      212,
+      368
+    ],
+    "world_units": [
+      106,
+      184
+    ],
+    "anchor_world": [
+      53.0,
+      183
+    ],
+    "anchor_px": [
+      106.0,
+      366
+    ],
+    "role": "ground",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "alliance_waymarker": {
+    "file": "runtime/decor/alliance_waymarker.png",
+    "description": "Каменный указатель Альянса вправо; декоративный, без новой игровой механики.",
+    "source": "masters/alliance_waymarker.png",
+    "source_px": [
+      1312,
+      1199
+    ],
+    "crop_px": [
+      161,
+      18,
+      1168,
+      1166
+    ],
+    "texture_px": [
+      156,
+      184
+    ],
+    "world_units": [
+      78,
+      92
+    ],
+    "anchor_world": [
+      39.0,
+      91
+    ],
+    "anchor_px": [
+      78.0,
+      182
+    ],
+    "role": "ground",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "horde_waymarker": {
+    "file": "runtime/decor/horde_waymarker.png",
+    "description": "Деревянный указатель Орды вправо с красной доской и клыком.",
+    "source": "masters/horde_waymarker.png",
+    "source_px": [
+      1312,
+      1199
+    ],
+    "crop_px": [
+      211,
+      18,
+      1185,
+      1179
+    ],
+    "texture_px": [
+      164,
+      188
+    ],
+    "world_units": [
+      82,
+      94
+    ],
+    "anchor_world": [
+      41.0,
+      93
+    ],
+    "anchor_px": [
+      82.0,
+      186
+    ],
+    "role": "ground",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "alliance_stone_plaque": {
+    "file": "runtime/decor/alliance_stone_plaque.png",
+    "description": "Каменная табличка с рельефным львом; фасады, мостовые устои и руины.",
+    "source": "masters/alliance_stone_plaque.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "crop_px": [
+      5,
+      5,
+      1769,
+      882
+    ],
+    "texture_px": [
+      256,
+      128
+    ],
+    "world_units": [
+      128,
+      64
+    ],
+    "anchor_world": [
+      64.0,
+      1
+    ],
+    "anchor_px": [
+      128.0,
+      2
+    ],
+    "role": "wall",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Верхнее крепление соприкасается со стеной или балкой; не подвешивать в пустоте."
+  },
+  "horde_wood_plaque": {
+    "file": "runtime/decor/horde_wood_plaque.png",
+    "description": "Деревянная табличка Орды с резьбой и железным обрамлением.",
+    "source": "masters/horde_wood_plaque.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "crop_px": [
+      11,
+      27,
+      1763,
+      872
+    ],
+    "texture_px": [
+      256,
+      128
+    ],
+    "world_units": [
+      128,
+      64
+    ],
+    "anchor_world": [
+      64.0,
+      1
+    ],
+    "anchor_px": [
+      128.0,
+      2
+    ],
+    "role": "wall",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Верхнее крепление соприкасается со стеной или балкой; не подвешивать в пустоте."
+  },
+  "horde_gate_ornament": {
+    "file": "runtime/decor/horde_gate_ornament.png",
+    "description": "Рогатое навершие входа в шахту; две нижние монтажные скобы, самостоятельной опоры на землю нет.",
+    "source": "masters/horde_gate_ornament.png",
+    "source_px": [
+      1774,
+      887
+    ],
+    "crop_px": [
+      24,
+      8,
+      1747,
+      881
+    ],
+    "texture_px": [
+      328,
+      168
+    ],
+    "world_units": [
+      164,
+      84
+    ],
+    "anchor_world": [
+      82.0,
+      83
+    ],
+    "anchor_px": [
+      164.0,
+      166
+    ],
+    "role": "mount",
+    "parallax": 1.0,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Прикрепить обе нижние скобы к верхней балке входа."
+  },
+  "mine_hoist": {
+    "file": "runtime/decor/mine_hoist.png",
+    "description": "Шахтный подъёмник: укосина, блок, канат, подвешенный ковш и закреплённый фонарь. Фоновый декор.",
+    "source": "masters/mine_hoist.png",
+    "source_px": [
+      1292,
+      1218
+    ],
+    "crop_px": [
+      65,
+      12,
+      1260,
+      1198
+    ],
+    "texture_px": [
+      420,
+      432
+    ],
+    "world_units": [
+      210,
+      216
+    ],
+    "anchor_world": [
+      105.0,
+      215
+    ],
+    "anchor_px": [
+      210.0,
+      430
+    ],
+    "role": "background_ground",
+    "parallax": 0.78,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "ore_chute": {
+    "file": "runtime/decor/ore_chute.png",
+    "description": "Рудная сортировка со скатным навесом, наклонным жёлобом, бункером и подвесными весами. Фоновый декор.",
+    "source": "masters/ore_chute.png",
+    "source_px": [
+      1536,
+      1024
+    ],
+    "crop_px": [
+      21,
+      2,
+      1484,
+      1020
+    ],
+    "texture_px": [
+      492,
+      336
+    ],
+    "world_units": [
+      246,
+      168
+    ],
+    "anchor_world": [
+      123.0,
+      167
+    ],
+    "anchor_px": [
+      246.0,
+      334
+    ],
+    "role": "background_ground",
+    "parallax": 0.78,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "canyon_spires": {
+    "file": "runtime/decor/canyon_spires.png",
+    "description": "Три наклонных выветренных скальных иглы. Дальний ориентир без проходимых верхних площадок.",
+    "source": "masters/canyon_spires.png",
+    "source_px": [
+      1254,
+      1254
+    ],
+    "crop_px": [
+      6,
+      50,
+      1241,
+      1184
+    ],
+    "texture_px": [
+      580,
+      572
+    ],
+    "world_units": [
+      290,
+      286
+    ],
+    "anchor_world": [
+      145.0,
+      285
+    ],
+    "anchor_px": [
+      290.0,
+      570
+    ],
+    "role": "background_ground",
+    "parallax": 0.45,
+    "repeat": false,
+    "density": 2,
+    "collision": null,
+    "mounting": "Закрыть низ грунтом на 2–4 ед."
+  },
+  "faction_hall": {
+    "file": "runtime/ui/faction_hall.png",
+    "description": "Два противостоящих зала: каменный синий Альянс и деревянно-железная красная Орда. Без героев и интерактивных надписей.",
+    "source_px": [
+      1672,
+      941
+    ],
+    "texture_px": [
+      1672,
+      941
+    ],
+    "display_ui": [
+      960,
+      540
+    ],
+    "anchor_ui": [
+      0,
+      0
+    ],
+    "role": "menu_background",
+    "repeat": false,
+    "stretch": "uniform cover; native ratio nearly 16:9",
+    "pedestal_top_ui": 380
+  },
+  "hero_human": {
+    "file": "runtime/ui/hero_human.png",
+    "description": "Полнофигурный человек; не переименовывать огра в орка.",
+    "texture_px": [
+      520,
+      512
+    ],
+    "role": "menu_hero",
+    "display_height_ui": 246,
+    "foot_ui": [
+      290,
+      380
+    ],
+    "source_direction": "right",
+    "menu_direction": "right",
+    "fit": "KEEP_ASPECT; не обрезать прозрачный холст, clip_contents=false",
+    "game_animation_change": false
+  },
+  "hero_ogre": {
+    "file": "runtime/ui/hero_ogre.png",
+    "description": "Полнофигурный огр; не переименовывать огра в орка.",
+    "texture_px": [
+      360,
+      512
+    ],
+    "role": "menu_hero",
+    "display_height_ui": 246,
+    "foot_ui": [
+      670,
+      380
+    ],
+    "source_direction": "right",
+    "menu_direction": "left",
+    "fit": "KEEP_ASPECT; не обрезать прозрачный холст, clip_contents=false",
+    "game_animation_change": false
+  }
+}

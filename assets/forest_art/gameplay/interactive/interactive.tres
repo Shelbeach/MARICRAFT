@@ -1,0 +1,338 @@
+[gd_resource type="SpriteFrames" load_steps=87 format=3]
+
+[ext_resource type="Texture2D" path="chest_coin.png" id="T_chest_coin"]
+[ext_resource type="Texture2D" path="chest_coin_open.png" id="T_chest_coin_open"]
+[ext_resource type="Texture2D" path="chest_bonus.png" id="T_chest_bonus"]
+[ext_resource type="Texture2D" path="chest_bonus_open.png" id="T_chest_bonus_open"]
+[ext_resource type="Texture2D" path="chest_spent.png" id="T_chest_spent"]
+[ext_resource type="Texture2D" path="fragile.png" id="T_fragile"]
+[ext_resource type="Texture2D" path="solid.png" id="T_solid"]
+[ext_resource type="Texture2D" path="pipe_entry_rim.png" id="T_pipe_entry_rim"]
+[ext_resource type="Texture2D" path="pipe_entry_body.png" id="T_pipe_entry_body"]
+[ext_resource type="Texture2D" path="pipe_entry_foot.png" id="T_pipe_entry_foot"]
+[ext_resource type="Texture2D" path="sign_entry.png" id="T_sign_entry"]
+[ext_resource type="Texture2D" path="pipe_entry.png" id="T_pipe_entry"]
+[ext_resource type="Texture2D" path="pipe_return_rim.png" id="T_pipe_return_rim"]
+[ext_resource type="Texture2D" path="pipe_return_body.png" id="T_pipe_return_body"]
+[ext_resource type="Texture2D" path="pipe_return_foot.png" id="T_pipe_return_foot"]
+[ext_resource type="Texture2D" path="sign_return.png" id="T_sign_return"]
+[ext_resource type="Texture2D" path="pipe_return.png" id="T_pipe_return"]
+[ext_resource type="Texture2D" path="pipe_ambush_rim.png" id="T_pipe_ambush_rim"]
+[ext_resource type="Texture2D" path="pipe_ambush_body.png" id="T_pipe_ambush_body"]
+[ext_resource type="Texture2D" path="pipe_ambush_foot.png" id="T_pipe_ambush_foot"]
+[ext_resource type="Texture2D" path="sign_ambush.png" id="T_sign_ambush"]
+[ext_resource type="Texture2D" path="pipe_ambush.png" id="T_pipe_ambush"]
+[ext_resource type="Texture2D" path="pipe_ambush_spent.png" id="T_pipe_ambush_spent"]
+[ext_resource type="Texture2D" path="ferry_oak.png" id="T_ferry_oak"]
+[ext_resource type="Texture2D" path="ferry_quay.png" id="T_ferry_quay"]
+[ext_resource type="Texture2D" path="spikes.png" id="T_spikes"]
+[ext_resource type="Texture2D" path="checkpoint_off.png" id="T_checkpoint_off"]
+[ext_resource type="Texture2D" path="checkpoint_on.png" id="T_checkpoint_on"]
+[ext_resource type="Texture2D" path="finish.png" id="T_finish"]
+[ext_resource type="Texture2D" path="gate_closed.png" id="T_gate_closed"]
+[ext_resource type="Texture2D" path="gate_open.png" id="T_gate_open"]
+[ext_resource type="Texture2D" path="gate_unlock.png" id="T_gate_unlock"]
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_0"]
+atlas = ExtResource("T_chest_coin")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_open_0"]
+atlas = ExtResource("T_chest_coin_open")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_open_1"]
+atlas = ExtResource("T_chest_coin_open")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_open_2"]
+atlas = ExtResource("T_chest_coin_open")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_open_3"]
+atlas = ExtResource("T_chest_coin_open")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_open_4"]
+atlas = ExtResource("T_chest_coin_open")
+region = Rect2(256, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_coin_open_5"]
+atlas = ExtResource("T_chest_coin_open")
+region = Rect2(320, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_0"]
+atlas = ExtResource("T_chest_bonus")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_open_0"]
+atlas = ExtResource("T_chest_bonus_open")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_open_1"]
+atlas = ExtResource("T_chest_bonus_open")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_open_2"]
+atlas = ExtResource("T_chest_bonus_open")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_open_3"]
+atlas = ExtResource("T_chest_bonus_open")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_open_4"]
+atlas = ExtResource("T_chest_bonus_open")
+region = Rect2(256, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_bonus_open_5"]
+atlas = ExtResource("T_chest_bonus_open")
+region = Rect2(320, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_chest_spent_0"]
+atlas = ExtResource("T_chest_spent")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fragile_0"]
+atlas = ExtResource("T_fragile")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_solid_0"]
+atlas = ExtResource("T_solid")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_entry_rim_0"]
+atlas = ExtResource("T_pipe_entry_rim")
+region = Rect2(0, 0, 160, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_entry_body_0"]
+atlas = ExtResource("T_pipe_entry_body")
+region = Rect2(0, 0, 160, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_entry_foot_0"]
+atlas = ExtResource("T_pipe_entry_foot")
+region = Rect2(0, 0, 160, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_sign_entry_0"]
+atlas = ExtResource("T_sign_entry")
+region = Rect2(0, 0, 28, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_entry_0"]
+atlas = ExtResource("T_pipe_entry")
+region = Rect2(0, 0, 160, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_return_rim_0"]
+atlas = ExtResource("T_pipe_return_rim")
+region = Rect2(0, 0, 160, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_return_body_0"]
+atlas = ExtResource("T_pipe_return_body")
+region = Rect2(0, 0, 160, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_return_foot_0"]
+atlas = ExtResource("T_pipe_return_foot")
+region = Rect2(0, 0, 160, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_sign_return_0"]
+atlas = ExtResource("T_sign_return")
+region = Rect2(0, 0, 28, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_return_0"]
+atlas = ExtResource("T_pipe_return")
+region = Rect2(0, 0, 160, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_ambush_rim_0"]
+atlas = ExtResource("T_pipe_ambush_rim")
+region = Rect2(0, 0, 160, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_ambush_body_0"]
+atlas = ExtResource("T_pipe_ambush_body")
+region = Rect2(0, 0, 160, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_ambush_foot_0"]
+atlas = ExtResource("T_pipe_ambush_foot")
+region = Rect2(0, 0, 160, 24)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_sign_ambush_0"]
+atlas = ExtResource("T_sign_ambush")
+region = Rect2(0, 0, 28, 26)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_ambush_0"]
+atlas = ExtResource("T_pipe_ambush")
+region = Rect2(0, 0, 160, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_ambush_spent_0"]
+atlas = ExtResource("T_pipe_ambush_spent")
+region = Rect2(0, 0, 160, 96)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ferry_oak_0"]
+atlas = ExtResource("T_ferry_oak")
+region = Rect2(0, 0, 256, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_ferry_quay_0"]
+atlas = ExtResource("T_ferry_quay")
+region = Rect2(0, 0, 256, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_spikes_0"]
+atlas = ExtResource("T_spikes")
+region = Rect2(0, 0, 96, 42)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_checkpoint_off_0"]
+atlas = ExtResource("T_checkpoint_off")
+region = Rect2(0, 0, 160, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_checkpoint_on_0"]
+atlas = ExtResource("T_checkpoint_on")
+region = Rect2(0, 0, 160, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_checkpoint_on_1"]
+atlas = ExtResource("T_checkpoint_on")
+region = Rect2(160, 0, 160, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_checkpoint_on_2"]
+atlas = ExtResource("T_checkpoint_on")
+region = Rect2(320, 0, 160, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_checkpoint_on_3"]
+atlas = ExtResource("T_checkpoint_on")
+region = Rect2(480, 0, 160, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_finish_0"]
+atlas = ExtResource("T_finish")
+region = Rect2(0, 0, 160, 197)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_finish_1"]
+atlas = ExtResource("T_finish")
+region = Rect2(160, 0, 160, 197)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_finish_2"]
+atlas = ExtResource("T_finish")
+region = Rect2(320, 0, 160, 197)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_finish_3"]
+atlas = ExtResource("T_finish")
+region = Rect2(480, 0, 160, 197)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_closed_0"]
+atlas = ExtResource("T_gate_closed")
+region = Rect2(0, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_open_0"]
+atlas = ExtResource("T_gate_open")
+region = Rect2(0, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_0"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(0, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_1"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(40, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_2"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(80, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_3"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(120, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_4"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(160, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_5"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(200, 0, 40, 344)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_gate_unlock_6"]
+atlas = ExtResource("T_gate_unlock")
+region = Rect2(240, 0, 40, 344)
+filter_clip = true
+
+[resource]
+animations = [{"name": &"chest_coin", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_chest_coin_0")}]},
+{"name": &"chest_coin_open", "speed": 20.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_chest_coin_open_0")}, {"duration": 1.0, "texture": SubResource("A_chest_coin_open_1")}, {"duration": 1.0, "texture": SubResource("A_chest_coin_open_2")}, {"duration": 1.0, "texture": SubResource("A_chest_coin_open_3")}, {"duration": 1.0, "texture": SubResource("A_chest_coin_open_4")}, {"duration": 1.0, "texture": SubResource("A_chest_coin_open_5")}]},
+{"name": &"chest_bonus", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_chest_bonus_0")}]},
+{"name": &"chest_bonus_open", "speed": 20.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_chest_bonus_open_0")}, {"duration": 1.0, "texture": SubResource("A_chest_bonus_open_1")}, {"duration": 1.0, "texture": SubResource("A_chest_bonus_open_2")}, {"duration": 1.0, "texture": SubResource("A_chest_bonus_open_3")}, {"duration": 1.0, "texture": SubResource("A_chest_bonus_open_4")}, {"duration": 1.0, "texture": SubResource("A_chest_bonus_open_5")}]},
+{"name": &"chest_spent", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_chest_spent_0")}]},
+{"name": &"fragile", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_fragile_0")}]},
+{"name": &"solid", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_solid_0")}]},
+{"name": &"pipe_entry_rim", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_entry_rim_0")}]},
+{"name": &"pipe_entry_body", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_entry_body_0")}]},
+{"name": &"pipe_entry_foot", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_entry_foot_0")}]},
+{"name": &"sign_entry", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_sign_entry_0")}]},
+{"name": &"pipe_entry", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_entry_0")}]},
+{"name": &"pipe_return_rim", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_return_rim_0")}]},
+{"name": &"pipe_return_body", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_return_body_0")}]},
+{"name": &"pipe_return_foot", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_return_foot_0")}]},
+{"name": &"sign_return", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_sign_return_0")}]},
+{"name": &"pipe_return", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_return_0")}]},
+{"name": &"pipe_ambush_rim", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_ambush_rim_0")}]},
+{"name": &"pipe_ambush_body", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_ambush_body_0")}]},
+{"name": &"pipe_ambush_foot", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_ambush_foot_0")}]},
+{"name": &"sign_ambush", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_sign_ambush_0")}]},
+{"name": &"pipe_ambush", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_ambush_0")}]},
+{"name": &"pipe_ambush_spent", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_ambush_spent_0")}]},
+{"name": &"ferry_oak", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ferry_oak_0")}]},
+{"name": &"ferry_quay", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_ferry_quay_0")}]},
+{"name": &"spikes", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_spikes_0")}]},
+{"name": &"checkpoint_off", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_checkpoint_off_0")}]},
+{"name": &"checkpoint_on", "speed": 5.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_checkpoint_on_0")}, {"duration": 1.0, "texture": SubResource("A_checkpoint_on_1")}, {"duration": 1.0, "texture": SubResource("A_checkpoint_on_2")}, {"duration": 1.0, "texture": SubResource("A_checkpoint_on_3")}]},
+{"name": &"finish", "speed": 5.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_finish_0")}, {"duration": 1.0, "texture": SubResource("A_finish_1")}, {"duration": 1.0, "texture": SubResource("A_finish_2")}, {"duration": 1.0, "texture": SubResource("A_finish_3")}]},
+{"name": &"gate_closed", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_gate_closed_0")}]},
+{"name": &"gate_open", "speed": 1.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_gate_open_0")}]},
+{"name": &"gate_unlock", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_gate_unlock_0")}, {"duration": 1.0, "texture": SubResource("A_gate_unlock_1")}, {"duration": 1.0, "texture": SubResource("A_gate_unlock_2")}, {"duration": 1.0, "texture": SubResource("A_gate_unlock_3")}, {"duration": 1.0, "texture": SubResource("A_gate_unlock_4")}, {"duration": 1.0, "texture": SubResource("A_gate_unlock_5")}, {"duration": 1.0, "texture": SubResource("A_gate_unlock_6")}]}]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="../../visual/actor_view.gd" id="1"]
+[ext_resource type="SpriteFrames" path="hero_bolt.tres" id="2"]
+[node name="hero_bolt" type="Node2D"]
+script = ExtResource("1")
+frames = ExtResource("2")
+pivot_px = Vector2(78,20)
+initial_clip = &"flight"

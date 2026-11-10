@@ -1,0 +1,6213 @@
+{
+  "characters/fire_imp": {
+    "patrol": {
+      "file": "runtime/characters/fire_imp/patrol.png",
+      "description": "Шесть фаз шага.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        960,
+        128
+      ],
+      "count": 6,
+      "fps": 10,
+      "loop": true,
+      "duration_seconds": 0.6,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/fire_imp_patrol.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ],
+        [
+          640,
+          0,
+          160,
+          128
+        ],
+        [
+          800,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/fire_imp/fire_imp.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_contact_px": [
+            272.0,
+            446
+          ],
+          "uniform_scale": 0.2052505966587112,
+          "translation_px": [
+            24,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_contact_px": [
+            295.5,
+            446
+          ],
+          "uniform_scale": 0.2052505966587112,
+          "translation_px": [
+            19,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_contact_px": [
+            218.0,
+            446
+          ],
+          "uniform_scale": 0.2052505966587112,
+          "translation_px": [
+            35,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_contact_px": [
+            280.5,
+            447
+          ],
+          "uniform_scale": 0.2052505966587112,
+          "translation_px": [
+            22,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_contact_px": [
+            301.5,
+            447
+          ],
+          "uniform_scale": 0.2052505966587112,
+          "translation_px": [
+            18,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_contact_px": [
+            210.0,
+            447
+          ],
+          "uniform_scale": 0.2052505966587112,
+          "translation_px": [
+            37,
+            20
+          ]
+        }
+      ],
+      "scene": "runtime/characters/fire_imp/fire_imp.tscn",
+      "layout": "Одна строка; кадры слева направо 0…5; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "idle": {
+      "file": "runtime/characters/fire_imp/idle.png",
+      "description": "Ожидание: дыхание и огонь.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 6,
+      "loop": true,
+      "duration_seconds": 0.6666666666666666,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/fire_imp_states_v2.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/fire_imp/fire_imp.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            186.5,
+            324
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            -5
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            186.5,
+            323
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            -4
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            185.5,
+            323
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            -4
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            186.0,
+            323
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            -4
+          ]
+        }
+      ],
+      "scene": "runtime/characters/fire_imp/fire_imp.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "turn": {
+      "file": "runtime/characters/fire_imp/turn.png",
+      "description": "Поворот через фронтальную позу.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        960,
+        128
+      ],
+      "count": 6,
+      "fps": 24,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/fire_imp_states_v2.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7,
+        6,
+        5
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ],
+        [
+          640,
+          0,
+          160,
+          128
+        ],
+        [
+          800,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/fire_imp/fire_imp.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику. Отразить визуальную ветвь в середине клипа, у фронтальной позы; не зеркалить физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            188.0,
+            302
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            12,
+            3
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            191.0,
+            302
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            11,
+            3
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            186.5,
+            302
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            3
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            187.5,
+            302
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            3
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            186.5,
+            302
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            13,
+            3
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            191.0,
+            302
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            11,
+            3
+          ]
+        }
+      ],
+      "scene": "runtime/characters/fire_imp/fire_imp.tscn",
+      "layout": "Одна строка; кадры слева направо 0…5; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "stomp_defeat": {
+      "file": "runtime/characters/fire_imp/stomp_defeat.png",
+      "description": "Поражение от прыжка: оседает в угли.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/fire_imp_states_v2.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/fire_imp/fire_imp.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            183.0,
+            284
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            14,
+            10
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            188.5,
+            283
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            12,
+            10
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            180.0,
+            283
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            15,
+            10
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            183.0,
+            283
+          ],
+          "uniform_scale": 0.3598326359832636,
+          "translation_px": [
+            14,
+            10
+          ]
+        }
+      ],
+      "scene": "runtime/characters/fire_imp/fire_imp.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "magic_defeat": {
+      "file": "runtime/characters/fire_imp/magic_defeat.png",
+      "description": "Магическое рассыпание в искры.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/fire_imp_magic_emerge.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/fire_imp/fire_imp.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "source_contact_px": [
+            208.5,
+            396
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            31,
+            19
+          ]
+        },
+        {
+          "source_region_px": [
+            444,
+            0,
+            887,
+            444
+          ],
+          "source_contact_px": [
+            204.0,
+            396
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            32,
+            19
+          ]
+        },
+        {
+          "source_region_px": [
+            887,
+            0,
+            1330,
+            444
+          ],
+          "source_contact_px": [
+            208.0,
+            395
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            31,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            1330,
+            0,
+            1774,
+            444
+          ],
+          "source_contact_px": [
+            200.0,
+            395
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            33,
+            20
+          ]
+        }
+      ],
+      "scene": "runtime/characters/fire_imp/fire_imp.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "pipe_emerge": {
+      "file": "runtime/characters/fire_imp/pipe_emerge.png",
+      "description": "Выброс из трубы и подготовка к приземлению.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/fire_imp_magic_emerge.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/fire_imp/fire_imp.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            444,
+            444,
+            887
+          ],
+          "source_contact_px": [
+            220.0,
+            372
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            29,
+            25
+          ]
+        },
+        {
+          "source_region_px": [
+            444,
+            444,
+            887,
+            887
+          ],
+          "source_contact_px": [
+            207.5,
+            353
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            32,
+            30
+          ]
+        },
+        {
+          "source_region_px": [
+            887,
+            444,
+            1330,
+            887
+          ],
+          "source_contact_px": [
+            232.0,
+            387
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            26,
+            22
+          ]
+        },
+        {
+          "source_region_px": [
+            1330,
+            444,
+            1774,
+            887
+          ],
+          "source_contact_px": [
+            214.0,
+            396
+          ],
+          "uniform_scale": 0.23369565217391305,
+          "translation_px": [
+            30,
+            19
+          ]
+        }
+      ],
+      "scene": "runtime/characters/fire_imp/fire_imp.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "characters/obsidian_shell": {
+    "patrol": {
+      "file": "runtime/characters/obsidian_shell/patrol.png",
+      "description": "Тяжёлый короткий шаг.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        960,
+        128
+      ],
+      "count": 6,
+      "fps": 10,
+      "loop": true,
+      "duration_seconds": 0.6,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_patrol.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ],
+        [
+          640,
+          0,
+          160,
+          128
+        ],
+        [
+          800,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_contact_px": [
+            220.5,
+            432
+          ],
+          "uniform_scale": 0.23059866962305986,
+          "translation_px": [
+            29,
+            12
+          ]
+        },
+        {
+          "source_region_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_contact_px": [
+            210.5,
+            432
+          ],
+          "uniform_scale": 0.23059866962305986,
+          "translation_px": [
+            31,
+            12
+          ]
+        },
+        {
+          "source_region_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_contact_px": [
+            169.5,
+            432
+          ],
+          "uniform_scale": 0.23059866962305986,
+          "translation_px": [
+            41,
+            12
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_contact_px": [
+            233.0,
+            432
+          ],
+          "uniform_scale": 0.23059866962305986,
+          "translation_px": [
+            26,
+            12
+          ]
+        },
+        {
+          "source_region_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_contact_px": [
+            255.0,
+            431
+          ],
+          "uniform_scale": 0.23059866962305986,
+          "translation_px": [
+            21,
+            13
+          ]
+        },
+        {
+          "source_region_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_contact_px": [
+            216.0,
+            430
+          ],
+          "uniform_scale": 0.23059866962305986,
+          "translation_px": [
+            30,
+            13
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…5; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "idle": {
+      "file": "runtime/characters/obsidian_shell/idle.png",
+      "description": "Ожидание под жёсткой защитой.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 6,
+      "loop": true,
+      "duration_seconds": 0.6666666666666666,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_states.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            164.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            164.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            165.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            164.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "turn": {
+      "file": "runtime/characters/obsidian_shell/turn.png",
+      "description": "Разворот через фронтальную позу.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        960,
+        128
+      ],
+      "count": 6,
+      "fps": 24,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_states.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7,
+        6,
+        5
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ],
+        [
+          640,
+          0,
+          160,
+          128
+        ],
+        [
+          800,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику. Отразить визуальную ветвь в середине клипа, у фронтальной позы; не зеркалить физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            166.0,
+            315
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            24,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            165.5,
+            315
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            183.5,
+            315
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            19,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            184.0,
+            315
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            18,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            183.5,
+            315
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            19,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            165.5,
+            315
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…5; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "stomp": {
+      "file": "runtime/characters/obsidian_shell/stomp.png",
+      "description": "Реакция на прыжок, подготовка к укрытию.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 21.333333333333332,
+      "loop": false,
+      "duration_seconds": 0.1875,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_states.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            164.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            25,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            166.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            24,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            166.0,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            24,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            167.5,
+            314
+          ],
+          "uniform_scale": 0.33440514469453375,
+          "translation_px": [
+            24,
+            7
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "hide": {
+      "file": "runtime/characters/obsidian_shell/hide.png",
+      "description": "Существо втягивается под оболочку.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_hide.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_contact_px": [
+            286.5,
+            541
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            28,
+            14
+          ]
+        },
+        {
+          "source_region_px": [
+            627,
+            0,
+            1254,
+            627
+          ],
+          "source_contact_px": [
+            292.5,
+            541
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            27,
+            14
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            627,
+            627,
+            1254
+          ],
+          "source_contact_px": [
+            308.5,
+            545
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            24,
+            13
+          ]
+        },
+        {
+          "source_region_px": [
+            627,
+            627,
+            1254,
+            1254
+          ],
+          "source_contact_px": [
+            319.0,
+            545
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            22,
+            13
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "wake": {
+      "file": "runtime/characters/obsidian_shell/wake.png",
+      "description": "Выход из оболочки; обратный порядок hide.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 11.428571428571429,
+      "loop": false,
+      "duration_seconds": 0.35,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_hide.png",
+      "source_keys_row_major_zero_based": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            627,
+            627,
+            1254,
+            1254
+          ],
+          "source_contact_px": [
+            319.0,
+            545
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            22,
+            13
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            627,
+            627,
+            1254
+          ],
+          "source_contact_px": [
+            308.5,
+            545
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            24,
+            13
+          ]
+        },
+        {
+          "source_region_px": [
+            627,
+            0,
+            1254,
+            627
+          ],
+          "source_contact_px": [
+            292.5,
+            541
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            27,
+            14
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_contact_px": [
+            286.5,
+            541
+          ],
+          "uniform_scale": 0.18150087260034903,
+          "translation_px": [
+            28,
+            14
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "hidden": {
+      "file": "runtime/characters/obsidian_shell/hidden.png",
+      "description": "Скрытая оболочка, слабое мерцание трещин.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 4,
+      "loop": true,
+      "duration_seconds": 1.0,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_motion.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            179.5,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            179.5,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            179.5,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            180.0,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            20
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "rolling": {
+      "file": "runtime/characters/obsidian_shell/rolling.png",
+      "description": "Скольжение вправо; оболочка не переворачивается.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 15,
+      "loop": true,
+      "duration_seconds": 0.26666666666666666,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_motion.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            179.5,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            195.5,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            20,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            203.5,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            17,
+            20
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            208.0,
+            300
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            16,
+            20
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "hit": {
+      "file": "runtime/characters/obsidian_shell/hit.png",
+      "description": "Короткое содрогание оболочки.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_motion.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            179.5,
+            301
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            19
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            182.5,
+            301
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            24,
+            19
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            180.0,
+            301
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            19
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            180.0,
+            301
+          ],
+          "uniform_scale": 0.3076923076923077,
+          "translation_px": [
+            25,
+            19
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "death": {
+      "file": "runtime/characters/obsidian_shell/death.png",
+      "description": "Магическое поражение раскрытого существа.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 10,
+      "loop": false,
+      "duration_seconds": 0.4,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_defeat_v2.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "source_contact_px": [
+            226.5,
+            394
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            15,
+            0
+          ]
+        },
+        {
+          "source_region_px": [
+            444,
+            0,
+            887,
+            444
+          ],
+          "source_contact_px": [
+            217.0,
+            393
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            18,
+            0
+          ]
+        },
+        {
+          "source_region_px": [
+            887,
+            0,
+            1330,
+            444
+          ],
+          "source_contact_px": [
+            181.0,
+            390
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            28,
+            1
+          ]
+        },
+        {
+          "source_region_px": [
+            1330,
+            0,
+            1774,
+            444
+          ],
+          "source_contact_px": [
+            187.0,
+            391
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            27,
+            1
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "shell_collision": {
+      "file": "runtime/characters/obsidian_shell/shell_collision.png",
+      "description": "Разрушение скрытой оболочки при столкновении.",
+      "frame_px": [
+        160,
+        128
+      ],
+      "sheet_px": [
+        640,
+        128
+      ],
+      "count": 4,
+      "fps": 10,
+      "loop": false,
+      "duration_seconds": 0.4,
+      "density": 2,
+      "pivot_px": [
+        80,
+        112
+      ],
+      "anchor_world": [
+        40.0,
+        56.0
+      ],
+      "world_canvas": [
+        80.0,
+        64.0
+      ],
+      "direction": "right",
+      "source": "masters/obsidian_shell_defeat_v2.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          128
+        ],
+        [
+          160,
+          0,
+          160,
+          128
+        ],
+        [
+          320,
+          0,
+          160,
+          128
+        ],
+        [
+          480,
+          0,
+          160,
+          128
+        ]
+      ],
+      "spriteframes": "runtime/characters/obsidian_shell/obsidian_shell.tres",
+      "transition_rule": "Таймер контроллера главнее FPS. play/sample(progress); визуальные клипы не меняют физику.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            444,
+            444,
+            887
+          ],
+          "source_contact_px": [
+            234.0,
+            369
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            13,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            444,
+            444,
+            887,
+            887
+          ],
+          "source_contact_px": [
+            220.0,
+            369
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            17,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            887,
+            444,
+            1330,
+            887
+          ],
+          "source_contact_px": [
+            217.5,
+            368
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            18,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            1330,
+            444,
+            1774,
+            887
+          ],
+          "source_contact_px": [
+            210.0,
+            368
+          ],
+          "uniform_scale": 0.28493150684931506,
+          "translation_px": [
+            20,
+            7
+          ]
+        }
+      ],
+      "scene": "runtime/characters/obsidian_shell/obsidian_shell.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "characters/ragnaros": {
+    "idle": {
+      "file": "runtime/characters/ragnaros/idle.png",
+      "description": "Спокойное тяжёлое дыхание, мерцание короны.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 6,
+      "loop": true,
+      "duration_seconds": 0.6666666666666666,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_idle.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_contact_px": [
+            263.0,
+            564
+          ],
+          "uniform_scale": 0.6481481481481481,
+          "translation_px": [
+            38,
+            98
+          ]
+        },
+        {
+          "source_region_px": [
+            627,
+            0,
+            1254,
+            627
+          ],
+          "source_contact_px": [
+            263.0,
+            563
+          ],
+          "uniform_scale": 0.6481481481481481,
+          "translation_px": [
+            38,
+            99
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            627,
+            627,
+            1254
+          ],
+          "source_contact_px": [
+            263.0,
+            564
+          ],
+          "uniform_scale": 0.6481481481481481,
+          "translation_px": [
+            38,
+            98
+          ]
+        },
+        {
+          "source_region_px": [
+            627,
+            627,
+            1254,
+            1254
+          ],
+          "source_contact_px": [
+            263.0,
+            564
+          ],
+          "uniform_scale": 0.6481481481481481,
+          "translation_px": [
+            38,
+            98
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "alert": {
+      "file": "runtime/characters/ragnaros/alert.png",
+      "description": "Обнаружение героя.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_fire.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            157.0,
+            333
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            5
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "prepare_fire": {
+      "file": "runtime/characters/ragnaros/prepare_fire.png",
+      "description": "Накопление огня в ладони.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_fire.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            157.0,
+            333
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            5
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            157.0,
+            333
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            5
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            157.0,
+            333
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            5
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            157.0,
+            333
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            5
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "fire_shot": {
+      "file": "runtime/characters/ragnaros/fire_shot.png",
+      "description": "Выстрел рукой и завершение жеста.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_fire.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            157.0,
+            332
+          ],
+          "uniform_scale": 1.3779527559055118,
+          "translation_px": [
+            -8,
+            7
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "prepare_hammer": {
+      "file": "runtime/characters/ragnaros/prepare_hammer.png",
+      "description": "Поднимает тяжёлый молот.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_hammer.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            168.5,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -36,
+            -13
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            164.5,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -30,
+            -13
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            150.0,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -9,
+            -13
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            140.5,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            5,
+            -13
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "hammer_slam": {
+      "file": "runtime/characters/ragnaros/hammer_slam.png",
+      "description": "Удар молотом по поверхности справа.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_hammer.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            163.5,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -28,
+            -13
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            149.5,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -8,
+            -13
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            146.5,
+            332
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -4,
+            -16
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            145.0,
+            330
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -2,
+            -13
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "ground_power": {
+      "file": "runtime/characters/ragnaros/ground_power.png",
+      "description": "Выброс силы через удар рукой.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 10,
+      "loop": false,
+      "duration_seconds": 0.4,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_hammer.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            158.0,
+            328
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -21,
+            -10
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            146.0,
+            328
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            -3,
+            -10
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            133.5,
+            328
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            15,
+            -10
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            124.5,
+            328
+          ],
+          "uniform_scale": 1.4462809917355373,
+          "translation_px": [
+            28,
+            -10
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "recover": {
+      "file": "runtime/characters/ragnaros/recover.png",
+      "description": "Поднимает молот и выпрямляется.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_reactions.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            144.0,
+            344
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            19,
+            13
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            148.0,
+            343
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            14,
+            14
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            143.0,
+            343
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            21,
+            14
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            141.5,
+            343
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            23,
+            14
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "open": {
+      "file": "runtime/characters/ragnaros/open.png",
+      "description": "Открытая грудь, усталое дыхание.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 6,
+      "loop": true,
+      "duration_seconds": 0.6666666666666666,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_reactions.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            153.5,
+            323
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            7,
+            41
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            152.0,
+            323
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            9,
+            41
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            146.0,
+            323
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            17,
+            41
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            139.0,
+            323
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            26,
+            41
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "guarded": {
+      "file": "runtime/characters/ragnaros/guarded.png",
+      "description": "Закрывает грудь молотом.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_reactions.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            159.0,
+            308
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            0,
+            60
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            156.5,
+            308
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            3,
+            60
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            150.5,
+            308
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            11,
+            60
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            143.5,
+            308
+          ],
+          "uniform_scale": 1.3108614232209739,
+          "translation_px": [
+            20,
+            60
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "deflect": {
+      "file": "runtime/characters/ragnaros/deflect.png",
+      "description": "Отбивает магию молотом.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_phase.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "source_contact_px": [
+            156.5,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            18,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            0,
+            724,
+            362
+          ],
+          "source_contact_px": [
+            153.0,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            22,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            0,
+            1086,
+            362
+          ],
+          "source_contact_px": [
+            153.5,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            21,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            0,
+            1448,
+            362
+          ],
+          "source_contact_px": [
+            153.0,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            22,
+            78
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "hit": {
+      "file": "runtime/characters/ragnaros/hit.png",
+      "description": "Отшатывается от попадания.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_phase.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            362,
+            362,
+            724
+          ],
+          "source_contact_px": [
+            156.5,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            18,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            362,
+            724,
+            724
+          ],
+          "source_contact_px": [
+            155.0,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            20,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            362,
+            1086,
+            724
+          ],
+          "source_contact_px": [
+            155.0,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            20,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            362,
+            1448,
+            724
+          ],
+          "source_contact_px": [
+            154.0,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            21,
+            78
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "phase": {
+      "file": "runtime/characters/ragnaros/phase.png",
+      "description": "Нарастание внутреннего огня и новая стойка.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        2048,
+        512
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_phase.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            724,
+            362,
+            1086
+          ],
+          "source_contact_px": [
+            154.0,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            21,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            362,
+            724,
+            724,
+            1086
+          ],
+          "source_contact_px": [
+            154.5,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            20,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            724,
+            724,
+            1086,
+            1086
+          ],
+          "source_contact_px": [
+            154.5,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            20,
+            78
+          ]
+        },
+        {
+          "source_region_px": [
+            1086,
+            724,
+            1448,
+            1086
+          ],
+          "source_contact_px": [
+            152.5,
+            318
+          ],
+          "uniform_scale": 1.2152777777777777,
+          "translation_px": [
+            23,
+            78
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "death": {
+      "file": "runtime/characters/ragnaros/death.png",
+      "description": "Оседает в лаву, остаются погасшие доспехи и молот.",
+      "frame_px": [
+        512,
+        512
+      ],
+      "sheet_px": [
+        3072,
+        512
+      ],
+      "count": 6,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.75,
+      "density": 2,
+      "pivot_px": [
+        208,
+        464
+      ],
+      "anchor_world": [
+        104.0,
+        232.0
+      ],
+      "world_canvas": [
+        256.0,
+        256.0
+      ],
+      "direction": "right; в арене визуальная ветвь отражена влево",
+      "source": "masters/ragnaros_death.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          512,
+          512
+        ],
+        [
+          512,
+          0,
+          512,
+          512
+        ],
+        [
+          1024,
+          0,
+          512,
+          512
+        ],
+        [
+          1536,
+          0,
+          512,
+          512
+        ],
+        [
+          2048,
+          0,
+          512,
+          512
+        ],
+        [
+          2560,
+          0,
+          512,
+          512
+        ]
+      ],
+      "spriteframes": "runtime/characters/ragnaros/ragnaros.tres",
+      "transition_rule": "Готовый художественный клип. Контроллер0.7.0 существует; синхронизировать с clock/visual_event. Тело=home, уязвимый молот=position; цельный рисунок требует отдельной визуальной адаптации. current_game_contract.json.",
+      "collision_world": null,
+      "packing": [
+        {
+          "source_region_px": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "source_contact_px": [
+            232.0,
+            467
+          ],
+          "uniform_scale": 0.8373205741626795,
+          "translation_px": [
+            14,
+            73
+          ]
+        },
+        {
+          "source_region_px": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "source_contact_px": [
+            215.0,
+            467
+          ],
+          "uniform_scale": 0.8373205741626795,
+          "translation_px": [
+            28,
+            73
+          ]
+        },
+        {
+          "source_region_px": [
+            1024,
+            0,
+            1536,
+            512
+          ],
+          "source_contact_px": [
+            200.5,
+            467
+          ],
+          "uniform_scale": 0.8373205741626795,
+          "translation_px": [
+            40,
+            73
+          ]
+        },
+        {
+          "source_region_px": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "source_contact_px": [
+            224.0,
+            439
+          ],
+          "uniform_scale": 0.8373205741626795,
+          "translation_px": [
+            20,
+            96
+          ]
+        },
+        {
+          "source_region_px": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "source_contact_px": [
+            218.0,
+            439
+          ],
+          "uniform_scale": 0.8373205741626795,
+          "translation_px": [
+            25,
+            96
+          ]
+        },
+        {
+          "source_region_px": [
+            1024,
+            512,
+            1536,
+            1024
+          ],
+          "source_contact_px": [
+            204.5,
+            439
+          ],
+          "uniform_scale": 0.8373205741626795,
+          "translation_px": [
+            37,
+            96
+          ]
+        }
+      ],
+      "scene": "runtime/characters/ragnaros/ragnaros.tscn",
+      "layout": "Одна строка; кадры слева направо 0…5; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "effects/boss_projectile": {
+    "warning": {
+      "file": "runtime/effects/boss_projectile/warning.png",
+      "description": "Предупреждение",
+      "frame_px": [
+        192,
+        160
+      ],
+      "sheet_px": [
+        768,
+        160
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        110,
+        80
+      ],
+      "anchor_world": [
+        55.0,
+        40.0
+      ],
+      "world_canvas": [
+        96.0,
+        80.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_boss_projectile_v2.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          192,
+          160
+        ],
+        [
+          192,
+          0,
+          192,
+          160
+        ],
+        [
+          384,
+          0,
+          192,
+          160
+        ],
+        [
+          576,
+          0,
+          192,
+          160
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_projectile/boss_projectile.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "scene": "runtime/effects/boss_projectile/boss_projectile.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "active": {
+      "file": "runtime/effects/boss_projectile/active.png",
+      "description": "Активный эффект",
+      "frame_px": [
+        192,
+        160
+      ],
+      "sheet_px": [
+        768,
+        160
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": true,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        110,
+        80
+      ],
+      "anchor_world": [
+        55.0,
+        40.0
+      ],
+      "world_canvas": [
+        96.0,
+        80.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_boss_projectile_v2.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          192,
+          160
+        ],
+        [
+          192,
+          0,
+          192,
+          160
+        ],
+        [
+          384,
+          0,
+          192,
+          160
+        ],
+        [
+          576,
+          0,
+          192,
+          160
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_projectile/boss_projectile.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "scene": "runtime/effects/boss_projectile/boss_projectile.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "end": {
+      "file": "runtime/effects/boss_projectile/end.png",
+      "description": "Завершение",
+      "frame_px": [
+        192,
+        160
+      ],
+      "sheet_px": [
+        768,
+        160
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        110,
+        80
+      ],
+      "anchor_world": [
+        55.0,
+        40.0
+      ],
+      "world_canvas": [
+        96.0,
+        80.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_boss_projectile_v2.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          192,
+          160
+        ],
+        [
+          192,
+          0,
+          192,
+          160
+        ],
+        [
+          384,
+          0,
+          192,
+          160
+        ],
+        [
+          576,
+          0,
+          192,
+          160
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_projectile/boss_projectile.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "scene": "runtime/effects/boss_projectile/boss_projectile.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "effects/boss_wave": {
+    "warning": {
+      "file": "runtime/effects/boss_wave/warning.png",
+      "description": "Предупреждение",
+      "frame_px": [
+        320,
+        192
+      ],
+      "sheet_px": [
+        1280,
+        192
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        160,
+        168
+      ],
+      "anchor_world": [
+        80.0,
+        84.0
+      ],
+      "world_canvas": [
+        160.0,
+        96.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_boss_wave.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          320,
+          192
+        ],
+        [
+          320,
+          0,
+          320,
+          192
+        ],
+        [
+          640,
+          0,
+          320,
+          192
+        ],
+        [
+          960,
+          0,
+          320,
+          192
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_wave/boss_wave.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_wave/boss_wave.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "active": {
+      "file": "runtime/effects/boss_wave/active.png",
+      "description": "Активный эффект",
+      "frame_px": [
+        320,
+        192
+      ],
+      "sheet_px": [
+        1280,
+        192
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": true,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        160,
+        168
+      ],
+      "anchor_world": [
+        80.0,
+        84.0
+      ],
+      "world_canvas": [
+        160.0,
+        96.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_boss_wave.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          320,
+          192
+        ],
+        [
+          320,
+          0,
+          320,
+          192
+        ],
+        [
+          640,
+          0,
+          320,
+          192
+        ],
+        [
+          960,
+          0,
+          320,
+          192
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_wave/boss_wave.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_wave/boss_wave.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "end": {
+      "file": "runtime/effects/boss_wave/end.png",
+      "description": "Завершение",
+      "frame_px": [
+        320,
+        192
+      ],
+      "sheet_px": [
+        1280,
+        192
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        160,
+        168
+      ],
+      "anchor_world": [
+        80.0,
+        84.0
+      ],
+      "world_canvas": [
+        160.0,
+        96.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_boss_wave.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          320,
+          192
+        ],
+        [
+          320,
+          0,
+          320,
+          192
+        ],
+        [
+          640,
+          0,
+          320,
+          192
+        ],
+        [
+          960,
+          0,
+          320,
+          192
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_wave/boss_wave.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_wave/boss_wave.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "effects/boss_eruption": {
+    "warning": {
+      "file": "runtime/effects/boss_eruption/warning.png",
+      "description": "Предупреждение",
+      "frame_px": [
+        320,
+        320
+      ],
+      "sheet_px": [
+        1280,
+        320
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        160,
+        294
+      ],
+      "anchor_world": [
+        80.0,
+        147.0
+      ],
+      "world_canvas": [
+        160.0,
+        160.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_boss_eruption.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          320,
+          320
+        ],
+        [
+          320,
+          0,
+          320,
+          320
+        ],
+        [
+          640,
+          0,
+          320,
+          320
+        ],
+        [
+          960,
+          0,
+          320,
+          320
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_eruption/boss_eruption.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_eruption/boss_eruption.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "active": {
+      "file": "runtime/effects/boss_eruption/active.png",
+      "description": "Активный эффект",
+      "frame_px": [
+        320,
+        320
+      ],
+      "sheet_px": [
+        1280,
+        320
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": true,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        160,
+        294
+      ],
+      "anchor_world": [
+        80.0,
+        147.0
+      ],
+      "world_canvas": [
+        160.0,
+        160.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_boss_eruption.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          320,
+          320
+        ],
+        [
+          320,
+          0,
+          320,
+          320
+        ],
+        [
+          640,
+          0,
+          320,
+          320
+        ],
+        [
+          960,
+          0,
+          320,
+          320
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_eruption/boss_eruption.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_eruption/boss_eruption.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "end": {
+      "file": "runtime/effects/boss_eruption/end.png",
+      "description": "Завершение",
+      "frame_px": [
+        320,
+        320
+      ],
+      "sheet_px": [
+        1280,
+        320
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        160,
+        294
+      ],
+      "anchor_world": [
+        80.0,
+        147.0
+      ],
+      "world_canvas": [
+        160.0,
+        160.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_boss_eruption.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          320,
+          320
+        ],
+        [
+          320,
+          0,
+          320,
+          320
+        ],
+        [
+          640,
+          0,
+          320,
+          320
+        ],
+        [
+          960,
+          0,
+          320,
+          320
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_eruption/boss_eruption.tres",
+      "transition_rule": "Художественные ключи для существующих трёх атак0.7.0. Подогнать видимое ядро к физике из current_game_contract.json; фазу задаёт контроллер, не animation_finished.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_eruption/boss_eruption.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "effects/boss_falling": {
+    "warning": {
+      "file": "runtime/effects/boss_falling/warning.png",
+      "description": "Предупреждение",
+      "frame_px": [
+        240,
+        320
+      ],
+      "sheet_px": [
+        960,
+        320
+      ],
+      "count": 4,
+      "fps": 8,
+      "loop": false,
+      "duration_seconds": 0.5,
+      "density": 2,
+      "pivot_px": [
+        120,
+        294
+      ],
+      "anchor_world": [
+        60.0,
+        147.0
+      ],
+      "world_canvas": [
+        120.0,
+        160.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_boss_falling_v2.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          240,
+          320
+        ],
+        [
+          240,
+          0,
+          240,
+          320
+        ],
+        [
+          480,
+          0,
+          240,
+          320
+        ],
+        [
+          720,
+          0,
+          240,
+          320
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_falling/boss_falling.tres",
+      "transition_rule": "Резервное художественное предложение: падающих камней в текущем Рагнаросе0.7.0 нет. Не добавлять механику автоматически.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_falling/boss_falling.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "active": {
+      "file": "runtime/effects/boss_falling/active.png",
+      "description": "Активный эффект",
+      "frame_px": [
+        240,
+        320
+      ],
+      "sheet_px": [
+        960,
+        320
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": true,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        120,
+        180
+      ],
+      "anchor_world": [
+        60.0,
+        90.0
+      ],
+      "world_canvas": [
+        120.0,
+        160.0
+      ],
+      "direction": "down",
+      "source": "masters/fx_boss_falling_v2.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          240,
+          320
+        ],
+        [
+          240,
+          0,
+          240,
+          320
+        ],
+        [
+          480,
+          0,
+          240,
+          320
+        ],
+        [
+          720,
+          0,
+          240,
+          320
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_falling/boss_falling.tres",
+      "transition_rule": "Резервное художественное предложение: падающих камней в текущем Рагнаросе0.7.0 нет. Не добавлять механику автоматически.",
+      "collision_world": null,
+      "anchor_meaning": "Центр камня; warning/end — контакт с поверхностью.",
+      "scene": "runtime/effects/boss_falling/boss_falling.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "end": {
+      "file": "runtime/effects/boss_falling/end.png",
+      "description": "Завершение",
+      "frame_px": [
+        240,
+        320
+      ],
+      "sheet_px": [
+        960,
+        320
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        120,
+        294
+      ],
+      "anchor_world": [
+        60.0,
+        147.0
+      ],
+      "world_canvas": [
+        120.0,
+        160.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_boss_falling_v2.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          240,
+          320
+        ],
+        [
+          240,
+          0,
+          240,
+          320
+        ],
+        [
+          480,
+          0,
+          240,
+          320
+        ],
+        [
+          720,
+          0,
+          240,
+          320
+        ]
+      ],
+      "spriteframes": "runtime/effects/boss_falling/boss_falling.tres",
+      "transition_rule": "Резервное художественное предложение: падающих камней в текущем Рагнаросе0.7.0 нет. Не добавлять механику автоматически.",
+      "collision_world": null,
+      "anchor_meaning": "Точка контакта с поверхностью.",
+      "scene": "runtime/effects/boss_falling/boss_falling.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "effects/hero_bolt": {
+    "flight": {
+      "file": "runtime/effects/hero_bolt/flight.png",
+      "description": "Полёт",
+      "frame_px": [
+        96,
+        40
+      ],
+      "sheet_px": [
+        384,
+        40
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": true,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        78,
+        20
+      ],
+      "anchor_world": [
+        39.0,
+        10.0
+      ],
+      "world_canvas": [
+        48.0,
+        20.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_hero_bolt.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          96,
+          40
+        ],
+        [
+          96,
+          0,
+          96,
+          40
+        ],
+        [
+          192,
+          0,
+          96,
+          40
+        ],
+        [
+          288,
+          0,
+          96,
+          40
+        ]
+      ],
+      "spriteframes": "runtime/effects/hero_bolt/hero_bolt.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": [
+        10,
+        6
+      ],
+      "physics": "bolt.gd: speed320, lifetime2.4, максимум2; только справочно, не изменять.",
+      "scene": "runtime/effects/hero_bolt/hero_bolt.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "trail": {
+      "file": "runtime/effects/hero_bolt/trail.png",
+      "description": "Короткий след",
+      "frame_px": [
+        96,
+        40
+      ],
+      "sheet_px": [
+        384,
+        40
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        78,
+        20
+      ],
+      "anchor_world": [
+        39.0,
+        10.0
+      ],
+      "world_canvas": [
+        48.0,
+        20.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_hero_bolt.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          96,
+          40
+        ],
+        [
+          96,
+          0,
+          96,
+          40
+        ],
+        [
+          192,
+          0,
+          96,
+          40
+        ],
+        [
+          288,
+          0,
+          96,
+          40
+        ]
+      ],
+      "spriteframes": "runtime/effects/hero_bolt/hero_bolt.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": [
+        10,
+        6
+      ],
+      "physics": "bolt.gd: speed320, lifetime2.4, максимум2; только справочно, не изменять.",
+      "scene": "runtime/effects/hero_bolt/hero_bolt.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "fade": {
+      "file": "runtime/effects/hero_bolt/fade.png",
+      "description": "Исчезновение",
+      "frame_px": [
+        96,
+        40
+      ],
+      "sheet_px": [
+        384,
+        40
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        78,
+        20
+      ],
+      "anchor_world": [
+        39.0,
+        10.0
+      ],
+      "world_canvas": [
+        48.0,
+        20.0
+      ],
+      "direction": "right",
+      "source": "masters/fx_hero_bolt.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          96,
+          40
+        ],
+        [
+          96,
+          0,
+          96,
+          40
+        ],
+        [
+          192,
+          0,
+          96,
+          40
+        ],
+        [
+          288,
+          0,
+          96,
+          40
+        ]
+      ],
+      "spriteframes": "runtime/effects/hero_bolt/hero_bolt.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": [
+        10,
+        6
+      ],
+      "physics": "bolt.gd: speed320, lifetime2.4, максимум2; только справочно, не изменять.",
+      "scene": "runtime/effects/hero_bolt/hero_bolt.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "effects/hero_impacts": {
+    "enemy_hit": {
+      "file": "runtime/effects/hero_impacts/enemy_hit.png",
+      "description": "Попадание по врагу",
+      "frame_px": [
+        144,
+        144
+      ],
+      "sheet_px": [
+        576,
+        144
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        72,
+        72
+      ],
+      "anchor_world": [
+        36.0,
+        36.0
+      ],
+      "world_canvas": [
+        72.0,
+        72.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_hero_impacts.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          144,
+          144
+        ],
+        [
+          144,
+          0,
+          144,
+          144
+        ],
+        [
+          288,
+          0,
+          144,
+          144
+        ],
+        [
+          432,
+          0,
+          144,
+          144
+        ]
+      ],
+      "spriteframes": "runtime/effects/hero_impacts/hero_impacts.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": null,
+      "scene": "runtime/effects/hero_impacts/hero_impacts.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "boss_hit": {
+      "file": "runtime/effects/hero_impacts/boss_hit.png",
+      "description": "Попадание по боссу",
+      "frame_px": [
+        144,
+        144
+      ],
+      "sheet_px": [
+        576,
+        144
+      ],
+      "count": 4,
+      "fps": 16,
+      "loop": false,
+      "duration_seconds": 0.25,
+      "density": 2,
+      "pivot_px": [
+        72,
+        72
+      ],
+      "anchor_world": [
+        36.0,
+        36.0
+      ],
+      "world_canvas": [
+        72.0,
+        72.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_hero_impacts.png",
+      "source_keys_row_major_zero_based": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          144,
+          144
+        ],
+        [
+          144,
+          0,
+          144,
+          144
+        ],
+        [
+          288,
+          0,
+          144,
+          144
+        ],
+        [
+          432,
+          0,
+          144,
+          144
+        ]
+      ],
+      "spriteframes": "runtime/effects/hero_impacts/hero_impacts.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": null,
+      "scene": "runtime/effects/hero_impacts/hero_impacts.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "powerup": {
+      "file": "runtime/effects/hero_impacts/powerup.png",
+      "description": "Получение усиления",
+      "frame_px": [
+        144,
+        144
+      ],
+      "sheet_px": [
+        576,
+        144
+      ],
+      "count": 4,
+      "fps": 12,
+      "loop": false,
+      "duration_seconds": 0.3333333333333333,
+      "density": 2,
+      "pivot_px": [
+        72,
+        126
+      ],
+      "anchor_world": [
+        36.0,
+        63.0
+      ],
+      "world_canvas": [
+        72.0,
+        72.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_hero_impacts.png",
+      "source_keys_row_major_zero_based": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          144,
+          144
+        ],
+        [
+          144,
+          0,
+          144,
+          144
+        ],
+        [
+          288,
+          0,
+          144,
+          144
+        ],
+        [
+          432,
+          0,
+          144,
+          144
+        ]
+      ],
+      "spriteframes": "runtime/effects/hero_impacts/hero_impacts.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": null,
+      "scene": "runtime/effects/hero_impacts/hero_impacts.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "effects/block_break": {
+    "break": {
+      "file": "runtime/effects/block_break/break.png",
+      "description": "Разрушение блока",
+      "frame_px": [
+        160,
+        160
+      ],
+      "sheet_px": [
+        640,
+        160
+      ],
+      "count": 4,
+      "fps": 14,
+      "loop": false,
+      "duration_seconds": 0.2857142857142857,
+      "density": 2,
+      "pivot_px": [
+        80,
+        80
+      ],
+      "anchor_world": [
+        40.0,
+        40.0
+      ],
+      "world_canvas": [
+        80.0,
+        80.0
+      ],
+      "direction": "symmetric/front; наземный или радиальный эффект",
+      "source": "masters/fx_block_break.png",
+      "source_keys_row_major_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "regions_px": [
+        [
+          0,
+          0,
+          160,
+          160
+        ],
+        [
+          160,
+          0,
+          160,
+          160
+        ],
+        [
+          320,
+          0,
+          160,
+          160
+        ],
+        [
+          480,
+          0,
+          160,
+          160
+        ]
+      ],
+      "spriteframes": "runtime/effects/block_break/block_break.tres",
+      "transition_rule": "Существующие параметры снаряда и наград не меняются. Эффект поражения должен жить отдельно от удаляемого объекта.",
+      "collision_world": null,
+      "scene": "runtime/effects/block_break/block_break.tscn",
+      "layout": "Одна строка; кадры слева направо 0…3; внешние поля и промежутки 0 px. AtlasTexture.filter_clip=true.",
+      "ready_spriteframes": true,
+      "runtime_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  }
+}

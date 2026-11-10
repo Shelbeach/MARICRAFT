@@ -1,0 +1,2830 @@
+{
+  "chest_closed": {
+    "file": "runtime/objects/chest_closed.png",
+    "source_px": [
+      96,
+      104
+    ],
+    "frame_px": [
+      96,
+      104
+    ],
+    "world_units": [
+      48,
+      52
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      50
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Медный рудный сундук — закрыт",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        104
+      ]
+    ]
+  },
+  "chest_used": {
+    "file": "runtime/objects/chest_used.png",
+    "source_px": [
+      96,
+      104
+    ],
+    "frame_px": [
+      96,
+      104
+    ],
+    "world_units": [
+      48,
+      52
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      50
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Медный рудный сундук — открыт и пуст, награда уже выдана",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        104
+      ]
+    ]
+  },
+  "block_strong": {
+    "file": "runtime/objects/block_strong.png",
+    "source_px": [
+      64,
+      64
+    ],
+    "frame_px": [
+      64,
+      64
+    ],
+    "world_units": [
+      32,
+      32
+    ],
+    "density": 2,
+    "anchor_world": [
+      16,
+      16
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Прочная цельная кладка без трещин, нерушимая опора.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        64,
+        64
+      ]
+    ]
+  },
+  "block_fragile": {
+    "file": "runtime/objects/block_fragile.png",
+    "source_px": [
+      64,
+      64
+    ],
+    "frame_px": [
+      64,
+      64
+    ],
+    "world_units": [
+      32,
+      32
+    ],
+    "density": 2,
+    "anchor_world": [
+      16,
+      16
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Хрупкая руда с медной жилой и крупными трещинами. Разрушается целиком по реальному событию.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        64,
+        64
+      ]
+    ]
+  },
+  "block_empty": {
+    "file": "runtime/objects/block_empty.png",
+    "source_px": [
+      64,
+      64
+    ],
+    "frame_px": [
+      64,
+      64
+    ],
+    "world_units": [
+      32,
+      32
+    ],
+    "density": 2,
+    "anchor_world": [
+      16,
+      16
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Использованный блок, погасший без награды.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        64,
+        64
+      ]
+    ]
+  },
+  "pipe_rim": {
+    "file": "runtime/objects/pipe_rim.png",
+    "source_px": [
+      160,
+      28
+    ],
+    "frame_px": [
+      160,
+      28
+    ],
+    "world_units": [
+      80,
+      14
+    ],
+    "density": 2,
+    "anchor_world": [
+      40,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Составная шахтная труба — pipe_rim",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        28
+      ]
+    ]
+  },
+  "pipe_middle": {
+    "file": "runtime/objects/pipe_middle.png",
+    "source_px": [
+      160,
+      54
+    ],
+    "frame_px": [
+      160,
+      54
+    ],
+    "world_units": [
+      80,
+      27
+    ],
+    "density": 2,
+    "anchor_world": [
+      40,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Составная шахтная труба — pipe_middle",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        54
+      ]
+    ]
+  },
+  "pipe_foot": {
+    "file": "runtime/objects/pipe_foot.png",
+    "source_px": [
+      160,
+      14
+    ],
+    "frame_px": [
+      160,
+      14
+    ],
+    "world_units": [
+      80,
+      7
+    ],
+    "density": 2,
+    "anchor_world": [
+      40,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Составная шахтная труба — pipe_foot",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        14
+      ]
+    ]
+  },
+  "pipe_entry": {
+    "file": "runtime/objects/pipe_entry.png",
+    "source_px": [
+      160,
+      96
+    ],
+    "frame_px": [
+      160,
+      96
+    ],
+    "world_units": [
+      80,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      40.0,
+      48
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Медная шахтная труба — вход, стрелка вниз",
+    "state": "pipe.mode/triggered",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        96
+      ]
+    ]
+  },
+  "pipe_return": {
+    "file": "runtime/objects/pipe_return.png",
+    "source_px": [
+      160,
+      96
+    ],
+    "frame_px": [
+      160,
+      96
+    ],
+    "world_units": [
+      80,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      40.0,
+      48
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Медная шахтная труба — возврат, стрелка вверх",
+    "state": "pipe.mode/triggered",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        96
+      ]
+    ]
+  },
+  "pipe_ambush": {
+    "file": "runtime/objects/pipe_ambush.png",
+    "source_px": [
+      160,
+      96
+    ],
+    "frame_px": [
+      160,
+      96
+    ],
+    "world_units": [
+      80,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      40.0,
+      48
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Медная шахтная труба — засада, предупреждающая метка",
+    "state": "pipe.mode/triggered",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        96
+      ]
+    ]
+  },
+  "pipe_spent": {
+    "file": "runtime/objects/pipe_spent.png",
+    "source_px": [
+      160,
+      96
+    ],
+    "frame_px": [
+      160,
+      96
+    ],
+    "world_units": [
+      80,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      40.0,
+      48
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Медная шахтная труба — засада сработала, метка погасла",
+    "state": "pipe.mode/triggered",
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        96
+      ]
+    ]
+  },
+  "checkpoint": {
+    "file": "runtime/objects/checkpoint.png",
+    "source_px": [
+      136,
+      300
+    ],
+    "frame_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "anchor_world": [
+      34.0,
+      149
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Контрольная точка с бирюзовым вымпелом.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        136,
+        300
+      ]
+    ]
+  },
+  "finish": {
+    "file": "runtime/objects/finish.png",
+    "source_px": [
+      136,
+      300
+    ],
+    "frame_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "anchor_world": [
+      34.0,
+      149
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Финиш с золотым вымпелом.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        136,
+        300
+      ]
+    ]
+  },
+  "spikes": {
+    "file": "runtime/objects/spikes.png",
+    "source_px": [
+      96,
+      44
+    ],
+    "frame_px": [
+      96,
+      44
+    ],
+    "world_units": [
+      48,
+      22
+    ],
+    "density": 2,
+    "anchor_world": [
+      24.0,
+      21
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Острые железные шипы на каменном основании.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        44
+      ]
+    ]
+  },
+  "checkpoint_inactive": {
+    "file": "runtime/objects/checkpoint_inactive.png",
+    "source_px": [
+      136,
+      300
+    ],
+    "frame_px": [
+      136,
+      300
+    ],
+    "world_units": [
+      68,
+      150
+    ],
+    "density": 2,
+    "anchor_world": [
+      34,
+      149
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Привал до активации, приглушённый вымпел.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        136,
+        300
+      ]
+    ]
+  },
+  "ferry": {
+    "file": "runtime/objects/ferry.png",
+    "source_px": [
+      256,
+      32
+    ],
+    "frame_px": [
+      256,
+      32
+    ],
+    "world_units": [
+      128,
+      16
+    ],
+    "density": 2,
+    "anchor_world": [
+      64,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Движущийся настил128×16 с обоими законченными железными торцами.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        256,
+        32
+      ]
+    ]
+  },
+  "gate_top": {
+    "file": "runtime/objects/gate_top.png",
+    "source_px": [
+      36,
+      16
+    ],
+    "frame_px": [
+      36,
+      16
+    ],
+    "world_units": [
+      18.0,
+      8.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      9,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Железные ворота, сохраняемый модуль gate_top",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        36,
+        16
+      ]
+    ]
+  },
+  "gate_middle": {
+    "file": "runtime/objects/gate_middle.png",
+    "source_px": [
+      36,
+      124
+    ],
+    "frame_px": [
+      36,
+      124
+    ],
+    "world_units": [
+      18.0,
+      62.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      9,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Железные ворота, сохраняемый модуль gate_middle",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        36,
+        124
+      ]
+    ]
+  },
+  "gate_bottom": {
+    "file": "runtime/objects/gate_bottom.png",
+    "source_px": [
+      36,
+      16
+    ],
+    "frame_px": [
+      36,
+      16
+    ],
+    "world_units": [
+      18.0,
+      8.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      9,
+      0
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Железные ворота, сохраняемый модуль gate_bottom",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        36,
+        16
+      ]
+    ]
+  },
+  "gate_closed": {
+    "file": "runtime/objects/gate_closed.png",
+    "source_px": [
+      36,
+      960
+    ],
+    "frame_px": [
+      36,
+      960
+    ],
+    "world_units": [
+      18,
+      480
+    ],
+    "density": 2,
+    "anchor_world": [
+      9,
+      480
+    ],
+    "count": 1,
+    "fps": 0,
+    "loop": false,
+    "description": "Ворота перекрывают всю реальную физическую преграду18×480.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        36,
+        960
+      ]
+    ]
+  },
+  "gate_opening": {
+    "file": "runtime/objects/gate_opening.png",
+    "source_px": [
+      180,
+      960
+    ],
+    "frame_px": [
+      36,
+      960
+    ],
+    "world_units": [
+      18,
+      480
+    ],
+    "density": 2,
+    "anchor_world": [
+      9,
+      480
+    ],
+    "count": 5,
+    "fps": 8,
+    "loop": false,
+    "description": "Ворота поднимаются в потолок, последний кадр пуст. Коллизия снимается сразу по контроллеру.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        36,
+        960
+      ],
+      [
+        36,
+        0,
+        36,
+        960
+      ],
+      [
+        72,
+        0,
+        36,
+        960
+      ],
+      [
+        108,
+        0,
+        36,
+        960
+      ],
+      [
+        144,
+        0,
+        36,
+        960
+      ]
+    ]
+  },
+  "human_green_flight": {
+    "file": "runtime/effects/human_green_flight.png",
+    "source_px": [
+      576,
+      40
+    ],
+    "frame_px": [
+      96,
+      40
+    ],
+    "world_units": [
+      48,
+      20
+    ],
+    "density": 2,
+    "anchor_world": [
+      39,
+      10
+    ],
+    "count": 6,
+    "fps": 12,
+    "loop": true,
+    "description": "Зелёная магия человека, круглый светлый заряд с коротким следом.",
+    "state": "bolt.direction/lifetime",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        40
+      ],
+      [
+        96,
+        0,
+        96,
+        40
+      ],
+      [
+        192,
+        0,
+        96,
+        40
+      ],
+      [
+        288,
+        0,
+        96,
+        40
+      ],
+      [
+        384,
+        0,
+        96,
+        40
+      ],
+      [
+        480,
+        0,
+        96,
+        40
+      ]
+    ]
+  },
+  "human_hit_wall": {
+    "file": "runtime/effects/human_hit_wall.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры human — wall.",
+    "state": "bolt.visual_event wall",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "human_hit_enemy": {
+    "file": "runtime/effects/human_hit_enemy.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры human — enemy.",
+    "state": "bolt.visual_event enemy",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "human_hit_boss": {
+    "file": "runtime/effects/human_hit_boss.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры human — boss.",
+    "state": "bolt.visual_event boss",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "human_hit_fade": {
+    "file": "runtime/effects/human_hit_fade.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры human — fade.",
+    "state": "bolt.visual_event fade",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "ogre_green_flight": {
+    "file": "runtime/effects/ogre_green_flight.png",
+    "source_px": [
+      576,
+      40
+    ],
+    "frame_px": [
+      96,
+      40
+    ],
+    "world_units": [
+      48,
+      20
+    ],
+    "density": 2,
+    "anchor_world": [
+      39,
+      10
+    ],
+    "count": 6,
+    "fps": 12,
+    "loop": true,
+    "description": "Зелёная магия огра, гранёное зелёное ядро с коротким следом.",
+    "state": "bolt.direction/lifetime",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        40
+      ],
+      [
+        96,
+        0,
+        96,
+        40
+      ],
+      [
+        192,
+        0,
+        96,
+        40
+      ],
+      [
+        288,
+        0,
+        96,
+        40
+      ],
+      [
+        384,
+        0,
+        96,
+        40
+      ],
+      [
+        480,
+        0,
+        96,
+        40
+      ]
+    ]
+  },
+  "ogre_hit_wall": {
+    "file": "runtime/effects/ogre_hit_wall.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры ogre — wall.",
+    "state": "bolt.visual_event wall",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "ogre_hit_enemy": {
+    "file": "runtime/effects/ogre_hit_enemy.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры ogre — enemy.",
+    "state": "bolt.visual_event enemy",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "ogre_hit_boss": {
+    "file": "runtime/effects/ogre_hit_boss.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры ogre — boss.",
+    "state": "bolt.visual_event boss",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "ogre_hit_fade": {
+    "file": "runtime/effects/ogre_hit_fade.png",
+    "source_px": [
+      768,
+      80
+    ],
+    "frame_px": [
+      96,
+      80
+    ],
+    "world_units": [
+      48,
+      40
+    ],
+    "density": 2,
+    "anchor_world": [
+      24,
+      29
+    ],
+    "count": 8,
+    "fps": 16,
+    "loop": false,
+    "description": "Зелёные искры ogre — fade.",
+    "state": "bolt.visual_event fade",
+    "regions_px": [
+      [
+        0,
+        0,
+        96,
+        80
+      ],
+      [
+        96,
+        0,
+        96,
+        80
+      ],
+      [
+        192,
+        0,
+        96,
+        80
+      ],
+      [
+        288,
+        0,
+        96,
+        80
+      ],
+      [
+        384,
+        0,
+        96,
+        80
+      ],
+      [
+        480,
+        0,
+        96,
+        80
+      ],
+      [
+        576,
+        0,
+        96,
+        80
+      ],
+      [
+        672,
+        0,
+        96,
+        80
+      ]
+    ]
+  },
+  "dust": {
+    "file": "runtime/effects/dust.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Низкое облачко сухой пыли.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "stone_break": {
+    "file": "runtime/effects/stone_break.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Каменная крошка разрушения.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "ore_break": {
+    "file": "runtime/effects/ore_break.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Медные осколки хрупкой руды.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "enemy_disappear": {
+    "file": "runtime/effects/enemy_disappear.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Пыль исчезновения побеждённого врага.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "foreman_hit": {
+    "file": "runtime/effects/foreman_hit.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Короткий акцент настоящего урона главарю.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "foreman_deflect": {
+    "file": "runtime/effects/foreman_deflect.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Холодные искры от защищённой кирки.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "foreman_phase": {
+    "file": "runtime/effects/foreman_phase.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Короткое усиление свечного света при смене фазы.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "foreman_death": {
+    "file": "runtime/effects/foreman_death.png",
+    "source_px": [
+      1280,
+      96
+    ],
+    "frame_px": [
+      128,
+      96
+    ],
+    "world_units": [
+      64,
+      48
+    ],
+    "density": 2,
+    "anchor_world": [
+      32,
+      35
+    ],
+    "count": 10,
+    "fps": 16,
+    "loop": false,
+    "description": "Оседающая пыль после падения главаря.",
+    "state": "",
+    "regions_px": [
+      [
+        0,
+        0,
+        128,
+        96
+      ],
+      [
+        128,
+        0,
+        128,
+        96
+      ],
+      [
+        256,
+        0,
+        128,
+        96
+      ],
+      [
+        384,
+        0,
+        128,
+        96
+      ],
+      [
+        512,
+        0,
+        128,
+        96
+      ],
+      [
+        640,
+        0,
+        128,
+        96
+      ],
+      [
+        768,
+        0,
+        128,
+        96
+      ],
+      [
+        896,
+        0,
+        128,
+        96
+      ],
+      [
+        1024,
+        0,
+        128,
+        96
+      ],
+      [
+        1152,
+        0,
+        128,
+        96
+      ]
+    ]
+  },
+  "fissure_warning": {
+    "file": "runtime/effects/fissure_warning.png",
+    "source_px": [
+      1728,
+      108
+    ],
+    "frame_px": [
+      216,
+      108
+    ],
+    "world_units": [
+      108.0,
+      54.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      54.0,
+      42
+    ],
+    "count": 8,
+    "fps": 8.88888888888889,
+    "loop": false,
+    "description": "Фиксированная разметка fissure, ширина96, заполнение таймера, урона ещё нет.",
+    "state": "MineStrike age<warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        216,
+        108
+      ],
+      [
+        216,
+        0,
+        216,
+        108
+      ],
+      [
+        432,
+        0,
+        216,
+        108
+      ],
+      [
+        648,
+        0,
+        216,
+        108
+      ],
+      [
+        864,
+        0,
+        216,
+        108
+      ],
+      [
+        1080,
+        0,
+        216,
+        108
+      ],
+      [
+        1296,
+        0,
+        216,
+        108
+      ],
+      [
+        1512,
+        0,
+        216,
+        108
+      ]
+    ],
+    "danger_world": [
+      -48.0,
+      -30,
+      96,
+      30
+    ],
+    "warning_seconds": 0.9
+  },
+  "fissure_active": {
+    "file": "runtime/effects/fissure_active.png",
+    "source_px": [
+      1728,
+      108
+    ],
+    "frame_px": [
+      216,
+      108
+    ],
+    "world_units": [
+      108.0,
+      54.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      54.0,
+      42
+    ],
+    "count": 8,
+    "fps": 22.22222222222222,
+    "loop": false,
+    "description": "Активная опасная область fissure 96×30. Боковые границы сохраняются весь интервал урона.",
+    "state": "MineStrike age>=warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        216,
+        108
+      ],
+      [
+        216,
+        0,
+        216,
+        108
+      ],
+      [
+        432,
+        0,
+        216,
+        108
+      ],
+      [
+        648,
+        0,
+        216,
+        108
+      ],
+      [
+        864,
+        0,
+        216,
+        108
+      ],
+      [
+        1080,
+        0,
+        216,
+        108
+      ],
+      [
+        1296,
+        0,
+        216,
+        108
+      ],
+      [
+        1512,
+        0,
+        216,
+        108
+      ]
+    ],
+    "danger_world": [
+      -48.0,
+      -30,
+      96,
+      30
+    ],
+    "active_seconds": 0.36
+  },
+  "wax_warning": {
+    "file": "runtime/effects/wax_warning.png",
+    "source_px": [
+      1568,
+      364
+    ],
+    "frame_px": [
+      196,
+      364
+    ],
+    "world_units": [
+      98.0,
+      182.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      49.0,
+      170
+    ],
+    "count": 8,
+    "fps": 8.333333333333334,
+    "loop": false,
+    "description": "Фиксированная разметка wax, ширина86, заполнение таймера, урона ещё нет.",
+    "state": "MineStrike age<warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        196,
+        364
+      ],
+      [
+        196,
+        0,
+        196,
+        364
+      ],
+      [
+        392,
+        0,
+        196,
+        364
+      ],
+      [
+        588,
+        0,
+        196,
+        364
+      ],
+      [
+        784,
+        0,
+        196,
+        364
+      ],
+      [
+        980,
+        0,
+        196,
+        364
+      ],
+      [
+        1176,
+        0,
+        196,
+        364
+      ],
+      [
+        1372,
+        0,
+        196,
+        364
+      ]
+    ],
+    "danger_world": [
+      -43.0,
+      -158,
+      86,
+      158
+    ],
+    "warning_seconds": 0.96
+  },
+  "wax_active": {
+    "file": "runtime/effects/wax_active.png",
+    "source_px": [
+      1568,
+      364
+    ],
+    "frame_px": [
+      196,
+      364
+    ],
+    "world_units": [
+      98.0,
+      182.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      49.0,
+      170
+    ],
+    "count": 8,
+    "fps": 11.428571428571429,
+    "loop": false,
+    "description": "Активная опасная область wax 86×158. Боковые границы сохраняются весь интервал урона.",
+    "state": "MineStrike age>=warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        196,
+        364
+      ],
+      [
+        196,
+        0,
+        196,
+        364
+      ],
+      [
+        392,
+        0,
+        196,
+        364
+      ],
+      [
+        588,
+        0,
+        196,
+        364
+      ],
+      [
+        784,
+        0,
+        196,
+        364
+      ],
+      [
+        980,
+        0,
+        196,
+        364
+      ],
+      [
+        1176,
+        0,
+        196,
+        364
+      ],
+      [
+        1372,
+        0,
+        196,
+        364
+      ]
+    ],
+    "danger_world": [
+      -43.0,
+      -158,
+      86,
+      158
+    ],
+    "active_seconds": 0.7
+  },
+  "rock_warning": {
+    "file": "runtime/effects/rock_warning.png",
+    "source_px": [
+      1472,
+      640
+    ],
+    "frame_px": [
+      184,
+      640
+    ],
+    "world_units": [
+      92.0,
+      320.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      46.0,
+      308
+    ],
+    "count": 8,
+    "fps": 7.692307692307692,
+    "loop": false,
+    "description": "Фиксированная разметка rock, ширина80, заполнение таймера, урона ещё нет.",
+    "state": "MineStrike age<warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        184,
+        640
+      ],
+      [
+        184,
+        0,
+        184,
+        640
+      ],
+      [
+        368,
+        0,
+        184,
+        640
+      ],
+      [
+        552,
+        0,
+        184,
+        640
+      ],
+      [
+        736,
+        0,
+        184,
+        640
+      ],
+      [
+        920,
+        0,
+        184,
+        640
+      ],
+      [
+        1104,
+        0,
+        184,
+        640
+      ],
+      [
+        1288,
+        0,
+        184,
+        640
+      ]
+    ],
+    "danger_world": [
+      -40.0,
+      -296,
+      80,
+      296
+    ],
+    "warning_seconds": 1.04
+  },
+  "rock_active": {
+    "file": "runtime/effects/rock_active.png",
+    "source_px": [
+      1472,
+      640
+    ],
+    "frame_px": [
+      184,
+      640
+    ],
+    "world_units": [
+      92.0,
+      320.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      46.0,
+      308
+    ],
+    "count": 8,
+    "fps": 22.22222222222222,
+    "loop": false,
+    "description": "Активная опасная область rock 80×296. Боковые границы сохраняются весь интервал урона.",
+    "state": "MineStrike age>=warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        184,
+        640
+      ],
+      [
+        184,
+        0,
+        184,
+        640
+      ],
+      [
+        368,
+        0,
+        184,
+        640
+      ],
+      [
+        552,
+        0,
+        184,
+        640
+      ],
+      [
+        736,
+        0,
+        184,
+        640
+      ],
+      [
+        920,
+        0,
+        184,
+        640
+      ],
+      [
+        1104,
+        0,
+        184,
+        640
+      ],
+      [
+        1288,
+        0,
+        184,
+        640
+      ]
+    ],
+    "danger_world": [
+      -40.0,
+      -296,
+      80,
+      296
+    ],
+    "active_seconds": 0.36
+  },
+  "rock_second_warning": {
+    "file": "runtime/effects/rock_second_warning.png",
+    "source_px": [
+      1344,
+      640
+    ],
+    "frame_px": [
+      168,
+      640
+    ],
+    "world_units": [
+      84.0,
+      320.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      42.0,
+      308
+    ],
+    "count": 8,
+    "fps": 5.369127516778524,
+    "loop": false,
+    "description": "Фиксированная разметка rock_second, ширина72, заполнение таймера, урона ещё нет.",
+    "state": "MineStrike age<warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        168,
+        640
+      ],
+      [
+        168,
+        0,
+        168,
+        640
+      ],
+      [
+        336,
+        0,
+        168,
+        640
+      ],
+      [
+        504,
+        0,
+        168,
+        640
+      ],
+      [
+        672,
+        0,
+        168,
+        640
+      ],
+      [
+        840,
+        0,
+        168,
+        640
+      ],
+      [
+        1008,
+        0,
+        168,
+        640
+      ],
+      [
+        1176,
+        0,
+        168,
+        640
+      ]
+    ],
+    "danger_world": [
+      -36.0,
+      -296,
+      72,
+      296
+    ],
+    "warning_seconds": 1.49
+  },
+  "rock_second_active": {
+    "file": "runtime/effects/rock_second_active.png",
+    "source_px": [
+      1344,
+      640
+    ],
+    "frame_px": [
+      168,
+      640
+    ],
+    "world_units": [
+      84.0,
+      320.0
+    ],
+    "density": 2,
+    "anchor_world": [
+      42.0,
+      308
+    ],
+    "count": 8,
+    "fps": 20.0,
+    "loop": false,
+    "description": "Активная опасная область rock_second 72×296. Боковые границы сохраняются весь интервал урона.",
+    "state": "MineStrike age>=warning",
+    "regions_px": [
+      [
+        0,
+        0,
+        168,
+        640
+      ],
+      [
+        168,
+        0,
+        168,
+        640
+      ],
+      [
+        336,
+        0,
+        168,
+        640
+      ],
+      [
+        504,
+        0,
+        168,
+        640
+      ],
+      [
+        672,
+        0,
+        168,
+        640
+      ],
+      [
+        840,
+        0,
+        168,
+        640
+      ],
+      [
+        1008,
+        0,
+        168,
+        640
+      ],
+      [
+        1176,
+        0,
+        168,
+        640
+      ]
+    ],
+    "danger_world": [
+      -36.0,
+      -296,
+      72,
+      296
+    ],
+    "active_seconds": 0.4
+  }
+}

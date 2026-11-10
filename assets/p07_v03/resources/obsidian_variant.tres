@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+[ext_resource type="Shader" path="../visual/terrain_variant.gdshader" id="1"]
+[ext_resource type="Texture2D" path="../terrain/obsidian_field_b.png" id="2"]
+[resource]
+shader=ExtResource("1")
+shader_parameter/variant_b=ExtResource("2")
+shader_parameter/tile_world=512.0

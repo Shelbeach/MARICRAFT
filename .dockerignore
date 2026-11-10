@@ -1,0 +1,7 @@
+# Minimal public image context. Neither source/debug tools nor the teacher ZIP enter it.
+**
+!Dockerfile
+!deploy/
+!deploy/nginx.conf
+!deploy/web/
+!deploy/web/**

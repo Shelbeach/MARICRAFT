@@ -1,0 +1,259 @@
+[gd_resource type="SpriteFrames" load_steps=58 format=3]
+
+[ext_resource type="Texture2D" path="idle.png" id="T_idle"]
+[ext_resource type="Texture2D" path="run.png" id="T_run"]
+[ext_resource type="Texture2D" path="jump.png" id="T_jump"]
+[ext_resource type="Texture2D" path="fall.png" id="T_fall"]
+[ext_resource type="Texture2D" path="land.png" id="T_land"]
+[ext_resource type="Texture2D" path="hurt.png" id="T_hurt"]
+[ext_resource type="Texture2D" path="head_hit.png" id="T_head_hit"]
+[ext_resource type="Texture2D" path="death.png" id="T_death"]
+[ext_resource type="Texture2D" path="victory.png" id="T_victory"]
+[ext_resource type="Texture2D" path="cast.png" id="T_cast"]
+
+[sub_resource type="AtlasTexture" id="A_idle_0"]
+atlas = ExtResource("T_idle")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_1"]
+atlas = ExtResource("T_idle")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_2"]
+atlas = ExtResource("T_idle")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_3"]
+atlas = ExtResource("T_idle")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_4"]
+atlas = ExtResource("T_idle")
+region = Rect2(976, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_5"]
+atlas = ExtResource("T_idle")
+region = Rect2(1220, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_0"]
+atlas = ExtResource("T_run")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_1"]
+atlas = ExtResource("T_run")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_2"]
+atlas = ExtResource("T_run")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_3"]
+atlas = ExtResource("T_run")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_4"]
+atlas = ExtResource("T_run")
+region = Rect2(976, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_5"]
+atlas = ExtResource("T_run")
+region = Rect2(1220, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_6"]
+atlas = ExtResource("T_run")
+region = Rect2(1464, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_run_7"]
+atlas = ExtResource("T_run")
+region = Rect2(1708, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_jump_0"]
+atlas = ExtResource("T_jump")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_jump_1"]
+atlas = ExtResource("T_jump")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_jump_2"]
+atlas = ExtResource("T_jump")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_0"]
+atlas = ExtResource("T_fall")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_1"]
+atlas = ExtResource("T_fall")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_2"]
+atlas = ExtResource("T_fall")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_fall_3"]
+atlas = ExtResource("T_fall")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_0"]
+atlas = ExtResource("T_land")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_1"]
+atlas = ExtResource("T_land")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_2"]
+atlas = ExtResource("T_land")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_land_3"]
+atlas = ExtResource("T_land")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_0"]
+atlas = ExtResource("T_hurt")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_1"]
+atlas = ExtResource("T_hurt")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_2"]
+atlas = ExtResource("T_hurt")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hurt_3"]
+atlas = ExtResource("T_hurt")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_0"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_1"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_2"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_head_hit_3"]
+atlas = ExtResource("T_head_hit")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_0"]
+atlas = ExtResource("T_death")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_1"]
+atlas = ExtResource("T_death")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_2"]
+atlas = ExtResource("T_death")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_death_3"]
+atlas = ExtResource("T_death")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_0"]
+atlas = ExtResource("T_victory")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_1"]
+atlas = ExtResource("T_victory")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_2"]
+atlas = ExtResource("T_victory")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_3"]
+atlas = ExtResource("T_victory")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_victory_4"]
+atlas = ExtResource("T_victory")
+region = Rect2(976, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_cast_0"]
+atlas = ExtResource("T_cast")
+region = Rect2(0, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_cast_1"]
+atlas = ExtResource("T_cast")
+region = Rect2(244, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_cast_2"]
+atlas = ExtResource("T_cast")
+region = Rect2(488, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_cast_3"]
+atlas = ExtResource("T_cast")
+region = Rect2(732, 0, 244, 180)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_cast_4"]
+atlas = ExtResource("T_cast")
+region = Rect2(976, 0, 244, 180)
+filter_clip = true
+
+[resource]
+animations = [{"name": &"idle", "speed": 6.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_idle_0")}, {"duration": 1.0, "texture": SubResource("A_idle_1")}, {"duration": 1.0, "texture": SubResource("A_idle_2")}, {"duration": 1.0, "texture": SubResource("A_idle_3")}, {"duration": 1.0, "texture": SubResource("A_idle_4")}, {"duration": 1.0, "texture": SubResource("A_idle_5")}]},
+{"name": &"run", "speed": 12.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_run_0")}, {"duration": 1.0, "texture": SubResource("A_run_1")}, {"duration": 1.0, "texture": SubResource("A_run_2")}, {"duration": 1.0, "texture": SubResource("A_run_3")}, {"duration": 1.0, "texture": SubResource("A_run_4")}, {"duration": 1.0, "texture": SubResource("A_run_5")}, {"duration": 1.0, "texture": SubResource("A_run_6")}, {"duration": 1.0, "texture": SubResource("A_run_7")}]},
+{"name": &"jump", "speed": 11.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_jump_0")}, {"duration": 1.0, "texture": SubResource("A_jump_1")}, {"duration": 1.0, "texture": SubResource("A_jump_2")}]},
+{"name": &"fall", "speed": 7.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_fall_0")}, {"duration": 1.0, "texture": SubResource("A_fall_1")}, {"duration": 1.0, "texture": SubResource("A_fall_2")}, {"duration": 1.0, "texture": SubResource("A_fall_3")}]},
+{"name": &"land", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_land_0")}, {"duration": 1.0, "texture": SubResource("A_land_1")}, {"duration": 1.0, "texture": SubResource("A_land_2")}, {"duration": 1.0, "texture": SubResource("A_land_3")}]},
+{"name": &"hurt", "speed": 11.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_hurt_0")}, {"duration": 1.0, "texture": SubResource("A_hurt_1")}, {"duration": 1.0, "texture": SubResource("A_hurt_2")}, {"duration": 1.0, "texture": SubResource("A_hurt_3")}]},
+{"name": &"head_hit", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_head_hit_0")}, {"duration": 1.0, "texture": SubResource("A_head_hit_1")}, {"duration": 1.0, "texture": SubResource("A_head_hit_2")}, {"duration": 1.0, "texture": SubResource("A_head_hit_3")}]},
+{"name": &"death", "speed": 7.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_death_0")}, {"duration": 1.0, "texture": SubResource("A_death_1")}, {"duration": 1.0, "texture": SubResource("A_death_2")}, {"duration": 1.0, "texture": SubResource("A_death_3")}]},
+{"name": &"victory", "speed": 7.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_victory_0")}, {"duration": 1.0, "texture": SubResource("A_victory_1")}, {"duration": 1.0, "texture": SubResource("A_victory_2")}, {"duration": 1.0, "texture": SubResource("A_victory_3")}, {"duration": 1.0, "texture": SubResource("A_victory_4")}]},
+{"name": &"cast", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_cast_0")}, {"duration": 1.0, "texture": SubResource("A_cast_1")}, {"duration": 1.0, "texture": SubResource("A_cast_2")}, {"duration": 1.0, "texture": SubResource("A_cast_3")}, {"duration": 1.0, "texture": SubResource("A_cast_4")}]}]

@@ -1,0 +1,686 @@
+[gd_scene format=3 uid="uid://b3y2m73vrji6f"]
+
+[ext_resource type="PackedScene" path="res://scenes/objects/reward_block.tscn" id="block"]
+[ext_resource type="PackedScene" path="res://scenes/objects/coin.tscn" id="coin"]
+[ext_resource type="Texture2D" uid="uid://dmdm8ryb0u0ml" path="res://assets/molten_art/decor/broken_arch.png" id="decor_0"]
+[ext_resource type="Texture2D" uid="uid://cnhguau7ygrrm" path="res://assets/molten_art/decor/direction_sign.png" id="decor_1"]
+[ext_resource type="Texture2D" uid="uid://sgnerkq6fs7o" path="res://assets/molten_art/decor/basalt_column.png" id="decor_2"]
+[ext_resource type="Texture2D" uid="uid://c8va65fkxwqt2" path="res://assets/molten_art/decor/molten_ore.png" id="decor_3"]
+[ext_resource type="Texture2D" uid="uid://cte2gbmdcd0pl" path="res://assets/molten_art/decor/obsidian_crystals.png" id="decor_4"]
+[ext_resource type="Texture2D" uid="uid://cuyok36s7pta1" path="res://assets/molten_art/decor/dark_iron_furnace.png" id="decor_5"]
+[ext_resource type="Texture2D" uid="uid://w5ns1rwlx77p" path="res://assets/molten_art/decor/iron_support.png" id="decor_6"]
+[ext_resource type="Texture2D" uid="uid://cj6ddkdtpti28" path="res://assets/molten_art/decor/chain_winch.png" id="decor_7"]
+[ext_resource type="Texture2D" uid="uid://bi6atiy6ts0s7" path="res://assets/molten_art/decor/fire_lamp.png" id="decor_8"]
+[ext_resource type="PackedScene" path="res://scenes/objects/ferry.tscn" id="ferry"]
+[ext_resource type="PackedScene" path="res://scenes/objects/test_platform.tscn" id="floor"]
+[ext_resource type="PackedScene" path="res://scenes/objects/molten_hazard.tscn" id="hazard"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/kobold.tscn" id="kobold"]
+[ext_resource type="Script" uid="uid://tnypmm087ot6" path="res://scripts/gameplay/molten_level.gd" id="level"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/fire_imp.tscn" id="murloc"]
+[ext_resource type="PackedScene" path="res://scenes/actors/forest_player.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://scenes/objects/spikes.tscn" id="spikes"]
+
+[node name="MoltenCore" type="Node2D" unique_id=132030746]
+script = ExtResource("level")
+checkpoint_x = 2330
+finish_x = 4300
+
+[node name="WestWall" parent="." unique_id=1051398825 instance=ExtResource("floor")]
+position = Vector2(-40, 80)
+construction = "masonry"
+size = Vector2(40, 500)
+
+[node name="EastWall" parent="." unique_id=1495411785 instance=ExtResource("floor")]
+position = Vector2(4428, 80)
+construction = "masonry"
+size = Vector2(40, 500)
+
+[node name="Gatehouse" parent="." unique_id=1949493763 instance=ExtResource("floor")]
+position = Vector2(0, 480)
+construction = "masonry"
+size = Vector2(780, 100)
+
+[node name="BasaltFirst" parent="." unique_id=1183892114 instance=ExtResource("floor")]
+position = Vector2(892, 440)
+construction = "masonry"
+size = Vector2(340, 140)
+
+[node name="BasaltSecond" parent="." unique_id=303000213 instance=ExtResource("floor")]
+position = Vector2(1344, 440)
+construction = "masonry"
+size = Vector2(208, 140)
+
+[node name="LowerForge" parent="." unique_id=1147571451 instance=ExtResource("floor")]
+position = Vector2(1552, 480)
+construction = "masonry"
+size = Vector2(708, 100)
+
+[node name="Warehouse" parent="." unique_id=1449524084 instance=ExtResource("floor")]
+position = Vector2(2260, 480)
+construction = "masonry"
+size = Vector2(840, 100)
+
+[node name="HighExit" parent="." unique_id=1447226078 instance=ExtResource("floor")]
+position = Vector2(3270, 340)
+construction = "masonry"
+size = Vector2(240, 240)
+
+[node name="CoolingStep" parent="." unique_id=2092816761 instance=ExtResource("floor")]
+position = Vector2(3510, 400)
+construction = "masonry"
+size = Vector2(120, 180)
+
+[node name="LastRise" parent="." unique_id=1962554244 instance=ExtResource("floor")]
+position = Vector2(3742, 440)
+construction = "masonry"
+size = Vector2(280, 140)
+
+[node name="ExitRoad" parent="." unique_id=742608092 instance=ExtResource("floor")]
+position = Vector2(4022, 480)
+construction = "masonry"
+size = Vector2(406, 100)
+
+[node name="SupplyStep" parent="." unique_id=655289306 instance=ExtResource("floor")]
+position = Vector2(250, 432)
+construction = "masonry"
+size = Vector2(80, 148)
+
+[node name="SupplyBalcony" parent="." unique_id=1947161167 instance=ExtResource("floor")]
+position = Vector2(380, 352)
+construction = "masonry"
+size = Vector2(200, 20)
+
+[node name="GateGrowth0" parent="." unique_id=1990197065 instance=ExtResource("block")]
+position = Vector2(410, 240)
+kind = "fragile"
+reward_id = "3-1/GateGrowth0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="GateGrowth1" parent="." unique_id=1665030880 instance=ExtResource("block")]
+position = Vector2(442, 240)
+kind = "fragile"
+reward_id = "3-1/GateGrowth1"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="GateGrowth" parent="." unique_id=1919030023 instance=ExtResource("block")]
+position = Vector2(474, 240)
+kind = "potion"
+reward_id = "3-1/GateGrowth"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="GateGrowth3" parent="." unique_id=2056132116 instance=ExtResource("block")]
+position = Vector2(506, 240)
+kind = "fragile"
+reward_id = "3-1/GateGrowth3"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="GateGrowth4" parent="." unique_id=115855022 instance=ExtResource("block")]
+position = Vector2(538, 240)
+kind = "fragile"
+reward_id = "3-1/GateGrowth4"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="FirstVent" parent="." unique_id=15192156 instance=ExtResource("hazard")]
+position = Vector2(650, 480)
+width = 60
+height = 64
+
+[node name="BasaltGuard" parent="." unique_id=1912543552 instance=ExtResource("murloc")]
+position = Vector2(1110, 438)
+reward_id = "3-1/BasaltGuard"
+patrol_width = 80
+metadata/_edit_group_ = true
+
+[node name="UpperApproach" parent="." unique_id=665241018 instance=ExtResource("floor")]
+position = Vector2(1552, 440)
+construction = "masonry"
+size = Vector2(104, 140)
+
+[node name="UpperWest" parent="." unique_id=2042424949 instance=ExtResource("floor")]
+position = Vector2(1696, 350)
+construction = "masonry"
+size = Vector2(164, 20)
+
+[node name="UpperEast" parent="." unique_id=935329126 instance=ExtResource("floor")]
+position = Vector2(1980, 270)
+construction = "masonry"
+size = Vector2(220, 20)
+
+[node name="UpperBridge0" parent="." unique_id=619302399 instance=ExtResource("block")]
+position = Vector2(1886, 318)
+kind = "fragile"
+reward_id = "3-1/UpperBridge0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="UpperBridge1" parent="." unique_id=2058685690 instance=ExtResource("block")]
+position = Vector2(1918, 318)
+kind = "fragile"
+reward_id = "3-1/UpperBridge1"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="UpperBridge2" parent="." unique_id=187458361 instance=ExtResource("block")]
+position = Vector2(1950, 318)
+kind = "fragile"
+reward_id = "3-1/UpperBridge2"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="WestCache0" parent="." unique_id=1976716469 instance=ExtResource("block")]
+position = Vector2(1712, 238)
+kind = "fragile"
+reward_id = "3-1/WestCache0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="WestCache" parent="." unique_id=1592379627 instance=ExtResource("block")]
+position = Vector2(1744, 238)
+reward_id = "3-1/WestCache"
+amount = 18
+metadata/_edit_group_ = true
+
+[node name="WestCache2" parent="." unique_id=1859460635 instance=ExtResource("block")]
+position = Vector2(1776, 238)
+kind = "fragile"
+reward_id = "3-1/WestCache2"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="WestCache3" parent="." unique_id=1894515166 instance=ExtResource("block")]
+position = Vector2(1808, 238)
+kind = "fragile"
+reward_id = "3-1/WestCache3"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="UpperCache0" parent="." unique_id=1464258531 instance=ExtResource("block")]
+position = Vector2(2020, 158)
+kind = "fragile"
+reward_id = "3-1/UpperCache0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="UpperCache1" parent="." unique_id=1867141620 instance=ExtResource("block")]
+position = Vector2(2052, 158)
+kind = "fragile"
+reward_id = "3-1/UpperCache1"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="UpperCache" parent="." unique_id=1746628825 instance=ExtResource("block")]
+position = Vector2(2084, 158)
+reward_id = "3-1/UpperCache"
+amount = 22
+metadata/_edit_group_ = true
+
+[node name="UpperCache3" parent="." unique_id=1249906312 instance=ExtResource("block")]
+position = Vector2(2116, 158)
+kind = "fragile"
+reward_id = "3-1/UpperCache3"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="UpperCache4" parent="." unique_id=742308456 instance=ExtResource("block")]
+position = Vector2(2148, 158)
+kind = "fragile"
+reward_id = "3-1/UpperCache4"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="LowerValveA" parent="." unique_id=1496509236 instance=ExtResource("hazard")]
+position = Vector2(1750, 480)
+width = 60
+height = 64
+offset = 0.6
+
+[node name="LowerValveB" parent="." unique_id=1620285410 instance=ExtResource("hazard")]
+position = Vector2(2090, 480)
+width = 60
+height = 64
+offset = 2.0
+
+[node name="WarehouseCrust0" parent="." unique_id=158014118 instance=ExtResource("block")]
+position = Vector2(2540, 368)
+kind = "fragile"
+reward_id = "3-1/WarehouseCrust0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="WarehouseCrust1" parent="." unique_id=1931056930 instance=ExtResource("block")]
+position = Vector2(2572, 368)
+kind = "fragile"
+reward_id = "3-1/WarehouseCrust1"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="WarehouseCrust" parent="." unique_id=1777849101 instance=ExtResource("block")]
+position = Vector2(2604, 368)
+reward_id = "3-1/WarehouseCrust"
+amount = 16
+metadata/_edit_group_ = true
+
+[node name="WarehouseCrust3" parent="." unique_id=1684793818 instance=ExtResource("block")]
+position = Vector2(2636, 368)
+kind = "fragile"
+reward_id = "3-1/WarehouseCrust3"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="WarehouseStep" parent="." unique_id=1747208059 instance=ExtResource("floor")]
+position = Vector2(2680, 432)
+construction = "masonry"
+size = Vector2(76, 148)
+
+[node name="RuneGallery" parent="." unique_id=1743159009 instance=ExtResource("floor")]
+position = Vector2(2800, 352)
+construction = "masonry"
+size = Vector2(210, 20)
+
+[node name="RuneSeal0" parent="." unique_id=944441042 instance=ExtResource("block")]
+position = Vector2(2834, 240)
+kind = "fragile"
+reward_id = "3-1/RuneSeal0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="RuneSeal1" parent="." unique_id=1116970508 instance=ExtResource("block")]
+position = Vector2(2866, 240)
+kind = "fragile"
+reward_id = "3-1/RuneSeal1"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="RuneSeal" parent="." unique_id=751524880 instance=ExtResource("block")]
+position = Vector2(2898, 240)
+kind = "rune"
+reward_id = "3-1/RuneSeal"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="RuneSeal3" parent="." unique_id=1604658884 instance=ExtResource("block")]
+position = Vector2(2930, 240)
+kind = "fragile"
+reward_id = "3-1/RuneSeal3"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="RuneSeal4" parent="." unique_id=87919752 instance=ExtResource("block")]
+position = Vector2(2962, 240)
+kind = "fragile"
+reward_id = "3-1/RuneSeal4"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="Keeper" parent="." unique_id=623139670 instance=ExtResource("kobold")]
+position = Vector2(2940, 478)
+reward_id = "3-1/Keeper"
+patrol_width = 95
+metadata/_edit_group_ = true
+
+[node name="ChainLift" parent="." unique_id=939543232 instance=ExtResource("ferry")]
+position = Vector2(3160, 460)
+travel = Vector2(0, -120)
+period = 4.8
+
+[node name="LastValve" parent="." unique_id=1972949321 instance=ExtResource("hazard")]
+position = Vector2(3870, 440)
+width = 58
+height = 64
+offset = 1.1
+
+[node name="ExitSpikes" parent="." unique_id=416475502 instance=ExtResource("spikes")]
+position = Vector2(4115, 480)
+metadata/_edit_group_ = true
+
+[node name="LastCache0" parent="." unique_id=1798938970 instance=ExtResource("block")]
+position = Vector2(4200, 368)
+kind = "fragile"
+reward_id = "3-1/LastCache0"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="LastCache" parent="." unique_id=412480336 instance=ExtResource("block")]
+position = Vector2(4232, 368)
+reward_id = "3-1/LastCache"
+amount = 18
+metadata/_edit_group_ = true
+
+[node name="LastCache2" parent="." unique_id=2083102603 instance=ExtResource("block")]
+position = Vector2(4264, 368)
+kind = "fragile"
+reward_id = "3-1/LastCache2"
+amount = 0
+metadata/_edit_group_ = true
+
+[node name="Coin001" parent="." unique_id=1043830970 instance=ExtResource("coin")]
+position = Vector2(160, 446)
+reward_id = "3-1/Coin001"
+metadata/_edit_group_ = true
+
+[node name="Coin002" parent="." unique_id=1066856533 instance=ExtResource("coin")]
+position = Vector2(208, 446)
+reward_id = "3-1/Coin002"
+metadata/_edit_group_ = true
+
+[node name="Coin003" parent="." unique_id=601833780 instance=ExtResource("coin")]
+position = Vector2(401, 316)
+reward_id = "3-1/Coin003"
+metadata/_edit_group_ = true
+
+[node name="Coin004" parent="." unique_id=268593818 instance=ExtResource("coin")]
+position = Vector2(473, 316)
+reward_id = "3-1/Coin004"
+metadata/_edit_group_ = true
+
+[node name="Coin005" parent="." unique_id=1754656165 instance=ExtResource("coin")]
+position = Vector2(545, 316)
+reward_id = "3-1/Coin005"
+metadata/_edit_group_ = true
+
+[node name="Coin006" parent="." unique_id=1755240081 instance=ExtResource("coin")]
+position = Vector2(758, 438)
+reward_id = "3-1/Coin006"
+metadata/_edit_group_ = true
+
+[node name="Coin007" parent="." unique_id=195202749 instance=ExtResource("coin")]
+position = Vector2(836, 384)
+reward_id = "3-1/Coin007"
+metadata/_edit_group_ = true
+
+[node name="Coin008" parent="." unique_id=1242054369 instance=ExtResource("coin")]
+position = Vector2(916, 404)
+reward_id = "3-1/Coin008"
+metadata/_edit_group_ = true
+
+[node name="Coin009" parent="." unique_id=1945992962 instance=ExtResource("coin")]
+position = Vector2(1210, 398)
+reward_id = "3-1/Coin009"
+metadata/_edit_group_ = true
+
+[node name="Coin010" parent="." unique_id=863822213 instance=ExtResource("coin")]
+position = Vector2(1288, 344)
+reward_id = "3-1/Coin010"
+metadata/_edit_group_ = true
+
+[node name="Coin011" parent="." unique_id=1041745806 instance=ExtResource("coin")]
+position = Vector2(1368, 398)
+reward_id = "3-1/Coin011"
+metadata/_edit_group_ = true
+
+[node name="Coin012" parent="." unique_id=1054056983 instance=ExtResource("coin")]
+position = Vector2(1700, 314)
+reward_id = "3-1/Coin012"
+metadata/_edit_group_ = true
+
+[node name="Coin013" parent="." unique_id=1353712028 instance=ExtResource("coin")]
+position = Vector2(1770, 314)
+reward_id = "3-1/Coin013"
+metadata/_edit_group_ = true
+
+[node name="Coin014" parent="." unique_id=504159191 instance=ExtResource("coin")]
+position = Vector2(1840, 314)
+reward_id = "3-1/Coin014"
+metadata/_edit_group_ = true
+
+[node name="Coin015" parent="." unique_id=1141819554 instance=ExtResource("coin")]
+position = Vector2(1890, 282)
+reward_id = "3-1/Coin015"
+metadata/_edit_group_ = true
+
+[node name="Coin016" parent="." unique_id=1529521354 instance=ExtResource("coin")]
+position = Vector2(1950, 282)
+reward_id = "3-1/Coin016"
+metadata/_edit_group_ = true
+
+[node name="Coin017" parent="." unique_id=897542986 instance=ExtResource("coin")]
+position = Vector2(2010, 234)
+reward_id = "3-1/Coin017"
+metadata/_edit_group_ = true
+
+[node name="Coin018" parent="." unique_id=1655902566 instance=ExtResource("coin")]
+position = Vector2(2090, 234)
+reward_id = "3-1/Coin018"
+metadata/_edit_group_ = true
+
+[node name="Coin019" parent="." unique_id=405880406 instance=ExtResource("coin")]
+position = Vector2(2160, 234)
+reward_id = "3-1/Coin019"
+metadata/_edit_group_ = true
+
+[node name="Coin020" parent="." unique_id=884340465 instance=ExtResource("coin")]
+position = Vector2(1620, 396)
+reward_id = "3-1/Coin020"
+metadata/_edit_group_ = true
+
+[node name="Coin021" parent="." unique_id=1774586873 instance=ExtResource("coin")]
+position = Vector2(1860, 444)
+reward_id = "3-1/Coin021"
+metadata/_edit_group_ = true
+
+[node name="Coin022" parent="." unique_id=516314631 instance=ExtResource("coin")]
+position = Vector2(2190, 444)
+reward_id = "3-1/Coin022"
+metadata/_edit_group_ = true
+
+[node name="Coin023" parent="." unique_id=62438942 instance=ExtResource("coin")]
+position = Vector2(2340, 444)
+reward_id = "3-1/Coin023"
+metadata/_edit_group_ = true
+
+[node name="Coin024" parent="." unique_id=687383083 instance=ExtResource("coin")]
+position = Vector2(2420, 444)
+reward_id = "3-1/Coin024"
+metadata/_edit_group_ = true
+
+[node name="Coin025" parent="." unique_id=1517803101 instance=ExtResource("coin")]
+position = Vector2(2490, 444)
+reward_id = "3-1/Coin025"
+metadata/_edit_group_ = true
+
+[node name="Coin026" parent="." unique_id=484001367 instance=ExtResource("coin")]
+position = Vector2(2824, 316)
+reward_id = "3-1/Coin026"
+metadata/_edit_group_ = true
+
+[node name="Coin027" parent="." unique_id=1564812564 instance=ExtResource("coin")]
+position = Vector2(2890, 316)
+reward_id = "3-1/Coin027"
+metadata/_edit_group_ = true
+
+[node name="Coin028" parent="." unique_id=1537366646 instance=ExtResource("coin")]
+position = Vector2(2960, 316)
+reward_id = "3-1/Coin028"
+metadata/_edit_group_ = true
+
+[node name="Coin029" parent="." unique_id=1902101133 instance=ExtResource("coin")]
+position = Vector2(3140, 304)
+reward_id = "3-1/Coin029"
+metadata/_edit_group_ = true
+
+[node name="Coin030" parent="." unique_id=766676692 instance=ExtResource("coin")]
+position = Vector2(3170, 304)
+reward_id = "3-1/Coin030"
+metadata/_edit_group_ = true
+
+[node name="Coin031" parent="." unique_id=1477462768 instance=ExtResource("coin")]
+position = Vector2(3330, 304)
+reward_id = "3-1/Coin031"
+metadata/_edit_group_ = true
+
+[node name="Coin032" parent="." unique_id=2106590251 instance=ExtResource("coin")]
+position = Vector2(3410, 304)
+reward_id = "3-1/Coin032"
+metadata/_edit_group_ = true
+
+[node name="Coin033" parent="." unique_id=1609422430 instance=ExtResource("coin")]
+position = Vector2(3608, 358)
+reward_id = "3-1/Coin033"
+metadata/_edit_group_ = true
+
+[node name="Coin034" parent="." unique_id=29308637 instance=ExtResource("coin")]
+position = Vector2(3686, 304)
+reward_id = "3-1/Coin034"
+metadata/_edit_group_ = true
+
+[node name="Coin035" parent="." unique_id=2113894969 instance=ExtResource("coin")]
+position = Vector2(3766, 358)
+reward_id = "3-1/Coin035"
+metadata/_edit_group_ = true
+
+[node name="Coin036" parent="." unique_id=1833085560 instance=ExtResource("coin")]
+position = Vector2(3780, 404)
+reward_id = "3-1/Coin036"
+metadata/_edit_group_ = true
+
+[node name="Coin037" parent="." unique_id=1092563318 instance=ExtResource("coin")]
+position = Vector2(3970, 404)
+reward_id = "3-1/Coin037"
+metadata/_edit_group_ = true
+
+[node name="Coin038" parent="." unique_id=688532864 instance=ExtResource("coin")]
+position = Vector2(4240, 404)
+reward_id = "3-1/Coin038"
+metadata/_edit_group_ = true
+
+[node name="LavaA" parent="." unique_id=349835940 instance=ExtResource("hazard")]
+position = Vector2(836, 560)
+kind = "lava"
+width = 112
+height = 46
+
+[node name="LavaB" parent="." unique_id=2009068386 instance=ExtResource("hazard")]
+position = Vector2(1288, 560)
+kind = "lava"
+width = 112
+height = 46
+
+[node name="LiftLava" parent="." unique_id=177439464 instance=ExtResource("hazard")]
+position = Vector2(3185, 560)
+kind = "lava"
+width = 170
+height = 46
+
+[node name="LavaC" parent="." unique_id=1362257626 instance=ExtResource("hazard")]
+position = Vector2(3686, 560)
+kind = "lava"
+width = 112
+height = 46
+
+[node name="Player" parent="." unique_id=132614249 instance=ExtResource("player")]
+position = Vector2(96, 475)
+metadata/_edit_group_ = true
+
+[node name="ForgeCaster" parent="." unique_id=1246264389 instance=ExtResource("murloc")]
+position = Vector2(2500, 478)
+reward_id = "3-1/ForgeCaster"
+patrol_width = 70
+ranged = true
+metadata/_edit_group_ = true
+
+[node name="Scenery" type="Node2D" parent="." unique_id=177259007]
+z_index = -8
+
+[node name="broken_arch_00" type="Sprite2D" parent="Scenery" unique_id=1174975447]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(110, 483)
+scale = Vector2(0.425, 0.425)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-164, -330)
+
+[node name="direction_sign_01" type="Sprite2D" parent="Scenery" unique_id=138039845]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(204, 483)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-70, -186)
+
+[node name="basalt_column_02" type="Sprite2D" parent="Scenery" unique_id=1801439728]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(738, 483)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-116, -434)
+
+[node name="molten_ore_03" type="Sprite2D" parent="Scenery" unique_id=261679975]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(990, 443)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-100, -126)
+
+[node name="obsidian_crystals_04" type="Sprite2D" parent="Scenery" unique_id=188489619]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(1465, 443)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-104, -286)
+
+[node name="dark_iron_furnace_05" type="Sprite2D" parent="Scenery" unique_id=1530730515]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(2360, 483)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-218, -458)
+
+[node name="iron_support_06" type="Sprite2D" parent="Scenery" unique_id=1429607126]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(2850, 483)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("decor_6")
+centered = false
+offset = Vector2(-106, -418)
+
+[node name="chain_winch_07" type="Sprite2D" parent="Scenery" unique_id=1811695274]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(3000, 483)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("decor_7")
+centered = false
+offset = Vector2(-154, -286)
+
+[node name="fire_lamp_08" type="Sprite2D" parent="Scenery" unique_id=1534659286]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(3380, 343)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("decor_8")
+centered = false
+offset = Vector2(-54, -218)
+
+[node name="broken_arch_09" type="Sprite2D" parent="Scenery" unique_id=668447078]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(3900, 443)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-164, -330)
+
+[node name="basalt_column_10" type="Sprite2D" parent="Scenery" unique_id=43401327]
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+position = Vector2(4370, 483)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-116, -434)

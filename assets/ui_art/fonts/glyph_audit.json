@@ -1,0 +1,50 @@
+[
+  {
+    "file": "Alegreya-ExtraBold.ttf",
+    "missing": [],
+    "glyphs": 1254,
+    "sha256": "5deb8b529889ce1c3c3beb155ff3d0477825132906ec49151283644160e7a843",
+    "arrows": {
+      "←": true,
+      "↑": true,
+      "→": true,
+      "↓": true
+    }
+  },
+  {
+    "file": "Alegreya-Variable.ttf",
+    "missing": [],
+    "glyphs": 1254,
+    "sha256": "ba5564634b93a8f8ba57b48cd4f1ae7417d2b4656fbac779028679b00de3cf12",
+    "arrows": {
+      "←": true,
+      "↑": true,
+      "→": true,
+      "↓": true
+    }
+  },
+  {
+    "file": "AlegreyaSans-Bold.ttf",
+    "missing": [],
+    "glyphs": 1235,
+    "sha256": "a3055a1893759bdbd7504bb22abc583769e7974c49353176eac0b03792c9fb8e",
+    "arrows": {
+      "←": true,
+      "↑": true,
+      "→": true,
+      "↓": true
+    }
+  },
+  {
+    "file": "AlegreyaSans-Medium.ttf",
+    "missing": [],
+    "glyphs": 1235,
+    "sha256": "4b89fe7804fd1485ec2757795a53ffdb66e1206dd56f844c2d72b3c944815b43",
+    "arrows": {
+      "←": true,
+      "↑": true,
+      "→": true,
+      "↓": true
+    }
+  }
+]

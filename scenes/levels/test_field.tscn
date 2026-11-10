@@ -1,0 +1,70 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/test_field.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/objects/test_platform.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/actors/test_player.tscn" id="3"]
+
+[node name="TestField" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Floor" parent="." instance=ExtResource("2")]
+position = Vector2(0,480)
+size = Vector2(1920,60)
+
+[node name="LeftStop" parent="." instance=ExtResource("2")]
+position = Vector2(0,144)
+size = Vector2(16,336)
+
+[node name="RightStop" parent="." instance=ExtResource("2")]
+position = Vector2(1904,144)
+size = Vector2(16,336)
+
+[node name="Step" parent="." instance=ExtResource("2")]
+position = Vector2(320,448)
+size = Vector2(96,32)
+
+[node name="Ledge" parent="." instance=ExtResource("2")]
+position = Vector2(448,416)
+size = Vector2(128,32)
+
+[node name="UpperLedge" parent="." instance=ExtResource("2")]
+position = Vector2(640,384)
+size = Vector2(128,32)
+
+[node name="Block" parent="." instance=ExtResource("2")]
+position = Vector2(960,448)
+size = Vector2(64,32)
+
+[node name="Platform" parent="." instance=ExtResource("2")]
+position = Vector2(1152,432)
+size = Vector2(160,32)
+
+[node name="HighPlatform" parent="." instance=ExtResource("2")]
+position = Vector2(1376,400)
+size = Vector2(192,32)
+
+[node name="EndBlock" parent="." instance=ExtResource("2")]
+position = Vector2(1696,448)
+size = Vector2(96,32)
+
+[node name="Player" parent="." instance=ExtResource("3")]
+position = Vector2(128,444)
+
+[node name="Guide" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="Guide"]
+offset_left = 40.0
+offset_top = 24.0
+text = "Испытательный стенд"
+theme_override_font_sizes/font_size = 30
+
+[node name="Keys" type="Label" parent="Guide"]
+offset_left = 40.0
+offset_top = 70.0
+theme_override_colors/font_color = Color(0.7,0.8,0.82,1)
+
+[node name="Badge" type="Label" parent="Guide"]
+offset_left = 840.0
+offset_top = 36.0
+text = "S00   /   02"
+theme_override_colors/font_color = Color(0.47,0.81,0.72,1)

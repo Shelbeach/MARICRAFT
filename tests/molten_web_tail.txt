@@ -1,0 +1,50 @@
+async function driveMolten(level){
+ const held=new Set(),started=performance.now();let lastFrame=-1,jumpUntil=0,airborne=false,lastReport=-600;
+ async function hold(code,on){if(held.has(code)===on)return;const vk=code==='Space'?32:code.charCodeAt(3);await key(code,code==='Space'?' ':code[3].toLowerCase(),vk,on);if(on)held.add(code);else held.delete(code);}
+ async function stop(){for(const k of [...held])await hold(k,false);jumpUntil=0;airborne=false;}
+ async function next(){for(;;){const s=await observe();if(s.page==='pause'){await tap('Escape','Escape',27);continue;}if(s.hearts!==3&&s.player){await shot('failure-'+level);throw Error('Heart loss '+JSON.stringify(s));}if(s.player&&s.frame!==lastFrame){lastFrame=s.frame;if(s.frame-lastReport>600){lastReport=s.frame;console.log('MOLTEN',level,Math.round(s.player.x),Math.round(s.player.y),s.boss?.hp??'');}return s;}if(performance.now()-started>340000)throw Error('Timeout '+level);await sleep(5);}}
+ const steer=(p,x)=>Math.abs(x-p.x)>3?Math.sign(x-p.x):0;
+ async function controls(s,axis,leap){await hold('KeyD',axis>0);await hold('KeyA',axis<0);if(!s.player.floor)airborne=true;if(held.has('Space')&&(s.frame>=jumpUntil||(leap&&s.player.floor&&airborne))){await hold('Space',false);jumpUntil=0;airborne=false;return;}if(leap&&s.player.floor&&!held.has('Space')){await hold('Space',true);jumpUntil=s.frame+46;airborne=false;}}
+ async function settle(ticks=65){await stop();let s=await next(),end=s.frame+ticks;while(s.frame<end)s=await next();return s;}
+ async function approach(dest,launch=[]){let s=await next();const end=s.frame+4200;while(s.page==='play'&&Math.abs(s.player.x-dest)>3){const p=s.player,axis=steer(p,dest);let leap=p.step_wall;for(const x of launch)if(axis>0&&((p.x>=x&&p.x<x+31)||(p.floor&&p.edge&&x>=p.x-12&&x<p.x+120)))leap=true;for(const foe of s.enemies){const gap=(foe.x-p.x)*axis,base=p.low_ceiling?45:80,timing=foe.direction!==axis?Math.max(base,65):base;if(gap>0&&gap<timing&&Math.abs(foe.y-p.y)<36)leap=true;}await controls(s,axis,leap);s=await next();if(s.frame>end)throw Error('Stuck '+dest+' '+JSON.stringify(s));}await stop();return s;}
+ async function valve(name){let s=await next(),v=s.hazards.find(v=>v.name===name);await approach(v.x-v.width/2-42);s=await settle(6);for(;;){v=s.hazards.find(v=>v.name===name);const phase=v.age%(v.warning+v.duration+v.rest);if(phase>=v.warning+v.duration+.03&&phase<v.warning+v.duration+.45)break;s=await next();}await approach(v.x+v.width/2+46);pass(true,'Web timed valve '+name);}
+ async function ferry(name,bank){let s=await next(),launched=false,boarded=false,end=s.frame+1000;while(s.frame<end){const d=s.ferries.find(d=>d.name===name),p=s.player;if(d.riding){boarded=true;break;}if(!launched&&p.floor&&d.elapsed>d.period*.65&&d.x-p.x<132)launched=true;await controls(s,launched&&d.x-p.x>4?1:0,launched);s=await next();}pass(boarded,'Web boarded '+name);await stop();while(s.ferries.find(d=>d.name===name).x<bank-91){const d=s.ferries.find(d=>d.name===name);await controls(s,Math.abs(d.x-s.player.x)>8?Math.sign(d.x-s.player.x):0,false);s=await next();}await stop();let first=true;while(s.player.x<bank+30){await controls(s,1,first);first=false;s=await next();}await stop();pass(s.player.y<500,'Web disembarked '+name);}
+ async function lift(){let s=await next(),launched=false,boarded=false,end=s.frame+1000;while(s.frame<end){const d=s.ferries.find(d=>d.name==='ChainLift');if(d.riding){boarded=true;break;}if(!launched&&s.player.floor&&d.elapsed>d.period*.8&&Math.abs(s.player.x-d.x)<125)launched=true;await controls(s,launched&&s.player.x<d.x-2?1:0,launched);s=await next();}pass(boarded,'Web boarded vertical chain lift');await stop();while(s.ferries.find(d=>d.name==='ChainLift').y>344){const d=s.ferries.find(d=>d.name==='ChainLift');await controls(s,Math.abs(d.x-s.player.x)>7?Math.sign(d.x-s.player.x):0,false);s=await next();}await stop();let first=true,air=false;while(!air||!s.player.floor){await controls(s,steer(s.player,3294),first);first=false;s=await next();if(!s.player.floor)air=true;}await settle(6);pass(Math.abs((await observe()).player.y-340)<3,'Web landed from lift');}
+ async function duel(){let s=await next(),oldStep=-1,evade=1900;const phases=new Set(),attacks=new Set(),end=s.frame+14000;while(s.boss.hp>0&&s.frame<end){const b=s.boss,p=s.player;phases.add(b.phase);let target=b.x-112,leap=p.step_wall;if(b.mode===1&&b.step!==oldStep){oldStep=b.step;attacks.add(b.attack);evade=p.x>b.arena_start+180?p.x-95:p.x+95;}if(b.mode===1||b.mode===2)target=b.attack===2?evade:b.x-112;else if(b.mode===3){if(b.hits>=2)target=b.x-120;else{target=b.x;if(Math.abs(b.x-p.x)<135)leap=true;}}else target=1910;if(b.attack===0&&s.shots.length)target=p.x;for(const shot of s.shots)if((p.x-shot.x)*shot.dx>0&&Math.abs(p.x-shot.x)<105&&shot.y>=p.y-(p.form===0?32:64)-20&&shot.y<=p.y+10)leap=true;await controls(s,steer(p,target),leap);s=await next();}await stop();pass(s.boss.hp===0&&phases.size===3,'Web Ragnaros defeated by stomps');metrics.boss_attacks=[...attacks];await shot('ragnaros-defeat');await settle(125);}
+ try{
+  if(level==='3-1'){await valve('FirstVent');await approach(1510,[748,1200]);await approach(1612);await settle();await valve('LowerValveA');await valve('LowerValveB');await approach(3068);await lift();await approach(3560);await settle(55);await approach(3808,[3598]);await valve('LastValve');await approach(4303,[4056]);}
+  if(level==='3-2'){let s;await approach(677);await ferry('LavaCarrier',1060);await approach(1462);await settle();await valve('TowerValve');await approach(2758);await ferry('Counterweight',3150);await approach(3500);await settle(55);await approach(3800,[3522]);await approach(4008);await approach(4260,[4123]);await valve('CastingValve');await approach(4418);await ferry('LastBridge',4780);await valve('LastBreath');await approach(5543,[4978]);}
+  if(level==='3-3'){await approach(201);await settle();await approach(360);await settle(55);await approach(800,[388]);await settle();await approach(1340,[822]);await approach(1442);await duel();await approach(3023);}
+  await settle(4);const s=await observe();pass(['result','victory'].includes(s.page),'Web finish '+level);metrics[level+'_seconds']=(performance.now()-started)/1000;
+ }finally{await stop();}
+}
+try{
+ const debug=process.argv.includes('--debug');
+ await open(debug?stage:release);
+ metrics.loading_ms=await evaluate('performance.now()');
+ await shot(debug?'debug-main':'release-main');
+ await tap('F1','F1',112);
+ let d=await observe();pass(d.debug===debug,'correct export type');
+ if(debug){await button('Начать тестовую сессию');await button('Заново · 3-1');}
+ else{
+  pass(!d.buttons.some(b=>b.text==='Начать тестовую сессию'),'release F1 disabled');
+  await button('Новая игра');await button('HeroHit_human');await button('Подтвердить выбор');
+  for(const [index,level] of ['1-1','1-2','1-3'].entries())await replay(level,index);
+  for(const level of ['2-1','2-2','2-3']){await button('Продолжить');await driveDurotar(level);await shot('result-'+level);await button('Следующий уровень');}
+  await button('Продолжить');
+ }
+ for(const [index,level] of ['3-1','3-2','3-3'].entries()){
+  await shot('start-'+level);await driveMolten(level);await shot('result-'+level);
+  if(index<2){await button('Следующий уровень');await button('Продолжить');}
+ }
+ d=await observe();pass(d.page==='victory'&&d.profile.completed,'final victory unlocks campaign');
+ metrics.final=d.profile;
+ if(!debug){await sleep(1200);await send('Page.reload',{ignoreCache:true});await sleep(400);await ready();d=await observe();pass(d.page==='victory'&&d.profile.completed&&d.profile.wallet===metrics.final.wallet,'Web reload keeps victory and bank');}
+ await button('Карта · все уровни');await shot('free-map');
+ d=await observe();pass(d.buttons.filter(b=>b.name.startsWith('Level_')&&!b.disabled).length===9,'all nine real replay buttons enabled');
+ await button('Level_3-2');await button('Играть');d=await observe();pass(d.level==='3-2'&&d.hearts===3&&d.profile.wallet===metrics.final.wallet,'replay starts with three hearts and retains bank');
+ await performanceSample('replay-performance');await shot('replay-3-2');
+ pass(errors.length===0,'no browser runtime errors');
+ fs.writeFileSync(path.join(out,debug?'debug.json':'release.json'),JSON.stringify({metrics,errors,requests},null,2));
+ console.log('MOLTEN WEB PASS',debug?'debug':'release');
+}catch(e){console.error(e);fs.writeFileSync(path.join(out,'failure-'+Date.now()+'.json'),JSON.stringify({error:String(e),metrics,errors},null,2));process.exitCode=1;}finally{await close();}

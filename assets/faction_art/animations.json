@@ -1,0 +1,1157 @@
+{
+  "rolling": {
+    "file": "runtime/characters/rolling.png",
+    "frame_px": [
+      160,
+      128
+    ],
+    "sheet_px": [
+      1280,
+      128
+    ],
+    "count": 8,
+    "fps": 20.0,
+    "duration_seconds": 0.4,
+    "loop": true,
+    "density": 2,
+    "pivot_px": [
+      80,
+      112
+    ],
+    "anchor_world": [
+      40.0,
+      56.0
+    ],
+    "world_canvas": [
+      80.0,
+      64.0
+    ],
+    "direction": "right",
+    "description": "Быстрое скольжение: шляпа остаётся верхом вверх, лёгкое покачивание и движение свечи; без полного вращения. Кадры 0/7 точно равны P04 hidden/00, остальные — новые позы.",
+    "frames": [
+      "source_frames/characters/rolling/00.png",
+      "source_frames/characters/rolling/01.png",
+      "source_frames/characters/rolling/02.png",
+      "source_frames/characters/rolling/03.png",
+      "source_frames/characters/rolling/04.png",
+      "source_frames/characters/rolling/05.png",
+      "source_frames/characters/rolling/06.png",
+      "source_frames/characters/rolling/07.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        160,
+        128
+      ],
+      [
+        160,
+        0,
+        160,
+        128
+      ],
+      [
+        320,
+        0,
+        160,
+        128
+      ],
+      [
+        480,
+        0,
+        160,
+        128
+      ],
+      [
+        640,
+        0,
+        160,
+        128
+      ],
+      [
+        800,
+        0,
+        160,
+        128
+      ],
+      [
+        960,
+        0,
+        160,
+        128
+      ],
+      [
+        1120,
+        0,
+        160,
+        128
+      ]
+    ],
+    "spriteframes": "runtime/characters/kobold_slide.tres",
+    "painted_keys": 6,
+    "controller": "Kobold.State.ROLLING, speed=256; коллизия не меняется.",
+    "packing_scale": 0.2847457627118644,
+    "full_compatible_spriteframes": "runtime/characters/kobold/kobold.tres"
+  },
+  "fissure_warning": {
+    "file": "runtime/effects/fissure_warning.png",
+    "frame_px": [
+      216,
+      108
+    ],
+    "sheet_px": [
+      864,
+      108
+    ],
+    "count": 4,
+    "fps": 4.444444444444445,
+    "duration_seconds": 0.9,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      108,
+      84
+    ],
+    "anchor_world": [
+      54.0,
+      42.0
+    ],
+    "world_canvas": [
+      108.0,
+      54.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Подсвеченная трещина и нарастающая пыль перед ударом кирки.",
+    "frames": [
+      "source_frames/effects/fissure_warning/00.png",
+      "source_frames/effects/fissure_warning/01.png",
+      "source_frames/effects/fissure_warning/02.png",
+      "source_frames/effects/fissure_warning/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        216,
+        108
+      ],
+      [
+        216,
+        0,
+        216,
+        108
+      ],
+      [
+        432,
+        0,
+        216,
+        108
+      ],
+      [
+        648,
+        0,
+        216,
+        108
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -48.0,
+      -30,
+      96,
+      30
+    ],
+    "source_regions": [
+      {
+        "cell_px": [
+          0,
+          0,
+          887,
+          444
+        ],
+        "art_bounds_in_cell_px": [
+          56,
+          185,
+          845,
+          319
+        ],
+        "runtime_content_px": [
+          12,
+          62,
+          192,
+          22
+        ]
+      },
+      {
+        "cell_px": [
+          887,
+          0,
+          1774,
+          444
+        ],
+        "art_bounds_in_cell_px": [
+          56,
+          187,
+          844,
+          319
+        ],
+        "runtime_content_px": [
+          12,
+          63,
+          192,
+          21
+        ]
+      },
+      {
+        "cell_px": [
+          0,
+          444,
+          887,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          56,
+          142,
+          844,
+          319
+        ],
+        "runtime_content_px": [
+          12,
+          55,
+          192,
+          29
+        ]
+      },
+      {
+        "cell_px": [
+          887,
+          444,
+          1774,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          56,
+          108,
+          844,
+          319
+        ],
+        "runtime_content_px": [
+          12,
+          50,
+          192,
+          34
+        ]
+      }
+    ],
+    "state": "age < warning",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "fissure_active": {
+    "file": "runtime/effects/fissure_active.png",
+    "frame_px": [
+      216,
+      108
+    ],
+    "sheet_px": [
+      864,
+      108
+    ],
+    "count": 4,
+    "fps": 11.11111111111111,
+    "duration_seconds": 0.36,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      108,
+      84
+    ],
+    "anchor_world": [
+      54.0,
+      42.0
+    ],
+    "world_canvas": [
+      108.0,
+      54.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Каменные осколки и низкий разлом, весь активный интервал.",
+    "frames": [
+      "source_frames/effects/fissure_active/00.png",
+      "source_frames/effects/fissure_active/01.png",
+      "source_frames/effects/fissure_active/02.png",
+      "source_frames/effects/fissure_active/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        216,
+        108
+      ],
+      [
+        216,
+        0,
+        216,
+        108
+      ],
+      [
+        432,
+        0,
+        216,
+        108
+      ],
+      [
+        648,
+        0,
+        216,
+        108
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -48.0,
+      -30,
+      96,
+      30
+    ],
+    "source_regions": [
+      {
+        "cell_px": [
+          0,
+          0,
+          887,
+          444
+        ],
+        "art_bounds_in_cell_px": [
+          25,
+          190,
+          847,
+          369
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          192,
+          60
+        ]
+      },
+      {
+        "cell_px": [
+          887,
+          0,
+          1774,
+          444
+        ],
+        "art_bounds_in_cell_px": [
+          26,
+          145,
+          861,
+          382
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          192,
+          60
+        ]
+      },
+      {
+        "cell_px": [
+          0,
+          444,
+          887,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          10,
+          161,
+          863,
+          391
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          192,
+          60
+        ]
+      },
+      {
+        "cell_px": [
+          887,
+          444,
+          1774,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          9,
+          147,
+          871,
+          396
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          192,
+          60
+        ]
+      }
+    ],
+    "state": "warning <= age < warning+duration",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "wax_warning": {
+    "file": "runtime/effects/wax_warning.png",
+    "frame_px": [
+      196,
+      364
+    ],
+    "sheet_px": [
+      784,
+      364
+    ],
+    "count": 4,
+    "fps": 4.166666666666667,
+    "duration_seconds": 0.96,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      98,
+      340
+    ],
+    "anchor_world": [
+      49.0,
+      170.0
+    ],
+    "world_canvas": [
+      98.0,
+      182.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Пузырящийся воск и растущий пар до выброса.",
+    "frames": [
+      "source_frames/effects/wax_warning/00.png",
+      "source_frames/effects/wax_warning/01.png",
+      "source_frames/effects/wax_warning/02.png",
+      "source_frames/effects/wax_warning/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        196,
+        364
+      ],
+      [
+        196,
+        0,
+        196,
+        364
+      ],
+      [
+        392,
+        0,
+        196,
+        364
+      ],
+      [
+        588,
+        0,
+        196,
+        364
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -43.0,
+      -158,
+      86,
+      158
+    ],
+    "source_regions": [
+      {
+        "cell_px": [
+          0,
+          0,
+          444,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          68,
+          285,
+          364,
+          821
+        ],
+        "runtime_content_px": [
+          12,
+          121,
+          172,
+          219
+        ]
+      },
+      {
+        "cell_px": [
+          444,
+          0,
+          887,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          60,
+          164,
+          368,
+          821
+        ],
+        "runtime_content_px": [
+          12,
+          72,
+          172,
+          268
+        ]
+      },
+      {
+        "cell_px": [
+          887,
+          0,
+          1330,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          47,
+          69,
+          372,
+          824
+        ],
+        "runtime_content_px": [
+          12,
+          32,
+          172,
+          308
+        ]
+      },
+      {
+        "cell_px": [
+          1330,
+          0,
+          1774,
+          887
+        ],
+        "art_bounds_in_cell_px": [
+          36,
+          54,
+          380,
+          828
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          172,
+          316
+        ]
+      }
+    ],
+    "state": "age < warning",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "wax_active": {
+    "file": "runtime/effects/wax_active.png",
+    "frame_px": [
+      196,
+      364
+    ],
+    "sheet_px": [
+      784,
+      364
+    ],
+    "count": 4,
+    "fps": 5.714285714285714,
+    "duration_seconds": 0.7,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      98,
+      340
+    ],
+    "anchor_world": [
+      49.0,
+      170.0
+    ],
+    "world_canvas": [
+      98.0,
+      182.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Высокий выброс светлого воска, рябь и капли.",
+    "frames": [
+      "source_frames/effects/wax_active/00.png",
+      "source_frames/effects/wax_active/01.png",
+      "source_frames/effects/wax_active/02.png",
+      "source_frames/effects/wax_active/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        196,
+        364
+      ],
+      [
+        196,
+        0,
+        196,
+        364
+      ],
+      [
+        392,
+        0,
+        196,
+        364
+      ],
+      [
+        588,
+        0,
+        196,
+        364
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -43.0,
+      -158,
+      86,
+      158
+    ],
+    "source_regions": [
+      {
+        "cell_px": [
+          0,
+          0,
+          462,
+          851
+        ],
+        "art_bounds_in_cell_px": [
+          18,
+          19,
+          443,
+          813
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          172,
+          316
+        ]
+      },
+      {
+        "cell_px": [
+          462,
+          0,
+          924,
+          851
+        ],
+        "art_bounds_in_cell_px": [
+          13,
+          17,
+          450,
+          816
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          172,
+          316
+        ]
+      },
+      {
+        "cell_px": [
+          924,
+          0,
+          1387,
+          851
+        ],
+        "art_bounds_in_cell_px": [
+          14,
+          19,
+          449,
+          817
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          172,
+          316
+        ]
+      },
+      {
+        "cell_px": [
+          1387,
+          0,
+          1849,
+          851
+        ],
+        "art_bounds_in_cell_px": [
+          22,
+          18,
+          444,
+          817
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          172,
+          316
+        ]
+      }
+    ],
+    "state": "warning <= age < warning+duration",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "rock_warning": {
+    "file": "runtime/effects/rock_warning.png",
+    "frame_px": [
+      184,
+      640
+    ],
+    "sheet_px": [
+      736,
+      640
+    ],
+    "count": 4,
+    "fps": 3.846153846153846,
+    "duration_seconds": 1.04,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      92,
+      616
+    ],
+    "anchor_world": [
+      46.0,
+      308.0
+    ],
+    "world_canvas": [
+      92.0,
+      320.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Сыплющаяся крошка, столб пыли и пятно осыпи до обвала.",
+    "frames": [
+      "source_frames/effects/rock_warning/00.png",
+      "source_frames/effects/rock_warning/01.png",
+      "source_frames/effects/rock_warning/02.png",
+      "source_frames/effects/rock_warning/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        184,
+        640
+      ],
+      [
+        184,
+        0,
+        184,
+        640
+      ],
+      [
+        368,
+        0,
+        184,
+        640
+      ],
+      [
+        552,
+        0,
+        184,
+        640
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -40.0,
+      -296,
+      80,
+      296
+    ],
+    "source_regions": [
+      {
+        "cell_px": [
+          0,
+          0,
+          326,
+          1206
+        ],
+        "art_bounds_in_cell_px": [
+          103,
+          135,
+          242,
+          1131
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      },
+      {
+        "cell_px": [
+          326,
+          0,
+          652,
+          1206
+        ],
+        "art_bounds_in_cell_px": [
+          82,
+          129,
+          246,
+          1132
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      },
+      {
+        "cell_px": [
+          652,
+          0,
+          979,
+          1206
+        ],
+        "art_bounds_in_cell_px": [
+          59,
+          133,
+          237,
+          1134
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      },
+      {
+        "cell_px": [
+          979,
+          0,
+          1305,
+          1206
+        ],
+        "art_bounds_in_cell_px": [
+          35,
+          131,
+          246,
+          1137
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      }
+    ],
+    "state": "age < warning",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "rock_active": {
+    "file": "runtime/effects/rock_active.png",
+    "frame_px": [
+      184,
+      640
+    ],
+    "sheet_px": [
+      736,
+      640
+    ],
+    "count": 4,
+    "fps": 11.11111111111111,
+    "duration_seconds": 0.36,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      92,
+      616
+    ],
+    "anchor_world": [
+      46.0,
+      308.0
+    ],
+    "world_canvas": [
+      92.0,
+      320.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Последовательное падение камней с пылью в полной области опасности.",
+    "frames": [
+      "source_frames/effects/rock_active/00.png",
+      "source_frames/effects/rock_active/01.png",
+      "source_frames/effects/rock_active/02.png",
+      "source_frames/effects/rock_active/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        184,
+        640
+      ],
+      [
+        184,
+        0,
+        184,
+        640
+      ],
+      [
+        368,
+        0,
+        184,
+        640
+      ],
+      [
+        552,
+        0,
+        184,
+        640
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -40.0,
+      -296,
+      80,
+      296
+    ],
+    "source_regions": [
+      {
+        "cell_px": [
+          0,
+          0,
+          363,
+          1082
+        ],
+        "art_bounds_in_cell_px": [
+          63,
+          33,
+          298,
+          1037
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      },
+      {
+        "cell_px": [
+          363,
+          0,
+          726,
+          1082
+        ],
+        "art_bounds_in_cell_px": [
+          59,
+          43,
+          295,
+          1037
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      },
+      {
+        "cell_px": [
+          726,
+          0,
+          1090,
+          1082
+        ],
+        "art_bounds_in_cell_px": [
+          63,
+          43,
+          301,
+          1038
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      },
+      {
+        "cell_px": [
+          1090,
+          0,
+          1453,
+          1082
+        ],
+        "art_bounds_in_cell_px": [
+          45,
+          49,
+          302,
+          1038
+        ],
+        "runtime_content_px": [
+          12,
+          24,
+          160,
+          592
+        ]
+      }
+    ],
+    "state": "warning <= age < warning+duration",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "rock_second_warning": {
+    "file": "runtime/effects/rock_second_warning.png",
+    "frame_px": [
+      168,
+      640
+    ],
+    "sheet_px": [
+      672,
+      640
+    ],
+    "count": 4,
+    "fps": 2.684563758389262,
+    "duration_seconds": 1.49,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      84,
+      616
+    ],
+    "anchor_world": [
+      42.0,
+      308.0
+    ],
+    "world_canvas": [
+      84.0,
+      320.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Второй обвал: тот же рисунок, ширина72ед. вместо80; предупреждение1.49с, активность0.40с.",
+    "frames": [
+      "source_frames/effects/rock_second_warning/00.png",
+      "source_frames/effects/rock_second_warning/01.png",
+      "source_frames/effects/rock_second_warning/02.png",
+      "source_frames/effects/rock_second_warning/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        168,
+        640
+      ],
+      [
+        168,
+        0,
+        168,
+        640
+      ],
+      [
+        336,
+        0,
+        168,
+        640
+      ],
+      [
+        504,
+        0,
+        168,
+        640
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -36.0,
+      -296,
+      72,
+      296
+    ],
+    "source_reuse": "rock_warning",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  },
+  "rock_second_active": {
+    "file": "runtime/effects/rock_second_active.png",
+    "frame_px": [
+      168,
+      640
+    ],
+    "sheet_px": [
+      672,
+      640
+    ],
+    "count": 4,
+    "fps": 10.0,
+    "duration_seconds": 0.4,
+    "loop": false,
+    "density": 2,
+    "pivot_px": [
+      84,
+      616
+    ],
+    "anchor_world": [
+      42.0,
+      308.0
+    ],
+    "world_canvas": [
+      84.0,
+      320.0
+    ],
+    "direction": "vertical/radial",
+    "description": "Второй обвал: тот же рисунок, ширина72ед. вместо80; предупреждение1.49с, активность0.40с.",
+    "frames": [
+      "source_frames/effects/rock_second_active/00.png",
+      "source_frames/effects/rock_second_active/01.png",
+      "source_frames/effects/rock_second_active/02.png",
+      "source_frames/effects/rock_second_active/03.png"
+    ],
+    "regions_px": [
+      [
+        0,
+        0,
+        168,
+        640
+      ],
+      [
+        168,
+        0,
+        168,
+        640
+      ],
+      [
+        336,
+        0,
+        168,
+        640
+      ],
+      [
+        504,
+        0,
+        168,
+        640
+      ]
+    ],
+    "spriteframes": "runtime/effects/mine_effects.tres",
+    "danger_world": [
+      -36.0,
+      -296,
+      72,
+      296
+    ],
+    "source_reuse": "rock_active",
+    "sampling": "frame = clamp(floor(progress * count), 0, count-1); progress берётся из настоящего MineStrike.age."
+  }
+}

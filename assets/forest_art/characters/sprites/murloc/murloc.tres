@@ -1,0 +1,168 @@
+[gd_resource type="SpriteFrames" load_steps=38 format=3]
+
+[ext_resource type="Texture2D" path="idle.png" id="T_idle"]
+[ext_resource type="Texture2D" path="patrol.png" id="T_patrol"]
+[ext_resource type="Texture2D" path="turn.png" id="T_turn"]
+[ext_resource type="Texture2D" path="hit.png" id="T_hit"]
+[ext_resource type="Texture2D" path="stomp_defeat.png" id="T_stomp_defeat"]
+[ext_resource type="Texture2D" path="magic_defeat.png" id="T_magic_defeat"]
+[ext_resource type="Texture2D" path="pipe_emerge.png" id="T_pipe_emerge"]
+
+[sub_resource type="AtlasTexture" id="A_idle_0"]
+atlas = ExtResource("T_idle")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_1"]
+atlas = ExtResource("T_idle")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_2"]
+atlas = ExtResource("T_idle")
+region = Rect2(300, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_3"]
+atlas = ExtResource("T_idle")
+region = Rect2(450, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_4"]
+atlas = ExtResource("T_idle")
+region = Rect2(600, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_idle_5"]
+atlas = ExtResource("T_idle")
+region = Rect2(750, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_0"]
+atlas = ExtResource("T_patrol")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_1"]
+atlas = ExtResource("T_patrol")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_2"]
+atlas = ExtResource("T_patrol")
+region = Rect2(300, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_3"]
+atlas = ExtResource("T_patrol")
+region = Rect2(450, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_4"]
+atlas = ExtResource("T_patrol")
+region = Rect2(600, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_5"]
+atlas = ExtResource("T_patrol")
+region = Rect2(750, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_6"]
+atlas = ExtResource("T_patrol")
+region = Rect2(900, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_patrol_7"]
+atlas = ExtResource("T_patrol")
+region = Rect2(1050, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_turn_0"]
+atlas = ExtResource("T_turn")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_turn_1"]
+atlas = ExtResource("T_turn")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_turn_2"]
+atlas = ExtResource("T_turn")
+region = Rect2(300, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_turn_3"]
+atlas = ExtResource("T_turn")
+region = Rect2(450, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hit_0"]
+atlas = ExtResource("T_hit")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_hit_1"]
+atlas = ExtResource("T_hit")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_stomp_defeat_0"]
+atlas = ExtResource("T_stomp_defeat")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_stomp_defeat_1"]
+atlas = ExtResource("T_stomp_defeat")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_stomp_defeat_2"]
+atlas = ExtResource("T_stomp_defeat")
+region = Rect2(300, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_defeat_0"]
+atlas = ExtResource("T_magic_defeat")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_defeat_1"]
+atlas = ExtResource("T_magic_defeat")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_magic_defeat_2"]
+atlas = ExtResource("T_magic_defeat")
+region = Rect2(300, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_0"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(0, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_1"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(150, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_2"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(300, 0, 150, 98)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="A_pipe_emerge_3"]
+atlas = ExtResource("T_pipe_emerge")
+region = Rect2(450, 0, 150, 98)
+filter_clip = true
+
+[resource]
+animations = [{"name": &"idle", "speed": 6.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_idle_0")}, {"duration": 1.0, "texture": SubResource("A_idle_1")}, {"duration": 1.0, "texture": SubResource("A_idle_2")}, {"duration": 1.0, "texture": SubResource("A_idle_3")}, {"duration": 1.0, "texture": SubResource("A_idle_4")}, {"duration": 1.0, "texture": SubResource("A_idle_5")}]},
+{"name": &"patrol", "speed": 9.0, "loop": true, "frames": [{"duration": 1.0, "texture": SubResource("A_patrol_0")}, {"duration": 1.0, "texture": SubResource("A_patrol_1")}, {"duration": 1.0, "texture": SubResource("A_patrol_2")}, {"duration": 1.0, "texture": SubResource("A_patrol_3")}, {"duration": 1.0, "texture": SubResource("A_patrol_4")}, {"duration": 1.0, "texture": SubResource("A_patrol_5")}, {"duration": 1.0, "texture": SubResource("A_patrol_6")}, {"duration": 1.0, "texture": SubResource("A_patrol_7")}]},
+{"name": &"turn", "speed": 9.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_turn_0")}, {"duration": 1.0, "texture": SubResource("A_turn_1")}, {"duration": 1.0, "texture": SubResource("A_turn_2")}, {"duration": 1.0, "texture": SubResource("A_turn_3")}]},
+{"name": &"hit", "speed": 12.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_hit_0")}, {"duration": 1.0, "texture": SubResource("A_hit_1")}]},
+{"name": &"stomp_defeat", "speed": 10.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_stomp_defeat_0")}, {"duration": 1.0, "texture": SubResource("A_stomp_defeat_1")}, {"duration": 1.0, "texture": SubResource("A_stomp_defeat_2")}]},
+{"name": &"magic_defeat", "speed": 9.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_magic_defeat_0")}, {"duration": 1.0, "texture": SubResource("A_magic_defeat_1")}, {"duration": 1.0, "texture": SubResource("A_magic_defeat_2")}]},
+{"name": &"pipe_emerge", "speed": 10.0, "loop": false, "frames": [{"duration": 1.0, "texture": SubResource("A_pipe_emerge_0")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_1")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_2")}, {"duration": 1.0, "texture": SubResource("A_pipe_emerge_3")}]}]

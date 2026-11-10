@@ -1,0 +1,68 @@
+[gd_resource type="SpriteFrames" load_steps=16 format=3]
+[ext_resource type="Texture2D" path="enemy_hit.png" id="T0"]
+[ext_resource type="Texture2D" path="boss_hit.png" id="T1"]
+[ext_resource type="Texture2D" path="powerup.png" id="T2"]
+[sub_resource type="AtlasTexture" id="F1"]
+atlas = ExtResource("T0")
+region = Rect2(0,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F2"]
+atlas = ExtResource("T0")
+region = Rect2(144,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F3"]
+atlas = ExtResource("T0")
+region = Rect2(288,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F4"]
+atlas = ExtResource("T0")
+region = Rect2(432,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F5"]
+atlas = ExtResource("T1")
+region = Rect2(0,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F6"]
+atlas = ExtResource("T1")
+region = Rect2(144,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F7"]
+atlas = ExtResource("T1")
+region = Rect2(288,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F8"]
+atlas = ExtResource("T1")
+region = Rect2(432,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F9"]
+atlas = ExtResource("T2")
+region = Rect2(0,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F10"]
+atlas = ExtResource("T2")
+region = Rect2(144,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F11"]
+atlas = ExtResource("T2")
+region = Rect2(288,0,144,144)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F12"]
+atlas = ExtResource("T2")
+region = Rect2(432,0,144,144)
+filter_clip = true
+
+[resource]
+animations = [{"name":&"enemy_hit","speed":16,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("F1")},{"duration":1.0,"texture":SubResource("F2")},{"duration":1.0,"texture":SubResource("F3")},{"duration":1.0,"texture":SubResource("F4")}]},
+{"name":&"boss_hit","speed":16,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("F5")},{"duration":1.0,"texture":SubResource("F6")},{"duration":1.0,"texture":SubResource("F7")},{"duration":1.0,"texture":SubResource("F8")}]},
+{"name":&"powerup","speed":12,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("F9")},{"duration":1.0,"texture":SubResource("F10")},{"duration":1.0,"texture":SubResource("F11")},{"duration":1.0,"texture":SubResource("F12")}]}]

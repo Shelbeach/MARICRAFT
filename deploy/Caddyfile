@@ -1,0 +1,3 @@
+{$MARICRAFT_DOMAIN} {
+    reverse_proxy maricraft:8080
+}

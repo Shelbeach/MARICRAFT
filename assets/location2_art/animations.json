@@ -1,0 +1,1393 @@
+{
+  "kobold": {
+    "name": "Кобольд",
+    "density": 2,
+    "direction": "right",
+    "frame_px": [
+      160,
+      128
+    ],
+    "pivot_px": [
+      80,
+      112
+    ],
+    "collision_world": [
+      30,
+      32
+    ],
+    "clips": {
+      "idle": {
+        "file": "runtime/characters/kobold/idle.png",
+        "frames": [
+          "source_frames/kobold/idle/00.png",
+          "source_frames/kobold/idle/01.png",
+          "source_frames/kobold/idle/02.png",
+          "source_frames/kobold/idle/03.png",
+          "source_frames/kobold/idle/04.png",
+          "source_frames/kobold/idle/05.png"
+        ],
+        "count": 6,
+        "fps": 6,
+        "loop": true,
+        "duration": 1.0,
+        "description": "Оглядывается и спокойно дышит, свеча над охристой шляпой.",
+        "state": "presentation idle",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ],
+          [
+            640,
+            0,
+            160,
+            128
+          ],
+          [
+            800,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "patrol": {
+        "file": "runtime/characters/kobold/patrol.png",
+        "frames": [
+          "source_frames/kobold/patrol/00.png",
+          "source_frames/kobold/patrol/01.png",
+          "source_frames/kobold/patrol/02.png",
+          "source_frames/kobold/patrol/03.png",
+          "source_frames/kobold/patrol/04.png",
+          "source_frames/kobold/patrol/05.png"
+        ],
+        "count": 6,
+        "fps": 10,
+        "loop": true,
+        "duration": 0.6,
+        "description": "Шесть нарисованных поз ходьбы с согнутыми коленями, движением лап и хвоста.",
+        "state": "PATROL",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ],
+          [
+            640,
+            0,
+            160,
+            128
+          ],
+          [
+            800,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "turn": {
+        "file": "runtime/characters/kobold/turn.png",
+        "frames": [
+          "source_frames/kobold/turn/00.png",
+          "source_frames/kobold/turn/01.png",
+          "source_frames/kobold/turn/02.png"
+        ],
+        "count": 3,
+        "fps": 12,
+        "loop": false,
+        "duration": 0.25,
+        "description": "Короткий разворот через фронтальное положение корпуса. Отражение всего спрайта по direction.",
+        "state": "direction change",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "stomp": {
+        "file": "runtime/characters/kobold/stomp.png",
+        "frames": [
+          "source_frames/kobold/stomp/00.png",
+          "source_frames/kobold/stomp/01.png",
+          "source_frames/kobold/stomp/02.png"
+        ],
+        "count": 3,
+        "fps": 16,
+        "loop": false,
+        "duration": 0.1875,
+        "description": "Реакция на прыжок сверху и приседание под шляпу.",
+        "state": "PATROL→HIDDEN",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "hide": {
+        "file": "runtime/characters/kobold/hide.png",
+        "frames": [
+          "source_frames/kobold/hide/00.png",
+          "source_frames/kobold/hide/01.png",
+          "source_frames/kobold/hide/02.png",
+          "source_frames/kobold/hide/03.png",
+          "source_frames/kobold/hide/04.png"
+        ],
+        "count": 5,
+        "fps": 20,
+        "loop": false,
+        "duration": 0.25,
+        "description": "Тело быстро уходит под неподвижную шляпу. Конец точно совпадает с hidden.",
+        "state": "HIDDEN first0.25",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ],
+          [
+            640,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "hidden": {
+        "file": "runtime/characters/kobold/hidden.png",
+        "frames": [
+          "source_frames/kobold/hidden/00.png",
+          "source_frames/kobold/hidden/01.png",
+          "source_frames/kobold/hidden/02.png",
+          "source_frames/kobold/hidden/03.png"
+        ],
+        "count": 4,
+        "fps": 4,
+        "loop": true,
+        "duration": 1.0,
+        "description": "Одна и та же шляпа со свечой неподвижна на поверхности.",
+        "state": "HIDDEN up to5s",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "wake": {
+        "file": "runtime/characters/kobold/wake.png",
+        "frames": [
+          "source_frames/kobold/wake/00.png",
+          "source_frames/kobold/wake/01.png",
+          "source_frames/kobold/wake/02.png",
+          "source_frames/kobold/wake/03.png",
+          "source_frames/kobold/wake/04.png"
+        ],
+        "count": 5,
+        "fps": 14.2857,
+        "loop": false,
+        "duration": 0.35,
+        "description": "Подготовка подъёма, появление головы и распрямление кобольда.",
+        "state": "last0.35s of HIDDEN",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ],
+          [
+            640,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "rolling": {
+        "file": "runtime/characters/kobold/rolling.png",
+        "frames": [
+          "source_frames/kobold/rolling/00.png",
+          "source_frames/kobold/rolling/01.png",
+          "source_frames/kobold/rolling/02.png",
+          "source_frames/kobold/rolling/03.png",
+          "source_frames/kobold/rolling/04.png",
+          "source_frames/kobold/rolling/05.png",
+          "source_frames/kobold/rolling/06.png",
+          "source_frames/kobold/rolling/07.png"
+        ],
+        "count": 8,
+        "fps": 20,
+        "loop": true,
+        "duration": 0.4,
+        "description": "Восемь углов катящейся шляпы, размеры исходной шляпы неизменны.",
+        "state": "ROLLING256",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ],
+          [
+            640,
+            0,
+            160,
+            128
+          ],
+          [
+            800,
+            0,
+            160,
+            128
+          ],
+          [
+            960,
+            0,
+            160,
+            128
+          ],
+          [
+            1120,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "hit": {
+        "file": "runtime/characters/kobold/hit.png",
+        "frames": [
+          "source_frames/kobold/hit/00.png",
+          "source_frames/kobold/hit/01.png",
+          "source_frames/kobold/hit/02.png"
+        ],
+        "count": 3,
+        "fps": 12,
+        "loop": false,
+        "duration": 0.25,
+        "description": "Кобольд откидывается после магического попадания.",
+        "state": "detached visual",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ]
+        ]
+      },
+      "death": {
+        "file": "runtime/characters/kobold/death.png",
+        "frames": [
+          "source_frames/kobold/death/00.png",
+          "source_frames/kobold/death/01.png",
+          "source_frames/kobold/death/02.png",
+          "source_frames/kobold/death/03.png",
+          "source_frames/kobold/death/04.png",
+          "source_frames/kobold/death/05.png",
+          "source_frames/kobold/death/06.png"
+        ],
+        "count": 7,
+        "fps": 10,
+        "loop": false,
+        "duration": 0.7,
+        "description": "Поражение, падение рядом со шляпой и постепенное исчезновение.",
+        "state": "defeat() detached",
+        "regions_px": [
+          [
+            0,
+            0,
+            160,
+            128
+          ],
+          [
+            160,
+            0,
+            160,
+            128
+          ],
+          [
+            320,
+            0,
+            160,
+            128
+          ],
+          [
+            480,
+            0,
+            160,
+            128
+          ],
+          [
+            640,
+            0,
+            160,
+            128
+          ],
+          [
+            800,
+            0,
+            160,
+            128
+          ],
+          [
+            960,
+            0,
+            160,
+            128
+          ]
+        ]
+      }
+    },
+    "spriteframes": "runtime/characters/kobold/kobold.tres"
+  },
+  "foreman": {
+    "name": "Главарь кобольдов",
+    "density": 2,
+    "direction": "right",
+    "frame_px": [
+      320,
+      300
+    ],
+    "pivot_px": [
+      150,
+      278
+    ],
+    "collision_world": [
+      64,
+      70
+    ],
+    "clips": {
+      "idle": {
+        "file": "runtime/characters/foreman/idle.png",
+        "frames": [
+          "source_frames/foreman/idle/00.png",
+          "source_frames/foreman/idle/01.png",
+          "source_frames/foreman/idle/02.png",
+          "source_frames/foreman/idle/03.png",
+          "source_frames/foreman/idle/04.png",
+          "source_frames/foreman/idle/05.png",
+          "source_frames/foreman/idle/06.png",
+          "source_frames/foreman/idle/07.png"
+        ],
+        "count": 8,
+        "fps": 8,
+        "loop": true,
+        "duration": 1.0,
+        "description": "Тяжёлое дыхание, кирка удерживается перед корпусом, три свечи.",
+        "state": "WATCH",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ],
+          [
+            1920,
+            0,
+            320,
+            300
+          ],
+          [
+            2240,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "move": {
+        "file": "runtime/characters/foreman/move.png",
+        "frames": [
+          "source_frames/foreman/move/00.png",
+          "source_frames/foreman/move/01.png",
+          "source_frames/foreman/move/02.png",
+          "source_frames/foreman/move/03.png"
+        ],
+        "count": 4,
+        "fps": 8,
+        "loop": true,
+        "duration": 0.5,
+        "description": "Тяжёлые шаги к выбранной позиции, кирка прижата к груди.",
+        "state": "WARN while moving78",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "alert": {
+        "file": "runtime/characters/foreman/alert.png",
+        "frames": [
+          "source_frames/foreman/alert/00.png",
+          "source_frames/foreman/alert/01.png",
+          "source_frames/foreman/alert/02.png"
+        ],
+        "count": 3,
+        "fps": 6,
+        "loop": false,
+        "duration": 0.5,
+        "description": "Поднимает голову и замечает героя.",
+        "state": "engaged",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "fissure_prepare": {
+        "file": "runtime/characters/foreman/fissure_prepare.png",
+        "frames": [
+          "source_frames/foreman/fissure_prepare/00.png",
+          "source_frames/foreman/fissure_prepare/01.png",
+          "source_frames/foreman/fissure_prepare/02.png",
+          "source_frames/foreman/fissure_prepare/03.png",
+          "source_frames/foreman/fissure_prepare/04.png",
+          "source_frames/foreman/fissure_prepare/05.png"
+        ],
+        "count": 6,
+        "fps": 6.666666666666666,
+        "loop": false,
+        "duration": 0.9,
+        "description": "Подъём кирки для низкого разлома.",
+        "state": "WARN fissure",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "fissure_strike": {
+        "file": "runtime/characters/foreman/fissure_strike.png",
+        "frames": [
+          "source_frames/foreman/fissure_strike/00.png",
+          "source_frames/foreman/fissure_strike/01.png",
+          "source_frames/foreman/fissure_strike/02.png",
+          "source_frames/foreman/fissure_strike/03.png"
+        ],
+        "count": 4,
+        "fps": 10.0,
+        "loop": false,
+        "duration": 0.4,
+        "description": "Резкий удар киркой вниз и заклинивание.",
+        "state": "STRIKE fissure",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "fissure_recover": {
+        "file": "runtime/characters/foreman/fissure_recover.png",
+        "frames": [
+          "source_frames/foreman/fissure_recover/00.png",
+          "source_frames/foreman/fissure_recover/01.png",
+          "source_frames/foreman/fissure_recover/02.png",
+          "source_frames/foreman/fissure_recover/03.png",
+          "source_frames/foreman/fissure_recover/04.png",
+          "source_frames/foreman/fissure_recover/05.png"
+        ],
+        "count": 6,
+        "fps": 2.7906976744186047,
+        "loop": false,
+        "duration": 2.15,
+        "description": "Кирка застряла, голова открыта для контратаки. Контроллер определяет конец окна.",
+        "state": "OPEN fissure",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "wax_prepare": {
+        "file": "runtime/characters/foreman/wax_prepare.png",
+        "frames": [
+          "source_frames/foreman/wax_prepare/00.png",
+          "source_frames/foreman/wax_prepare/01.png",
+          "source_frames/foreman/wax_prepare/02.png",
+          "source_frames/foreman/wax_prepare/03.png",
+          "source_frames/foreman/wax_prepare/04.png",
+          "source_frames/foreman/wax_prepare/05.png"
+        ],
+        "count": 6,
+        "fps": 6.25,
+        "loop": false,
+        "duration": 0.96,
+        "description": "Свободная лапа у свечной короны перед выбросом воска.",
+        "state": "WARN wax",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "wax_strike": {
+        "file": "runtime/characters/foreman/wax_strike.png",
+        "frames": [
+          "source_frames/foreman/wax_strike/00.png",
+          "source_frames/foreman/wax_strike/01.png",
+          "source_frames/foreman/wax_strike/02.png",
+          "source_frames/foreman/wax_strike/03.png"
+        ],
+        "count": 4,
+        "fps": 5.2631578947368425,
+        "loop": false,
+        "duration": 0.76,
+        "description": "Приказ свободной лапой, выброс воска возникает отдельным эффектом.",
+        "state": "STRIKE wax",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "wax_recover": {
+        "file": "runtime/characters/foreman/wax_recover.png",
+        "frames": [
+          "source_frames/foreman/wax_recover/00.png",
+          "source_frames/foreman/wax_recover/01.png",
+          "source_frames/foreman/wax_recover/02.png",
+          "source_frames/foreman/wax_recover/03.png",
+          "source_frames/foreman/wax_recover/04.png",
+          "source_frames/foreman/wax_recover/05.png"
+        ],
+        "count": 6,
+        "fps": 2.9702970297029703,
+        "loop": false,
+        "duration": 2.02,
+        "description": "Кирка застряла, голова открыта для контратаки. Контроллер определяет конец окна.",
+        "state": "OPEN wax",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "rock_prepare": {
+        "file": "runtime/characters/foreman/rock_prepare.png",
+        "frames": [
+          "source_frames/foreman/rock_prepare/00.png",
+          "source_frames/foreman/rock_prepare/01.png",
+          "source_frames/foreman/rock_prepare/02.png",
+          "source_frames/foreman/rock_prepare/03.png",
+          "source_frames/foreman/rock_prepare/04.png",
+          "source_frames/foreman/rock_prepare/05.png"
+        ],
+        "count": 6,
+        "fps": 5.769230769230769,
+        "loop": false,
+        "duration": 1.04,
+        "description": "Высокий замах киркой, взгляд вверх перед двумя обвалами.",
+        "state": "WARN rock",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "rock_strike": {
+        "file": "runtime/characters/foreman/rock_strike.png",
+        "frames": [
+          "source_frames/foreman/rock_strike/00.png",
+          "source_frames/foreman/rock_strike/01.png",
+          "source_frames/foreman/rock_strike/02.png",
+          "source_frames/foreman/rock_strike/03.png"
+        ],
+        "count": 4,
+        "fps": 4.444444444444445,
+        "loop": false,
+        "duration": 0.9,
+        "description": "Удар вниз запускает два падения породы с задержкой.",
+        "state": "STRIKE rock",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "rock_recover": {
+        "file": "runtime/characters/foreman/rock_recover.png",
+        "frames": [
+          "source_frames/foreman/rock_recover/00.png",
+          "source_frames/foreman/rock_recover/01.png",
+          "source_frames/foreman/rock_recover/02.png",
+          "source_frames/foreman/rock_recover/03.png",
+          "source_frames/foreman/rock_recover/04.png",
+          "source_frames/foreman/rock_recover/05.png"
+        ],
+        "count": 6,
+        "fps": 3.1578947368421053,
+        "loop": false,
+        "duration": 1.9,
+        "description": "Кирка застряла, голова открыта для контратаки. Контроллер определяет конец окна.",
+        "state": "OPEN rock",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "open": {
+        "file": "runtime/characters/foreman/open.png",
+        "frames": [
+          "source_frames/foreman/open/00.png",
+          "source_frames/foreman/open/01.png",
+          "source_frames/foreman/open/02.png",
+          "source_frames/foreman/open/03.png",
+          "source_frames/foreman/open/04.png",
+          "source_frames/foreman/open/05.png"
+        ],
+        "count": 6,
+        "fps": 6,
+        "loop": true,
+        "duration": 1.0,
+        "description": "Усталое положение с опорой на застрявшую кирку.",
+        "state": "OPEN hits<2",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "guarded": {
+        "file": "runtime/characters/foreman/guarded.png",
+        "frames": [
+          "source_frames/foreman/guarded/00.png",
+          "source_frames/foreman/guarded/01.png",
+          "source_frames/foreman/guarded/02.png",
+          "source_frames/foreman/guarded/03.png",
+          "source_frames/foreman/guarded/04.png",
+          "source_frames/foreman/guarded/05.png"
+        ],
+        "count": 6,
+        "fps": 8,
+        "loop": true,
+        "duration": 0.75,
+        "description": "Прикрывает голову древком кирки, окно урона закрыто.",
+        "state": "OPEN hits>=2 / invulnerable",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "hit": {
+        "file": "runtime/characters/foreman/hit.png",
+        "frames": [
+          "source_frames/foreman/hit/00.png",
+          "source_frames/foreman/hit/01.png",
+          "source_frames/foreman/hit/02.png"
+        ],
+        "count": 3,
+        "fps": 7.894736842105263,
+        "loop": false,
+        "duration": 0.38,
+        "description": "Отдёргивает голову и возвращается к уязвимой стойке.",
+        "state": "HP decrease",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "deflect": {
+        "file": "runtime/characters/foreman/deflect.png",
+        "frames": [
+          "source_frames/foreman/deflect/00.png",
+          "source_frames/foreman/deflect/01.png",
+          "source_frames/foreman/deflect/02.png"
+        ],
+        "count": 3,
+        "fps": 12,
+        "loop": false,
+        "duration": 0.25,
+        "description": "Короткий жёсткий блок киркой, без изменения HP.",
+        "state": "rejected hit",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "phase": {
+        "file": "runtime/characters/foreman/phase.png",
+        "frames": [
+          "source_frames/foreman/phase/00.png",
+          "source_frames/foreman/phase/01.png",
+          "source_frames/foreman/phase/02.png",
+          "source_frames/foreman/phase/03.png"
+        ],
+        "count": 4,
+        "fps": 4.705882352941177,
+        "loop": false,
+        "duration": 0.85,
+        "description": "Рык, усиление готовности и возврат к наблюдению.",
+        "state": "HP crosses6 or3",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ]
+        ]
+      },
+      "death": {
+        "file": "runtime/characters/foreman/death.png",
+        "frames": [
+          "source_frames/foreman/death/00.png",
+          "source_frames/foreman/death/01.png",
+          "source_frames/foreman/death/02.png",
+          "source_frames/foreman/death/03.png",
+          "source_frames/foreman/death/04.png",
+          "source_frames/foreman/death/05.png"
+        ],
+        "count": 6,
+        "fps": 7.5,
+        "loop": false,
+        "duration": 0.8,
+        "description": "Главарь опускается на колени и падает рядом с киркой.",
+        "state": "DEAD immediately opens gate",
+        "regions_px": [
+          [
+            0,
+            0,
+            320,
+            300
+          ],
+          [
+            320,
+            0,
+            320,
+            300
+          ],
+          [
+            640,
+            0,
+            320,
+            300
+          ],
+          [
+            960,
+            0,
+            320,
+            300
+          ],
+          [
+            1280,
+            0,
+            320,
+            300
+          ],
+          [
+            1600,
+            0,
+            320,
+            300
+          ]
+        ]
+      }
+    },
+    "spriteframes": "runtime/characters/foreman/foreman.tres"
+  }
+}

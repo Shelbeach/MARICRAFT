@@ -1,0 +1,994 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/molten_level.gd" id="level"]
+[ext_resource type="PackedScene" path="res://scenes/objects/test_platform.tscn" id="floor"]
+[ext_resource type="PackedScene" path="res://scenes/objects/reward_block.tscn" id="block"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/kobold.tscn" id="kobold"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/fire_imp.tscn" id="murloc"]
+[ext_resource type="PackedScene" path="res://scenes/objects/coin.tscn" id="coin"]
+[ext_resource type="PackedScene" path="res://scenes/actors/forest_player.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://scenes/objects/ferry.tscn" id="ferry"]
+[ext_resource type="PackedScene" path="res://scenes/objects/pipe.tscn" id="pipe"]
+[ext_resource type="PackedScene" path="res://scenes/objects/spikes.tscn" id="spikes"]
+[ext_resource type="PackedScene" path="res://scenes/objects/molten_hazard.tscn" id="hazard"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/smith_sculpture.png" id="decor_0"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/dark_iron_furnace.png" id="decor_1"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/iron_support.png" id="decor_2"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/chain_winch.png" id="decor_3"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/molten_ore.png" id="decor_4"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/fire_lamp.png" id="decor_5"]
+[ext_resource type="Texture2D" path="res://assets/molten_art/decor/direction_sign.png" id="decor_6"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+[node name="MoltenCore" type="Node2D"]
+script = ExtResource("level")
+chapter_level = "3-2"
+finish_x = 5540
+checkpoint_x = 2290
+cave_left = 6600
+cave_width = 1680
+
+[node name="WestWall" parent="." instance=ExtResource("floor")]
+position = Vector2(-40, 80)
+size = Vector2(40, 500)
+construction = "masonry"
+
+[node name="EastWall" parent="." instance=ExtResource("floor")]
+position = Vector2(5668, 80)
+size = Vector2(40, 500)
+construction = "masonry"
+
+[node name="Sorting" parent="." instance=ExtResource("floor")]
+position = Vector2(0, 480)
+size = Vector2(700, 100)
+construction = "masonry"
+
+[node name="Arrival" parent="." instance=ExtResource("floor")]
+position = Vector2(1060, 440)
+size = Vector2(270, 140)
+construction = "masonry"
+
+[node name="TowerFoot" parent="." instance=ExtResource("floor")]
+position = Vector2(1330, 480)
+size = Vector2(690, 100)
+construction = "masonry"
+
+[node name="RestFoundry" parent="." instance=ExtResource("floor")]
+position = Vector2(2020, 480)
+size = Vector2(760, 100)
+construction = "masonry"
+
+[node name="CounterBank" parent="." instance=ExtResource("floor")]
+position = Vector2(3150, 380)
+size = Vector2(300, 200)
+construction = "masonry"
+
+[node name="SlagBank" parent="." instance=ExtResource("floor")]
+position = Vector2(3450, 440)
+size = Vector2(260, 140)
+construction = "masonry"
+
+[node name="Casting" parent="." instance=ExtResource("floor")]
+position = Vector2(3710, 480)
+size = Vector2(730, 100)
+construction = "masonry"
+
+[node name="FinalIsland" parent="." instance=ExtResource("floor")]
+position = Vector2(4780, 440)
+size = Vector2(230, 140)
+construction = "masonry"
+
+[node name="MasterStep" parent="." instance=ExtResource("floor")]
+position = Vector2(5122, 400)
+size = Vector2(180, 180)
+construction = "masonry"
+
+[node name="Workshop" parent="." instance=ExtResource("floor")]
+position = Vector2(5302, 480)
+size = Vector2(366, 100)
+construction = "masonry"
+
+[node name="SortStep" parent="." instance=ExtResource("floor")]
+position = Vector2(280, 432)
+size = Vector2(80, 148)
+construction = "masonry"
+
+[node name="SortShelf" parent="." instance=ExtResource("floor")]
+position = Vector2(420, 352)
+size = Vector2(210, 20)
+construction = "masonry"
+
+[node name="SortGrowth0" parent="." instance=ExtResource("block")]
+position = Vector2(450, 240)
+reward_id = "3-2/SortGrowth0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SortGrowth1" parent="." instance=ExtResource("block")]
+position = Vector2(482, 240)
+reward_id = "3-2/SortGrowth1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SortGrowth" parent="." instance=ExtResource("block")]
+position = Vector2(514, 240)
+reward_id = "3-2/SortGrowth"
+kind = "potion"
+amount = 0
+vein_bonus = 0
+
+[node name="SortGrowth3" parent="." instance=ExtResource("block")]
+position = Vector2(546, 240)
+reward_id = "3-2/SortGrowth3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SortGrowth4" parent="." instance=ExtResource("block")]
+position = Vector2(578, 240)
+reward_id = "3-2/SortGrowth4"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="Sorter" parent="." instance=ExtResource("murloc")]
+position = Vector2(570, 478)
+reward_id = "3-2/Sorter"
+patrol_width = 76
+
+[node name="LavaCarrier" parent="." instance=ExtResource("ferry")]
+position = Vector2(760, 456)
+travel = Vector2(240, -16)
+period = 4.6
+
+[node name="TowerStep" parent="." instance=ExtResource("floor")]
+position = Vector2(1330, 440)
+size = Vector2(180, 140)
+construction = "masonry"
+
+[node name="TowerDeck" parent="." instance=ExtResource("floor")]
+position = Vector2(1560, 352)
+size = Vector2(240, 20)
+construction = "masonry"
+
+[node name="CrownDeck" parent="." instance=ExtResource("floor")]
+position = Vector2(1890, 272)
+size = Vector2(220, 20)
+construction = "masonry"
+
+[node name="CrownBridge0" parent="." instance=ExtResource("block")]
+position = Vector2(1816, 320)
+reward_id = "3-2/CrownBridge0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CrownBridge1" parent="." instance=ExtResource("block")]
+position = Vector2(1848, 320)
+reward_id = "3-2/CrownBridge1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CrownBridge2" parent="." instance=ExtResource("block")]
+position = Vector2(1880, 320)
+reward_id = "3-2/CrownBridge2"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CrownCache0" parent="." instance=ExtResource("block")]
+position = Vector2(1922, 160)
+reward_id = "3-2/CrownCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CrownCache1" parent="." instance=ExtResource("block")]
+position = Vector2(1954, 160)
+reward_id = "3-2/CrownCache1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CrownCache" parent="." instance=ExtResource("block")]
+position = Vector2(1986, 160)
+reward_id = "3-2/CrownCache"
+kind = "coins"
+amount = 24
+vein_bonus = 0
+
+[node name="CrownCache3" parent="." instance=ExtResource("block")]
+position = Vector2(2018, 160)
+reward_id = "3-2/CrownCache3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CrownCache4" parent="." instance=ExtResource("block")]
+position = Vector2(2050, 160)
+reward_id = "3-2/CrownCache4"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="TowerCache0" parent="." instance=ExtResource("block")]
+position = Vector2(1590, 240)
+reward_id = "3-2/TowerCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="TowerCache1" parent="." instance=ExtResource("block")]
+position = Vector2(1622, 240)
+reward_id = "3-2/TowerCache1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="TowerCache" parent="." instance=ExtResource("block")]
+position = Vector2(1654, 240)
+reward_id = "3-2/TowerCache"
+kind = "coins"
+amount = 22
+vein_bonus = 0
+
+[node name="TowerCache3" parent="." instance=ExtResource("block")]
+position = Vector2(1686, 240)
+reward_id = "3-2/TowerCache3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="TowerCache4" parent="." instance=ExtResource("block")]
+position = Vector2(1718, 240)
+reward_id = "3-2/TowerCache4"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="HighSmith" parent="." instance=ExtResource("kobold")]
+position = Vector2(1230, 438)
+reward_id = "3-2/HighSmith"
+patrol_width = 55
+
+[node name="TowerValve" parent="." instance=ExtResource("hazard")]
+position = Vector2(1920, 480)
+width = 64
+height = 64
+offset = 1.8
+
+[node name="RestSupply0" parent="." instance=ExtResource("block")]
+position = Vector2(2360, 368)
+reward_id = "3-2/RestSupply0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="RestSupply1" parent="." instance=ExtResource("block")]
+position = Vector2(2392, 368)
+reward_id = "3-2/RestSupply1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="RestSupply" parent="." instance=ExtResource("block")]
+position = Vector2(2424, 368)
+reward_id = "3-2/RestSupply"
+kind = "rune"
+amount = 0
+vein_bonus = 0
+
+[node name="RestSupply3" parent="." instance=ExtResource("block")]
+position = Vector2(2456, 368)
+reward_id = "3-2/RestSupply3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="RestSupply4" parent="." instance=ExtResource("block")]
+position = Vector2(2488, 368)
+reward_id = "3-2/RestSupply4"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="Entry" parent="." instance=ExtResource("pipe")]
+position = Vector2(2580, 480)
+destination = Vector2(6680, 475)
+prompt = "Тигельная комната · необязательное испытание"
+
+[node name="Counterweight" parent="." instance=ExtResource("ferry")]
+position = Vector2(2840, 452)
+travel = Vector2(250, -72)
+period = 5.0
+
+[node name="CounterStep" parent="." instance=ExtResource("floor")]
+position = Vector2(3240, 332)
+size = Vector2(70, 248)
+construction = "masonry"
+
+[node name="CounterGallery" parent="." instance=ExtResource("floor")]
+position = Vector2(3340, 252)
+size = Vector2(160, 20)
+construction = "masonry"
+
+[node name="CounterCache0" parent="." instance=ExtResource("block")]
+position = Vector2(3370, 140)
+reward_id = "3-2/CounterCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CounterCache" parent="." instance=ExtResource("block")]
+position = Vector2(3402, 140)
+reward_id = "3-2/CounterCache"
+kind = "coins"
+amount = 20
+vein_bonus = 0
+
+[node name="CounterCache2" parent="." instance=ExtResource("block")]
+position = Vector2(3434, 140)
+reward_id = "3-2/CounterCache2"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SlagTeeth" parent="." instance=ExtResource("spikes")]
+position = Vector2(3580, 440)
+
+[node name="DangerVent" parent="." instance=ExtResource("pipe")]
+position = Vector2(3930, 480)
+mode = "ambush"
+enemy_scene = ExtResource("murloc")
+enemy_id = "3-2/DangerGuard"
+emerge_direction = -1
+enemy_patrol_width = 140
+
+[node name="BypassStep" parent="." instance=ExtResource("floor")]
+position = Vector2(3990, 432)
+size = Vector2(80, 148)
+construction = "masonry"
+
+[node name="BypassDeck" parent="." instance=ExtResource("floor")]
+position = Vector2(4110, 352)
+size = Vector2(210, 20)
+construction = "masonry"
+
+[node name="BypassCache0" parent="." instance=ExtResource("block")]
+position = Vector2(4140, 240)
+reward_id = "3-2/BypassCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="BypassCache" parent="." instance=ExtResource("block")]
+position = Vector2(4172, 240)
+reward_id = "3-2/BypassCache"
+kind = "coins"
+amount = 20
+vein_bonus = 0
+
+[node name="BypassCache2" parent="." instance=ExtResource("block")]
+position = Vector2(4204, 240)
+reward_id = "3-2/BypassCache2"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="BypassCache3" parent="." instance=ExtResource("block")]
+position = Vector2(4236, 240)
+reward_id = "3-2/BypassCache3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="CastingTeeth" parent="." instance=ExtResource("spikes")]
+position = Vector2(4180, 480)
+
+[node name="CastingValve" parent="." instance=ExtResource("hazard")]
+position = Vector2(4360, 480)
+width = 60
+height = 64
+offset = 0.3
+
+[node name="LastBridge" parent="." instance=ExtResource("ferry")]
+position = Vector2(4500, 456)
+travel = Vector2(220, -16)
+period = 4.5
+
+[node name="LastBreath" parent="." instance=ExtResource("hazard")]
+position = Vector2(4880, 440)
+width = 56
+height = 58
+offset = 1.5
+
+[node name="FinalCache0" parent="." instance=ExtResource("block")]
+position = Vector2(5440, 368)
+reward_id = "3-2/FinalCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="FinalCache" parent="." instance=ExtResource("block")]
+position = Vector2(5472, 368)
+reward_id = "3-2/FinalCache"
+kind = "coins"
+amount = 18
+vein_bonus = 0
+
+[node name="FinalCache2" parent="." instance=ExtResource("block")]
+position = Vector2(5504, 368)
+reward_id = "3-2/FinalCache2"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="ChamberWestWall" parent="." instance=ExtResource("floor")]
+position = Vector2(6560, 80)
+size = Vector2(40, 500)
+construction = "masonry"
+
+[node name="ChamberFloor" parent="." instance=ExtResource("floor")]
+position = Vector2(6600, 480)
+size = Vector2(1680, 100)
+construction = "masonry"
+
+[node name="ChamberEastWall" parent="." instance=ExtResource("floor")]
+position = Vector2(8280, 80)
+size = Vector2(40, 500)
+construction = "masonry"
+
+[node name="ChamberStep" parent="." instance=ExtResource("floor")]
+position = Vector2(6880, 432)
+size = Vector2(90, 148)
+construction = "masonry"
+
+[node name="ChamberShelf" parent="." instance=ExtResource("floor")]
+position = Vector2(7030, 352)
+size = Vector2(220, 20)
+construction = "masonry"
+
+[node name="ChamberCache0" parent="." instance=ExtResource("block")]
+position = Vector2(7060, 240)
+reward_id = "3-2/ChamberCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="ChamberCache1" parent="." instance=ExtResource("block")]
+position = Vector2(7092, 240)
+reward_id = "3-2/ChamberCache1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="ChamberCache" parent="." instance=ExtResource("block")]
+position = Vector2(7124, 240)
+reward_id = "3-2/ChamberCache"
+kind = "coins"
+amount = 24
+vein_bonus = 0
+
+[node name="ChamberCache3" parent="." instance=ExtResource("block")]
+position = Vector2(7156, 240)
+reward_id = "3-2/ChamberCache3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="ChamberCache4" parent="." instance=ExtResource("block")]
+position = Vector2(7188, 240)
+reward_id = "3-2/ChamberCache4"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SecretCrust0" parent="." instance=ExtResource("block")]
+position = Vector2(7480, 368)
+reward_id = "3-2/SecretCrust0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SecretCrust1" parent="." instance=ExtResource("block")]
+position = Vector2(7512, 368)
+reward_id = "3-2/SecretCrust1"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="SecretCrust2" parent="." instance=ExtResource("block")]
+position = Vector2(7544, 368)
+reward_id = "3-2/SecretCrust2"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="Coin001" parent="." instance=ExtResource("coin")]
+position = Vector2(7480, 310)
+reward_id = "3-2/Coin001"
+
+[node name="Coin002" parent="." instance=ExtResource("coin")]
+position = Vector2(7512, 310)
+reward_id = "3-2/Coin002"
+
+[node name="Coin003" parent="." instance=ExtResource("coin")]
+position = Vector2(7544, 310)
+reward_id = "3-2/Coin003"
+
+[node name="ChamberTeeth" parent="." instance=ExtResource("spikes")]
+position = Vector2(7330, 480)
+
+[node name="ChamberKeeper" parent="." instance=ExtResource("kobold")]
+position = Vector2(7650, 478)
+reward_id = "3-2/ChamberKeeper"
+patrol_width = 86
+
+[node name="VaultLift" parent="." instance=ExtResource("ferry")]
+position = Vector2(7885, 440)
+travel = Vector2(0, -112)
+period = 4.6
+
+[node name="VaultShelf" parent="." instance=ExtResource("floor")]
+position = Vector2(7960, 328)
+size = Vector2(200, 20)
+construction = "masonry"
+
+[node name="VaultCache0" parent="." instance=ExtResource("block")]
+position = Vector2(8010, 216)
+reward_id = "3-2/VaultCache0"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="VaultCache" parent="." instance=ExtResource("block")]
+position = Vector2(8042, 216)
+reward_id = "3-2/VaultCache"
+kind = "coins"
+amount = 24
+vein_bonus = 0
+
+[node name="VaultCache2" parent="." instance=ExtResource("block")]
+position = Vector2(8074, 216)
+reward_id = "3-2/VaultCache2"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="VaultCache3" parent="." instance=ExtResource("block")]
+position = Vector2(8106, 216)
+reward_id = "3-2/VaultCache3"
+kind = "fragile"
+amount = 0
+vein_bonus = 0
+
+[node name="Return" parent="." instance=ExtResource("pipe")]
+position = Vector2(8200, 480)
+mode = "return"
+destination = Vector2(2680, 475)
+prompt = "Вернуться к привалу кузницы"
+
+[node name="Coin004" parent="." instance=ExtResource("coin")]
+position = Vector2(175, 444)
+reward_id = "3-2/Coin004"
+
+[node name="Coin005" parent="." instance=ExtResource("coin")]
+position = Vector2(225, 444)
+reward_id = "3-2/Coin005"
+
+[node name="Coin006" parent="." instance=ExtResource("coin")]
+position = Vector2(485, 444)
+reward_id = "3-2/Coin006"
+
+[node name="Coin007" parent="." instance=ExtResource("coin")]
+position = Vector2(555, 444)
+reward_id = "3-2/Coin007"
+
+[node name="Coin008" parent="." instance=ExtResource("coin")]
+position = Vector2(450, 316)
+reward_id = "3-2/Coin008"
+
+[node name="Coin009" parent="." instance=ExtResource("coin")]
+position = Vector2(520, 316)
+reward_id = "3-2/Coin009"
+
+[node name="Coin010" parent="." instance=ExtResource("coin")]
+position = Vector2(590, 316)
+reward_id = "3-2/Coin010"
+
+[node name="Coin011" parent="." instance=ExtResource("coin")]
+position = Vector2(678, 438)
+reward_id = "3-2/Coin011"
+
+[node name="Coin012" parent="." instance=ExtResource("coin")]
+position = Vector2(880.0, 384)
+reward_id = "3-2/Coin012"
+
+[node name="Coin013" parent="." instance=ExtResource("coin")]
+position = Vector2(1084.0, 404.0)
+reward_id = "3-2/Coin013"
+
+[node name="Coin014" parent="." instance=ExtResource("coin")]
+position = Vector2(1130, 404)
+reward_id = "3-2/Coin014"
+
+[node name="Coin015" parent="." instance=ExtResource("coin")]
+position = Vector2(1220, 404)
+reward_id = "3-2/Coin015"
+
+[node name="Coin016" parent="." instance=ExtResource("coin")]
+position = Vector2(1460, 396)
+reward_id = "3-2/Coin016"
+
+[node name="Coin017" parent="." instance=ExtResource("coin")]
+position = Vector2(1530, 396)
+reward_id = "3-2/Coin017"
+
+[node name="Coin018" parent="." instance=ExtResource("coin")]
+position = Vector2(1590, 316)
+reward_id = "3-2/Coin018"
+
+[node name="Coin019" parent="." instance=ExtResource("coin")]
+position = Vector2(1660, 316)
+reward_id = "3-2/Coin019"
+
+[node name="Coin020" parent="." instance=ExtResource("coin")]
+position = Vector2(1730, 316)
+reward_id = "3-2/Coin020"
+
+[node name="Coin021" parent="." instance=ExtResource("coin")]
+position = Vector2(1850, 236)
+reward_id = "3-2/Coin021"
+
+[node name="Coin022" parent="." instance=ExtResource("coin")]
+position = Vector2(1950, 236)
+reward_id = "3-2/Coin022"
+
+[node name="Coin023" parent="." instance=ExtResource("coin")]
+position = Vector2(2020, 236)
+reward_id = "3-2/Coin023"
+
+[node name="Coin024" parent="." instance=ExtResource("coin")]
+position = Vector2(2070, 236)
+reward_id = "3-2/Coin024"
+
+[node name="Coin025" parent="." instance=ExtResource("coin")]
+position = Vector2(1390.0, 404.0)
+reward_id = "3-2/Coin025"
+
+[node name="Coin026" parent="." instance=ExtResource("coin")]
+position = Vector2(1850, 444)
+reward_id = "3-2/Coin026"
+
+[node name="Coin027" parent="." instance=ExtResource("coin")]
+position = Vector2(2160, 444)
+reward_id = "3-2/Coin027"
+
+[node name="Coin028" parent="." instance=ExtResource("coin")]
+position = Vector2(2250, 444)
+reward_id = "3-2/Coin028"
+
+[node name="Coin029" parent="." instance=ExtResource("coin")]
+position = Vector2(2330, 444)
+reward_id = "3-2/Coin029"
+
+[node name="Coin030" parent="." instance=ExtResource("coin")]
+position = Vector2(2490, 444)
+reward_id = "3-2/Coin030"
+
+[node name="Coin031" parent="." instance=ExtResource("coin")]
+position = Vector2(2650, 444)
+reward_id = "3-2/Coin031"
+
+[node name="Coin032" parent="." instance=ExtResource("coin")]
+position = Vector2(2704, 444)
+reward_id = "3-2/Coin032"
+
+[node name="Coin033" parent="." instance=ExtResource("coin")]
+position = Vector2(2758, 438)
+reward_id = "3-2/Coin033"
+
+[node name="Coin034" parent="." instance=ExtResource("coin")]
+position = Vector2(2965.0, 384)
+reward_id = "3-2/Coin034"
+
+[node name="Coin035" parent="." instance=ExtResource("coin")]
+position = Vector2(3174.0, 344.0)
+reward_id = "3-2/Coin035"
+
+[node name="Coin036" parent="." instance=ExtResource("coin")]
+position = Vector2(3370, 216)
+reward_id = "3-2/Coin036"
+
+[node name="Coin037" parent="." instance=ExtResource("coin")]
+position = Vector2(3440, 216)
+reward_id = "3-2/Coin037"
+
+[node name="Coin038" parent="." instance=ExtResource("coin")]
+position = Vector2(3480, 404)
+reward_id = "3-2/Coin038"
+
+[node name="Coin039" parent="." instance=ExtResource("coin")]
+position = Vector2(3650, 404)
+reward_id = "3-2/Coin039"
+
+[node name="Coin040" parent="." instance=ExtResource("coin")]
+position = Vector2(3770, 444)
+reward_id = "3-2/Coin040"
+
+[node name="Coin041" parent="." instance=ExtResource("coin")]
+position = Vector2(4020.0, 396.0)
+reward_id = "3-2/Coin041"
+
+[node name="Coin042" parent="." instance=ExtResource("coin")]
+position = Vector2(4140, 316)
+reward_id = "3-2/Coin042"
+
+[node name="Coin043" parent="." instance=ExtResource("coin")]
+position = Vector2(4210, 316)
+reward_id = "3-2/Coin043"
+
+[node name="Coin044" parent="." instance=ExtResource("coin")]
+position = Vector2(4280, 316)
+reward_id = "3-2/Coin044"
+
+[node name="Coin045" parent="." instance=ExtResource("coin")]
+position = Vector2(4418, 438)
+reward_id = "3-2/Coin045"
+
+[node name="Coin046" parent="." instance=ExtResource("coin")]
+position = Vector2(4610.0, 384)
+reward_id = "3-2/Coin046"
+
+[node name="Coin047" parent="." instance=ExtResource("coin")]
+position = Vector2(4804.0, 404.0)
+reward_id = "3-2/Coin047"
+
+[node name="Coin048" parent="." instance=ExtResource("coin")]
+position = Vector2(4988, 398)
+reward_id = "3-2/Coin048"
+
+[node name="Coin049" parent="." instance=ExtResource("coin")]
+position = Vector2(5066.0, 344)
+reward_id = "3-2/Coin049"
+
+[node name="Coin050" parent="." instance=ExtResource("coin")]
+position = Vector2(5146.0, 364.0)
+reward_id = "3-2/Coin050"
+
+[node name="Coin051" parent="." instance=ExtResource("coin")]
+position = Vector2(5192, 364)
+reward_id = "3-2/Coin051"
+
+[node name="Coin052" parent="." instance=ExtResource("coin")]
+position = Vector2(5240, 364)
+reward_id = "3-2/Coin052"
+
+[node name="Coin053" parent="." instance=ExtResource("coin")]
+position = Vector2(5340, 444)
+reward_id = "3-2/Coin053"
+
+[node name="Coin054" parent="." instance=ExtResource("coin")]
+position = Vector2(6700, 444)
+reward_id = "3-2/Coin054"
+
+[node name="Coin055" parent="." instance=ExtResource("coin")]
+position = Vector2(6780, 444)
+reward_id = "3-2/Coin055"
+
+[node name="Coin056" parent="." instance=ExtResource("coin")]
+position = Vector2(7050, 316)
+reward_id = "3-2/Coin056"
+
+[node name="Coin057" parent="." instance=ExtResource("coin")]
+position = Vector2(7120, 316)
+reward_id = "3-2/Coin057"
+
+[node name="Coin058" parent="." instance=ExtResource("coin")]
+position = Vector2(7200, 316)
+reward_id = "3-2/Coin058"
+
+[node name="Coin059" parent="." instance=ExtResource("coin")]
+position = Vector2(7480, 444)
+reward_id = "3-2/Coin059"
+
+[node name="Coin060" parent="." instance=ExtResource("coin")]
+position = Vector2(7760, 444)
+reward_id = "3-2/Coin060"
+
+[node name="Coin061" parent="." instance=ExtResource("coin")]
+position = Vector2(7990, 292)
+reward_id = "3-2/Coin061"
+
+[node name="Coin062" parent="." instance=ExtResource("coin")]
+position = Vector2(8060, 292)
+reward_id = "3-2/Coin062"
+
+[node name="Coin063" parent="." instance=ExtResource("coin")]
+position = Vector2(8120, 292)
+reward_id = "3-2/Coin063"
+
+[node name="CarrierLava" parent="." instance=ExtResource("hazard")]
+position = Vector2(880.0, 560)
+kind = "lava"
+width = 360
+height = 46
+
+[node name="CounterLava" parent="." instance=ExtResource("hazard")]
+position = Vector2(2965.0, 560)
+kind = "lava"
+width = 370
+height = 46
+
+[node name="FinalLava" parent="." instance=ExtResource("hazard")]
+position = Vector2(4610.0, 560)
+kind = "lava"
+width = 340
+height = 46
+
+[node name="LeapLava" parent="." instance=ExtResource("hazard")]
+position = Vector2(5066.0, 560)
+kind = "lava"
+width = 112
+height = 46
+
+[node name="Player" parent="." instance=ExtResource("player")]
+position = Vector2(96, 475)
+
+[node name="FoundryCaster" parent="." instance=ExtResource("murloc")]
+position = Vector2(2170, 478)
+reward_id = "3-2/FoundryCaster"
+patrol_width = 60
+ranged = true
+
+[node name="Scenery" type="Node2D" parent="."]
+z_index = -8
+
+[node name="smith_sculpture_00" type="Sprite2D" parent="Scenery"]
+position = Vector2(120, 483)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-126, -410)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="dark_iron_furnace_01" type="Sprite2D" parent="Scenery"]
+position = Vector2(510, 483)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-218, -458)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="iron_support_02" type="Sprite2D" parent="Scenery"]
+position = Vector2(1640, 483)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("decor_2")
+centered = false
+offset = Vector2(-106, -418)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="chain_winch_03" type="Sprite2D" parent="Scenery"]
+position = Vector2(2210, 483)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-154, -286)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="dark_iron_furnace_04" type="Sprite2D" parent="Scenery"]
+position = Vector2(2440, 483)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-218, -458)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="smith_sculpture_05" type="Sprite2D" parent="Scenery"]
+position = Vector2(3195, 383)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-126, -410)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="molten_ore_06" type="Sprite2D" parent="Scenery"]
+position = Vector2(3660, 443)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-100, -126)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="dark_iron_furnace_07" type="Sprite2D" parent="Scenery"]
+position = Vector2(4140, 483)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-218, -458)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="fire_lamp_08" type="Sprite2D" parent="Scenery"]
+position = Vector2(4930, 443)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-54, -218)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="direction_sign_09" type="Sprite2D" parent="Scenery"]
+position = Vector2(5520, 483)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("decor_6")
+centered = false
+offset = Vector2(-70, -186)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="dark_iron_furnace_10" type="Sprite2D" parent="Scenery"]
+position = Vector2(6800, 483)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_1")
+centered = false
+offset = Vector2(-218, -458)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="molten_ore_11" type="Sprite2D" parent="Scenery"]
+position = Vector2(7190, 483)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_4")
+centered = false
+offset = Vector2(-100, -126)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="smith_sculpture_12" type="Sprite2D" parent="Scenery"]
+position = Vector2(7680, 483)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("decor_0")
+centered = false
+offset = Vector2(-126, -410)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="chain_winch_13" type="Sprite2D" parent="Scenery"]
+position = Vector2(7820, 483)
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("decor_3")
+centered = false
+offset = Vector2(-154, -286)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2
+
+[node name="fire_lamp_14" type="Sprite2D" parent="Scenery"]
+position = Vector2(8170, 483)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("decor_5")
+centered = false
+offset = Vector2(-54, -218)
+modulate = Color(0.56, 0.54, 0.62, 1)
+texture_filter = 2

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="SpriteFrames" path="../resources/ragnaros_body.tres" id="1"]
+[node name="RagnarosBodyAtlas" type="AnimatedSprite2D"]
+sprite_frames=ExtResource("1")
+animation=&"idle"
+centered=false
+offset=Vector2(-208,-464)
+scale=Vector2(0.5,0.5)

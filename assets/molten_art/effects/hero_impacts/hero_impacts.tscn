@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="../../visual/actor_view.gd" id="1"]
+[ext_resource type="SpriteFrames" path="hero_impacts.tres" id="2"]
+[node name="hero_impacts" type="Node2D"]
+script = ExtResource("1")
+frames = ExtResource("2")
+pivot_px = Vector2(72,72)
+initial_clip = &"enemy_hit"
+clip_pivots = {"enemy_hit":Vector2(72,72), "boss_hit":Vector2(72,72), "powerup":Vector2(72,126)}

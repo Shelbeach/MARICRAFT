@@ -1,0 +1,249 @@
+{
+  "player_jump": {
+    "file": "player_jump.wav",
+    "volume_db": -1,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 2,
+    "interval": 0.1,
+    "priority": 30,
+    "variants": [
+      "player_jump.wav",
+      "player_jump_02.wav",
+      "player_jump_03.wav"
+    ]
+  },
+  "magic_cast": {
+    "file": "magic_cast.wav",
+    "volume_db": -2,
+    "pitch": [
+      0.97,
+      1.03
+    ],
+    "voices": 2,
+    "interval": 0.09,
+    "priority": 30
+  },
+  "player_hurt": {
+    "file": "player_hurt.wav",
+    "volume_db": 0,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.25,
+    "priority": 70
+  },
+  "player_death": {
+    "file": "player_death.wav",
+    "volume_db": 0,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.6,
+    "priority": 90
+  },
+  "coin_pickup": {
+    "file": "coin_pickup.wav",
+    "volume_db": -2,
+    "pitch": [
+      0.99,
+      1.01
+    ],
+    "voices": 3,
+    "interval": 0.045,
+    "priority": 30
+  },
+  "powerup_pickup": {
+    "file": "powerup_pickup.wav",
+    "volume_db": -1,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.18,
+    "priority": 70
+  },
+  "chest_open": {
+    "file": "chest_open.wav",
+    "volume_db": -2,
+    "pitch": [
+      0.97,
+      1.03
+    ],
+    "voices": 2,
+    "interval": 0.13,
+    "priority": 30
+  },
+  "block_break": {
+    "file": "block_break.wav",
+    "volume_db": -3,
+    "pitch": [
+      0.96,
+      1.04
+    ],
+    "voices": 2,
+    "interval": 0.07,
+    "priority": 30
+  },
+  "pipe_transition": {
+    "file": "pipe_transition.wav",
+    "volume_db": -1,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.3,
+    "priority": 30
+  },
+  "checkpoint": {
+    "file": "checkpoint.wav",
+    "volume_db": -1,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.7,
+    "priority": 70
+  },
+  "enemy_pop": {
+    "file": "enemy_pop.wav",
+    "volume_db": -2,
+    "pitch": [
+      0.96,
+      1.04
+    ],
+    "voices": 3,
+    "interval": 0.055,
+    "priority": 30
+  },
+  "hat_kick": {
+    "file": "hat_kick.wav",
+    "volume_db": -3,
+    "pitch": [
+      0.97,
+      1.03
+    ],
+    "voices": 2,
+    "interval": 0.12,
+    "priority": 30
+  },
+  "boss_warning": {
+    "file": "boss_warning.wav",
+    "volume_db": 0,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.18,
+    "priority": 90
+  },
+  "ui_click": {
+    "file": "ui_click.wav",
+    "volume_db": -4,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 2,
+    "interval": 0.055,
+    "priority": 30
+  },
+  "level_complete": {
+    "file": "level_complete.wav",
+    "volume_db": -1,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 1.0,
+    "priority": 90
+  },
+  "game_over": {
+    "file": "game_over.wav",
+    "volume_db": -1,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 1.2,
+    "priority": 90
+  },
+  "murloc_water_cast": {
+    "file": "murloc_water_cast.wav",
+    "volume_db": -2,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.25,
+    "priority": 65
+  },
+  "murloc_dash": {
+    "file": "murloc_dash.wav",
+    "volume_db": -2,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.25,
+    "priority": 65
+  },
+  "murloc_slam": {
+    "file": "murloc_slam.wav",
+    "volume_db": -2,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.25,
+    "priority": 65
+  },
+  "foreman_pickaxe_strike": {
+    "file": "foreman_pickaxe_strike.wav",
+    "volume_db": -2,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.25,
+    "priority": 65
+  },
+  "foreman_wax_burst": {
+    "file": "foreman_wax_burst.wav",
+    "volume_db": -2,
+    "pitch": [
+      1,
+      1
+    ],
+    "voices": 1,
+    "interval": 0.25,
+    "priority": 65
+  },
+  "foreman_rockfall": {
+    "file": "foreman_rockfall.wav",
+    "volume_db": -3,
+    "pitch": [
+      0.98,
+      1.02
+    ],
+    "voices": 2,
+    "interval": 0.18,
+    "priority": 65
+  }
+}

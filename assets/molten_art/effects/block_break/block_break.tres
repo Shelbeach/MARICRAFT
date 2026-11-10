@@ -1,0 +1,24 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+[ext_resource type="Texture2D" path="break.png" id="T0"]
+[sub_resource type="AtlasTexture" id="F1"]
+atlas = ExtResource("T0")
+region = Rect2(0,0,160,160)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F2"]
+atlas = ExtResource("T0")
+region = Rect2(160,0,160,160)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F3"]
+atlas = ExtResource("T0")
+region = Rect2(320,0,160,160)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="F4"]
+atlas = ExtResource("T0")
+region = Rect2(480,0,160,160)
+filter_clip = true
+
+[resource]
+animations = [{"name":&"break","speed":14,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("F1")},{"duration":1.0,"texture":SubResource("F2")},{"duration":1.0,"texture":SubResource("F3")},{"duration":1.0,"texture":SubResource("F4")}]}]

@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "file": "menu_theme.ogg",
+    "source_number": 1,
+    "loop_start": 53.658820861678,
+    "loop_end": 114.54154195011338,
+    "gain_db": -6.460000000000001
+  },
+  "forest": {
+    "file": "forest_theme.ogg",
+    "source_number": 2,
+    "loop_start": 66.5662358276644,
+    "loop_end": 160.83925170068028,
+    "gain_db": -6.66
+  },
+  "durotar": {
+    "file": "durotar_theme.ogg",
+    "source_number": 3,
+    "loop_start": 73.75909297052154,
+    "loop_end": 127.09532879818595,
+    "gain_db": -8.4
+  },
+  "molten": {
+    "file": "molten_theme.ogg",
+    "source_number": 4,
+    "loop_start": 108.64551020408163,
+    "loop_end": 165.67371882086167,
+    "gain_db": -7.75
+  },
+  "bosses": {
+    "file": "bosses_theme.ogg",
+    "source_number": 5,
+    "loop_start": 45.135124716553285,
+    "loop_end": 99.2840589569161,
+    "gain_db": -6.800000000000001
+  },
+  "ragnaros": {
+    "file": "ragnaros_theme.ogg",
+    "source_number": 6,
+    "loop_start": 69.88746031746032,
+    "loop_end": 136.01789115646258,
+    "gain_db": -6.140000000000001
+  }
+}
